@@ -1,32 +1,46 @@
-# Mintlify Starter Kit
+# GTM Cookbook
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+Go-To-Market 完整指南：从战略到执行，系统掌握市场进入方法论。
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+## 课程结构
 
-### Development
+| 模块 | 内容 | 时长 |
+|------|------|------|
+| **模块一** | GTM 基础认知与战略意义 | 2 小时 |
+| **模块二** | 核心方法论与框架 | 4 小时 |
+| **模块三** | 执行体系与运营 | 3 小时 |
+| **模块四** | 实战案例深度解析 | 2 小时 |
+| **模块五** | 执行工具包 | 2 小时 |
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+## 核心内容
 
-```
+- **系统化模块**：5 大模块 + 附录，从基础认知到实战工具
+- **方法论驱动**：跨越鸿沟、PLG/SLG、ICP 构建、价值主张设计等核心方法论
+- **实战案例**：Slack、Notion、飞书、北森等中外经典案例深度解析
+- **即用工具**：战略模板、ICP 工作表、竞争矩阵、漏斗检查表等
+
+## 适合人群
+
+- 产品经理：理解如何将产品推向市场
+- 市场营销：掌握 GTM 战略与执行框架
+- 销售负责人：了解 GTM Motion 与渠道策略
+- 创业者：系统学习市场进入方法论
+- 投资人：评估被投企业的 GTM 能力
+
+## 本地开发
+
+安装 [Mintlify CLI](https://www.npmjs.com/package/mintlify)：
+
+```bash
 npm i -g mintlify
 ```
 
-Run the following command at the root of your documentation (where mint.json is)
+启动本地预览：
 
-```
+```bash
 mintlify dev
 ```
 
-### Publishing Changes
+## 部署
 
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
-
-#### Troubleshooting
-
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+本项目使用 Mintlify 托管，推送到 main 分支后自动部署。

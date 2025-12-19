@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "GTM Cookbook",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -17,75 +17,119 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "GitHub",
+      "url": "https://github.com/Digidai/docs"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "开始学习",
+    "url": "/module-01/1.1-gtm-definition"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "工具包",
+      "url": "module-05"
+    },
+    {
+      "name": "附录",
+      "url": "appendix"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "模块一",
+      "icon": "1",
+      "url": "module-01"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "模块二",
+      "icon": "2",
+      "url": "module-02"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "模块三",
+      "icon": "3",
+      "url": "module-03"
+    },
+    {
+      "name": "模块四",
+      "icon": "4",
+      "url": "module-04"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "开始",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "introduction"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "模块一：GTM 基础认知",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "module-01/index",
+        "module-01/1.1-gtm-definition",
+        "module-01/1.2-gtm-importance",
+        "module-01/1.3-gtm-scenarios",
+        "module-01/1.4-gtm-core-questions"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "模块二：核心方法论",
       "pages": [
-        "api-reference/introduction"
+        "module-02/index",
+        "module-02/2.1-crossing-the-chasm",
+        "module-02/2.2-gtm-motions",
+        "module-02/2.3-icp-methodology",
+        "module-02/2.4-value-proposition",
+        "module-02/2.5-positioning"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "模块三：执行体系",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "module-03/index",
+        "module-03/3.1-channel-strategy",
+        "module-03/3.2-pricing-strategy",
+        "module-03/3.3-sales-marketing-alignment",
+        "module-03/3.4-metrics",
+        "module-03/3.5-revops"
+      ]
+    },
+    {
+      "group": "模块四：实战案例",
+      "pages": [
+        "module-04/index",
+        "module-04/4.1-plg-cases",
+        "module-04/4.2-slg-cases",
+        "module-04/4.3-chasm-cases",
+        "module-04/4.4-ai-gtm"
+      ]
+    },
+    {
+      "group": "模块五：工具包",
+      "pages": [
+        "module-05/index",
+        "module-05/5.1-strategy-template",
+        "module-05/5.2-icp-worksheet",
+        "module-05/5.3-competitive-matrix",
+        "module-05/5.4-funnel-checklist",
+        "module-05/5.5-milestone-plan",
+        "module-05/5.6-tool-stack",
+        "module-05/5.7-value-proposition-worksheet"
+      ]
+    },
+    {
+      "group": "附录",
+      "pages": [
+        "appendix/index",
+        "appendix/glossary",
+        "appendix/reading-list",
+        "appendix/resources"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "github": "https://github.com/Digidai"
   }
 }
