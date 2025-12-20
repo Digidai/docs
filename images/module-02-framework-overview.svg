@@ -1,0 +1,152 @@
+<svg width="900" height="950" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: bold; fill: #1e293b; }
+      .box-title { font-family: sans-serif; font-size: 20px; font-weight: bold; }
+      .box-desc { font-family: sans-serif; font-size: 15px; fill: #475569; }
+      .section-label { font-family: sans-serif; font-size: 18px; font-weight: bold; fill: #475569; }
+      .arrow-path { stroke: #64748b; stroke-width: 2; fill: none; stroke-linejoin: round; stroke-linecap: round; }
+      .trend-text { font-family: sans-serif; font-size: 15px; font-weight: bold; fill: #059669; }
+      .small-label { font-family: sans-serif; font-size: 13px; fill: #94a3b8; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;}
+      .icon { font-size: 32px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title (Center at 450) -->
+  <text x="450" y="50" text-anchor="middle" class="title">GTM 核心方法论体系 (Framework Overview)</text>
+
+  <!-- SECTION 1: MARKET STAGE (TOP) -->
+  <g transform="translate(150, 100)">
+     <!-- Label -->
+     <text x="-130" y="45" class="section-label">1. 市场阶段</text>
+     <text x="-130" y="65" class="small-label">Market Stage</text>
+     
+     <!-- Adoption Curve Box -->
+     <rect x="0" y="0" width="600" height="140" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" filter="url(#shadow)"/>
+     <text x="40" y="80" class="icon">📊</text>
+
+     <!-- Content -->
+     <g transform="translate(0, 20)">
+        <text x="300" y="25" text-anchor="middle" class="box-title" fill="#1565C0">2.1 技术采纳生命周期</text>
+        <text x="300" y="55" text-anchor="middle" class="box-desc">(判断产品所处的市场阶段)</text>
+     </g>
+     
+     <!-- Visual Flow -->
+     <g transform="translate(300, 100)">
+        <text x="0" y="0" font-size="14" fill="#d946ef" font-weight="bold" text-anchor="middle">─ 鸿沟 ─→</text>
+        <text x="-80" y="0" font-size="14" fill="#555" text-anchor="end">创新者 → 早期采用者</text>
+        <text x="80" y="0" font-size="14" fill="#555" text-anchor="start">早期主流 → 晚期主流</text>
+     </g>
+  </g>
+
+  <!-- ARROW 1: Market -> Strategy -->
+  <path d="M 450,240 L 450,290" class="arrow-path" marker-end="url(#arrowhead)"/>
+
+  <!-- SECTION 2: STRATEGY DEFINITION (MIDDLE) -->
+  <g transform="translate(150, 290)">
+     <!-- Label -->
+     <text x="-130" y="65" class="section-label">2. 核心定义</text>
+     <text x="-130" y="85" class="small-label">Core Strategy</text>
+
+     <!-- 2.3 ICP -->
+     <g transform="translate(0, 0)">
+       <rect x="0" y="0" width="190" height="180" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" filter="url(#shadow)"/>
+       <text x="85" y="45" text-anchor="middle" class="icon">🎯</text>
+       <g transform="translate(95, 70)">
+          <text x="0" y="25" text-anchor="middle" class="box-title" fill="#2E7D32">2.3 ICP 定义</text>
+          <text x="0" y="55" text-anchor="middle" class="box-desc">谁是理想客户？</text>
+          <text x="0" y="80" text-anchor="middle" class="box-desc">他们在哪里？</text>
+       </g>
+     </g>
+
+     <!-- 2.4 Value Prop -->
+     <g transform="translate(205, 0)">
+       <rect x="0" y="0" width="190" height="180" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" filter="url(#shadow)"/>
+       <text x="85" y="45" text-anchor="middle" class="icon">💎</text>
+       <g transform="translate(95, 70)">
+         <text x="0" y="25" text-anchor="middle" class="box-title" fill="#EF6C00">2.4 价值主张</text>
+         <text x="0" y="55" text-anchor="middle" class="box-desc">解决什么问题？</text>
+         <text x="0" y="80" text-anchor="middle" class="box-desc">创造什么价值？</text>
+       </g>
+     </g>
+
+     <!-- 2.5 Positioning -->
+     <g transform="translate(410, 0)">
+       <rect x="0" y="0" width="190" height="180" rx="12" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" filter="url(#shadow)"/>
+       <text x="85" y="45" text-anchor="middle" class="icon">🧭</text>
+       <g transform="translate(95, 70)">
+         <text x="0" y="25" text-anchor="middle" class="box-title" fill="#6A1B9A">2.5 市场定位</text>
+         <text x="0" y="55" text-anchor="middle" class="box-desc">如何差异化？</text>
+         <text x="0" y="80" text-anchor="middle" class="box-desc">心智占位？</text>
+       </g>
+     </g>
+  </g>
+
+  <!-- ARROW 2: Strategy -> Motion (Unified Circuit Merge - Refined) -->
+  <g>
+    <!-- Left Stem: 245,470 -> Down to 510 -> Right to 450 -->
+    <path d="M 245,470 L 245,510 L 450,510" class="arrow-path"/>
+    <!-- Right Stem: 655,470 -> Down to 510 -> Left to 450 -->
+    <path d="M 655,470 L 655,510 L 450,510" class="arrow-path"/>
+    <!-- Center Stem: 450,470 -> Down to Join (510) -> Continue to 530 -->
+    <path d="M 450,470 L 450,530" class="arrow-path" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <!-- SECTION 3: EXECUTION MOTION (BOTTOM) -->
+  <g transform="translate(150, 530)">
+     <!-- Label -->
+     <text x="-130" y="80" class="section-label">3. 增长模式</text>
+     <text x="-130" y="100" class="small-label">Growth Motion</text>
+
+     <!-- Main Box -->
+     <rect x="0" y="0" width="600" height="280" rx="12" fill="#F8FAFC" stroke="#64748b" stroke-width="2" filter="url(#shadow)"/>
+     <text x="40" y="60" class="icon">🚀</text>
+     <g transform="translate(0, 10)">
+        <text x="300" y="45" text-anchor="middle" class="box-title" fill="#1e293b">2.2 GTM Motion 选择</text>
+     </g>
+
+     <!-- Motion Types -->
+     <g transform="translate(40, 90)">
+        <!-- PLG -->
+        <g transform="translate(0, 0)">
+           <rect x="0" y="0" width="110" height="60" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+           <text x="55" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#334155">PLG</text>
+        </g>
+        <!-- SLG -->
+        <g transform="translate(135, 0)">
+           <rect x="0" y="0" width="110" height="60" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+           <text x="55" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#334155">SLG</text>
+        </g>
+        <!-- MLG -->
+        <g transform="translate(270, 0)">
+           <rect x="0" y="0" width="110" height="60" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+           <text x="55" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#334155">MLG</text>
+        </g>
+        <!-- CLG -->
+        <g transform="translate(405, 0)">
+           <rect x="0" y="0" width="110" height="60" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+           <text x="55" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#334155">CLG</text>
+        </g>
+     </g>
+
+     <!-- Trend Arrow (Sleek Geometric Circuit - Thinner) -->
+     <g transform="translate(0, 60)">
+        <path d="M 95,155 L 230,155" stroke="#94a3b8" stroke-width="2" fill="none"/>
+        <path d="M 95,150 L 95,155" stroke="#94a3b8" stroke-width="2" fill="none"/>
+        <path d="M 230,150 L 230,155" stroke="#94a3b8" stroke-width="2" fill="none"/>
+        <path d="M 162.5,155 L 162.5,180" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <text x="162.5" y="205" text-anchor="middle" class="trend-text">Trend: Product-Led Sales (混合模式)</text>
+     </g>
+
+  </g>
+
+</svg>

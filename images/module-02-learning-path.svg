@@ -1,0 +1,97 @@
+<svg width="800" height="900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#64748b"/>
+    </marker>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 26px; font-weight: bold; fill: #1e293b; }
+      .box-title { font-family: sans-serif; font-size: 18px; font-weight: bold; }
+      .box-subtitle { font-family: sans-serif; font-size: 14px; fill: #475569; }
+      .annotation { font-family: sans-serif; font-size: 14px; fill: #64748b; font-style: italic; }
+      .arrow-path { stroke: #64748b; stroke-width: 2.5; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title (Centered at 400) -->
+  <text x="400" y="50" text-anchor="middle" class="title">模块二学习路径 (Learning Path)</text>
+
+  <!-- Step 1: 2.1 Chasm (Y=90) -->
+  <!-- Center X shift: +100 (200 -> 300) -->
+  <g transform="translate(300, 90)">
+    <rect x="0" y="0" width="200" height="80" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" filter="url(#shadow)"/>
+    <text x="100" y="35" text-anchor="middle" class="box-title" fill="#1565C0">2.1 跨越鸿沟</text>
+    <text x="100" y="60" text-anchor="middle" class="box-subtitle">(60 分钟)</text>
+    
+    <!-- Annotation Right (Relative X=220, Absolute X=520) -->
+    <text x="220" y="45" class="annotation">← 起点：先判断市场阶段</text>
+  </g>
+
+  <!-- Arrow Down -->
+  <path d="M 400,170 L 400,260" class="arrow-path" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 2: 2.3 & 2.4 Parallel (Moved to Y=270) -->
+  <!-- Center X shift: +100 (50 -> 150) -->
+  <g transform="translate(150, 270)">
+     <!-- 2.3 ICP -->
+     <g transform="translate(0, 0)">
+       <rect x="0" y="0" width="180" height="80" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" filter="url(#shadow)"/>
+       <text x="90" y="35" text-anchor="middle" class="box-title" fill="#2E7D32">2.3 ICP 定义</text>
+       <text x="90" y="60" text-anchor="middle" class="box-subtitle">(45 分钟)</text>
+     </g>
+
+     <!-- Arrow Horizontal -->
+     <path d="M 200,40 L 230,40" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4"/>
+
+     <!-- 2.4 Value Prop -->
+     <g transform="translate(250, 0)">
+       <rect x="0" y="0" width="180" height="80" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" filter="url(#shadow)"/>
+       <text x="90" y="35" text-anchor="middle" class="box-title" fill="#EF6C00">2.4 价值主张</text>
+       <text x="90" y="60" text-anchor="middle" class="box-subtitle">(45 分钟)</text>
+     </g>
+     
+     <!-- Annotation Right (Relative X=450, Absolute X=600) -->
+     <text x="450" y="45" class="annotation">← 并行学习，互为补充</text>
+  </g>
+
+  <!-- Connectors to merge (Bezier) -->
+  <!-- Left Side Curve (140 -> 240) -->
+  <path d="M 240,350 C 240,410 400,410 400,460" class="arrow-path" marker-end="url(#arrowhead)"/>
+  <!-- Right Side Curve (390 -> 490) -->
+  <path d="M 490,350 C 490,410 400,410 400,460" class="arrow-path" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 3: 2.2 Motion (Moved to Y=470) -->
+  <!-- Center X shift: +100 (200 -> 300) -->
+  <g transform="translate(300, 470)">
+    <rect x="0" y="0" width="200" height="80" rx="8" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" filter="url(#shadow)"/>
+    <text x="100" y="35" text-anchor="middle" class="box-title" fill="#6A1B9A">2.2 GTM Motion</text>
+    <text x="100" y="60" text-anchor="middle" class="box-subtitle">(60 分钟)</text>
+    
+    <!-- Annotation Right (Relative X=220, Absolute X=520) -->
+    <text x="220" y="45" class="annotation">← 核心：基于输入选择模式</text>
+  </g>
+
+  <!-- Arrow Down -->
+  <path d="M 400,550 L 400,640" class="arrow-path" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 4: 2.5 Positioning (Moved to Y=650) -->
+  <!-- Center X shift: +100 (200 -> 300) -->
+  <g transform="translate(300, 650)">
+    <rect x="0" y="0" width="200" height="80" rx="8" fill="#F1F5F9" stroke="#475569" stroke-width="2" filter="url(#shadow)"/>
+    <text x="100" y="35" text-anchor="middle" class="box-title" fill="#334155">2.5 市场定位</text>
+    <text x="100" y="60" text-anchor="middle" class="box-subtitle">(30 分钟)</text>
+    
+    <!-- Annotation Right (Relative X=220, Absolute X=520) -->
+    <text x="220" y="45" class="annotation">← 终点：确定竞争策略</text>
+  </g>
+
+  <!-- Final Path End -->
+  <circle cx="400" cy="780" r="6" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M 400,730 L 400,780" stroke="#94a3b8" stroke-width="3"/>
+
+</svg>
