@@ -13,20 +13,21 @@
     </filter>
 
     <!-- Funnel Gradients (Deep Orange/Red for standard SLG) -->
+    <!-- Darker Starts for White Text Contrast -->
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" /> <!-- Red 500 -->
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" /> <!-- Red 600 -->
     </linearGradient>
     <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#fb923c;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" /> <!-- Orange 500 -->
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" /> <!-- Orange 600 -->
     </linearGradient>
      <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#facc15;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#ca8a04;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
     </linearGradient>
     
@@ -76,7 +77,8 @@
 
     <!-- 5. Expansion (Rectangle base) -->
     <rect x="140" y="370" width="120" height="60" rx="4" fill="#15803d" filter="url(#shadow)"/>
-    <text x="200" y="405" text-anchor="middle" class="text label" font-size="12">Expansion & Upsell</text>
+    <text x="200" y="405" text-anchor="middle" class="text label" font-size="12">Expansion &amp; Upsell</text>
+    <!-- Note: Ampersand escaped in Expansion & Upsell -->
 
   </g>
 

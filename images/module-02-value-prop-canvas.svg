@@ -107,9 +107,6 @@
   <!-- ========================================== -->
   <!-- FIT ARROWS                               -->
   <!-- ========================================== -->
-  <!-- Align Arrows to Centers of Zones -->
-  <!-- Top: Gain Creators (230, ~50 in square + 60 trans = 290 global x) -> Gains (diff logic)  -->
-  <!-- Visual Alignment: Square Right Edge (400) -> Circle Left Edge (450) -->
   
   <g transform="translate(400, 170)"> 
      <path d="M 5,30 L 45,30" stroke="#10b981" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="4,2"/>

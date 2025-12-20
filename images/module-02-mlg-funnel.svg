@@ -13,21 +13,21 @@
       <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
     </filter>
 
-    <!-- Funnel Gradients -->
+    <!-- Funnel Gradients (Slightly Darkened for better Text Contrast) -->
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" /> <!-- Emerald 500 -->
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" /> <!-- Emerald 600 -->
     </linearGradient>
     <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
     </linearGradient>
      <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#047857;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#065f46;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#047857;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#064e3b;stop-opacity:1" />
     </linearGradient>
 
