@@ -6,7 +6,7 @@
       .label { font-size: 16px; font-weight: bold; fill: #1e293b; }
       .sublabel { font-size: 13px; fill: #64748b; }
       .card-title { font-size: 18px; font-weight: bold; }
-      .vs-text { font-size: 36px; font-weight: bold; fill: #ffffff; font-style: italic; }
+      .vs-text { font-size: 36px; font-weight: 900; fill: #ffffff; font-style: italic; stroke: #b45309; stroke-width: 1px; }
       .feature-text { font-size: 12px; font-weight: bold; }
     </style>
     
@@ -14,96 +14,93 @@
       <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
     </filter>
     
-    <!-- Leader Gradient (Cold/Static) -->
-    <linearGradient id="leaderGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#f1f5f9;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#cbd5e1;stop-opacity:1" />
+    <!-- Leader Gradient (Cold/Static/Stone) -->
+    <linearGradient id="leaderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e2e8f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#94a3b8;stop-opacity:1" />
     </linearGradient>
 
-    <!-- Challenger Gradient (Hot/Dynamic) -->
-    <linearGradient id="challengerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#fee2e2;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#fca5a5;stop-opacity:1" />
+    <!-- Challenger Gradient (Hot/Dynamic/Fire) -->
+    <linearGradient id="challengerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
     </linearGradient>
     
     <!-- VS Burst Gradient -->
     <radialGradient id="vsGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
     </radialGradient>
 
   </defs>
 
-  <!-- Background -->
   <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10"/>
 
-  <!-- Title -->
-  <text x="400" y="40" text-anchor="middle" class="text title">Head-to-Head 正面竞争</text>
+  <text x="400" y="40" text-anchor="middle" class="text title">Head-to-Head 正面竞争策略</text>
   
-  <!-- Main Container -->
   <g transform="translate(50, 80)">
     
-    <!-- Left: The Incumbent Leader -->
+    <!-- Left: The Incumbent Leader (Old Castle) -->
     <g transform="translate(0, 50)">
       <!-- Fortress Shape -->
-      <path d="M 0,0 L 300,0 L 320,150 L 300,300 L 0,300 Z" fill="url(#leaderGrad)" stroke="#94a3b8" stroke-width="2" filter="url(#shadow)"/>
+      <path d="M 0,20 L 50,20 L 50,0 L 100,0 L 100,20 L 150,20 L 150,0 L 200,0 L 200,20 L 300,20 L 320,200 L 300,320 L 0,320 L -20,150 Z" fill="url(#leaderGrad)" stroke="#475569" stroke-width="2" filter="url(#shadow)"/>
+      <!-- Cracks -->
+      <path d="M 50,150 L 80,200 M 250,100 L 230,150 L 260,180" stroke="#475569" stroke-width="1" fill="none"/>
       
-      <text x="150" y="40" text-anchor="middle" class="text card-title" fill="#334155">市场领导者 (Leader)</text>
-      <text x="150" y="60" text-anchor="middle" class="text sublabel">"庞大、稳固、默认选择"</text>
+      <text x="150" y="60" text-anchor="middle" class="text card-title" fill="#1e293b">市场领导者 (Leader)</text>
+      <text x="150" y="80" text-anchor="middle" class="text sublabel">"庞大、稳固、默认选择"</text>
       
-      <!-- Icon: Castle/Fortress -->
-      <text x="150" y="100" text-anchor="middle" font-size="40">🏰</text>
+      <text x="150" y="130" text-anchor="middle" font-size="50">🏰</text>
 
-      <!-- Attributes (Weaknesses to exploit) -->
-      <g transform="translate(60, 140)">
-        <rect x="0" y="0" width="180" height="25" rx="4" fill="#e2e8f0" stroke="#cbd5e1"/>
-        <text x="90" y="17" text-anchor="middle" class="text feature-text" fill="#64748b">价格昂贵</text>
+      <!-- Attributes (Weaknesses) -->
+      <g transform="translate(60, 160)">
+        <rect x="0" y="0" width="180" height="30" rx="4" fill="#cbd5e1" stroke="#94a3b8"/>
+        <text x="90" y="20" text-anchor="middle" class="text feature-text" fill="#475569">🚫 价格昂贵</text>
         
-        <rect x="0" y="35" width="180" height="25" rx="4" fill="#e2e8f0" stroke="#cbd5e1"/>
-        <text x="90" y="52" text-anchor="middle" class="text feature-text" fill="#64748b">架构陈旧 (Legacy)</text>
+        <rect x="0" y="40" width="180" height="30" rx="4" fill="#cbd5e1" stroke="#94a3b8"/>
+        <text x="90" y="60" text-anchor="middle" class="text feature-text" fill="#475569">🚫 架构陈旧 (Legacy)</text>
         
-        <rect x="0" y="70" width="180" height="25" rx="4" fill="#e2e8f0" stroke="#cbd5e1"/>
-        <text x="90" y="87" text-anchor="middle" class="text feature-text" fill="#64748b">响应缓慢</text>
+        <rect x="0" y="80" width="180" height="30" rx="4" fill="#cbd5e1" stroke="#94a3b8"/>
+        <text x="90" y="100" text-anchor="middle" class="text feature-text" fill="#475569">🚫 响应缓慢</text>
       </g>
     </g>
 
-    <!-- Right: The Challenger -->
+    <!-- Right: The Challenger (Speed Boat/Rocket) -->
     <g transform="translate(380, 50)">
-      <!-- Arrow Head Shape attacking left -->
-      <path d="M 320,0 L 20,0 L 0,150 L 20,300 L 320,300 Z" fill="url(#challengerGrad)" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+      <!-- Dynamic Shape -->
+      <path d="M 320,20 L 40,20 L 0,150 L 40,320 L 320,320 Z" fill="url(#challengerGrad)" stroke="#b45309" stroke-width="2" filter="url(#shadow)"/>
+      <!-- Speed Lines -->
+      <path d="M 330,50 L 380,50 M 330,280 L 360,280" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8,4"/>
       
-      <text x="170" y="40" text-anchor="middle" class="text card-title" fill="#b91c1c">挑战者 (Challenger)</text>
-      <text x="170" y="60" text-anchor="middle" class="text sublabel">"更好、更快、更便宜"</text>
+      <text x="170" y="60" text-anchor="middle" class="text card-title" fill="#78350f">挑战者 (Challenger)</text>
+      <text x="170" y="80" text-anchor="middle" class="text sublabel">"更好、更快、更便宜"</text>
       
-      <!-- Icon: Rocket/Sword -->
-      <text x="170" y="100" text-anchor="middle" font-size="40">🚀</text>
+      <text x="170" y="130" text-anchor="middle" font-size="50">🚀</text>
 
       <!-- Attributes (Strengths) -->
-      <g transform="translate(80, 140)">
-        <rect x="0" y="0" width="180" height="25" rx="4" fill="#fee2e2" stroke="#fca5a5"/>
-        <text x="90" y="17" text-anchor="middle" class="text feature-text" fill="#ef4444">性价比高</text>
+      <g transform="translate(80, 160)">
+        <rect x="0" y="0" width="180" height="30" rx="4" fill="#fffbeb" stroke="#fcd34d"/>
+        <text x="90" y="20" text-anchor="middle" class="text feature-text" fill="#b45309">✅ 性价比高</text>
         
-        <rect x="0" y="35" width="180" height="25" rx="4" fill="#fee2e2" stroke="#fca5a5"/>
-        <text x="90" y="52" text-anchor="middle" class="text feature-text" fill="#ef4444">现代架构 (Modern)</text>
+        <rect x="0" y="40" width="180" height="30" rx="4" fill="#fffbeb" stroke="#fcd34d"/>
+        <text x="90" y="60" text-anchor="middle" class="text feature-text" fill="#b45309">✅ 现代架构 (Modern)</text>
         
-        <rect x="0" y="70" width="180" height="25" rx="4" fill="#fee2e2" stroke="#fca5a5"/>
-        <text x="90" y="87" text-anchor="middle" class="text feature-text" fill="#ef4444">极致体验</text>
+        <rect x="0" y="80" width="180" height="30" rx="4" fill="#fffbeb" stroke="#fcd34d"/>
+        <text x="90" y="100" text-anchor="middle" class="text feature-text" fill="#b45309">✅ 极致体验</text>
       </g>
     </g>
 
     <!-- CENTER: VS FLASH -->
-    <g transform="translate(350, 150)">
-      <!-- Starburst shape -->
-      <polygon points="0,0 20,-50 40,-10 80,-40 60,10 100,0 70,30 100,70 50,50 20,100 10,40 -40,80 -10,30 -50,10 -20,-20 -60,-60 -10,-40" fill="url(#vsGrad)" stroke="#b45309" stroke-width="2" filter="url(#shadow)"/>
-      <text x="20" y="25" text-anchor="middle" class="text vs-text">VS</text>
+    <g transform="translate(350, 160)">
+      <polygon points="0,0 20,-60 40,-10 90,-50 60,10 110,0 70,30 110,80 50,50 20,110 10,40 -50,90 -10,30 -60,10 -20,-20 -70,-70 -10,-40" fill="url(#vsGrad)" stroke="#ffffff" stroke-width="3" filter="url(#shadow)"/>
+      <text x="20" y="30" text-anchor="middle" class="text vs-text">VS</text>
     </g>
 
   </g>
   
-  <!-- Bottom Note -->
-  <g transform="translate(250, 450)">
-     <text x="150" y="0" text-anchor="middle" class="text sublabel" font-weight="bold" fill="#64748b">
-       核心：证明 "Better" 并利用对手的 "庞大" 弱点
+  <g transform="translate(250, 460)">
+     <text x="150" y="0" text-anchor="middle" class="text sublabel" font-weight="bold" fill="#64748b" font-size="14">
+       策略核心：攻击对手"庞大"带来的"笨重"，强调自身的"敏捷"与"现代"
      </text>
   </g>
 

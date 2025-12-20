@@ -3,10 +3,10 @@
     <style>
       .text { font-family: Arial, sans-serif; }
       .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
-      .label { font-size: 14px; fill: #ffffff; font-weight: bold; }
-      .desc { font-size: 12px; fill: #475569; }
-      .source-label { font-size: 11px; fill: #64748b; font-style: italic; }
-      .handoff { font-size: 14px; font-weight: bold; fill: #ef4444; }
+      .label { font-size: 15px; fill: #ffffff; font-weight: bold; text-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+      .desc { font-size: 13px; fill: #334155; }
+      .source-label { font-size: 12px; fill: #475569; font-weight: 500; }
+      .handoff { font-size: 14px; font-weight: bold; fill: #dc2626; }
     </style>
     
     <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
@@ -16,34 +16,32 @@
     <!-- Funnel Gradients -->
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#10b981;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#6ee7b7;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#34d399;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
     </linearGradient>
      <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#a7f3d0;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#6ee7b7;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#065f46;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#a7f3d0;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#6ee7b7;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#047857;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#064e3b;stop-opacity:1" />
     </linearGradient>
+
+    <!-- Arrow Marker for Recycle -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b" />
+    </marker>
     
   </defs>
 
-  <!-- Background -->
   <rect width="750" height="650" fill="#f8fafc" rx="10" ry="10"/>
 
-  <!-- Title -->
-  <text x="375" y="40" text-anchor="middle" class="text title">MLG Inbound 漏斗 (包含回收机制)</text>
+  <text x="375" y="40" text-anchor="middle" class="text title">MLG 漏斗: Inbound + 回收机制</text>
 
-  <!-- Funnel Container -->
   <g transform="translate(180, 80)">
     
     <!-- 1. Visitors -->
@@ -51,68 +49,69 @@
     <text x="195" y="50" text-anchor="middle" class="text label">访客 (Visitors)</text>
     
     <!-- Source Annotation -->
-    <g transform="translate(410, 20)">
-        <text x="0" y="10" class="text source-label">SEO / Blog</text>
-        <text x="0" y="25" class="text source-label">Ads / Social</text>
-        <path d="M -10,15 L -20,15" stroke="#94a3b8" stroke-width="1"/>
+    <g transform="translate(410, 25)">
+        <text x="5" y="0" class="text source-label">SEO / Blog</text>
+        <text x="5" y="15" class="text source-label">Ads / Social</text>
+        <path d="M -5,5 L -15,5" stroke="#94a3b8" stroke-width="2"/>
     </g>
 
     <!-- 2. Leads -->
     <path d="M 40,95 L 350,95 L 310,185 L 80,185 Z" fill="url(#grad2)" filter="url(#shadow)"/>
-    <text x="195" y="145" text-anchor="middle" class="text label" fill="#064e3b">线索 (Leads)</text>
+    <text x="195" y="145" text-anchor="middle" class="text label">线索 (Leads)</text>
     
-    <g transform="translate(360, 115)">
-        <text x="0" y="10" class="text source-label">Content Gating</text>
-         <path d="M -10,10 L -20,15" stroke="#94a3b8" stroke-width="1"/>
+    <g transform="translate(360, 120)">
+        <text x="5" y="5" class="text source-label">Content Gating</text>
+        <path d="M -5,0 L -15,0" stroke="#94a3b8" stroke-width="2"/>
     </g>
 
     <!-- 3. MQL -->
     <path d="M 80,190 L 310,190 L 270,280 L 120,280 Z" fill="url(#grad3)" filter="url(#shadow)"/>
-    <text x="195" y="240" text-anchor="middle" class="text label" fill="#064e3b">MQL (Qualified)</text>
+    <text x="195" y="240" text-anchor="middle" class="text label">MQL (Qualified)</text>
     
-    <g transform="translate(320, 210)">
-        <text x="0" y="10" class="text source-label">Scoring > 60</text>
-        <path d="M -10,10 L -20,15" stroke="#94a3b8" stroke-width="1"/>
+    <g transform="translate(320, 215)">
+        <text x="5" y="5" class="text source-label">Scoring > 60分</text>
+        <path d="M -5,0 L -15,0" stroke="#94a3b8" stroke-width="2"/>
     </g>
 
     <!-- HANDOFF ZONE -->
-    <line x1="100" y1="285" x2="290" y2="285" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4"/>
-    <g transform="translate(400, 280)">
-       <text x="0" y="10" class="text handoff">← Sales Handoff</text>
-       <text x="0" y="25" class="text source-label" fill="#ef4444">(CRM Assignment)</text>
+    <line x1="100" y1="285" x2="290" y2="285" stroke="#dc2626" stroke-width="2" stroke-dasharray="6,4"/>
+    <g transform="translate(380, 280)">
+       <text x="5" y="5" class="text handoff">← Sales Handoff</text>
+       <text x="5" y="20" class="text source-label" fill="#dc2626">(CRM Assignment)</text>
     </g>
 
     <!-- 4. SQL / SAL -->
     <path d="M 120,290 L 270,290 L 240,380 L 150,380 Z" fill="url(#grad4)" filter="url(#shadow)"/>
-    <text x="195" y="340" text-anchor="middle" class="text label" fill="#064e3b">SQL / SAL</text>
+    <text x="195" y="340" text-anchor="middle" class="text label">SQL / SAL</text>
     
-    <g transform="translate(280, 310)">
-         <text x="0" y="10" class="text source-label">SDR Verified</text>
-          <path d="M -10,5 L -20,5" stroke="#94a3b8" stroke-width="1"/>
+    <g transform="translate(280, 315)">
+         <text x="5" y="5" class="text source-label">SDR Verified</text>
+         <path d="M -5,0 L -15,0" stroke="#94a3b8" stroke-width="2"/>
     </g>
     
     <!-- Recycle Loop -->
-    <path d="M 280,340 C 350,340 380,260 380,200 C 380,150 340,140 340,140" stroke="#64748b" stroke-width="1" stroke-dasharray="4,2" fill="none" marker-end="url(#arrow)"/> 
-    <!-- Arrow definition missing in this block, will default or fail. Need to add back if missing from logic, but standard browser handles basic markers well usually or I should re-add marker def.
-         Wait, I need to ensure marker is defined. I'll add a simple arrow path.
-    -->
-    <text x="390" y="250" class="text source-label">Recycle (Nurture)</text>
+    <path d="M 280,340 C 360,340 390,260 390,200 C 390,140 350,140 350,140" stroke="#64748b" stroke-width="2" stroke-dasharray="4,2" fill="none" marker-end="url(#arrow)"/> 
+    <rect x="395" y="180" width="100" height="40" rx="4" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="445" y="198" text-anchor="middle" class="text source-label" font-weight="bold" fill="#334155">Recycle</text>
+    <text x="445" y="213" text-anchor="middle" class="text source-label">(Nurture)</text>
 
     <!-- 5. Opportunity -->
-    <rect x="165" y="385" width="60" height="80" fill="#10b981" filter="url(#shadow)"/>
-    <text x="195" y="430" text-anchor="middle" class="text label" font-size="12">DEAL</text>
+    <rect x="165" y="385" width="60" height="80" fill="#047857" filter="url(#shadow)"/>
+    <text x="195" y="430" text-anchor="middle" class="text label" font-size="14">DEAL</text>
 
   </g>
 
   <!-- Bottom Panel -->
-  <g transform="translate(125, 500)">
-     <rect x="0" y="0" width="500" height="120" rx="8" fill="#f0fdf4" stroke="#86efac"/>
-     <text x="20" y="30" class="text desc" font-weight="bold" fill="#15803d">高效漏斗特征：</text>
+  <g transform="translate(125, 520)">
+     <rect x="0" y="0" width="500" height="100" rx="8" fill="#f0fdf4" stroke="#86efac"/>
      
-     <g transform="translate(20, 50)">
-        <text x="0" y="0" class="text desc">1. 严格的 Handoff 标准 (避免销售浪费时间)</text>
-        <text x="0" y="25" class="text desc">2. 自动化评分 (Scoring) 代替人工筛选</text>
-        <text x="0" y="50" class="text desc">3. SQL 回收机制 (Recycle) 持续培育未成熟线索</text>
+     <g transform="translate(20, 25)">
+        <text x="0" y="0" class="text desc" font-weight="bold" font-size="14" fill="#15803d">💡 高效漏斗关键点：</text>
+        <g transform="translate(10, 25)">
+            <text x="0" y="0" class="text desc">1. 严格的 Handoff 标准：避免销售团队处理低质量线索</text>
+            <text x="0" y="20" class="text desc">2. 自动化评分 (Lead Scoring)：用行为数据代替人工筛选</text>
+            <text x="0" y="40" class="text desc">3. SQL 回收机制 (Recycle Loop)：未成交线索不是"垃圾"，而是"待成熟"</text>
+        </g>
      </g>
   </g>
 

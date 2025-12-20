@@ -11,6 +11,11 @@
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
       <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
     </filter>
+    
+    <!-- Gap Pattern -->
+    <pattern id="gapPattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 0,10 L 10,0" stroke="#fca5a5" stroke-width="2"/>
+    </pattern>
   </defs>
 
   <rect width="650" height="600" fill="#f8fafc" rx="10" ry="10"/>
@@ -31,27 +36,32 @@
      <!-- 3. Expected (Inner) -->
      <circle cx="0" cy="0" r="100" fill="#bae6fd" stroke="#0ea5e9" stroke-width="2" filter="url(#shadow)"/>
      <text x="0" y="-70" text-anchor="middle" class="text label" fill="#0c4a6e">2. 期望产品 (Expected)</text>
-     <text x="0" y="-50" text-anchor="middle" class="text desc">通过及格线 (Table Stakes)</text>
+     <text x="0" y="-50" text-anchor="middle" class="text desc">及格线 (Table Stakes)</text>
 
      <!-- 4. Core (Center) -->
      <circle cx="0" cy="0" r="40" fill="#0284c7" stroke="#075985" stroke-width="2" filter="url(#shadow)"/>
      <text x="0" y="5" text-anchor="middle" class="text center-label">Core</text>
 
      <!-- GAP Visual -->
+     <!-- Arc Segment representing the Gap between Expected and Augmented -->
+     <!-- Start radius 100, End radius 170. angle 0 to 45 deg? No, let's use a wedge on the right side. -->
+     <path d="M 100,0 L 170,0 A 170,170 0 0,1 120,120 L 70,70" fill="url(#gapPattern)" opacity="0.5" stroke="none" transform="rotate(-30)"/>
+     
      <line x1="100" y1="0" x2="170" y2="0" stroke="#ef4444" stroke-width="3" stroke-dasharray="4,2"/>
      <text x="135" y="-10" text-anchor="middle" class="text gap-text">THE GAP</text>
      
-     <g transform="translate(180, 0)">
-        <text x="10" y="0" class="text desc" fill="#ef4444">价值空白地带</text>
+     <g transform="translate(185, 0)">
+        <text x="10" y="0" class="text desc" fill="#ef4444" font-weight="bold">← 价值空白 (Gap)</text>
+        <text x="10" y="15" class="text desc" fill="#ef4444" font-size="11">客户期望 vs 实际交付</text>
      </g>
 
   </g>
 
   <!-- Side Note -->
   <g transform="translate(50, 520)">
-     <text x="0" y="0" class="text desc" font-weight="bold" fill="#334155">核心理念：</text>
-     <text x="0" y="20" class="text desc">客户买的不是 "Core"，而是 "Whole Product"。</text>
-     <text x="0" y="40" class="text desc">初创公司常死在 "期望产品" 未达标，或 "增强产品" 无差异。</text>
+     <text x="0" y="0" class="text desc" font-weight="bold" fill="#334155" font-size="14">核心理念：</text>
+     <text x="0" y="25" class="text desc">· 客户购买的不仅仅是核心功能(Core)，而是整体解决方案(Whole Product)。</text>
+     <text x="0" y="45" class="text desc">· 跨越鸿沟的关键在于填补 "期望产品" 与 "增强产品" 之间的 GAP。</text>
   </g>
 
 </svg>

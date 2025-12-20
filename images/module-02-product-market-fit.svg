@@ -3,15 +3,15 @@
     <style>
       .text { font-family: Arial, sans-serif; }
       .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
-      .level-title { font-size: 16px; font-weight: bold; fill: #ffffff; }
-      .desc { font-size: 13px; fill: #f1f5f9; }
-      .arrow-text { font-size: 12px; fill: #94a3b8; }
+      .level-title { font-size: 16px; font-weight: bold; fill: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+      .desc { font-size: 13px; fill: #e2e8f0; }
+      .icon { font-size: 24px; }
     </style>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
     </filter>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#cbd5e1" />
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8" />
     </marker>
   </defs>
 
@@ -19,45 +19,50 @@
   <rect width="600" height="500" fill="#f8fafc" rx="10" ry="10"/>
 
   <!-- Title -->
-  <text x="300" y="40" text-anchor="middle" class="text title">Fit 的三个层次</text>
+  <text x="300" y="40" text-anchor="middle" class="text title">PMF 的三个层次 (Fit Hierarchy)</text>
 
   <!-- Pyramid Stages -->
-  <g transform="translate(100, 80)">
+  <g transform="translate(100, 70)">
 
     <!-- Level 3: Scale Fit (Top) -->
     <g transform="translate(50, 0)">
-       <rect x="0" y="0" width="300" height="100" rx="8" ry="8" fill="#3b82f6" filter="url(#shadow)"/>
+       <rect x="0" y="0" width="300" height="100" rx="8" ry="8" fill="#2563eb" filter="url(#shadow)"/>
+       <text x="30" y="40" class="icon">📈</text>
        <text x="150" y="30" text-anchor="middle" class="text level-title">Level 3: Scale Fit (规模匹配)</text>
-       
-       <text x="30" y="60" class="text desc">• 价值主张在规模化中持续有效</text>
-       <text x="30" y="80" class="text desc">• 销售能传递，营销能触达</text>
+       <text x="60" y="60" class="text desc">• 价值主张在规模化中持续有效</text>
+       <text x="60" y="80" class="text desc">• 销售能独立传递，渠道能触达</text>
     </g>
 
     <!-- Arrow Up -->
-    <line x1="200" y1="140" x2="200" y2="100" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="200" y1="130" x2="200" y2="100" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
 
     <!-- Level 2: Market Fit (Middle) -->
-    <g transform="translate(25, 140)">
-       <rect x="0" y="0" width="350" height="100" rx="8" ry="8" fill="#6366f1" filter="url(#shadow)"/>
+    <g transform="translate(25, 130)">
+       <rect x="0" y="0" width="350" height="100" rx="8" ry="8" fill="#4f46e5" filter="url(#shadow)"/>
+       <text x="30" y="40" class="icon">💰</text>
        <text x="175" y="30" text-anchor="middle" class="text level-title">Level 2: Market Fit (市场匹配)</text>
-       
-       <text x="30" y="60" class="text desc">• 有客户愿意付费购买</text>
-       <text x="30" y="80" class="text desc">• 价值主张经市场验证</text>
+       <text x="60" y="60" class="text desc">• 真实客户愿意付费购买</text>
+       <text x="60" y="80" class="text desc">• 留存率和复购率健康</text>
     </g>
 
     <!-- Arrow Up -->
-    <line x1="200" y1="280" x2="200" y2="240" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="200" y1="260" x2="200" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
 
     <!-- Level 1: Problem-Solution Fit (Bottom) -->
-    <g transform="translate(0, 280)">
-       <rect x="0" y="0" width="400" height="100" rx="8" ry="8" fill="#8b5cf6" filter="url(#shadow)"/>
+    <g transform="translate(0, 260)">
+       <rect x="0" y="0" width="400" height="100" rx="8" ry="8" fill="#7c3aed" filter="url(#shadow)"/>
+       <text x="30" y="40" class="icon">🧩</text>
        <text x="200" y="30" text-anchor="middle" class="text level-title">Level 1: Problem-Solution Fit</text>
        <text x="200" y="50" text-anchor="middle" class="text level-title">(问题-方案匹配)</text>
-       
-       <text x="30" y="75" class="text desc">• 方案解决了客户痛点</text>
-       <text x="30" y="90" class="text desc">• 纸面逻辑成立，访谈验证</text>
+       <text x="60" y="80" class="text desc">• 方案逻辑上解决了痛点</text>
+       <text x="60" y="95" class="text desc">• 早期访谈验证通过</text>
     </g>
 
+  </g>
+  
+  <g transform="translate(50, 450)">
+     <text x="0" y="0" class="text desc" fill="#64748b" font-weight="bold" font-size="14">注意：</text>
+     <text x="45" y="0" class="text desc" fill="#64748b">绝大多数初创公司死在 Level 1 到 Level 2 的跨越中。</text>
   </g>
 
 </svg>
