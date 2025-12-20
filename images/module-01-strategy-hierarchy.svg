@@ -1,0 +1,48 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">
+    战略层级关系
+  </text>
+
+  <!-- Level 1: Business Strategy (Green) -->
+  <g transform="translate(50, 70)">
+    <rect x="0" y="0" width="700" height="350" rx="16" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" filter="url(#shadow)"/>
+    <text x="350" y="35" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2E7D32">Business Strategy</text>
+    <text x="350" y="60" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#555">（公司整体战略：做什么业务）</text>
+
+    <!-- Level 2: GTM Strategy (Blue) -->
+    <g transform="translate(50, 80)">
+      <rect x="0" y="0" width="600" height="240" rx="14" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" filter="url(#shadow)"/>
+      <text x="300" y="35" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1565C0">GTM Strategy</text>
+      <text x="300" y="60" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#555">（市场进入战略：如何进入市场）</text>
+
+      <!-- Level 3: Marketing & Sales (Orange) -->
+      <g transform="translate(50, 90)">
+        
+        <!-- Marketing -->
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="230" height="100" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+          <text x="115" y="45" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#EF6C00">Marketing Strategy</text>
+          <text x="115" y="70" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#555">(需求生成)</text>
+        </g>
+
+        <!-- Sales -->
+        <g transform="translate(270, 0)">
+          <rect x="0" y="0" width="230" height="100" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+          <text x="115" y="45" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#EF6C00">Sales Strategy</text>
+          <text x="115" y="70" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#555">(获客转化)</text>
+        </g>
+
+      </g>
+    </g>
+  </g>
+</svg>
