@@ -1,125 +1,145 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 550">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650">
   <defs>
     <style>
       .text { font-family: Arial, sans-serif; }
-      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
-      .header { font-size: 18px; font-weight: bold; fill: #475569; }
-      .card-title { font-size: 15px; font-weight: bold; fill: #1e293b; }
-      .item { font-size: 12px; fill: #475569; }
-      .icon { font-size: 28px; }
+      .title { font-size: 28px; font-weight: bold; fill: #1e293b; }
+      .header { font-size: 20px; font-weight: bold; fill: #475569; }
+      .card-title { font-size: 16px; font-weight: bold; fill: #1e293b; }
+      .item { font-size: 14px; fill: #475569; }
+      .icon { font-size: 32px; }
       .section-label { font-size: 12px; font-weight: bold; fill: #64748b; text-transform: uppercase; }
     </style>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.1"/>
     </filter>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#3b82f6" />
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L10,3 z" fill="#3b82f6" />
     </marker>
   </defs>
 
-  <rect width="850" height="550" fill="#f8fafc" rx="10" ry="10"/>
-  <text x="425" y="40" text-anchor="middle" class="text title">价值主张画布 (Value Proposition Canvas)</text>
+  <rect width="1000" height="650" fill="#f8fafc" rx="12" ry="12"/>
+  <text x="500" y="50" text-anchor="middle" class="text title">价值主张画布 (Value Proposition Canvas)</text>
 
+  <!-- Global Y Offset: START AT Y=130. CENTER Y = 130 + 180 = 310 -->
+  
   <!-- ========================================== -->
-  <!-- LEFT: VALUE MAP (Square)                 -->
+  <!-- LEFT: VALUE MAP (Square 360x360)         -->
+  <!-- Position: x=60, y=130                    -->
   <!-- ========================================== -->
-  <g transform="translate(60, 100)">
-    <!-- Base Square Frame -->
-    <rect x="0" y="0" width="340" height="340" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+  <g transform="translate(60, 130)">
+    <!-- Base Frame Outline -->
+    <rect x="0" y="0" width="360" height="360" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
     
-    <!-- Gain Creators (Top Right Triangle) -->
-    <path d="M 0,0 L 340,0 L 170,170 Z" fill="#d1fae5" stroke="#ffffff" stroke-width="2"/>
+    <!-- 1. Products (Left Half: 180x360) -->
+    <rect x="0" y="0" width="180" height="360" rx="4" fill="#dbeafe" stroke="#ffffff" stroke-width="1"/>
     
-    <!-- Pain Relievers (Bottom Right Triangle) -->
-    <path d="M 0,340 L 340,340 L 170,170 Z" fill="#fee2e2" stroke="#ffffff" stroke-width="2"/>
+    <!-- 2. Gain Creators (Top Right Quadrant: 180x180) -->
+    <rect x="180" y="0" width="180" height="180" fill="#d1fae5" stroke="#ffffff" stroke-width="1"/>
     
-    <!-- Products (Left Triangle) -->
-    <path d="M 0,0 L 0,340 L 170,170 Z" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+    <!-- 3. Pain Relievers (Bottom Right Quadrant: 180x180) -->
+    <rect x="180" y="180" width="180" height="180" fill="#fee2e2" stroke="#ffffff" stroke-width="1"/>
     
-    <!-- Content Labels (Centered in Zones) -->
-    <!-- Gain Creators -->
-    <g transform="translate(170, 50)">
+    <!-- Content Labels (Standardized Centers) -->
+    <!-- Gain Creators (Center of Top Right: x=270, y=90) -->
+    <g transform="translate(270, 70)">
        <text x="0" y="0" text-anchor="middle" class="icon">🚀</text>
-       <text x="0" y="25" text-anchor="middle" class="text card-title">Gain Creators</text>
-       <text x="0" y="45" text-anchor="middle" class="text item">收益创造者</text>
+       <text x="0" y="30" text-anchor="middle" class="text card-title">Gain Creators</text>
+       <text x="0" y="50" text-anchor="middle" class="text item">收益创造者</text>
     </g>
 
-    <!-- Pain Relievers -->
-    <g transform="translate(170, 270)">
+    <!-- Pain Relievers (Center of Bottom Right: x=270, y=270) -->
+    <g transform="translate(270, 250)">
        <text x="0" y="0" text-anchor="middle" class="icon">💊</text>
-       <text x="0" y="25" text-anchor="middle" class="text card-title">Pain Relievers</text>
-       <text x="0" y="45" text-anchor="middle" class="text item">痛点缓解者</text>
+       <text x="0" y="30" text-anchor="middle" class="text card-title">Pain Relievers</text>
+       <text x="0" y="50" text-anchor="middle" class="text item">痛点缓解者</text>
     </g>
 
-    <!-- Products -->
-    <g transform="translate(60, 160)">
+    <!-- Products (Center of Left Half: x=90, y=180) -->
+    <g transform="translate(90, 160)">
        <text x="0" y="0" text-anchor="middle" class="icon">📦</text>
-       <text x="0" y="25" text-anchor="middle" class="text card-title">Products</text>
-       <text x="0" y="45" text-anchor="middle" class="text item">产品与服务</text>
+       <text x="0" y="30" text-anchor="middle" class="text card-title">Products</text>
+       <text x="0" y="50" text-anchor="middle" class="text item">产品与服务</text>
     </g>
     
-    <!-- Title -->
-    <text x="170" y="-15" text-anchor="middle" class="text header">Value Map (产品)</text>
+    <!-- Header -->
+    <text x="180" y="-20" text-anchor="middle" class="text header">Value Map (产品)</text>
   </g>
 
   <!-- ========================================== -->
-  <!-- RIGHT: CUSTOMER PROFILE (Circle)         -->
+  <!-- RIGHT: CUSTOMER PROFILE (Circle r=180)   -->
+  <!-- Position: Ends at 1000-60=940.           -->
+  <!-- Width 360. Start x = 580.                -->
+  <!-- Gap: 580 - (60+360=420) = 160px GAP      -->
+  <!-- Center: x + r = 580 + 180 = 760          -->
   <!-- ========================================== -->
-  <g transform="translate(450, 100)">
+  <g transform="translate(580, 130)">
     <!-- Base Circle -->
-    <circle cx="170" cy="170" r="170" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+    <circle cx="180" cy="180" r="180" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
 
     <!-- Gains (Top Left Slice) -->
-    <path d="M 170,170 L 170,0 A 170,170 0 0,0 0,170 Z" fill="#ecfdf5" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 180,180 L 180,0 A 180,180 0 0,0 0,180 Z" fill="#ecfdf5" stroke="#ffffff" stroke-width="2"/>
     
     <!-- Pains (Bottom Left Slice) -->
-    <path d="M 170,170 L 0,170 A 170,170 0 0,0 170,340 Z" fill="#fef2f2" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 180,180 L 0,180 A 180,180 0 0,0 180,360 Z" fill="#fef2f2" stroke="#ffffff" stroke-width="2"/>
     
-    <!-- Customer Jobs (Right Half) -->
-    <path d="M 170,170 L 170,340 A 170,170 0 0,0 170,0 Z" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+    <!-- Jobs (Right Half) -->
+    <path d="M 180,180 L 180,360 A 180,180 0 0,0 180,0 Z" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
 
     <!-- Content Labels -->
-    <!-- Gains -->
-    <g transform="translate(70, 70)">
+    <!-- Gains (Top Left) -->
+    <g transform="translate(75, 75)">
        <text x="0" y="0" text-anchor="middle" class="icon">😍</text>
-       <text x="0" y="25" text-anchor="middle" class="text card-title">Gains</text>
-       <text x="0" y="45" text-anchor="middle" class="text item">期望收益</text>
+       <text x="0" y="30" text-anchor="middle" class="text card-title">Gains</text>
+       <text x="0" y="50" text-anchor="middle" class="text item">期望收益</text>
     </g>
 
-    <!-- Pains -->
-    <g transform="translate(70, 260)">
+    <!-- Pains (Bottom Left) -->
+    <g transform="translate(75, 275)">
        <text x="0" y="0" text-anchor="middle" class="icon">😫</text>
-       <text x="0" y="25" text-anchor="middle" class="text card-title">Pains</text>
-       <text x="0" y="45" text-anchor="middle" class="text item">痛点风险</text>
+       <text x="0" y="30" text-anchor="middle" class="text card-title">Pains</text>
+       <text x="0" y="50" text-anchor="middle" class="text item">痛点风险</text>
     </g>
     
-    <!-- Jobs -->
-    <g transform="translate(260, 170)">
+    <!-- Jobs (Right) -->
+    <g transform="translate(275, 180)">
        <text x="0" y="0" text-anchor="middle" class="icon">📋</text>
-       <text x="0" y="25" text-anchor="middle" class="text card-title">Jobs</text>
-       <text x="0" y="45" text-anchor="middle" class="text item">待办任务</text>
+       <text x="0" y="30" text-anchor="middle" class="text card-title">Jobs</text>
+       <text x="0" y="50" text-anchor="middle" class="text item">待办任务</text>
     </g>
 
-    <!-- Title -->
-    <text x="170" y="-15" text-anchor="middle" class="text header">Customer Profile (客户)</text>
+    <!-- Header -->
+    <text x="180" y="-20" text-anchor="middle" class="text header">Customer Profile (客户)</text>
   </g>
 
   <!-- ========================================== -->
-  <!-- FIT ARROWS                               -->
+  <!-- FIT ARROWS (Gap X: 420 to 580 = 160px)   -->
+  <!-- Center X = 500                           -->
   <!-- ========================================== -->
   
-  <g transform="translate(400, 170)"> 
-     <path d="M 5,30 L 45,30" stroke="#10b981" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="4,2"/>
-     <text x="25" y="20" text-anchor="middle" font-size="10" fill="#10b981" font-weight="bold">Create</text>
-  </g>
-  <g transform="translate(400, 360)"> 
-     <path d="M 5,0 L 45,0" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="4,2"/>
-     <text x="25" y="15" text-anchor="middle" font-size="10" fill="#ef4444" font-weight="bold">Relieve</text>
+  <!-- Fit Arrow: Create (Top) -->
+  <!-- Zone Center Y Rel To Group: ~90. Global Y = 130 + 90 = 220 -->
+  <g transform="translate(435, 220)"> 
+     <path d="M 0,0 L 130,0" stroke="#10b981" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="6,3"/>
+     <text x="65" y="-12" text-anchor="middle" font-size="12" fill="#10b981" font-weight="bold">Create Value</text>
   </g>
   
-  <g transform="translate(425, 270)"> <!-- Center FIT label at x=425 -->
-     <circle cx="0" cy="0" r="22" fill="#3b82f6" stroke="#ffffff" stroke-width="2"/>
-     <text x="0" y="5" text-anchor="middle" fill="#ffffff" font-weight="bold" font-size="14">FIT</text>
+  <!-- Fit Arrow: Relieve (Bottom) -->
+  <!-- Zone Center Y Rel To Group: ~270. Global Y = 130 + 270 = 400 -->
+  <g transform="translate(435, 400)"> 
+     <path d="M 0,0 L 130,0" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="6,3"/>
+     <text x="65" y="-12" text-anchor="middle" font-size="12" fill="#ef4444" font-weight="bold">Relieve Pain</text>
   </g>
+  
+  <!-- Central FIT Node -->
+  <!-- Center of gap is X=500, Y=310 -->
+  <g transform="translate(500, 310)">
+     <circle cx="0" cy="0" r="30" fill="#3b82f6" stroke="#ffffff" stroke-width="3"/>
+     <text x="0" y="6" text-anchor="middle" fill="#ffffff" font-weight="bold" font-size="16">FIT</text>
+  </g>
+
+  <!-- Legend / Note at bottom -->
+   <g transform="translate(500, 580)">
+     <text x="0" y="0" text-anchor="middle" class="item" font-size="14">目标：实现 Product-Market Fit (PMF)，即左侧提供的价值完美匹配右侧的客户需求</text>
+   </g>
 
 </svg>

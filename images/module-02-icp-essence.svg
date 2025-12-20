@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
   <defs>
     <style>
       .text { font-family: Arial, sans-serif; }
@@ -41,16 +41,20 @@
 
   </defs>
 
-  <rect width="900" height="520" fill="#f8fafc" rx="10" ry="10"/>
+  <rect width="900" height="600" fill="#f8fafc" rx="10" ry="10"/>
 
+  <!-- Title at Y=50 -->
   <text x="450" y="50" text-anchor="middle" class="text title">ICP Essence: 市场分层与聚焦核心</text>
 
-  <g transform="translate(50, 90)">
+  <!-- Diagram Container Moved Down to Y=140 to prevent overlap -->
+  <g transform="translate(50, 140)">
     
     <!-- Visual Target (Left) -->
     <g transform="translate(250, 200)">
        <!-- TAM Circle -->
        <circle cx="0" cy="0" r="210" fill="url(#tamGrad)" stroke="#94a3b8" stroke-width="1" filter="url(#shadow)"/>
+       
+       <!-- Label is at y=-235. Absolute Y = 140 + 200 - 235 = 105. Well clear of Y=50 Title. -->
        <path d="M 0,-210 L 0,-230" stroke="#94a3b8" stroke-width="1"/>
        <text x="0" y="-235" text-anchor="middle" class="text label" fill="#64748b">TAM (总潜在市场)</text>
        
