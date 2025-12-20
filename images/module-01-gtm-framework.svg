@@ -1,0 +1,62 @@
+<svg width="800" height="420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">
+    GTM 战略框架
+  </text>
+
+  <!-- Row 1: Core Strategy (WHO, WHAT, HOW) -->
+  <g transform="translate(40, 80)">
+    <!-- 1. Target Market (WHO) -->
+    <rect x="0" y="0" width="220" height="140" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="110" y="30" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565C0">1. 目标市场 (WHO)</text>
+    <text x="30" y="60" font-family="sans-serif" font-size="14" fill="#555">• ICP 定义</text>
+    <text x="30" y="90" font-family="sans-serif" font-size="14" fill="#555">• 市场规模</text>
+    <text x="30" y="120" font-family="sans-serif" font-size="14" fill="#555">• 细分策略</text>
+
+    <!-- 2. Value Prop (WHAT) -->
+    <rect x="250" y="0" width="220" height="140" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="360" y="30" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565C0">2. 价值主张 (WHAT)</text>
+    <text x="280" y="60" font-family="sans-serif" font-size="14" fill="#555">• 核心价值</text>
+    <text x="280" y="90" font-family="sans-serif" font-size="14" fill="#555">• 差异化点</text>
+    <text x="280" y="120" font-family="sans-serif" font-size="14" fill="#555">• 定位声明</text>
+
+    <!-- 3. Channel Strategy (HOW) -->
+    <rect x="500" y="0" width="220" height="140" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="610" y="30" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565C0">3. 渠道策略 (HOW)</text>
+    <text x="530" y="60" font-family="sans-serif" font-size="14" fill="#555">• GTM Motion</text>
+    <text x="530" y="90" font-family="sans-serif" font-size="14" fill="#555">• 销售模式</text>
+    <text x="530" y="120" font-family="sans-serif" font-size="14" fill="#555">• 渠道组合</text>
+  </g>
+
+  <!-- Row 2: Model & Execution -->
+  <g transform="translate(40, 250)">
+    <!-- 4. Pricing & Model -->
+    <rect x="0" y="0" width="345" height="130" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="172.5" y="30" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#EF6C00">4. 定价与商业模式</text>
+    
+    <g transform="translate(40, 55)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#555">• 定价策略</text>
+      <text x="0" y="30" font-family="sans-serif" font-size="14" fill="#555">• 收入模式</text>
+      <text x="0" y="60" font-family="sans-serif" font-size="14" fill="#555">• 打包与分层</text>
+    </g>
+
+    <!-- 5. Execution & Metrics -->
+    <rect x="375" y="0" width="345" height="130" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="547.5" y="30" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2E7D32">5. 执行计划与指标</text>
+    
+    <g transform="translate(415, 55)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#555">• 关键里程碑</text>
+      <text x="0" y="30" font-family="sans-serif" font-size="14" fill="#555">• 资源配置</text>
+      <text x="0" y="60" font-family="sans-serif" font-size="14" fill="#555">• 成功指标 (KPIs)</text>
+    </g>
+  </g>
+</svg>
