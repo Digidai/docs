@@ -1,73 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
+<svg width="800" height="550" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <style>
-      .text { font-family: Arial, sans-serif; }
-      .title { font-size: 26px; font-weight: bold; fill: #1e293b; }
-      .intro { font-size: 16px; fill: #64748b; font-style: italic; }
-      .key { font-size: 20px; font-weight: bold; fill: #3b82f6; font-family: 'Courier New', monospace; }
-      .value { font-size: 18px; fill: #1e293b; font-weight: bold; }
-      .desc { font-size: 12px; fill: #94a3b8; }
-      .bracket { fill: none; stroke: #cbd5e1; stroke-width: 2; }
-    </style>
-    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
     </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .keyword { font-family: monospace; font-size: 16px; font-weight: bold; fill: #2563eb; } /* Blue-600 */
+      .placeholder { font-family: sans-serif; font-size: 15px; font-weight: bold; fill: #1e293b; }
+      .meaning { font-family: sans-serif; font-size: 14px; fill: #64748b; font-style: italic; }
+      .row-bg { fill: #f8fafc; stroke: #e2e8f0; stroke-width: 1; }
+    </style>
   </defs>
 
-  <rect width="900" height="550" fill="#f8fafc" rx="10" ry="10"/>
-  <text x="450" y="50" text-anchor="middle" class="text title">定位陈述公式 (The Positioning Statement)</text>
-  <text x="450" y="80" text-anchor="middle" class="text intro">Based on April Dunford &amp; Geoffrey Moore</text>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
 
-  <!-- The Document Paper -->
-  <rect x="100" y="110" width="700" height="400" rx="5" fill="#ffffff" filter="url(#shadow)"/>
-  
-  <!-- Lines -->
-  <g transform="translate(150, 160)">
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" class="title">April Dunford 定位公式</text>
+
+  <!-- Main Container -->
+  <g transform="translate(100, 90)">
       
-      <!-- Line 1: For -->
-      <text x="0" y="0" class="text key">FOR</text>
-      <line x1="60" y1="5" x2="350" y2="5" stroke="#e2e8f0" stroke-width="2"/>
-      <text x="70" y="0" class="text value">[目标客户 Target Customer]</text>
-      <text x="400" y="0" class="text desc">← 谁最需要你？</text>
+      <!-- Row 1: For -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="600" height="50" rx="6" class="row-bg" filter="url(#shadow)"/>
+        <text x="20" y="32" class="keyword">For</text>
+        <text x="70" y="32" class="placeholder">[目标客户]</text>
+        <path d="M 350,25 L 390,25" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+        <text x="410" y="32" class="meaning">你服务谁？</text>
+      </g>
 
-      <!-- Line 2: Who -->
+      <!-- Row 2: Who -->
       <g transform="translate(0, 60)">
-          <text x="0" y="0" class="text key">WHO</text>
-          <line x1="60" y1="5" x2="350" y2="5" stroke="#e2e8f0" stroke-width="2"/>
-          <text x="70" y="0" class="text value">[有此核心痛点/需求]</text>
-          <text x="400" y="0" class="text desc">← 他们面临什么问题？</text>
+        <rect x="0" y="0" width="600" height="50" rx="6" class="row-bg" filter="url(#shadow)"/>
+        <text x="20" y="32" class="keyword">Who</text>
+        <text x="70" y="32" class="placeholder">[有这个问题/需求]</text>
+        <path d="M 350,25 L 390,25" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+        <text x="410" y="32" class="meaning">他们的痛点是什么？</text>
       </g>
 
-      <!-- Line 3: Our Product Is -->
+      <!-- Row 3: Our -->
       <g transform="translate(0, 120)">
-          <text x="0" y="0" class="text key">IS A</text>
-          <line x1="60" y1="5" x2="350" y2="5" stroke="#e2e8f0" stroke-width="2"/>
-          <text x="70" y="0" class="text value">[市场类别 Market Category]</text>
-          <text x="400" y="0" class="text desc">← 你的参照系是什么？</text>
+        <rect x="0" y="0" width="600" height="50" rx="6" class="row-bg" filter="url(#shadow)"/>
+        <text x="20" y="32" class="keyword">Our</text>
+        <text x="70" y="32" class="placeholder">[产品/服务]</text>
+        <path d="M 350,25 L 390,25" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+        <text x="410" y="32" class="meaning">你提供什么？</text>
       </g>
 
-      <!-- Line 4: That -->
+      <!-- Row 4: Is a -->
       <g transform="translate(0, 180)">
-          <text x="0" y="0" class="text key">THAT</text>
-          <line x1="60" y1="5" x2="350" y2="5" stroke="#e2e8f0" stroke-width="2"/>
-          <text x="70" y="0" class="text value">[核心差异化价值]</text>
-          <text x="400" y="0" class="text desc">← 你解决了什么难题？</text>
+        <rect x="0" y="0" width="600" height="50" rx="6" class="row-bg" filter="url(#shadow)"/>
+        <text x="20" y="32" class="keyword">Is a</text>
+        <text x="70" y="32" class="placeholder">[品类]</text>
+        <path d="M 350,25 L 390,25" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+        <text x="410" y="32" class="meaning">属于什么品类？(参照系)</text>
       </g>
 
-      <!-- Line 5: Unlike -->
+      <!-- Row 5: That -->
       <g transform="translate(0, 240)">
-          <text x="0" y="0" class="text key">UNLIKE</text>
-          <line x1="80" y1="5" x2="350" y2="5" stroke="#e2e8f0" stroke-width="2"/>
-          <text x="90" y="0" class="text value">[主要竞争替代品]</text>
-          <text x="400" y="0" class="text desc">← 客户现在的替代方案？</text>
+        <rect x="0" y="0" width="600" height="50" rx="6" class="row-bg" filter="url(#shadow)"/>
+        <text x="20" y="32" class="keyword">That</text>
+        <text x="70" y="32" class="placeholder">[关键利益/差异化]</text>
+        <path d="M 350,25 L 390,25" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+        <text x="410" y="32" class="meaning">核心价值是什么？</text>
       </g>
 
-      <!-- Line 6: We have -->
+      <!-- Row 6: Unlike -->
       <g transform="translate(0, 300)">
-          <text x="0" y="0" class="text key">WE</text>
-          <line x1="60" y1="5" x2="350" y2="5" stroke="#e2e8f0" stroke-width="2"/>
-          <text x="70" y="0" class="text value">[关键证明/独特性]</text>
-          <text x="400" y="0" class="text desc">← 为什么是你？</text>
+        <rect x="0" y="0" width="600" height="50" rx="6" class="row-bg" filter="url(#shadow)"/>
+        <text x="20" y="32" class="keyword">Unlike</text>
+        <text x="80" y="32" class="placeholder">[竞争替代品]</text>
+        <path d="M 350,25 L 390,25" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+        <text x="410" y="32" class="meaning">与谁竞争？</text>
+      </g>
+
+      <!-- Row 7: We -->
+      <g transform="translate(0, 360)">
+        <rect x="0" y="0" width="600" height="50" rx="6" class="row-bg" filter="url(#shadow)"/>
+        <text x="20" y="32" class="keyword">We</text>
+        <text x="70" y="32" class="placeholder">[独特差异点]</text>
+        <path d="M 350,25 L 390,25" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+        <text x="410" y="32" class="meaning">你的独特之处是什么？</text>
       </g>
 
   </g>

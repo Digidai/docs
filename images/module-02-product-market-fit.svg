@@ -1,14 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 550">
   <defs>
     <style>
-      .text { font-family: Arial, sans-serif; }
+      .text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
       .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
-      .level-title { font-size: 16px; font-weight: bold; fill: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.2); }
-      .desc { font-size: 13px; fill: #e2e8f0; }
-      .icon { font-size: 24px; }
+      .level-en { font-size: 18px; font-weight: bold; }
+      .level-cn { font-size: 16px; font-weight: normal; } /* Slightly smaller, normal weight */
+      .desc { font-size: 14px; fill: #334155; } /* Darker slate for better readability */
+      .icon { font-size: 32px; } /* Slightly larger icons */
+      .note { font-size: 14px; fill: #64748b; font-style: italic; }
+      .note-highlight { font-weight: bold; fill: #ef4444; }
     </style>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
     </filter>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8" />
@@ -16,53 +19,84 @@
   </defs>
 
   <!-- Background -->
-  <rect width="600" height="500" fill="#f8fafc" rx="10" ry="10"/>
+  <rect width="700" height="550" fill="#ffffff" rx="12" ry="12"/>
 
-  <!-- Title -->
-  <text x="300" y="40" text-anchor="middle" class="text title">PMF 的三个层次 (Fit Hierarchy)</text>
+  <!-- Main Title -->
+  <text x="350" y="50" text-anchor="middle" class="text title">PMF 的三个层次 (Fit Hierarchy)</text>
 
-  <!-- Pyramid Stages -->
-  <g transform="translate(100, 70)">
+  <!-- Pyramid Stages (Stacked Widths) -->
+  <g transform="translate(100, 80)">
 
-    <!-- Level 3: Scale Fit (Top) -->
-    <g transform="translate(50, 0)">
-       <rect x="0" y="0" width="300" height="100" rx="8" ry="8" fill="#2563eb" filter="url(#shadow)"/>
-       <text x="30" y="40" class="icon">📈</text>
-       <text x="150" y="30" text-anchor="middle" class="text level-title">Level 3: Scale Fit (规模匹配)</text>
-       <text x="60" y="60" class="text desc">• 价值主张在规模化中持续有效</text>
-       <text x="60" y="80" class="text desc">• 销售能独立传递，渠道能触达</text>
+    <!-- Validation Maturity Axis -->
+    <line x1="-30" y1="380" x2="-30" y2="20" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="-45" y="200" text-anchor="middle" transform="rotate(-90, -45, 200)" class="text note" fill="#94a3b8" font-weight="bold" letter-spacing="1">MATURITY</text>
+
+    <!-- Level 3: Scale Fit (Top) - Orange Theme -->
+    <g transform="translate(100, 0)">
+       <rect x="0" y="0" width="300" height="110" rx="8" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5" filter="url(#shadow)"/>
+       
+       <!-- Icon centered vertically in left section -->
+       <text x="25" y="65" text-anchor="middle" class="icon">📈</text>
+       
+       <!-- Text Block -->
+       <g transform="translate(60, 30)">
+          <text x="0" y="0" class="text level-en" fill="#C2410C">Level 3: Scale Fit</text>
+          <text x="0" y="20" class="text level-cn" fill="#EA580C">(规模匹配)</text>
+       </g>
+       
+       <!-- Bullet Points -->
+       <g transform="translate(60, 75)">
+         <text x="0" y="0" class="text desc">• 价值主张在规模化中持续有效</text>
+         <text x="0" y="20" class="text desc">• 销售能独立传递，渠道能触达</text>
+       </g>
     </g>
 
-    <!-- Arrow Up -->
-    <line x1="200" y1="130" x2="200" y2="100" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+    <!-- Connection Line -->
+    <line x1="250" y1="130" x2="250" y2="110" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,2"/>
 
-    <!-- Level 2: Market Fit (Middle) -->
-    <g transform="translate(25, 130)">
-       <rect x="0" y="0" width="350" height="100" rx="8" ry="8" fill="#4f46e5" filter="url(#shadow)"/>
-       <text x="30" y="40" class="icon">💰</text>
-       <text x="175" y="30" text-anchor="middle" class="text level-title">Level 2: Market Fit (市场匹配)</text>
-       <text x="60" y="60" class="text desc">• 真实客户愿意付费购买</text>
-       <text x="60" y="80" class="text desc">• 留存率和复购率健康</text>
+    <!-- Level 2: Market Fit (Middle) - Green Theme -->
+    <g transform="translate(50, 130)">
+       <rect x="0" y="0" width="400" height="110" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5" filter="url(#shadow)"/>
+       
+       <text x="30" y="65" text-anchor="middle" class="icon">💰</text>
+       
+       <g transform="translate(65, 30)">
+          <text x="0" y="0" class="text level-en" fill="#15803D">Level 2: Market Fit</text>
+          <text x="0" y="20" class="text level-cn" fill="#16A34A">(市场匹配)</text>
+       </g>
+       
+       <g transform="translate(65, 75)">
+          <text x="0" y="0" class="text desc">• 真实客户愿意付费购买 (Retention)</text>
+          <text x="0" y="20" class="text desc">• 留存率和复购率健康 (Repurchase)</text>
+       </g>
     </g>
 
-    <!-- Arrow Up -->
-    <line x1="200" y1="260" x2="200" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+    <!-- Connection Line -->
+    <line x1="250" y1="260" x2="250" y2="240" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,2"/>
 
-    <!-- Level 1: Problem-Solution Fit (Bottom) -->
+    <!-- Level 1: Problem-Solution Fit (Bottom) - Blue Theme -->
     <g transform="translate(0, 260)">
-       <rect x="0" y="0" width="400" height="100" rx="8" ry="8" fill="#7c3aed" filter="url(#shadow)"/>
-       <text x="30" y="40" class="icon">🧩</text>
-       <text x="200" y="30" text-anchor="middle" class="text level-title">Level 1: Problem-Solution Fit</text>
-       <text x="200" y="50" text-anchor="middle" class="text level-title">(问题-方案匹配)</text>
-       <text x="60" y="80" class="text desc">• 方案逻辑上解决了痛点</text>
-       <text x="60" y="95" class="text desc">• 早期访谈验证通过</text>
+       <rect x="0" y="0" width="500" height="110" rx="8" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5" filter="url(#shadow)"/>
+       
+       <text x="35" y="65" text-anchor="middle" class="icon">🧩</text>
+       
+       <g transform="translate(70, 30)">
+          <text x="0" y="0" class="text level-en" fill="#1D4ED8">Level 1: Problem-Solution Fit</text>
+          <text x="0" y="20" class="text level-cn" fill="#2563EB">(问题-方案匹配)</text>
+       </g>
+       
+       <g transform="translate(70, 75)">
+          <text x="0" y="0" class="text desc">• 方案逻辑上解决了痛点 (Value)</text>
+          <text x="0" y="20" class="text desc">• 早期访谈验证通过 (Validation)</text>
+       </g>
     </g>
 
   </g>
   
-  <g transform="translate(50, 450)">
-     <text x="0" y="0" class="text desc" fill="#64748b" font-weight="bold" font-size="14">注意：</text>
-     <text x="45" y="0" class="text desc" fill="#64748b">绝大多数初创公司死在 Level 1 到 Level 2 的跨越中。</text>
+  <!-- Bottom Note -->
+  <g transform="translate(60, 490)">
+     <rect x="0" y="0" width="580" height="40" rx="6" fill="#FEF2F2" stroke="#FEE2E2"/>
+     <text x="290" y="25" text-anchor="middle" class="text note">⚠️ <tspan class="note-highlight">注意：</tspan> 绝大多数初创公司死在 Level 1 到 Level 2 的跨越中。</text>
   </g>
 
 </svg>
