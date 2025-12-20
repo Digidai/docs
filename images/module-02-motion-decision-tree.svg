@@ -42,16 +42,13 @@
     <text x="125" y="75" text-anchor="middle" class="text label">感知价值 (TTV)?</text>
   </g>
 
-  <!-- Q1 ARROWS (Rectilinear) -->
-  
-  <!-- Arrow LEFT (Yes) -->
-  <!-- Start: 325,130. Target: 225,170 (Top Q2). Path: Left to 225, then Down. -->
+  <!-- Q1 ARROWS (Branches) -->
+  <!-- Left (Yes) -->
   <path d="M 325,130 L 225,130 L 225,170" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
   <rect x="255" y="115" width="40" height="22" rx="4" fill="#dcfce7" stroke="#86efac"/>
   <text x="275" y="130" text-anchor="middle" class="yes-label">YES</text>
 
-  <!-- Arrow RIGHT (No) -->
-  <!-- Start: 575,130. Target: 675,170 (Top Q3). Path: Right to 675, then Down. -->
+  <!-- Right (No) -->
   <path d="M 575,130 L 675,130 L 675,170" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
   <rect x="605" y="115" width="40" height="22" rx="4" fill="#fee2e2" stroke="#fca5a5"/>
   <text x="625" y="130" text-anchor="middle" class="no-label">NO</text>
@@ -75,41 +72,33 @@
 
 
   <!-- ================================================================================== -->
-  <!-- LEVEL 2 OUTPUT ARROWS (Rectilinear) -->
+  <!-- OUTCOME ARROWS (Straight Vertical Drop) -->
   <!-- ================================================================================== -->
-  <!-- Q2 Tips: Left 100, Right 350. (Y=230) -->
-  <!-- Outcome Centers: PLG(115), PLS(335). Difference from tips: +15 inward. -->
   
-  <!-- Q2 -> YES -> PLG (x=115) -->
-  <!-- From 100,230 to 115,330. H: 100->115. V: 230->330. -->
-  <path d="M 100,230 L 115,230 L 115,330" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
-  <text x="70" y="245" class="yes-label">YES</text>
+  <!-- Q2 -> YES -> PLG -->
+  <!-- Tip x=100. Drop straight to box (x=50..180). Hits at x=100. -->
+  <path d="M 100,230 L 100,330" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <text x="90" y="250" text-anchor="end" class="yes-label" transform="translate(0,0)">YES</text>
 
-  <!-- Q2 -> NO -> PLS (x=335) -->
-  <!-- From 350,230 to 335,330. H: 350->335. V: 230->330. -->
-  <path d="M 350,230 L 335,230 L 335,330" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
-  <text x="360" y="245" class="no-label" text-anchor="end">NO</text>
+  <!-- Q2 -> NO -> PLS -->
+  <!-- Tip x=350. Drop straight to box (x=270..400). Hits at x=350. -->
+  <path d="M 350,230 L 350,330" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <text x="360" y="250" text-anchor="start" class="no-label">NO</text>
 
+  <!-- Q3 -> YES -> MLG -->
+  <!-- Tip x=550. Drop straight to box (x=500..630). Hits at x=550. -->
+  <path d="M 550,230 L 550,330" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <text x="540" y="250" text-anchor="end" class="yes-label">YES</text>
 
-  <!-- Q3 Tips: Left 550, Right 800. (Y=230) -->
-  <!-- Outcome Centers: MLG(565), SLG(785). -->
-
-  <!-- Q3 -> YES -> MLG (x=565) -->
-  <!-- From 550,230 to 565,330. H: 550->565. V: 230->330. -->
-  <path d="M 550,230 L 565,230 L 565,330" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
-  <text x="520" y="245" class="yes-label">YES</text>
-
-  <!-- Q3 -> NO -> SLG (x=785) -->
-  <!-- From 800,230 to 785,330. H: 800->785. V: 230->330. -->
-  <path d="M 800,230 L 785,230 L 785,330" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
-  <text x="810" y="245" class="no-label" text-anchor="end">NO</text>
+  <!-- Q3 -> NO -> SLG -->
+  <!-- Tip x=800. Drop straight to box (x=720..850). Hits at x=800. -->
+  <path d="M 800,230 L 800,330" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <text x="810" y="250" text-anchor="start" class="no-label">NO</text>
 
 
   <!-- ================================================================================== -->
   <!-- OUTCOME BOXES -->
   <!-- ================================================================================== -->
-  <!-- Width 130. Centers: 115, 335, 565, 785. -->
-  <!-- Left Xs: 50, 270, 500, 720. -->
   
   <!-- PLG (x=50) -->
   <g transform="translate(50, 330)"> 
