@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 600">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .role { font-size: 16px; font-weight: bold; fill: #1e293b; }
+      .desc { font-size: 13px; fill: #475569; }
+      .icon { font-size: 20px; }
+      .bracket-label { font-size: 12px; font-weight: bold; fill: #64748b; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#cbd5e1" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="600" fill="#f8fafc" rx="10" ry="10"/>
+
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" class="text title">典型 B2B 决策链 (The Decision Chain)</text>
+
+  <!-- Flow Lines (Background) -->
+  <line x1="350" y1="80" x2="350" y2="520" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="8,4"/>
+
+  <!-- Roles Start -->
+  <g transform="translate(170, 80)">
+
+    <!-- 1. Initiator (The Spark) -->
+    <g transform="translate(0, 0)">
+       <rect x="0" y="0" width="360" height="60" rx="30" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+       <circle cx="30" cy="30" r="20" fill="#fef3c7"/>
+       <text x="30" y="37" text-anchor="middle" class="icon">💡</text>
+       
+       <text x="65" y="25" class="text role">发起者 (Initiator)</text>
+       <text x="65" y="45" class="text desc">痛点感知者，提出最初需求</text>
+    </g>
+
+    <line x1="180" y1="60" x2="180" y2="80" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- 2. Influencer & Gatekeeper (Parallel) -->
+    <g transform="translate(0, 80)">
+       <!-- Left: Influencer -->
+       <g transform="translate(-80, 0)">
+         <rect x="0" y="0" width="160" height="90" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+         <text x="80" y="25" text-anchor="middle" class="icon">🗣️</text>
+         <text x="80" y="50" text-anchor="middle" class="text role" font-size="14">影响者</text>
+         <text x="80" y="70" text-anchor="middle" class="text desc" font-size="11">提供评估建议</text>
+       </g>
+
+       <!-- Right: Gatekeeper -->
+       <g transform="translate(280, 0)">
+         <rect x="0" y="0" width="160" height="90" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" filter="url(#shadow)"/>
+         <text x="80" y="25" text-anchor="middle" class="icon">🛡️</text>
+         <text x="80" y="50" text-anchor="middle" class="text role" font-size="14">守门者</text>
+         <text x="80" y="70" text-anchor="middle" class="text desc" font-size="11">控制信息通道</text>
+       </g>
+       
+       <!-- Connector lines to center -->
+       <line x1="80" y1="45" x2="280" y2="45" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4"/>
+    </g>
+
+    <line x1="180" y1="170" x2="180" y2="200" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- 3. Decider (The Core) -->
+    <g transform="translate(-20, 200)">
+       <rect x="0" y="0" width="400" height="70" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+       <rect x="0" y="0" width="6" height="70" rx="2" fill="#3b82f6"/>
+       
+       <circle cx="40" cy="35" r="22" fill="#dbeafe"/>
+       <text x="40" y="42" text-anchor="middle" class="icon">👑</text>
+       
+       <text x="80" y="30" class="text role" fill="#1e3a8a">决策者 (Decider)</text>
+       <text x="80" y="52" class="text desc">拥有最终拍板权 (Economic Buyer)</text>
+    </g>
+
+    <line x1="180" y1="270" x2="180" y2="300" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- 4. Approver (The Check) -->
+    <g transform="translate(0, 300)">
+       <rect x="0" y="0" width="360" height="60" rx="30" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+       <circle cx="30" cy="30" r="20" fill="#ecfccb"/>
+       <text x="30" y="37" text-anchor="middle" class="icon">✍️</text>
+       
+       <text x="65" y="25" class="text role">批准者 (Approver)</text>
+       <text x="65" y="45" class="text desc">预算/合规审批 (CFO/Legal)</text>
+    </g>
+
+    <line x1="180" y1="360" x2="180" y2="390" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- 5. User (The Value) -->
+    <g transform="translate(0, 390)">
+       <rect x="0" y="0" width="360" height="60" rx="30" fill="#f0fdf4" stroke="#22c55e" stroke-width="2" filter="url(#shadow)"/>
+       <circle cx="30" cy="30" r="20" fill="#dcfce7"/>
+       <text x="30" y="37" text-anchor="middle" class="icon">🧑‍💻</text>
+       
+       <text x="65" y="25" class="text role" fill="#14532d">使用者 (User)</text>
+       <text x="65" y="45" class="text desc" fill="#15803d">实际使用与价值落地</text>
+    </g>
+
+  </g>
+
+  <!-- Side Annotations -->
+  <g transform="translate(620, 235)">
+     <!-- Bracket for Decider -->
+     <path d="M -20,0 L 0,0 L 0,80 L -20,80" stroke="#94a3b8" stroke-width="1" fill="none"/>
+     <text x="10" y="45" text-anchor="middle" class="bracket-label" fill="#3b82f6">关键</text>
+  </g>
+
+</svg>

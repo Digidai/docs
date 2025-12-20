@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .label { font-size: 14px; fill: #334155; font-weight: bold; }
+      .desc { font-size: 12px; fill: #64748b; }
+      .month { font-size: 14px; fill: #94a3b8; font-weight: bold; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="10" ry="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="text title">企业级 SLG 销售周期 (Typical 6-12 Months)</text>
+
+  <!-- Timeline Axis -->
+  <line x1="50" y1="100" x2="750" y2="100" stroke="#cbd5e1" stroke-width="4"/>
+  
+  <!-- Phases -->
+  
+  <!-- Phase 1: Discovery -->
+  <circle cx="100" cy="100" r="10" fill="#f97316"/>
+  <text x="100" y="80" text-anchor="middle" class="text month">Month 1-2</text>
+  <g transform="translate(30, 130)">
+    <rect x="0" y="0" width="140" height="150" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+    <text x="70" y="30" text-anchor="middle" class="text label" fill="#f97316">发现 (Discovery)</text>
+    <line x1="10" y1="45" x2="130" y2="45" stroke="#f1f5f9"/>
+    <text x="70" y="70" text-anchor="middle" class="text desc">• 初次会议</text>
+    <text x="70" y="90" text-anchor="middle" class="text desc">• 需求发现</text>
+    <text x="70" y="110" text-anchor="middle" class="text desc">• 决策链识别</text>
+  </g>
+
+  <!-- Phase 2: Evaluation -->
+  <circle cx="280" cy="100" r="10" fill="#f97316"/>
+  <text x="280" y="80" text-anchor="middle" class="text month">Month 3-4</text>
+  <g transform="translate(210, 130)">
+    <rect x="0" y="0" width="140" height="150" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+    <text x="70" y="30" text-anchor="middle" class="text label" fill="#f97316">评估 (Evaluation)</text>
+    <line x1="10" y1="45" x2="130" y2="45" stroke="#f1f5f9"/>
+    <text x="70" y="70" text-anchor="middle" class="text desc">• 深度 Demo</text>
+    <text x="70" y="90" text-anchor="middle" class="text desc">• 技术评估</text>
+    <text x="70" y="110" text-anchor="middle" class="text desc">• 方案设计</text>
+  </g>
+
+  <!-- Phase 3: POC -->
+  <circle cx="460" cy="100" r="10" fill="#f97316"/>
+  <text x="460" y="80" text-anchor="middle" class="text month">Month 5-8</text>
+  <g transform="translate(390, 130)">
+    <rect x="0" y="0" width="140" height="150" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+    <text x="70" y="30" text-anchor="middle" class="text label" fill="#f97316">POC / 验证</text>
+    <line x1="10" y1="45" x2="130" y2="45" stroke="#f1f5f9"/>
+    <text x="70" y="70" text-anchor="middle" class="text desc">• 试点项目</text>
+    <text x="70" y="90" text-anchor="middle" class="text desc">• 价值验证</text>
+    <text x="70" y="110" text-anchor="middle" class="text desc">• ROI 计算</text>
+  </g>
+
+  <!-- Phase 4: Signing -->
+  <circle cx="640" cy="100" r="10" fill="#10b981"/> <!-- Green for success -->
+  <text x="640" y="80" text-anchor="middle" class="text month">Month 9-12</text>
+  <g transform="translate(570, 130)">
+    <rect x="0" y="0" width="140" height="150" rx="8" ry="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+    <text x="70" y="30" text-anchor="middle" class="text label" fill="#10b981">签约 (Closing)</text>
+    <line x1="10" y1="45" x2="130" y2="45" stroke="#e2e8f0"/>
+    <text x="70" y="70" text-anchor="middle" class="text desc">• 法务审核</text>
+    <text x="70" y="90" text-anchor="middle" class="text desc">• 预算批准</text>
+    <text x="70" y="110" text-anchor="middle" class="text desc">• 合同签署</text>
+  </g>
+
+  <!-- Connector Lines -->
+  <line x1="170" y1="200" x2="210" y2="200" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="350" y1="200" x2="390" y2="200" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="530" y1="200" x2="570" y2="200" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+
+</svg>

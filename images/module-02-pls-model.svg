@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 550">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .label { font-size: 16px; fill: #ffffff; font-weight: bold; }
+      .desc { font-size: 13px; fill: #e2e8f0; }
+      .path-title { font-size: 14px; font-weight: bold; fill: #1e293b; }
+      .path-desc { font-size: 12px; fill: #64748b; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b" />
+    </marker>
+  </defs>
+
+  <rect width="850" height="550" fill="#f8fafc" rx="10" ry="10"/>
+  <text x="425" y="40" text-anchor="middle" class="text title">Product-Led Sales (PLS) 运营架构</text>
+
+  <!-- Layer 1: Product Foundation -->
+  <g transform="translate(125, 80)">
+     <path d="M 0,20 L 600,20 L 600,100 L 0,100 Z" fill="#1e293b" filter="url(#shadow)"/>
+     <text x="300" y="55" text-anchor="middle" class="text label">1. PLG 基础池 (Product Foundation)</text>
+     <text x="300" y="80" text-anchor="middle" class="text desc">海量自服务用户 (Usage Data)</text>
+  </g>
+
+  <!-- Filter/Signal Layer -->
+  <g transform="translate(225, 180)">
+     <!-- Funnel/Filter shape -->
+     <path d="M 0,0 L 400,0 L 350,80 L 50,80 Z" fill="#64748b" opacity="0.9" filter="url(#shadow)"/>
+     <text x="200" y="35" text-anchor="middle" class="text label" font-size="14">2. 信号过滤 (PQL Scoring)</text>
+     <text x="200" y="60" text-anchor="middle" class="text desc" font-size="12">Firmographics + Product Signals</text>
+  </g>
+
+  <!-- Split Paths -->
+  
+  <!-- Path A: Automation -->
+  <g transform="translate(50, 310)">
+     <rect x="0" y="0" width="350" height="180" rx="8" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2"/>
+     <text x="175" y="30" text-anchor="middle" class="text path-title" fill="#0284c7">路径 A: 自动化触达 (Self-Serve)</text>
+     
+     <g transform="translate(20, 50)">
+         <rect x="0" y="0" width="310" height="30" rx="4" fill="#ffffff"/>
+         <text x="10" y="20" class="text path-desc">对象：中小企业 (SMB), 个人用户</text>
+         
+         <rect x="0" y="40" width="310" height="30" rx="4" fill="#ffffff"/>
+         <text x="10" y="60" class="text path-desc">方式：In-app Nudges, Email Sequence</text>
+         
+         <rect x="0" y="80" width="310" height="30" rx="4" fill="#ffffff"/>
+         <text x="10" y="100" class="text path-desc">目标：自助升级付费</text>
+     </g>
+  </g>
+
+  <!-- Path B: Sales Assist -->
+  <g transform="translate(450, 310)">
+     <rect x="0" y="0" width="350" height="180" rx="8" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+     <text x="175" y="30" text-anchor="middle" class="text path-title" fill="#ea580c">路径 B: 销售介入 (Sales-Assist)</text>
+     
+     <g transform="translate(20, 50)">
+         <rect x="0" y="0" width="310" height="30" rx="4" fill="#ffffff"/>
+         <text x="10" y="20" class="text path-desc">对象：企业客户 (Enterprise), 高分 PQL</text>
+         
+         <rect x="0" y="40" width="310" height="30" rx="4" fill="#ffffff"/>
+         <text x="10" y="60" class="text path-desc">方式：AE Outreach, Consultative Call</text>
+         
+         <rect x="0" y="80" width="310" height="30" rx="4" fill="#ffffff"/>
+         <text x="10" y="100" class="text path-desc">目标：企业级合约 (SLAs)</text>
+     </g>
+  </g>
+
+  <!-- Connectors -->
+  <path d="M 425,260 L 425,290 L 225,290 L 225,310" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none" stroke-dasharray="4,4"/>
+  <path d="M 425,260 L 425,290 L 625,290 L 625,310" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none" stroke-dasharray="4,4"/>
+
+</svg>

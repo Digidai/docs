@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 550">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .label { font-size: 16px; font-weight: bold; fill: #1e293b; }
+      .desc-title { font-size: 16px; font-weight: bold; }
+      .desc { font-size: 13px; fill: #475569; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    
+    <!-- Heat Gradient -->
+    <linearGradient id="heatGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#94a3b8;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#facc15;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="550" fill="#f8fafc" rx="10" ry="10"/>
+
+  <!-- Title -->
+  <text x="300" y="40" text-anchor="middle" class="text title">痛点严重程度分级 (Pain Scale)</text>
+
+  <!-- Thermometer Visual -->
+  <g transform="translate(80, 80)">
+    <!-- Bulb -->
+    <circle cx="50" cy="400" r="40" fill="#94a3b8" />
+    <!-- Stem Background -->
+    <rect x="30" y="0" width="40" height="400" rx="20" fill="#e2e8f0"/>
+    
+    <!-- Mercury (Gradient Fill) -->
+    <rect x="35" y="50" width="30" height="350" rx="15" fill="url(#heatGrad)"/>
+    <!-- Bulb Fill -->
+    <circle cx="50" cy="400" r="30" fill="#94a3b8"/> <!-- Base stays cool/neutral logically, but visual should fuse -->
+    <circle cx="50" cy="400" r="32" fill="url(#heatGrad)"/>
+
+    <!-- Ticks -->
+    <line x1="20" y1="350" x2="80" y2="350" stroke="#64748b" stroke-width="2"/>
+    <line x1="20" y1="250" x2="80" y2="250" stroke="#64748b" stroke-width="2"/>
+    <line x1="20" y1="150" x2="80" y2="150" stroke="#64748b" stroke-width="2"/>
+    <line x1="20" y1="50" x2="80" y2="50" stroke="#ef4444" stroke-width="3"/>
+  </g>
+
+  <!-- Explainer Cards -->
+  <g transform="translate(180, 80)">
+     
+     <!-- Level 4: Extreme -->
+     <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="380" height="80" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="2" filter="url(#shadow)"/>
+        <circle cx="40" cy="40" r="25" fill="#ef4444"/>
+        <text x="40" y="48" text-anchor="middle" class="text label" fill="#ffffff" font-size="20">10</text>
+        
+        <text x="80" y="30" class="text desc-title" fill="#b91c1c">极端痛点 (Extreme)</text>
+        <text x="80" y="55" class="text desc">"流血不止" - 必须立刻解决，不惜代价</text>
+     </g>
+
+     <!-- Level 3: Severe -->
+     <g transform="translate(0, 100)">
+        <rect x="0" y="0" width="380" height="80" rx="8" fill="#fff7ed" stroke="#fdba74" stroke-width="2" filter="url(#shadow)"/>
+        <circle cx="40" cy="40" r="25" fill="#f97316"/>
+        <text x="40" y="48" text-anchor="middle" class="text label" fill="#ffffff" font-size="20">8</text>
+        
+        <text x="80" y="30" class="text desc-title" fill="#c2410c">重度痛点 (Severe)</text>
+        <text x="80" y="55" class="text desc">严重影响效率，有明确预算</text>
+     </g>
+
+     <!-- Level 2: Moderate -->
+     <g transform="translate(0, 200)">
+        <rect x="0" y="0" width="380" height="80" rx="8" fill="#fefce8" stroke="#fde047" stroke-width="2" filter="url(#shadow)"/>
+        <circle cx="40" cy="40" r="25" fill="#eab308"/>
+        <text x="40" y="48" text-anchor="middle" class="text label" fill="#ffffff" font-size="20">5</text>
+        
+        <text x="80" y="30" class="text desc-title" fill="#a16207">中度痛点 (Moderate)</text>
+        <text x="80" y="55" class="text desc">有点麻烦，但可以忍受</text>
+     </g>
+
+     <!-- Level 1: Minor -->
+     <g transform="translate(0, 300)">
+        <rect x="0" y="0" width="380" height="80" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+        <circle cx="40" cy="40" r="25" fill="#94a3b8"/>
+        <text x="40" y="48" text-anchor="middle" class="text label" fill="#ffffff" font-size="20">2</text>
+        
+        <text x="80" y="30" class="text desc-title" fill="#475569">轻微痛点 (Minor)</text>
+        <text x="80" y="55" class="text desc">锦上添花，Nice to have</text>
+     </g>
+
+  </g>
+
+  <!-- Connectors -->
+  <line x1="120" y1="130" x2="180" y2="120" stroke="#ef4444" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="120" y1="230" x2="180" y2="220" stroke="#f97316" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="120" y1="330" x2="180" y2="320" stroke="#eab308" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="120" y1="430" x2="180" y2="420" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4"/>
+
+</svg>

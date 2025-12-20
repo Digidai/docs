@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 300">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .step-num { font-size: 40px; font-weight: bold; fill: #ffffff; opacity: 0.2; }
+      .step-title { font-size: 18px; font-weight: bold; fill: #ffffff; }
+      .step-desc { font-size: 13px; fill: #f0f9ff; }
+      .loop-text { font-size: 14px; font-weight: bold; fill: #6366f1; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L0,12 L12,6 z" fill="#cbd5e1" />
+    </marker>
+    <marker id="arrow-loop" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L0,12 L12,6 z" fill="#6366f1" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="950" height="300" fill="#f8fafc" rx="10" ry="10"/>
+
+  <!-- Title -->
+  <text x="475" y="40" text-anchor="middle" class="text title">ICP 构建五步流程</text>
+
+  <!-- Process Steps Group -->
+  <g transform="translate(40, 90)">
+    
+    <!-- Step 1: Analyze - Blue -->
+    <g transform="translate(0, 0)">
+      <path d="M 0,0 L 140,0 L 160,60 L 140,120 L 0,120 L 20,60 Z" fill="#2563eb" filter="url(#shadow)"/>
+      <text x="35" y="105" text-anchor="middle" class="text step-num">1</text>
+      <text x="80" y="45" text-anchor="middle" class="text step-title">分析</text>
+      <text x="80" y="65" text-anchor="middle" class="text step-desc" font-weight="bold">Analyze</text>
+      <text x="80" y="90" text-anchor="middle" class="text step-desc" font-size="11">分析最佳客户</text>
+    </g>
+
+    <!-- Connector 1-2 -->
+    <!-- Chevron overlap handles connection naturally, but leaving small gap for style -->
+    
+    <!-- Step 2: Identify - Blue-Purple -->
+    <g transform="translate(170, 0)">
+      <path d="M 0,0 L 140,0 L 160,60 L 140,120 L 0,120 L 20,60 Z" fill="#4338ca" filter="url(#shadow)"/>
+      <text x="35" y="105" text-anchor="middle" class="text step-num">2</text>
+      <text x="80" y="45" text-anchor="middle" class="text step-title">识别</text>
+      <text x="80" y="65" text-anchor="middle" class="text step-desc" font-weight="bold">Identify</text>
+       <text x="80" y="90" text-anchor="middle" class="text step-desc" font-size="11">找共同特征</text>
+    </g>
+
+    <!-- Step 3: Validate - Purple -->
+    <g transform="translate(340, 0)">
+      <path d="M 0,0 L 140,0 L 160,60 L 140,120 L 0,120 L 20,60 Z" fill="#7c3aed" filter="url(#shadow)"/>
+      <text x="35" y="105" text-anchor="middle" class="text step-num">3</text>
+      <text x="80" y="45" text-anchor="middle" class="text step-title">验证</text>
+      <text x="80" y="65" text-anchor="middle" class="text step-desc" font-weight="bold">Validate</text>
+       <text x="80" y="90" text-anchor="middle" class="text step-desc" font-size="11">验证假设</text>
+    </g>
+
+    <!-- Step 4: Document - Purple-Pink -->
+    <g transform="translate(510, 0)">
+      <path d="M 0,0 L 140,0 L 160,60 L 140,120 L 0,120 L 20,60 Z" fill="#c026d3" filter="url(#shadow)"/>
+      <text x="35" y="105" text-anchor="middle" class="text step-num">4</text>
+      <text x="80" y="45" text-anchor="middle" class="text step-title">文档</text>
+      <text x="80" y="65" text-anchor="middle" class="text step-desc" font-weight="bold">Document</text>
+       <text x="80" y="90" text-anchor="middle" class="text step-desc" font-size="11">标准化输出</text>
+    </g>
+
+    <!-- Step 5: Iterate - Pink -->
+    <g transform="translate(680, 0)">
+      <path d="M 0,0 L 140,0 L 160,60 L 140,120 L 0,120 L 20,60 Z" fill="#db2777" filter="url(#shadow)"/>
+      <text x="35" y="105" text-anchor="middle" class="text step-num">5</text>
+      <text x="80" y="45" text-anchor="middle" class="text step-title">迭代</text>
+      <text x="80" y="65" text-anchor="middle" class="text step-desc" font-weight="bold">Iterate</text>
+      <text x="80" y="90" text-anchor="middle" class="text step-desc" font-size="11">持续更新</text>
+    </g>
+
+    <!-- Feedback Loop -->
+    <!-- Curve from end of Step 5 back to Step 1 start -->
+    <path d="M 760,120 L 760,165 L 80,165 L 80,120" stroke="#6366f1" stroke-width="3" stroke-dasharray="8,4" fill="none" marker-end="url(#arrow-loop)"/>
+    
+    <rect x="370" y="150" width="120" height="30" rx="15" fill="#eef2ff" stroke="#6366f1" stroke-width="1"/>
+    <text x="430" y="170" text-anchor="middle" class="text loop-text">动态闭环</text>
+
+  </g>
+
+</svg>

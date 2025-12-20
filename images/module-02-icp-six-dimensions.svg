@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .card-title { font-size: 16px; font-weight: bold; fill: #1e293b; }
+      .card-subtitle { font-size: 12px; fill: #64748b; font-style: italic; }
+      .item { font-size: 12px; fill: #475569; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="text title">ICP 六大核心维度</text>
+
+  <!-- Grid Layout 3x2 -->
+  
+  <!-- Row 1 -->
+  <!-- Firmographics -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="220" height="180" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="220" height="40" rx="8" ry="8" fill="#e0f2fe"/> <!-- Header bg -->
+    <text x="110" y="25" text-anchor="middle" class="text card-title">Firmographics</text>
+    <text x="110" y="55" text-anchor="middle" class="text card-subtitle">(企业特征)</text>
+    
+    <g transform="translate(20, 80)">
+      <text x="0" y="0" class="text item">• 行业 (Industry)</text>
+      <text x="0" y="25" class="text item">• 规模 (Size)</text>
+      <text x="0" y="50" class="text item">• 地理位置 (Location)</text>
+      <text x="0" y="75" class="text item">• 成长阶段 (Stage)</text>
+    </g>
+  </g>
+
+  <!-- Technographics -->
+  <g transform="translate(290, 80)">
+    <rect x="0" y="0" width="220" height="180" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="220" height="40" rx="8" ry="8" fill="#dcfce7"/>
+    <text x="110" y="25" text-anchor="middle" class="text card-title">Technographics</text>
+    <text x="110" y="55" text-anchor="middle" class="text card-subtitle">(技术特征)</text>
+
+    <g transform="translate(20, 80)">
+      <text x="0" y="0" class="text item">• 技术栈 (Tech Stack)</text>
+      <text x="0" y="25" class="text item">• 技术成熟度 (Maturity)</text>
+      <text x="0" y="50" class="text item">• 集成需求 (Integration)</text>
+      <text x="0" y="75" class="text item">• 安全要求 (Security)</text>
+    </g>
+  </g>
+
+  <!-- Psychographics -->
+  <g transform="translate(530, 80)">
+    <rect x="0" y="0" width="220" height="180" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="220" height="40" rx="8" ry="8" fill="#f3e8ff"/>
+    <text x="110" y="25" text-anchor="middle" class="text card-title">Psychographics</text>
+    <text x="110" y="55" text-anchor="middle" class="text card-subtitle">(心理特征)</text>
+
+    <g transform="translate(20, 80)">
+      <text x="0" y="0" class="text item">• 创新倾向 (Innovation)</text>
+      <text x="0" y="25" class="text item">• 决策风格 (Decision Style)</text>
+      <text x="0" y="50" class="text item">• 风险偏好 (Risk)</text>
+      <text x="0" y="75" class="text item">• 购买行为 (Buying Behavior)</text>
+    </g>
+  </g>
+
+  <!-- Row 2 -->
+  <!-- Pain Points -->
+  <g transform="translate(50, 280)">
+    <rect x="0" y="0" width="220" height="180" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="220" height="40" rx="8" ry="8" fill="#fee2e2"/>
+    <text x="110" y="25" text-anchor="middle" class="text card-title">Pain Points</text>
+    <text x="110" y="55" text-anchor="middle" class="text card-subtitle">(痛点)</text>
+
+    <g transform="translate(20, 80)">
+      <text x="0" y="0" class="text item">• 核心痛点 (Core Pain)</text>
+      <text x="0" y="25" class="text item">• 紧迫程度 (Urgency)</text>
+      <text x="0" y="50" class="text item">• 影响范围 (Impact)</text>
+      <text x="0" y="75" class="text item">• 现有方案 (Current Solution)</text>
+    </g>
+  </g>
+
+  <!-- Buying Signals -->
+  <g transform="translate(290, 280)">
+    <rect x="0" y="0" width="220" height="180" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="220" height="40" rx="8" ry="8" fill="#ffedd5"/>
+    <text x="110" y="25" text-anchor="middle" class="text card-title">Buying Signals</text>
+    <text x="110" y="55" text-anchor="middle" class="text card-subtitle">(购买信号)</text>
+
+    <g transform="translate(20, 80)">
+      <text x="0" y="0" class="text item">• 意图数据 (Intent Data)</text>
+      <text x="0" y="25" class="text item">• 触发事件 (Trigger Events)</text>
+      <text x="0" y="50" class="text item">• 行为信号 (Behavior)</text>
+      <text x="0" y="75" class="text item">• 竞品动态 (Competitor)</text>
+    </g>
+  </g>
+
+  <!-- Decision Makers -->
+  <g transform="translate(530, 280)">
+    <rect x="0" y="0" width="220" height="180" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="220" height="40" rx="8" ry="8" fill="#f1f5f9"/>
+    <text x="110" y="25" text-anchor="middle" class="text card-title">Decision Makers</text>
+    <text x="110" y="55" text-anchor="middle" class="text card-subtitle">(决策者)</text>
+
+    <g transform="translate(20, 80)">
+      <text x="0" y="0" class="text item">• 决策链 (Decision Chain)</text>
+      <text x="0" y="25" class="text item">• 关键角色 (Key Roles)</text>
+      <text x="0" y="50" class="text item">• 采购流程 (Process)</text>
+      <text x="0" y="75" class="text item">• 预算结构 (Budget)</text>
+    </g>
+  </g>
+
+</svg>

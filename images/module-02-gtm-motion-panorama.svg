@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .label { font-size: 14px; fill: #475569; }
+      .box-title { font-size: 16px; font-weight: bold; fill: #ffffff; }
+      .box-desc { font-size: 12px; fill: #1e293b; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="text title">GTM Motion 类型全景</text>
+
+  <!-- Top Row: 4 Main Motions -->
+  <g transform="translate(40, 80)">
+    
+    <!-- PLG -->
+    <rect x="0" y="0" width="160" height="100" rx="8" ry="8" fill="#3b82f6" filter="url(#shadow)"/>
+    <text x="80" y="40" text-anchor="middle" class="text box-title">PLG</text>
+    <text x="80" y="60" text-anchor="middle" class="text box-title" font-size="12">Product-Led</text>
+    <text x="80" y="80" text-anchor="middle" class="text box-title" font-size="12">Growth</text>
+    <text x="80" y="130" text-anchor="middle" class="text box-desc" font-weight="bold">产品驱动</text>
+    <text x="80" y="150" text-anchor="middle" class="text box-desc">用户自助体验</text>
+
+    <!-- SLG -->
+    <rect x="190" y="0" width="160" height="100" rx="8" ry="8" fill="#f97316" filter="url(#shadow)"/>
+    <text x="270" y="40" text-anchor="middle" class="text box-title">SLG</text>
+    <text x="270" y="60" text-anchor="middle" class="text box-title" font-size="12">Sales-Led</text>
+    <text x="270" y="80" text-anchor="middle" class="text box-title" font-size="12">Growth</text>
+    <text x="270" y="130" text-anchor="middle" class="text box-desc" font-weight="bold">销售驱动</text>
+    <text x="270" y="150" text-anchor="middle" class="text box-desc">顾问式咨询</text>
+
+    <!-- MLG -->
+    <rect x="380" y="0" width="160" height="100" rx="8" ry="8" fill="#10b981" filter="url(#shadow)"/>
+    <text x="460" y="40" text-anchor="middle" class="text box-title">MLG</text>
+    <text x="460" y="60" text-anchor="middle" class="text box-title" font-size="12">Marketing-Led</text>
+    <text x="460" y="80" text-anchor="middle" class="text box-title" font-size="12">Growth</text>
+    <text x="460" y="130" text-anchor="middle" class="text box-desc" font-weight="bold">营销驱动</text>
+    <text x="460" y="150" text-anchor="middle" class="text box-desc">Inbound/内容</text>
+
+    <!-- CLG -->
+    <rect x="570" y="0" width="160" height="100" rx="8" ry="8" fill="#8b5cf6" filter="url(#shadow)"/>
+    <text x="650" y="40" text-anchor="middle" class="text box-title">CLG</text>
+    <text x="650" y="60" text-anchor="middle" class="text box-title" font-size="12">Community-Led</text>
+    <text x="650" y="80" text-anchor="middle" class="text box-title" font-size="12">Growth</text>
+    <text x="650" y="130" text-anchor="middle" class="text box-desc" font-weight="bold">社区驱动</text>
+    <text x="650" y="150" text-anchor="middle" class="text box-desc">口碑/推荐</text>
+  </g>
+
+  <!-- Connectors -->
+  <g transform="translate(40, 240)">
+    <path d="M 80,0 L 80,40 L 365,40 L 365,80" stroke="#cbd5e1" stroke-width="2" fill="none"/>
+    <path d="M 270,0 L 270,40 L 365,40" stroke="#cbd5e1" stroke-width="2" fill="none"/>
+    <path d="M 460,0 L 460,40 L 365,40" stroke="#cbd5e1" stroke-width="2" fill="none"/>
+    <path d="M 650,0 L 650,40 L 365,40" stroke="#cbd5e1" stroke-width="2" fill="none"/>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#cbd5e1" />
+    </marker>
+    <line x1="365" y1="40" x2="365" y2="75" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Hybrid Motion -->
+  <g transform="translate(40, 320)">
+    <rect x="250" y="0" width="230" height="100" rx="8" ry="8" fill="#0f172a" filter="url(#shadow)"/>
+    <text x="365" y="35" text-anchor="middle" class="text box-title" font-size="18">Hybrid Motion</text>
+    <text x="365" y="55" text-anchor="middle" class="text box-title" font-weight="normal" font-size="14">(混合模式)</text> 
+    <text x="365" y="80" text-anchor="middle" class="text box-title" font-size="12" fill="#94a3b8">Product-Led Sales (PLS)</text>
+  </g>
+  
+  <text x="405" y="470" text-anchor="middle" class="text label" fill="#64748b" font-style="italic">↑ 2025 主流趋势</text>
+
+</svg>

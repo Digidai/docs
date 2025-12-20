@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .mod-title { font-size: 16px; font-weight: bold; fill: #1e293b; }
+      .mod-q { font-size: 14px; font-weight: bold; fill: #3b82f6; }
+      .mod-desc { font-size: 12px; fill: #64748b; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="550" fill="#f8fafc" rx="10" ry="10"/>
+
+  <!-- Title -->
+  <text x="450" y="50" text-anchor="middle" class="text title">模块二核心框架总结</text>
+  
+  <!-- Foundation Line -->
+  <line x1="100" y1="500" x2="800" y2="500" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="450" y="525" text-anchor="middle" class="text mod-desc" style="font-size: 14px; font-weight: bold;">GTM 战略基础</text>
+
+  <!-- Top Node: 2.1 Market Stage -->
+  <g transform="translate(350, 90)">
+     <rect x="0" y="0" width="200" height="90" rx="8" ry="8" fill="#ffffff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+     <text x="100" y="30" text-anchor="middle" class="text mod-title">2.1 市场阶段</text>
+     <text x="100" y="55" text-anchor="middle" class="text mod-q">你在哪里？</text>
+     <text x="100" y="75" text-anchor="middle" class="text mod-desc">鸿沟理论 / 生命周期</text>
+  </g>
+
+  <!-- Connector Lines Branching Out -->
+  <path d="M 450,180 L 450,210 L 200,210 L 200,240" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <path d="M 450,180 L 450,210 L 450,210 L 450,240" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <path d="M 450,180 L 450,210 L 700,210 L 700,240" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+
+
+  <!-- Middle Row: Strategy Pillars -->
+  <g transform="translate(0, 240)">
+    
+    <!-- 2.3 ICP -->
+    <g transform="translate(100, 0)">
+       <rect x="0" y="0" width="200" height="110" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+       <text x="100" y="30" text-anchor="middle" class="text mod-title">2.3 ICP</text>
+       <text x="100" y="55" text-anchor="middle" class="text mod-q">卖给谁？</text>
+       <text x="100" y="75" text-anchor="middle" class="text mod-desc">六大维度</text>
+       <text x="100" y="90" text-anchor="middle" class="text mod-desc">理想客户标准</text>
+    </g>
+
+    <!-- 2.4 Value Prop -->
+    <g transform="translate(350, 0)">
+       <rect x="0" y="0" width="200" height="110" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+       <text x="100" y="30" text-anchor="middle" class="text mod-title">2.4 价值主张</text>
+       <text x="100" y="55" text-anchor="middle" class="text mod-q">卖什么？</text>
+       <text x="100" y="75" text-anchor="middle" class="text mod-desc">画布模型</text>
+       <text x="100" y="90" text-anchor="middle" class="text mod-desc">定位公式</text>
+    </g>
+
+    <!-- 2.5 Positioning -->
+    <g transform="translate(600, 0)">
+       <rect x="0" y="0" width="200" height="110" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+       <text x="100" y="30" text-anchor="middle" class="text mod-title">2.5 市场定位</text>
+       <text x="100" y="55" text-anchor="middle" class="text mod-q">在哪竞争？</text>
+       <text x="100" y="75" text-anchor="middle" class="text mod-desc">Head / Category / Niche</text>
+       <text x="100" y="90" text-anchor="middle" class="text mod-desc">定位策略</text>
+    </g>
+
+  </g>
+
+  <!-- Connectors converging to Bottom -->
+  <path d="M 200,350 L 200,380 L 450,380 L 450,400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <path d="M 450,350 L 450,380 L 450,380 L 450,400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <path d="M 700,350 L 700,380 L 450,380 L 450,400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+
+  <!-- Bottom Node: 2.2 GTM Motion -->
+  <g transform="translate(350, 400)">
+     <rect x="0" y="0" width="200" height="90" rx="8" ry="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+     <text x="100" y="30" text-anchor="middle" class="text mod-title">2.2 GTM Motion</text>
+     <text x="100" y="55" text-anchor="middle" class="text mod-q">怎么去？</text>
+     <text x="100" y="75" text-anchor="middle" class="text mod-desc">PLG / SLG / MLG</text>
+  </g>
+
+</svg>

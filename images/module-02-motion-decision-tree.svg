@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .label { font-size: 14px; fill: #1e293b; font-weight: bold; }
+      
+      .yes-label { font-size: 12px; fill: #15803d; font-weight: bold; }
+      .no-label { font-size: 12px; fill: #b91c1c; font-weight: bold; }
+      
+      .result-title { font-size: 18px; font-weight: bold; fill: #ffffff; }
+      .result-desc { font-size: 13px; fill: #f8fafc; }
+      .zone-label { font-size: 12px; font-weight: bold; fill: #94a3b8; text-transform: uppercase; letter-spacing: 1px; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <rect width="900" height="650" fill="#f8fafc" rx="10" ry="10"/>
+  
+  <!-- Zones Backgrounds -->
+  <!-- Left Half Zone -->
+  <rect x="25" y="90" width="415" height="540" rx="10" fill="#f0f9ff" stroke="#e0f2fe" stroke-dasharray="4,4"/>
+  <text x="232" y="615" text-anchor="middle" class="zone-label" fill="#38bdf8">Low Touch / Tech Touch</text>
+
+  <!-- Right Half Zone -->
+  <rect x="460" y="90" width="415" height="540" rx="10" fill="#fff7ed" stroke="#ffedd5" stroke-dasharray="4,4"/>
+  <text x="667" y="615" text-anchor="middle" class="zone-label" fill="#fb923c">High Touch / Sales Touch</text>
+
+  <text x="450" y="50" text-anchor="middle" class="text title">GTM Motion 决策树 (Decision Framework)</text>
+
+  <!-- ================================================================================== -->
+  <!-- ROOT NODE: Q1 (Center x=450) -->
+  <!-- ================================================================================== -->
+  <g transform="translate(325, 70)">
+    <path d="M 125,0 L 250,60 L 125,120 L 0,60 Z" fill="#ffffff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+    <text x="125" y="55" text-anchor="middle" class="text label">Q1: 用户能否快速</text>
+    <text x="125" y="75" text-anchor="middle" class="text label">感知价值 (TTV)?</text>
+  </g>
+
+  <!-- Q1 ARROWS (Rectilinear) -->
+  
+  <!-- Arrow LEFT (Yes) -->
+  <!-- Start: 325,130. Target: 225,170 (Top Q2). Path: Left to 225, then Down. -->
+  <path d="M 325,130 L 225,130 L 225,170" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <rect x="255" y="115" width="40" height="22" rx="4" fill="#dcfce7" stroke="#86efac"/>
+  <text x="275" y="130" text-anchor="middle" class="yes-label">YES</text>
+
+  <!-- Arrow RIGHT (No) -->
+  <!-- Start: 575,130. Target: 675,170 (Top Q3). Path: Right to 675, then Down. -->
+  <path d="M 575,130 L 675,130 L 675,170" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <rect x="605" y="115" width="40" height="22" rx="4" fill="#fee2e2" stroke="#fca5a5"/>
+  <text x="625" y="130" text-anchor="middle" class="no-label">NO</text>
+
+
+  <!-- ================================================================================== -->
+  <!-- LEVEL 2 NODES: Q2 & Q3 -->
+  <!-- ================================================================================== -->
+  
+  <!-- Q2 (Center x=225) -->
+  <g transform="translate(100, 170)">
+    <path d="M 125,0 L 250,60 L 125,120 L 0,60 Z" fill="#ffffff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+    <text x="125" y="65" text-anchor="middle" class="text label">Q2: ACV &lt; $5k?</text>
+  </g>
+
+  <!-- Q3 (Center x=675) -->
+  <g transform="translate(550, 170)">
+    <path d="M 125,0 L 250,60 L 125,120 L 0,60 Z" fill="#ffffff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+    <text x="125" y="65" text-anchor="middle" class="text label">Q3: 需复杂教育?</text>
+  </g>
+
+
+  <!-- ================================================================================== -->
+  <!-- LEVEL 2 OUTPUT ARROWS (Rectilinear) -->
+  <!-- ================================================================================== -->
+  <!-- Q2 Tips: Left 100, Right 350. (Y=230) -->
+  <!-- Outcome Centers: PLG(115), PLS(335). Difference from tips: +15 inward. -->
+  
+  <!-- Q2 -> YES -> PLG (x=115) -->
+  <!-- From 100,230 to 115,330. H: 100->115. V: 230->330. -->
+  <path d="M 100,230 L 115,230 L 115,330" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <text x="70" y="245" class="yes-label">YES</text>
+
+  <!-- Q2 -> NO -> PLS (x=335) -->
+  <!-- From 350,230 to 335,330. H: 350->335. V: 230->330. -->
+  <path d="M 350,230 L 335,230 L 335,330" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <text x="360" y="245" class="no-label" text-anchor="end">NO</text>
+
+
+  <!-- Q3 Tips: Left 550, Right 800. (Y=230) -->
+  <!-- Outcome Centers: MLG(565), SLG(785). -->
+
+  <!-- Q3 -> YES -> MLG (x=565) -->
+  <!-- From 550,230 to 565,330. H: 550->565. V: 230->330. -->
+  <path d="M 550,230 L 565,230 L 565,330" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <text x="520" y="245" class="yes-label">YES</text>
+
+  <!-- Q3 -> NO -> SLG (x=785) -->
+  <!-- From 800,230 to 785,330. H: 800->785. V: 230->330. -->
+  <path d="M 800,230 L 785,230 L 785,330" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <text x="810" y="245" class="no-label" text-anchor="end">NO</text>
+
+
+  <!-- ================================================================================== -->
+  <!-- OUTCOME BOXES -->
+  <!-- ================================================================================== -->
+  <!-- Width 130. Centers: 115, 335, 565, 785. -->
+  <!-- Left Xs: 50, 270, 500, 720. -->
+  
+  <!-- PLG (x=50) -->
+  <g transform="translate(50, 330)"> 
+      <rect x="0" y="0" width="130" height="150" rx="8" fill="#3b82f6" stroke="#1d4ed8" stroke-width="2" filter="url(#shadow)"/>
+      <text x="65" y="30" text-anchor="middle" class="result-title">PLG</text>
+      <line x1="20" y1="45" x2="110" y2="45" stroke="#93c5fd" />
+      <text x="65" y="70" text-anchor="middle" class="result-desc">自助服务</text>
+      <text x="65" y="90" text-anchor="middle" class="result-desc">病毒传播</text>
+      <text x="65" y="130" text-anchor="middle" class="result-desc" font-style="italic">Zoom, Slack</text>
+  </g>
+
+  <!-- PLS (x=270) -->
+  <g transform="translate(270, 330)">
+      <rect x="0" y="0" width="130" height="150" rx="8" fill="#0f172a" stroke="#334155" stroke-width="2" filter="url(#shadow)"/>
+      <text x="65" y="30" text-anchor="middle" class="result-title">PLS</text>
+      <line x1="20" y1="45" x2="110" y2="45" stroke="#475569" />
+      <text x="65" y="70" text-anchor="middle" class="result-desc">产品为主</text>
+      <text x="65" y="90" text-anchor="middle" class="result-desc">销售辅助</text>
+      <text x="65" y="130" text-anchor="middle" class="result-desc" font-style="italic">HubSpot</text>
+  </g>
+
+  <!-- MLG (x=500) -->
+  <g transform="translate(500, 330)">
+      <rect x="0" y="0" width="130" height="150" rx="8" fill="#10b981" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
+      <text x="65" y="30" text-anchor="middle" class="result-title">MLG</text>
+      <line x1="20" y1="45" x2="110" y2="45" stroke="#6ee7b7" />
+      <text x="65" y="70" text-anchor="middle" class="result-desc">内容驱动</text>
+      <text x="65" y="90" text-anchor="middle" class="result-desc">线索培育</text>
+      <text x="65" y="130" text-anchor="middle" class="result-desc" font-style="italic">Salesforce</text>
+  </g>
+
+  <!-- SLG (x=720) -->
+  <g transform="translate(720, 330)"> 
+      <rect x="0" y="0" width="130" height="150" rx="8" fill="#f97316" stroke="#c2410c" stroke-width="2" filter="url(#shadow)"/>
+      <text x="65" y="30" text-anchor="middle" class="result-title">SLG</text>
+      <line x1="20" y1="45" x2="110" y2="45" stroke="#fdba74" />
+      <text x="65" y="70" text-anchor="middle" class="result-desc">关系驱动</text>
+      <text x="65" y="90" text-anchor="middle" class="result-desc">高触达</text>
+      <text x="65" y="130" text-anchor="middle" class="result-desc" font-style="italic">Palantir</text>
+  </g>
+
+</svg>

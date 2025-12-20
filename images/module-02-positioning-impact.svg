@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .box-title { font-size: 18px; font-weight: bold; fill: #1e293b; }
+      .box-desc { font-size: 14px; fill: #475569; }
+      .arrow-text { font-size: 14px; fill: #94a3b8; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="550" fill="#f8fafc" rx="10" ry="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="text title">定位决定一切</text>
+
+  <!-- Top Box: Market Positioning -->
+  <g transform="translate(150, 80)">
+    <rect x="0" y="0" width="500" height="90" rx="8" ry="8" fill="#ffffff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+    <text x="250" y="35" text-anchor="middle" class="text box-title">市场定位 (Market Positioning)</text>
+    <text x="250" y="65" text-anchor="middle" class="text box-desc">"我们是为 [目标市场] 设计的 [品类] 中的 [差异化] 选择"</text>
+  </g>
+
+  <!-- Arrow Down -->
+  <line x1="400" y1="170" x2="400" y2="220" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="410" y="200" class="text arrow-text">决定了</text>
+
+  <!-- Middle Row: 3 Boxes - Widened spacing -->
+  <g transform="translate(50, 220)">
+    
+    <!-- Box 1 -->
+    <g transform="translate(0, 0)">
+       <rect x="0" y="0" width="200" height="110" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+       <text x="100" y="30" text-anchor="middle" class="text box-title">竞争战场</text>
+       <text x="100" y="60" text-anchor="middle" class="text box-desc">与谁竞争？</text>
+       <text x="100" y="85" text-anchor="middle" class="text box-desc">避开谁？</text>
+    </g>
+
+    <!-- Box 2 -->
+    <g transform="translate(250, 0)">
+       <rect x="0" y="0" width="200" height="110" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+       <text x="100" y="30" text-anchor="middle" class="text box-title">客户期望</text>
+       <text x="100" y="60" text-anchor="middle" class="text box-desc">客户预期</text>
+       <text x="100" y="85" text-anchor="middle" class="text box-desc">什么价值？</text>
+    </g>
+
+    <!-- Box 3 -->
+    <g transform="translate(500, 0)">
+       <rect x="0" y="0" width="200" height="110" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+       <text x="100" y="30" text-anchor="middle" class="text box-title">评估标准</text>
+       <text x="100" y="60" text-anchor="middle" class="text box-desc">客户用什么</text>
+       <text x="100" y="85" text-anchor="middle" class="text box-desc">标准评估？</text>
+    </g>
+
+  </g>
+
+  <!-- Arrow Down to Bottom -->
+  <line x1="100" y1="330" x2="300" y2="380" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+  <line x1="350" y1="330" x2="380" y2="380" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+  <line x1="600" y1="330" x2="450" y2="380" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+
+  <!-- Bottom Box: GTM Execution -->
+  <g transform="translate(250, 380)">
+    <rect x="0" y="0" width="300" height="130" rx="8" ry="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1" filter="url(#shadow)"/>
+    <text x="150" y="30" text-anchor="middle" class="text box-title">GTM 执行</text>
+    <text x="150" y="60" text-anchor="middle" class="text box-desc">• 营销信息  • 销售策略</text>
+    <text x="150" y="85" text-anchor="middle" class="text box-desc">• 定价策略  • 渠道选择</text>
+    <text x="150" y="110" text-anchor="middle" class="text box-desc">• 产品路线图</text>
+  </g>
+
+</svg>

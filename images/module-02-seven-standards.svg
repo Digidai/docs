@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .std-title { font-size: 16px; font-weight: bold; fill: #1e293b; }
+      .std-desc { font-size: 13px; fill: #64748b; }
+      .check-box { fill: #f0fdf4; stroke: #22c55e; stroke-width: 2; rx: 4; }
+      .icon { font-size: 18px; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8fafc" rx="10" ry="10"/>
+  <text x="400" y="40" text-anchor="middle" class="text title">Lincoln Murphy 理想客户 7 大标准</text>
+
+  <!-- Content Grid -->
+  <g transform="translate(50, 80)">
+    
+    <!-- Left Column: The Customer Side -->
+    <text x="150" y="0" text-anchor="middle" class="text std-title" fill="#3b82f6" font-size="18">客户侧 (Feasibility)</text>
+    
+    <!-- 1. Ready -->
+    <g transform="translate(0, 30)">
+       <rect x="0" y="0" width="320" height="80" rx="8" fill="#ffffff" filter="url(#shadow)"/>
+       <rect x="0" y="0" width="6" height="80" rx="2" fill="#3b82f6"/>
+       <text x="25" y="30" class="text std-title">1. Ready (准备充分)</text>
+       <text x="25" y="55" class="text std-desc">客户意识到问题了吗？有紧迫感吗？</text>
+       <text x="280" y="45" class="icon">🚦</text>
+    </g>
+
+    <!-- 2. Willing -->
+    <g transform="translate(0, 120)">
+       <rect x="0" y="0" width="320" height="80" rx="8" fill="#ffffff" filter="url(#shadow)"/>
+       <rect x="0" y="0" width="6" height="80" rx="2" fill="#3b82f6"/>
+       <text x="25" y="30" class="text std-title">2. Willing (意愿强烈)</text>
+       <text x="25" y="55" class="text std-desc">客户愿意采取行动解决问题吗？</text>
+       <text x="280" y="45" class="icon">🤝</text>
+    </g>
+
+    <!-- 3. Able -->
+    <g transform="translate(0, 210)">
+       <rect x="0" y="0" width="320" height="80" rx="8" fill="#ffffff" filter="url(#shadow)"/>
+       <rect x="0" y="0" width="6" height="80" rx="2" fill="#3b82f6"/>
+       <text x="25" y="30" class="text std-title">3. Able (能力具备)</text>
+       <text x="25" y="55" class="text std-desc">有预算吗？有决策权吗？</text>
+       <text x="280" y="45" class="icon">💰</text>
+    </g>
+
+    
+    <!-- Right Column: The Outcome Side -->
+    <text x="500" y="0" text-anchor="middle" class="text std-title" fill="#10b981" font-size="18">结果侧 (Viability)</text>
+
+    <!-- 4. Successful -->
+    <g transform="translate(350, 30)">
+       <rect x="0" y="0" width="320" height="80" rx="8" fill="#ffffff" filter="url(#shadow)"/>
+       <rect x="0" y="0" width="6" height="80" rx="2" fill="#10b981"/>
+       <text x="25" y="30" class="text std-title">4. Success Potential (能成功)</text>
+       <text x="25" y="55" class="text std-desc">我们的产品能真正解决他们的问题吗？</text>
+       <text x="280" y="45" class="icon">✅</text>
+    </g>
+
+    <!-- 5. Acquisition Efficiency -->
+    <g transform="translate(350, 120)">
+       <rect x="0" y="0" width="320" height="80" rx="8" fill="#ffffff" filter="url(#shadow)"/>
+       <rect x="0" y="0" width="6" height="80" rx="2" fill="#10b981"/>
+       <text x="25" y="30" class="text std-title">5. Efficient Acquisition</text>
+       <text x="25" y="55" class="text std-desc">获取这个客户的 CAC 是否合理？</text>
+       <text x="280" y="45" class="icon">📉</text>
+    </g>
+
+    <!-- 6. Expansion Poteital -->
+    <g transform="translate(350, 210)">
+       <rect x="0" y="0" width="320" height="80" rx="8" fill="#ffffff" filter="url(#shadow)"/>
+       <rect x="0" y="0" width="6" height="80" rx="2" fill="#10b981"/>
+       <text x="25" y="30" class="text std-title">6. Expansion Potential</text>
+       <text x="25" y="55" class="text std-desc">Upsell/Cross-sell 空间大吗？</text>
+       <text x="280" y="45" class="icon">📈</text>
+    </g>
+
+    <!-- 7. Advocacy -->
+    <g transform="translate(350, 300)">
+       <rect x="0" y="0" width="320" height="80" rx="8" fill="#ffffff" filter="url(#shadow)"/>
+       <rect x="0" y="0" width="6" height="80" rx="2" fill="#10b981"/>
+       <text x="25" y="30" class="text std-title">7. Advocacy Potential</text>
+       <text x="25" y="55" class="text std-desc">他们会成为我们的推荐者吗？</text>
+       <text x="280" y="45" class="icon">📣</text>
+    </g>
+
+  </g>
+
+  <!-- Bottom Checklist -->
+  <g transform="translate(250, 500)">
+     <rect x="0" y="0" width="300" height="60" rx="30" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+     <text x="150" y="35" text-anchor="middle" class="text std-title" fill="#15803d">结论：只有满足全部 7 点才是真正的 ICP</text>
+  </g>
+
+</svg>

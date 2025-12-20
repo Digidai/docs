@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .label { font-size: 16px; font-weight: bold; fill: #1e293b; }
+      .sublabel { font-size: 13px; fill: #64748b; }
+      .new-cat-label { font-size: 18px; font-weight: bold; fill: #1e40af; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#3b82f6" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="text title">Category Creation 品类创造</text>
+
+  <!-- Left Side: Red Ocean -->
+  <g transform="translate(50, 100)">
+    <!-- Red tinted background -->
+    <rect x="0" y="0" width="380" height="320" rx="12" fill="#fef2f2" stroke="#fca5a5" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="190" y="30" text-anchor="middle" class="text sublabel" fill="#991b1b" font-weight="bold">拥挤的现有市场 (Red Ocean)</text>
+    
+    <!-- Cat A -->
+    <g transform="translate(30, 60)">
+      <rect x="0" y="0" width="150" height="220" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="75" y="40" text-anchor="middle" class="text label">现有品类 A</text>
+      <text x="75" y="65" text-anchor="middle" class="text sublabel">CRM</text>
+      <!-- Crowd Icon -->
+      <circle cx="75" cy="140" r="40" fill="#f1f5f9"/>
+      <text x="75" y="145" text-anchor="middle" font-size="24">👥</text>
+      <text x="75" y="195" text-anchor="middle" class="text sublabel" fill="#ef4444">竞争激烈</text>
+    </g>
+
+    <!-- Cat B -->
+    <g transform="translate(200, 60)">
+      <rect x="0" y="0" width="150" height="220" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="75" y="40" text-anchor="middle" class="text label">现有品类 B</text>
+      <text x="75" y="65" text-anchor="middle" class="text sublabel">营销自动化</text>
+      <!-- Crowd Icon -->
+      <circle cx="75" cy="140" r="40" fill="#f1f5f9"/>
+      <text x="75" y="145" text-anchor="middle" font-size="24">👥</text>
+      <text x="75" y="195" text-anchor="middle" class="text sublabel" fill="#ef4444">价格战</text>
+    </g>
+  </g>
+
+  <!-- Right Side: Blue Ocean (New Category) -->
+  <g transform="translate(480, 80)">
+     <!-- Blue tinted background -->
+     <rect x="0" y="0" width="270" height="360" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+     
+     <text x="135" y="50" text-anchor="middle" class="text new-cat-label">你创造的新品类</text>
+     <text x="135" y="80" text-anchor="middle" class="text label" fill="#3b82f6">"收入运营平台"</text>
+     <text x="135" y="100" text-anchor="middle" class="text sublabel">(Revenue Ops)</text>
+     
+     <!-- Crown Icon -->
+     <circle cx="135" cy="180" r="60" fill="#dbeafe"/>
+     <text x="135" y="190" text-anchor="middle" font-size="50">👑</text>
+
+     <text x="135" y="280" text-anchor="middle" class="text label" fill="#1e40af">独占鳌头</text>
+     <text x="135" y="310" text-anchor="middle" class="text sublabel" fill="#3b82f6" font-weight="bold">你是定义者 &amp; 领导者</text>
+  </g>
+  
+  <!-- Arrow Connector -->
+  <path d="M 430,260 L 480,260" stroke="#3b82f6" stroke-width="3" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+  <text x="455" y="240" text-anchor="middle" class="text sublabel" fill="#3b82f6">跳出</text>
+
+</svg>

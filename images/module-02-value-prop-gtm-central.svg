@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .label { font-size: 16px; font-weight: bold; fill: #1e293b; }
+      .desc { font-size: 13px; fill: #64748b; }
+      .center-label { font-size: 18px; font-weight: bold; fill: #ffffff; }
+      .center-desc { font-size: 14px; fill: #f1f5f9; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="text title">价值主张在 GTM 中的核心地位</text>
+
+  <!-- Top Layer -->
+  <g transform="translate(100, 80)">
+    <!-- ICP -->
+    <rect x="0" y="0" width="200" height="80" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+    <text x="100" y="35" text-anchor="middle" class="text label">ICP</text>
+    <text x="100" y="55" text-anchor="middle" class="text desc">卖给谁？</text>
+
+    <!-- Branch to Positioning -->
+    <g transform="translate(400, 0)">
+       <rect x="0" y="0" width="200" height="80" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+        <text x="100" y="35" text-anchor="middle" class="text label">市场定位</text>
+        <text x="100" y="55" text-anchor="middle" class="text desc">如何被记住？</text>
+    </g>
+  </g>
+
+  <!-- Center Layer: Value Proposition -->
+  <g transform="translate(250, 200)">
+    <rect x="0" y="0" width="300" height="100" rx="8" ry="8" fill="#3b82f6" filter="url(#shadow)"/>
+    <text x="150" y="35" text-anchor="middle" class="text center-label">价值主张</text>
+    <text x="150" y="60" text-anchor="middle" class="text center-desc">解决什么问题？</text>
+    <text x="150" y="80" text-anchor="middle" class="text center-desc">创造什么价值？</text>
+  </g>
+
+  <!-- Connections Top to Center -->
+  <line x1="200" y1="160" x2="300" y2="200" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="600" y1="160" x2="500" y2="200" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Bottom Layer -->
+  <g transform="translate(50, 350)">
+    <!-- Sales -->
+    <rect x="0" y="0" width="200" height="80" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+    <text x="100" y="35" text-anchor="middle" class="text label">销售话术</text>
+    <text x="100" y="55" text-anchor="middle" class="text desc">Demo 设计</text>
+
+    <!-- Marketing -->
+    <g transform="translate(250, 0)">
+       <rect x="0" y="0" width="200" height="80" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+        <text x="100" y="35" text-anchor="middle" class="text label">营销内容</text>
+        <text x="100" y="55" text-anchor="middle" class="text desc">网站文案</text>
+    </g>
+
+    <!-- Product -->
+    <g transform="translate(500, 0)">
+       <rect x="0" y="0" width="200" height="80" rx="8" ry="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+        <text x="100" y="35" text-anchor="middle" class="text label">产品设计</text>
+        <text x="100" y="55" text-anchor="middle" class="text desc">功能优先级</text>
+    </g>
+  </g>
+
+  <!-- Connections Center to Bottom -->
+  <line x1="400" y1="300" x2="150" y2="350" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="400" y1="300" x2="400" y2="350" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="400" y1="300" x2="650" y2="350" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+</svg>

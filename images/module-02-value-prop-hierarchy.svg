@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 600">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .level-title { font-size: 16px; font-weight: bold; fill: #ffffff; }
+      .desc { font-size: 13px; fill: #f1f5f9; }
+      .arrow-text { font-size: 12px; font-weight: bold; fill: #64748b; }
+      .note-title { font-size: 14px; font-weight: bold; fill: #475569; }
+      .note-text { font-size: 12px; fill: #64748b; }
+    </style>
+    
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="3" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+
+    <!-- Gradients for 3D Effect -->
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Arrow Marker -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <rect width="700" height="600" fill="#f8fafc" rx="10" ry="10"/>
+  <text x="350" y="40" text-anchor="middle" class="text title">价值主张层次结构 (Messaging Hierarchy)</text>
+
+  <!-- Pyramid Stack -->
+  <g transform="translate(150, 80)">
+    
+    <!-- Level 1 (Top) -->
+    <!-- L1: Elevator Pitch -->
+    <path d="M 130,0 L 270,0 L 290,80 L 110,80 Z" fill="url(#gradTop)" filter="url(#shadow)"/>
+    <text x="200" y="35" text-anchor="middle" class="text level-title">Level 1: 电梯演讲</text>
+    <text x="200" y="55" text-anchor="middle" class="text desc">Elevator Pitch (30s)</text>
+
+    <!-- Level 2 -->
+    <!-- L2: Positioning Statement -->
+    <path d="M 105,85 L 295,85 L 315,165 L 85,165 Z" fill="#3b82f6" opacity="0.9" filter="url(#shadow)"/>
+    <text x="200" y="115" text-anchor="middle" class="text level-title">Level 2: 定位声明</text>
+    <text x="200" y="135" text-anchor="middle" class="text desc">Positioning Statement</text>
+
+    <!-- Level 3 -->
+    <!-- L3: Value Pillars -->
+    <path d="M 80,170 L 320,170 L 340,250 L 60,250 Z" fill="#3b82f6" opacity="0.8" filter="url(#shadow)"/>
+    <text x="200" y="200" text-anchor="middle" class="text level-title">Level 3: 价值支柱</text>
+    <text x="200" y="220" text-anchor="middle" class="text desc">3-5 Value Pillars</text>
+
+    <!-- Level 4 (Bottom) -->
+    <!-- L4: Proof Points -->
+    <path d="M 55,255 L 345,255 L 385,345 L 15,345 Z" fill="#3b82f6" opacity="0.7" filter="url(#shadow)"/>
+    <text x="200" y="285" text-anchor="middle" class="text level-title">Level 4: 证据库</text>
+    <text x="200" y="305" text-anchor="middle" class="text desc">Proof Points (Data, Cases)</text>
+  </g>
+
+  <!-- Side Annotations (Right) -->
+  <g transform="translate(560, 100)">
+    <!-- Up Arrow (Abstract) -->
+    <line x1="0" y1="330" x2="0" y2="20" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="10" y="180" class="text arrow-text" transform="rotate(90 10 180)">← 提炼 (Abstraction)</text>
+    
+    <text x="20" y="30" class="text arrow-text" font-size="10" fill="#64748b">High Level</text>
+    <text x="20" y="340" class="text arrow-text" font-size="10" fill="#64748b">Detailed</text>
+  </g>
+
+  <!-- Bottom Panel -->
+  <g transform="translate(100, 460)">
+     <rect x="0" y="0" width="500" height="100" rx="8" fill="#eff6ff" stroke="#dbeafe" stroke-width="2"/>
+     
+     <g transform="translate(20, 30)">
+        <text x="0" y="0" class="text note-title">💡 最佳实践 (Best Practice):</text>
+        
+        <g transform="translate(0, 25)">
+          <text x="0" y="0" class="text note-text">1. 构建顺序：从下往上 (Bottom-Up)。先收集 Level 4 素材，再归纳为 Struts，最后提炼 Pitch。</text>
+          <text x="0" y="20" class="text note-text">2. 沟通顺序：从上往下 (Top-Down)。先讲 Level 1 吸引注意，对方感兴趣再展开下层细节。</text>
+        </g>
+     </g>
+  </g>
+
+</svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .step-title { font-size: 16px; font-weight: bold; fill: #1e293b; }
+      .step-num { font-size: 32px; font-weight: bold; fill: #f1f5f9; }
+      .step-desc { font-size: 13px; fill: #64748b; }
+      .icon { font-size: 24px; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="3" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#cbd5e1" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="400" fill="#f8fafc" rx="10" ry="10"/>
+
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" class="text title">品类创造四步框架</text>
+
+  <!-- Steps Flow -->
+  <g transform="translate(40, 100)">
+    
+    <!-- Step 1: Define -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="180" height="220" rx="12" ry="12" fill="#ffffff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+      <rect x="0" y="0" width="180" height="6" rx="12" fill="#3b82f6" clip-path="inset(0 0 50% 0)"/>
+      
+      <text x="160" y="40" text-anchor="end" class="text step-num" fill="#dbeafe">01</text>
+      
+      <!-- Icon -->
+      <circle cx="90" cy="70" r="30" fill="#eff6ff"/>
+      <text x="90" y="80" text-anchor="middle" class="icon">📐</text>
+      
+      <text x="90" y="120" text-anchor="middle" class="text step-title">定义品类</text>
+      <text x="90" y="140" text-anchor="middle" class="text step-desc" font-weight="bold" fill="#2563eb">Define</text>
+      
+      <line x1="40" y1="155" x2="140" y2="155" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="90" y="180" text-anchor="middle" class="text step-desc">命名 &amp; 边界</text>
+    </g>
+
+    <!-- Connector -->
+    <line x1="180" y1="110" x2="210" y2="110" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 2: Educate -->
+    <g transform="translate(210, 0)">
+      <rect x="0" y="0" width="180" height="220" rx="12" ry="12" fill="#ffffff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+      <rect x="0" y="0" width="180" height="6" rx="12" fill="#2563eb" clip-path="inset(0 0 50% 0)"/>
+      
+      <text x="160" y="40" text-anchor="end" class="text step-num" fill="#bfdbfe">02</text>
+      
+      <circle cx="90" cy="70" r="30" fill="#eff6ff"/>
+      <text x="90" y="80" text-anchor="middle" class="icon">📢</text>
+      
+      <text x="90" y="120" text-anchor="middle" class="text step-title">教育市场</text>
+      <text x="90" y="140" text-anchor="middle" class="text step-desc" font-weight="bold" fill="#1d4ed8">Educate</text>
+      
+      <line x1="40" y1="155" x2="140" y2="155" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="90" y="180" text-anchor="middle" class="text step-desc">内容 &amp; 认知</text>
+    </g>
+
+    <!-- Connector -->
+    <line x1="390" y1="110" x2="420" y2="110" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 3: Community -->
+    <g transform="translate(420, 0)">
+      <rect x="0" y="0" width="180" height="220" rx="12" ry="12" fill="#ffffff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+      <rect x="0" y="0" width="180" height="6" rx="12" fill="#1d4ed8" clip-path="inset(0 0 50% 0)"/>
+      
+      <text x="160" y="40" text-anchor="end" class="text step-num" fill="#93c5fd">03</text>
+      
+      <circle cx="90" cy="70" r="30" fill="#eff6ff"/>
+      <text x="90" y="80" text-anchor="middle" class="icon">🤝</text>
+      
+      <text x="90" y="120" text-anchor="middle" class="text step-title">建立社区</text>
+      <text x="90" y="140" text-anchor="middle" class="text step-desc" font-weight="bold" fill="#1e40af">Community</text>
+      
+      <line x1="40" y1="155" x2="140" y2="155" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="90" y="180" text-anchor="middle" class="text step-desc">生态 &amp; 共识</text>
+    </g>
+
+    <!-- Connector -->
+    <line x1="600" y1="110" x2="630" y2="110" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 4: Dominate -->
+    <g transform="translate(630, 0)">
+      <rect x="0" y="0" width="180" height="220" rx="12" ry="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+      <rect x="0" y="0" width="180" height="6" rx="12" fill="#1e3a8a" clip-path="inset(0 0 50% 0)"/>
+      
+      <text x="160" y="40" text-anchor="end" class="text step-num" fill="#60a5fa">04</text>
+      
+      <circle cx="90" cy="70" r="30" fill="#dbeafe"/>
+      <text x="90" y="80" text-anchor="middle" class="icon">👑</text>
+      
+      <text x="90" y="120" text-anchor="middle" class="text step-title">主导品类</text>
+      <text x="90" y="140" text-anchor="middle" class="text step-desc" font-weight="bold" fill="#1e3a8a">Dominate</text>
+      
+      <line x1="40" y1="155" x2="140" y2="155" stroke="#bfdbfe" stroke-width="1"/>
+      <text x="90" y="180" text-anchor="middle" class="text step-desc">标准 &amp; 领导</text>
+    </g>
+
+  </g>
+
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .label { font-size: 14px; fill: #ffffff; font-weight: bold; }
+      .desc { font-size: 12px; fill: #475569; }
+      .node-text { font-size: 14px; font-weight: bold; fill: #5b21b6; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8b5cf6" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="text title">CLG 社区飞轮 (Community Flywheel)</text>
+
+  <!-- Central Hub: Community Size -->
+  <g transform="translate(300, 80)">
+    <rect x="0" y="0" width="200" height="60" rx="30" ry="30" fill="#ddd6fe" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+    <text x="100" y="35" text-anchor="middle" class="text node-text">社区成员增长</text>
+  </g>
+
+  <!-- Three Pillars below -->
+  <g transform="translate(80, 200)">
+    <!-- UGC Content -->
+    <rect x="0" y="0" width="160" height="120" rx="8" ry="8" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="2" filter="url(#shadow)"/>
+    <text x="80" y="30" text-anchor="middle" class="text node-text">UGC 内容</text>
+    <text x="80" y="60" text-anchor="middle" class="text desc">模板/插件</text>
+    <text x="80" y="80" text-anchor="middle" class="text desc">资源/教程</text>
+  </g>
+
+  <g transform="translate(320, 200)">
+    <!-- Peer Support -->
+    <rect x="0" y="0" width="160" height="120" rx="8" ry="8" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="2" filter="url(#shadow)"/>
+    <text x="80" y="30" text-anchor="middle" class="text node-text">互帮互助</text>
+    <text x="80" y="60" text-anchor="middle" class="text desc">问答/论坛</text>
+    <text x="80" y="80" text-anchor="middle" class="text desc">最佳实践</text>
+  </g>
+
+  <g transform="translate(560, 200)">
+    <!-- Word of Mouth -->
+    <rect x="0" y="0" width="160" height="120" rx="8" ry="8" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="2" filter="url(#shadow)"/>
+    <text x="80" y="30" text-anchor="middle" class="text node-text">口碑传播</text>
+    <text x="80" y="60" text-anchor="middle" class="text desc">推荐/安利</text>
+    <text x="80" y="80" text-anchor="middle" class="text desc">社交分享</text>
+  </g>
+
+  <!-- Bottom: Value Amplification -->
+  <g transform="translate(300, 380)">
+    <rect x="0" y="0" width="200" height="60" rx="30" ry="30" fill="#ddd6fe" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+    <text x="100" y="35" text-anchor="middle" class="text node-text">产品价值放大</text>
+  </g>
+
+  <!-- Arrows to form the loop -->
+  <!-- From Size to Pillars -->
+  <path d="M 400,140 L 400,180" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+  <path d="M 400,180 L 160,180 L 160,200" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow-purple)" fill="none"/>
+  <path d="M 400,180 L 400,200" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow-purple)" fill="none"/>
+  <path d="M 400,180 L 640,180 L 640,200" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow-purple)" fill="none"/>
+
+  <!-- From Pillars to Bottom -->
+  <path d="M 160,320 L 160,350 L 350,350 L 350,380" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow-purple)" fill="none"/>
+  <path d="M 400,320 L 400,380" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow-purple)" fill="none"/>
+  <path d="M 640,320 L 640,350 L 450,350 L 450,380" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow-purple)" fill="none"/>
+
+  <!-- From Bottom back to Top (Loop) -->
+  <path d="M 300,410 L 50,410 L 50,110 L 300,110" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow-purple)" fill="none" stroke-dasharray="8,8" opacity="0.5"/>
+
+</svg>

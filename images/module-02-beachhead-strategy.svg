@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .label { font-size: 14px; fill: #475569; }
+      .header { font-size: 16px; font-weight: bold; fill: #ffffff; }
+      .segment-text { font-size: 14px; fill: #334155; font-weight: bold; }
+      .strategy-title { font-size: 14px; font-weight: bold; fill: #9a3412; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L0,12 L12,6 z" fill="#f97316" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="550" fill="#f8fafc" rx="10" ry="10"/>
+
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" class="text title">滩头阵地战略 (Beachhead Strategy)</text>
+  
+  <!-- Left Panel: The Invasion Map (Main Visual) -->
+  <g transform="translate(50, 70)">
+      
+      <!-- 1. Mainstream Market (The Continent) -->
+      <rect x="0" y="140" width="550" height="280" rx="15" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+      <text x="275" y="170" text-anchor="middle" class="text label" font-weight="bold" font-size="16" fill="#64748b">主流市场 (Mainstream Market)</text>
+      
+      <!-- Target Segments Grid -->
+      <g transform="translate(50, 200)">
+          <!-- Row 1 -->
+          <rect x="0" y="0" width="100" height="90" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+          <text x="50" y="50" text-anchor="middle" class="text label" fill="#cbd5e1">Seg A</text>
+          
+          <rect x="110" y="0" width="100" height="90" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+          <text x="160" y="50" text-anchor="middle" class="text label" fill="#cbd5e1">Seg B</text>
+
+          <!-- Expansion Path 1 -->
+          <path d="M 270,90 L 320,50" stroke="#f97316" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+          <rect x="330" y="0" width="100" height="90" rx="4" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+          <text x="380" y="50" text-anchor="middle" class="text label" fill="#f97316">后续扩张</text>
+          
+          <!-- Row 2 -->
+          <rect x="0" y="100" width="100" height="90" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+          <text x="50" y="150" text-anchor="middle" class="text label" fill="#cbd5e1">Seg D</text>
+          
+          <!-- BEACHHEAD (The Target) -->
+          <g transform="translate(110, 100)">
+             <rect x="0" y="0" width="100" height="90" rx="8" fill="#f97316" stroke="#c2410c" stroke-width="3" filter="url(#shadow)"/>
+             <text x="50" y="40" text-anchor="middle" class="text header">滩头阵地</text>
+             <text x="50" y="60" text-anchor="middle" class="text header" font-size="12">Beachhead</text>
+             <!-- Target Icon -->
+             <circle cx="50" cy="75" r="5" fill="#ffffff" opacity="0.8"/>
+             <circle cx="50" cy="75" r="8" stroke="#ffffff" stroke-width="1" fill="none" opacity="0.8"/>
+          </g>
+
+          <!-- Expansion Path 2 -->
+          <path d="M 220,145 L 320,145" stroke="#f97316" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+          <rect x="330" y="100" width="100" height="90" rx="4" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+          <text x="380" y="150" text-anchor="middle" class="text label" fill="#f97316">后续扩张</text>
+      </g>
+      
+      <!-- 2. The Chasm (The Ocean) -->
+      <path d="M 0,100 L 550,100 L 540,130 L 10,130 Z" fill="#1e293b" opacity="0.8"/>
+      <text x="275" y="122" text-anchor="middle" class="text header" font-style="italic" font-size="14">THE CHASM (鸿沟)</text>
+      
+      <!-- 3. Early Market (The Base) -->
+      <g transform="translate(160, 0)">
+          <rect x="0" y="0" width="220" height="80" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+           <text x="110" y="30" text-anchor="middle" class="text label" font-weight="bold" fill="#1e40af">早期市场</text>
+           <text x="110" y="50" text-anchor="middle" class="text label" font-size="12" fill="#3b82f6">(Early Market)</text>
+      </g>
+      
+      <!-- Invasion Arrow -->
+      <!-- Curving over the chasm into the beachhead -->
+      <path d="M 270,80 Q 270,140 210,290" stroke="#f97316" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+      <circle cx="270" cy="80" r="4" fill="#f97316"/>
+  </g>
+
+  <!-- Right Panel: Strategic Notes -->
+  <g transform="translate(630, 70)">
+      
+      <g transform="translate(0, 50)">
+          <rect x="0" y="0" width="220" height="100" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+          <text x="20" y="30" class="text strategy-title">1. 选定滩头 (Select)</text>
+          <text x="20" y="55" class="text label" font-size="12">• 痛点够痛</text>
+          <text x="20" y="75" class="text label" font-size="12">• 预算充足</text>
+      </g>
+
+      <g transform="translate(0, 170)">
+          <rect x="0" y="0" width="220" height="100" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+          <text x="20" y="30" class="text strategy-title">2. 全力攻占 (Capture)</text>
+          <text x="20" y="55" class="text label" font-size="12">• 集中资源</text>
+          <text x="20" y="75" class="text label" font-size="12">• 建立绝对优势 (>50%)</text>
+      </g>
+
+      <g transform="translate(0, 290)">
+          <rect x="0" y="0" width="220" height="100" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+          <text x="20" y="30" class="text strategy-title">3. 扩张 (Expand)</text>
+          <text x="20" y="55" class="text label" font-size="12">• 像保龄球一样击倒</text>
+          <text x="20" y="75" class="text label" font-size="12">• 进入相邻市场</text>
+      </g>
+
+  </g>
+
+</svg>

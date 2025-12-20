@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; }
+      .title { font-size: 26px; font-weight: bold; fill: #1e293b; }
+      .intro { font-size: 16px; fill: #64748b; font-style: italic; }
+      .key { font-size: 20px; font-weight: bold; fill: #3b82f6; font-family: 'Courier New', monospace; }
+      .value { font-size: 18px; fill: #1e293b; font-weight: bold; }
+      .desc { font-size: 12px; fill: #94a3b8; }
+      .bracket { fill: none; stroke: #cbd5e1; stroke-width: 2; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="550" fill="#f8fafc" rx="10" ry="10"/>
+  <text x="450" y="50" text-anchor="middle" class="text title">定位陈述公式 (The Positioning Statement)</text>
+  <text x="450" y="80" text-anchor="middle" class="text intro">Based on April Dunford &amp; Geoffrey Moore</text>
+
+  <!-- The Document Paper -->
+  <rect x="100" y="110" width="700" height="400" rx="5" fill="#ffffff" filter="url(#shadow)"/>
+  
+  <!-- Lines -->
+  <g transform="translate(150, 160)">
+      
+      <!-- Line 1: For -->
+      <text x="0" y="0" class="text key">FOR</text>
+      <line x1="60" y1="5" x2="350" y2="5" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="70" y="0" class="text value">[目标客户 Target Customer]</text>
+      <text x="400" y="0" class="text desc">← 谁最需要你？</text>
+
+      <!-- Line 2: Who -->
+      <g transform="translate(0, 60)">
+          <text x="0" y="0" class="text key">WHO</text>
+          <line x1="60" y1="5" x2="350" y2="5" stroke="#e2e8f0" stroke-width="2"/>
+          <text x="70" y="0" class="text value">[有此核心痛点/需求]</text>
+          <text x="400" y="0" class="text desc">← 他们面临什么问题？</text>
+      </g>
+
+      <!-- Line 3: Our Product Is -->
+      <g transform="translate(0, 120)">
+          <text x="0" y="0" class="text key">IS A</text>
+          <line x1="60" y1="5" x2="350" y2="5" stroke="#e2e8f0" stroke-width="2"/>
+          <text x="70" y="0" class="text value">[市场类别 Market Category]</text>
+          <text x="400" y="0" class="text desc">← 你的参照系是什么？</text>
+      </g>
+
+      <!-- Line 4: That -->
+      <g transform="translate(0, 180)">
+          <text x="0" y="0" class="text key">THAT</text>
+          <line x1="60" y1="5" x2="350" y2="5" stroke="#e2e8f0" stroke-width="2"/>
+          <text x="70" y="0" class="text value">[核心差异化价值]</text>
+          <text x="400" y="0" class="text desc">← 你解决了什么难题？</text>
+      </g>
+
+      <!-- Line 5: Unlike -->
+      <g transform="translate(0, 240)">
+          <text x="0" y="0" class="text key">UNLIKE</text>
+          <line x1="80" y1="5" x2="350" y2="5" stroke="#e2e8f0" stroke-width="2"/>
+          <text x="90" y="0" class="text value">[主要竞争替代品]</text>
+          <text x="400" y="0" class="text desc">← 客户现在的替代方案？</text>
+      </g>
+
+      <!-- Line 6: We have -->
+      <g transform="translate(0, 300)">
+          <text x="0" y="0" class="text key">WE</text>
+          <line x1="60" y1="5" x2="350" y2="5" stroke="#e2e8f0" stroke-width="2"/>
+          <text x="70" y="0" class="text value">[关键证明/独特性]</text>
+          <text x="400" y="0" class="text desc">← 为什么是你？</text>
+      </g>
+
+  </g>
+
+</svg>
