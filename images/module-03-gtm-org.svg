@@ -1,0 +1,107 @@
+<svg width="850" height="650" viewBox="0 0 850 650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .node-text { font-family: sans-serif; font-size: 15px; font-weight: bold; fill: #ffffff; }
+      .sub-node-text { font-family: sans-serif; font-size: 12px; fill: #1e293b; font-weight: 500; }
+      .role-label { font-family: sans-serif; font-size: 10px; fill: #ffffff; opacity: 0.9; }
+      .connector { stroke: #94A3B8; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="425" y="45" text-anchor="middle" class="title">典型 GTM 组织协作架构 (Salesforce 模式)</text>
+
+  <!-- Level 1: CEO -->
+  <g transform="translate(350, 80)">
+    <rect x="0" y="0" width="150" height="55" rx="27.5" fill="#1e293b" filter="url(#shadow)"/>
+    <text x="75" y="35" text-anchor="middle" class="node-text">CEO / 总裁</text>
+  </g>
+
+  <!-- Level 2 Connector -->
+  <path d="M 425,135 V 165" class="connector"/>
+  <path d="M 125,165 H 725" class="connector"/>
+  <path d="M 125,165 V 195" class="connector"/>
+  <path d="M 425,165 V 195" class="connector"/>
+  <path d="M 725,165 V 195" class="connector"/>
+
+  <!-- Level 2: CMO, RevOps, CRO -->
+  <g transform="translate(50, 195)">
+    <!-- CMO -->
+    <g>
+      <rect x="0" y="0" width="150" height="65" rx="12" fill="#3B82F6" filter="url(#shadow)"/>
+      <text x="75" y="35" text-anchor="middle" class="node-text">CMO</text>
+      <text x="75" y="52" text-anchor="middle" class="role-label">市场部负责人</text>
+    </g>
+    
+    <!-- RevOps / President -->
+    <g transform="translate(300, 0)">
+      <rect x="0" y="0" width="150" height="65" rx="12" fill="#8B5CF6" filter="url(#shadow)"/>
+      <text x="75" y="35" text-anchor="middle" class="node-text">RevOps</text>
+      <text x="75" y="52" text-anchor="middle" class="role-label">中央运营中台</text>
+    </g>
+
+    <!-- CRO -->
+    <g transform="translate(600, 0)">
+      <rect x="0" y="0" width="150" height="65" rx="12" fill="#F59E0B" filter="url(#shadow)"/>
+      <text x="75" y="35" text-anchor="middle" class="node-text">CRO</text>
+      <text x="75" y="52" text-anchor="middle" class="role-label">收入/销售负责人</text>
+    </g>
+  </g>
+
+  <!-- Level 3 Boxes (Groups) -->
+  <g transform="translate(50, 310)">
+    <!-- CMO Sub-teams -->
+    <g>
+      <rect x="0" y="0" width="150" height="200" rx="12" fill="#EFF6FF" stroke="#3B82F6" stroke-dasharray="4,2"/>
+      <text x="75" y="25" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1D4ED8">市场战队 (Marketing)</text>
+      <g transform="translate(20, 55)">
+        <text x="0" y="0" class="sub-node-text">• 品牌与公共关系</text>
+        <text x="0" y="30" class="sub-node-text">• 需求挖掘 (Demand)</text>
+        <text x="0" y="60" class="sub-node-text">• 产品市场 (PMM)</text>
+        <text x="0" y="90" class="sub-node-text">• 活动与内容策划</text>
+      </g>
+    </g>
+
+    <!-- RevOps Sub-teams -->
+    <g transform="translate(300, 0)">
+      <rect x="0" y="0" width="150" height="200" rx="12" fill="#F5F3FF" stroke="#8B5CF6" stroke-dasharray="4,2"/>
+      <text x="75" y="25" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#6D28D9">中央中台 (RevOps)</text>
+      <g transform="translate(20, 55)">
+        <text x="0" y="0" class="sub-node-text" font-weight="bold">• SDR Team (核心)</text>
+        <text x="0" y="30" class="sub-node-text">• 数据归因与分析</text>
+        <text x="0" y="60" class="sub-node-text">• GTM 工具栈管理</text>
+        <text x="0" y="90" class="sub-node-text">• 线索生命周期定义</text>
+      </g>
+      <!-- Horizontal connection indicator to Sales -->
+      <path d="M 150,55 H 250" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="2,2"/>
+    </g>
+
+    <!-- CRO Sub-teams -->
+    <g transform="translate(600, 0)">
+      <rect x="0" y="0" width="150" height="200" rx="12" fill="#FFFBEB" stroke="#F59E0B" stroke-dasharray="4,2"/>
+      <text x="75" y="25" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#B45309">销售战队 (Sales)</text>
+      <g transform="translate(20, 55)">
+        <text x="0" y="0" class="sub-node-text">• 区域/行业销售 (AE)</text>
+        <text x="0" y="30" class="sub-node-text">• 合作伙伴/渠道</text>
+        <text x="0" y="60" class="sub-node-text">• 售前技术支持</text>
+        <text x="0" y="90" class="sub-node-text">• 客户成功 (CSM)</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Cross-team Collaboration Highlight -->
+  <g transform="translate(125, 540)">
+    <rect x="0" y="0" width="600" height="70" rx="12" fill="#F8FAFC" stroke="#E2E8F0" filter="url(#shadow)"/>
+    <text x="300" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">💡 Salesforce 模式的核心竞争力：</text>
+    <text x="300" y="52" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#475569">
+      SDR 向中立的 RevOps 汇报，避免了营销只顾“数量”而销售由于“偏见”不跟进的矛盾
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg width="850" height="450" viewBox="0 0 850 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #333; }
+      .header { font-family: sans-serif; font-size: 18px; font-weight: bold; }
+      .item-text { font-family: sans-serif; font-size: 14px; fill: #475569; }
+      .status-box { fill: #ffffff; stroke-width: 1.5; filter: url(#shadow); }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="425" y="45" text-anchor="middle" class="title">服务级别协议 (SLA) 的核心价值</text>
+
+  <!-- Left: No SLA -->
+  <g transform="translate(60, 100)">
+    <rect x="0" y="0" width="350" height="300" rx="12" fill="#FFF1F2" stroke="#FDA4AF" class="status-box"/>
+    <text x="175" y="40" text-anchor="middle" class="header" fill="#BE123C">没有 SLA：凭感觉协作</text>
+    
+    <g transform="translate(30, 80)">
+      <text x="0" y="0" class="item-text">❌ 营销不知道销售需要多少线索</text>
+      <text x="0" y="40" class="item-text">❌ 销售不知道线索何时能送达</text>
+      <text x="0" y="80" class="item-text">❌ 出了问题互相指责，推卸责任</text>
+      <text x="0" y="120" class="item-text">❌ 无法客观评估获客活动的质量</text>
+      <text x="0" y="160" class="item-text">❌ 团队目标脱节，资源双重浪费</text>
+    </g>
+  </g>
+
+  <!-- Right: With SLA -->
+  <g transform="translate(440, 100)">
+    <rect x="0" y="0" width="350" height="300" rx="12" fill="#F0FDF4" stroke="#22C55E" class="status-box"/>
+    <text x="175" y="40" text-anchor="middle" class="header" fill="#15803D">有 SLA：凭契约驱动</text>
+    
+    <g transform="translate(30, 80)">
+      <text x="0" y="0" class="item-text">✅ 明确的数量和质量承诺</text>
+      <text x="0" y="40" class="item-text">✅ 线索跟进时效有硬性约束</text>
+      <text x="0" y="80" class="item-text">✅ 问题归因清晰，数据说话</text>
+      <text x="0" y="120" class="item-text">✅ 获客成本 (CAC) 可持续优化</text>
+      <text x="0" y="160" class="item-text">✅ 建立基于数据的跨团队信任</text>
+    </g>
+  </g>
+</svg>

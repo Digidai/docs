@@ -1,0 +1,61 @@
+<svg width="850" height="500" viewBox="0 0 850 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748B"/>
+    </marker>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #333; }
+      .step-title { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #1e293b; }
+      .role-label { font-family: sans-serif; font-size: 12px; font-weight: bold; }
+      .item-text { font-family: sans-serif; font-size: 13px; fill: #475569; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="425" y="45" text-anchor="middle" class="title">ABM 大客户协同作战模式</text>
+
+  <!-- Step 1: Selection -->
+  <g transform="translate(175, 80)">
+    <rect x="0" y="0" width="500" height="110" rx="12" fill="#F0F9FF" stroke="#0EA5E9" filter="url(#shadow)"/>
+    <text x="20" y="30" class="step-title">1. 目标客户选择 (Selection)</text>
+    <g transform="translate(20, 55)">
+      <text x="0" y="0" class="item-text">• 销售沉淀：战略关系图谱、关键 KP 洞察</text>
+      <text x="0" y="25" class="item-text">• 营销赋能：商机意图数据、全网画像分析</text>
+      <text x="350" y="15" class="role-label" fill="#0369A1">共同商定 Top List</text>
+    </g>
+  </g>
+
+  <!-- Connector 1 -->
+  <line x1="425" y1="190" x2="425" y2="215" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 2: Engagement -->
+  <g transform="translate(175, 220)">
+    <rect x="0" y="0" width="500" height="110" rx="12" fill="#FFF7ED" stroke="#F97316" filter="url(#shadow)"/>
+    <text x="20" y="30" class="step-title">2. 个性化全方位触达 (Engagement)</text>
+    <g transform="translate(20, 55)">
+      <text x="0" y="0" class="item-text">• 营销：1对1 定制内容、精准广告、高管沙龙</text>
+      <text x="0" y="25" class="item-text">• 销售：基于深度洞察的个人化外呼与拜访</text>
+      <text x="350" y="15" class="role-label" fill="#C2410C">协作：每周同步会</text>
+    </g>
+  </g>
+
+  <!-- Connector 2 -->
+  <line x1="425" y1="330" x2="425" y2="355" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 3: Closing -->
+  <g transform="translate(175, 360)">
+    <rect x="0" y="0" width="500" height="110" rx="12" fill="#F0FDF4" stroke="#22C55E" filter="url(#shadow)"/>
+    <text x="20" y="30" class="step-title">3. 商务推进与赢单 (Advancement)</text>
+    <g transform="translate(20, 55)">
+      <text x="0" y="0" class="item-text">• 销售：关系推进、商务谈判、定制价值方案</text>
+      <text x="0" y="25" class="item-text">• 营销：提供深度竞品分析、背书物料与行政支持</text>
+      <text x="350" y="15" class="role-label" fill="#15803D">赢单：销售主导</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg width="850" height="500" viewBox="0 0 850 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748B"/>
+    </marker>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #333; }
+      .node-title { font-family: sans-serif; font-size: 18px; font-weight: bold; fill: #ffffff; }
+      .feedback-text { font-family: sans-serif; font-size: 13px; fill: #475569; font-weight: bold; }
+      .loop-node { filter: url(#shadow); rx: 12; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="425" y="45" text-anchor="middle" class="title">从线索到成交：闭环反馈机制</text>
+
+  <!-- Marketing: Gen Leads -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="200" height="100" class="loop-node" fill="#3B82F6" stroke="#2563EB"/>
+    <text x="100" y="45" text-anchor="middle" class="node-title">营销 (Marketing)</text>
+    <text x="100" y="70" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#ffffff" opacity="0.9">漏斗获客与评分</text>
+  </g>
+
+  <!-- Flow to Sales -->
+  <path d="M 310,150 Q 425,150 540,150" stroke="#94A3B8" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="425" y="135" text-anchor="middle" class="feedback-text" fill="#3B82F6">交付 MQL 线索</text>
+
+  <!-- Sales: Follow up -->
+  <g transform="translate(550, 100)">
+    <rect x="0" y="0" width="200" height="100" class="loop-node" fill="#F59E0B" stroke="#D97706"/>
+    <text x="100" y="45" text-anchor="middle" class="node-title">销售 (Sales)</text>
+    <text x="100" y="70" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#ffffff" opacity="0.9">跟进、验证与成交</text>
+  </g>
+
+  <!-- Feedback Path (Bottom Arch) -->
+  <path d="M 650,210 Q 650,380 425,380 Q 200,380 200,210" stroke="#10B981" stroke-width="3" stroke-dasharray="8,4" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Feedback Content Card -->
+  <g transform="translate(325, 300)">
+    <rect x="0" y="0" width="200" height="120" rx="12" fill="#F0FDF4" stroke="#4CAF50" filter="url(#shadow)"/>
+    <text x="100" y="30" text-anchor="middle" class="feedback-text" fill="#15803D">结构化质量反馈</text>
+    <g transform="translate(20, 55)">
+      <text x="0" y="0" class="item-text" font-size="12">• 真实现场赢/单原因</text>
+      <text x="0" y="20" class="item-text" font-size="12">• 用户画像偏差反馈</text>
+      <text x="0" y="40" class="item-text" font-size="12">• 获客物料实效反馈</text>
+    </g>
+  </g>
+
+  <!-- Loop Completion Summary -->
+  <rect x="250" y="450" width="350" height="40" rx="20" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="425" y="475" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#64748B">
+    数据透明：反馈循环让营销每一分预算都有结果
+  </text>
+</svg>

@@ -1,0 +1,71 @@
+<svg width="850" height="700" viewBox="0 0 850 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #333; }
+      .section-title { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #1e3a8a; }
+      .content-text { font-family: sans-serif; font-size: 13px; fill: #334155; }
+      .form-bg { fill: #ffffff; stroke: #e2e8f0; stroke-width: 1; filter: url(#shadow); rx: 8; }
+      .header-bg { fill: #f8fafc; stroke-bottom: 1px solid #e2e8f0; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f1f5f9"/>
+
+  <!-- Paper Form -->
+  <g transform="translate(100, 40)">
+    <rect x="0" y="0" width="650" height="620" class="form-bg"/>
+    
+    <!-- Header -->
+    <path d="M 0,0 H 650 V 60 H 0 Z" fill="#f8fafc" rx="8"/>
+    <text x="325" y="38" text-anchor="middle" class="title" font-size="20">销售与营销服务级别协议 (SLA) 模板</text>
+    <line x1="0" y1="60" x2="650" y2="60" stroke="#e2e8f0" stroke-width="1"/>
+
+    <!-- Section 1: Joint Goals -->
+    <g transform="translate(40, 90)">
+      <text x="0" y="0" class="section-title">第一部分：共同目标 (Joint Goals)</text>
+      <line x1="0" y1="10" x2="150" y2="10" stroke="#3b82f6" stroke-width="2"/>
+      <g transform="translate(10, 40)">
+        <text x="0" y="0" class="content-text">• 季度总收入目标：$__________</text>
+        <text x="0" y="25" class="content-text">• 所需 Pipeline 价值：$__________ (按赢率推算)</text>
+        <text x="0" y="50" class="content-text">• 每月所需 MQL 数量：__________ 个</text>
+      </g>
+    </g>
+
+    <!-- Section 2: Marketing Commitment -->
+    <g transform="translate(40, 210)">
+      <text x="0" y="0" class="section-title">第二部分：营销承诺 (Marketing → Sales)</text>
+      <line x1="0" y1="10" x2="150" y2="10" stroke="#3b82f6" stroke-width="2"/>
+      <g transform="translate(10, 40)">
+        <text x="0" y="0" class="content-text">• 1. 交付数量承诺：每月交付 _____ 个合格 MQL</text>
+        <text x="0" y="25" class="content-text">• 2. 质量标准：符合 ICP (规模 > ____ / 行业属于 ____)</text>
+        <text x="0" y="50" class="content-text">• 3. 信息完整：关键字段 (姓名/电话/需求) 填充率 > 95%</text>
+        <text x="0" y="75" class="content-text">• 4. 时效性：线索产生后 _____ 小时内自动进入 CRM</text>
+      </g>
+    </g>
+
+    <!-- Section 3: Sales Commitment -->
+    <g transform="translate(40, 360)">
+      <text x="0" y="0" class="section-title">第三部分：销售承诺 (Sales → Marketing)</text>
+      <line x1="0" y1="10" x2="150" y2="10" stroke="#3b82f6" stroke-width="2"/>
+      <g transform="translate(10, 40)">
+        <text x="0" y="0" class="content-text">• 1. 跟进时效：收到 MQL 后 _____ 小时内完成首次触达</text>
+        <text x="0" y="25" class="content-text">• 2. 跟进频率：每个 MQL 至少完成 _____ 次多渠道跟进</text>
+        <text x="0" y="50" class="content-text">• 3. 数据更新：每周五前更新 CRM 关键流程状态</text>
+        <text x="0" y="75" class="content-text">• 4. 质量反馈：每月底提供线索转化的详细反馈报告</text>
+      </g>
+    </g>
+
+    <!-- Footer / Signatures -->
+    <g transform="translate(40, 520)">
+      <line x1="0" y1="0" x2="570" y2="0" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,2"/>
+      <text x="0" y="30" class="content-text" font-weight="bold">营销负责人签字：____________________</text>
+      <text x="350" y="30" class="content-text" font-weight="bold">日期：__________</text>
+      <text x="0" y="70" class="content-text" font-weight="bold">销售负责人签字：____________________</text>
+      <text x="350" y="70" class="content-text" font-weight="bold">日期：__________</text>
+    </g>
+  </g>
+</svg>

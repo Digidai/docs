@@ -1,0 +1,134 @@
+<svg width="850" height="750" viewBox="0 0 850 750" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .stage-name { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #ffffff; }
+      .info-title { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #1e293b; }
+      .info-text { font-family: sans-serif; font-size: 13px; fill: #475569; }
+      .tag-mktg { fill: #3B82F6; }
+      .tag-sales { fill: #F59E0B; }
+      .tag-text { font-family: sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="425" y="45" text-anchor="middle" class="title">B2B 销售与营销统一漏斗定义 (Refined)</text>
+
+  <!-- Funnel Structure -->
+  <g transform="translate(80, 90)">
+    
+    <!-- Stage 1: Visitor -->
+    <g>
+      <path d="M 0,0 H 260 L 245,65 H 15 Z" fill="#94A3B8" opacity="0.15"/>
+      <path d="M 0,0 L 15,65" stroke="#94A3B8" stroke-width="1" fill="none"/>
+      <path d="M 260,0 L 245,65" stroke="#94A3B8" stroke-width="1" fill="none"/>
+      <text x="130" y="38" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#64748B">1. Visitor (访客)</text>
+      
+      <g transform="translate(290, 0)">
+        <rect x="0" y="0" width="350" height="65" rx="8" fill="#F8FAFC" stroke="#CBD5E1" filter="url(#shadow)"/>
+        <text x="15" y="25" class="info-title">定义：访问企业官网、自媒体账号的受众</text>
+        <text x="15" y="45" class="info-text">关键指标：UV / PV / 留存率</text>
+        <rect x="270" y="10" width="60" height="18" rx="9" class="tag-mktg" opacity="0.8"/>
+        <text x="300" y="23" text-anchor="middle" class="tag-text">责任：营销</text>
+      </g>
+    </g>
+
+    <!-- Stage 2: Lead -->
+    <g transform="translate(0, 75)">
+      <path d="M 15,0 H 245 L 230,65 H 30 Z" fill="#3B82F6" opacity="0.2"/>
+      <path d="M 15,0 L 30,65" stroke="#3B82F6" stroke-width="1" fill="none"/>
+      <path d="M 245,0 L 230,65" stroke="#3B82F6" stroke-width="1" fill="none"/>
+      <text x="130" y="38" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1D4ED8">2. Lead (原始线索)</text>
+      
+      <g transform="translate(290, 0)">
+        <rect x="0" y="0" width="350" height="65" rx="8" fill="#F0F7FF" stroke="#93C5FD" filter="url(#shadow)"/>
+        <text x="15" y="25" class="info-title">定义：留下联系方式的潜在意向客户</text>
+        <text x="15" y="45" class="info-text">动作：表单留资、Demo 预约、活动报名</text>
+        <rect x="270" y="10" width="60" height="18" rx="9" class="tag-mktg"/>
+        <text x="300" y="23" text-anchor="middle" class="tag-text">责任：营销</text>
+      </g>
+    </g>
+
+    <!-- Stage 3: MQL -->
+    <g transform="translate(0, 150)">
+      <path d="M 30,0 H 230 L 215,65 H 45 Z" fill="#3B82F6" opacity="0.6"/>
+      <path d="M 30,0 L 45,65" stroke="#2563EB" stroke-width="1" fill="none"/>
+      <path d="M 230,0 L 215,65" stroke="#2563EB" stroke-width="1" fill="none"/>
+      <text x="130" y="38" text-anchor="middle" class="stage-name">3. MQL (市场合格线索)</text>
+      
+      <g transform="translate(290, 0)">
+        <rect x="0" y="0" width="350" height="65" rx="8" fill="#F0F7FF" stroke="#2563EB" stroke-width="1.5" filter="url(#shadow)"/>
+        <text x="15" y="25" class="info-title">定义：符合 ICP 画像且评分超过阈值</text>
+        <text x="15" y="45" class="info-text">交接：营销确认合格，正式流转至销售团队</text>
+        <rect x="250" y="10" width="80" height="18" rx="9" fill="#2563EB"/>
+        <text x="290" y="23" text-anchor="middle" class="tag-text">核心交接点</text>
+      </g>
+    </g>
+
+    <!-- Stage 4: SQL/SAL -->
+    <g transform="translate(0, 225)">
+      <path d="M 45,0 H 215 L 200,65 H 60 Z" fill="#F59E0B" opacity="0.65"/>
+      <path d="M 45,0 L 60,65" stroke="#D97706" stroke-width="1" fill="none"/>
+      <path d="M 215,0 L 200,65" stroke="#D97706" stroke-width="1" fill="none"/>
+      <text x="130" y="38" text-anchor="middle" class="stage-name">4. SQL (销售合格线索)</text>
+      
+      <g transform="translate(290, 0)">
+        <rect x="0" y="0" width="350" height="65" rx="8" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5" filter="url(#shadow)"/>
+        <text x="15" y="25" class="info-title">定义：销售确认有明确预算、权力和需求</text>
+        <text x="15" y="45" class="info-text">动作：销售首次触达后确认值得正式立项</text>
+        <rect x="270" y="10" width="60" height="18" rx="9" class="tag-sales"/>
+        <text x="300" y="23" text-anchor="middle" class="tag-text">责任：销售</text>
+      </g>
+    </g>
+
+    <!-- Stage 5: Opportunity -->
+    <g transform="translate(0, 300)">
+      <path d="M 60,0 H 200 L 185,65 H 75 Z" fill="#F59E0B" opacity="0.9"/>
+      <path d="M 60,0 L 75,65" stroke="#D97706" stroke-width="1" fill="none"/>
+      <path d="M 200,0 L 185,65" stroke="#D97706" stroke-width="1" fill="none"/>
+      <text x="130" y="38" text-anchor="middle" class="stage-name">5. Opportunity (机会)</text>
+      
+      <g transform="translate(290, 0)">
+        <rect x="0" y="0" width="350" height="65" rx="8" fill="#FFF7ED" stroke="#EA580C" filter="url(#shadow)"/>
+        <text x="15" y="25" class="info-title">定义：进入正式商务报价或 PoC 测试阶段</text>
+        <text x="15" y="45" class="info-text">标志：已制定具体的价值方案并获得内部认可</text>
+        <rect x="270" y="10" width="60" height="18" rx="9" class="tag-sales"/>
+        <text x="300" y="23" text-anchor="middle" class="tag-text">责任：销售</text>
+      </g>
+    </g>
+
+    <!-- Stage 6: Customer -->
+    <g transform="translate(0, 375)">
+      <path d="M 75,0 H 185 L 175,65 H 85 Z" fill="#10B981"/>
+      <path d="M 75,0 L 85,65" stroke="#059669" stroke-width="1" fill="none"/>
+      <path d="M 185,0 L 175,65" stroke="#059669" stroke-width="1" fill="none"/>
+      <text x="130" y="38" text-anchor="middle" class="stage-name">6. Customer (成交)</text>
+      
+      <g transform="translate(290, 0)">
+        <rect x="0" y="0" width="350" height="65" rx="8" fill="#F0FDF4" stroke="#10B981" filter="url(#shadow)"/>
+        <text x="15" y="25" class="info-title">定义：客户完成签约并启动后续服事</text>
+        <text x="15" y="45" class="info-text">标志：商务合同生效，线索结案</text>
+        <rect x="270" y="10" width="60" height="18" rx="9" fill="#10B981"/>
+        <text x="300" y="23" text-anchor="middle" class="tag-text">状态：赢单</text>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- Summary Card -->
+  <g transform="translate(80, 580)">
+    <rect x="0" y="0" width="650" height="120" rx="12" fill="#F8FAFC" stroke="#E2E8F0" filter="url(#shadow)"/>
+    <text x="25" y="35" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1e293b">💡 设计关键：</text>
+    <g transform="translate(25, 60)">
+      <text x="0" y="0" class="info-text">• MQL 前段归营销，SQL 后段归销售，交接点必须有双向验收机制</text>
+      <text x="0" y="25" class="info-text">• 漏斗不仅是计算转化率的工具，更是跨部门协作的“共同语言”</text>
+      <text x="0" y="50" class="info-text">• 结构化数据：每个阶段的流转必须在 CRM 中有明确的动作触发</text>
+    </g>
+  </g>
+</svg>
