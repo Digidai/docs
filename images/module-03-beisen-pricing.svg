@@ -18,76 +18,76 @@
   <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
 
   <!-- Title -->
-  <text x="425" y="40" text-anchor="middle" class="title">Beisen (北森) Modular Pricing Structure</text>
+  <text x="425" y="40" text-anchor="middle" class="title">北森 (Beisen) 计费模式拆解</text>
 
   <!-- Container -->
   <g transform="translate(125, 80)">
 
     <!-- 1. Platform Fee -->
     <g transform="translate(0, 0)">
-      <text x="0" y="-10" class="section-label">1. Platform Base (Mandatory)</text>
+      <text x="0" y="-10" class="section-label">1. 核心平台费 (必选)</text>
       <rect x="0" y="0" width="600" height="100" rx="8" fill="#CCFBF1" stroke="#2DD4BF" stroke-width="2" filter="url(#shadow)"/>
-      <text x="30" y="35" class="box-title">Core HR Platform</text>
-      <text x="30" y="60" class="box-desc">• Tiered pricing based on Employee Count (Headcount)</text>
-      <text x="30" y="80" class="box-desc">• Includes basic Core HR modules &amp; Data Foundation</text>
+      <text x="30" y="35" class="box-title">Core HR 核心平台</text>
+      <text x="30" y="60" class="box-desc">• 按员工总数 (Headcount) 阶梯定价</text>
+      <text x="30" y="80" class="box-desc">• 包含组织人事、员工档案等数据底座</text>
     </g>
 
     <!-- 2. Modules -->
     <g transform="translate(0, 140)">
-      <text x="0" y="-10" class="section-label">2. Functional Modules (Optional Add-ons)</text>
+      <text x="0" y="-10" class="section-label">2. 功能模块增购 (按需选配)</text>
       
       <!-- Module Grid -->
       <g transform="translate(0, 0)">
         <rect x="0" y="0" width="110" height="80" class="module-box"/>
-        <text x="55" y="45" text-anchor="middle" class="module-text">Recruiting</text>
+        <text x="55" y="45" text-anchor="middle" class="module-text">招聘云</text>
       </g>
       
       <g transform="translate(122, 0)">
         <rect x="0" y="0" width="110" height="80" class="module-box"/>
-        <text x="55" y="45" text-anchor="middle" class="module-text">Performance</text>
+        <text x="55" y="45" text-anchor="middle" class="module-text">绩效云</text>
       </g>
 
       <g transform="translate(244, 0)">
         <rect x="0" y="0" width="110" height="80" class="module-box"/>
-        <text x="55" y="45" text-anchor="middle" class="module-text">Learning</text>
+        <text x="55" y="45" text-anchor="middle" class="module-text">学习云</text>
       </g>
 
       <g transform="translate(366, 0)">
         <rect x="0" y="0" width="110" height="80" class="module-box"/>
-        <text x="55" y="45" text-anchor="middle" class="module-text">Comp</text>
+        <text x="55" y="45" text-anchor="middle" class="module-text">薪酬云</text>
       </g>
 
       <g transform="translate(488, 0)">
         <rect x="0" y="0" width="112" height="80" class="module-box"/>
-        <text x="56" y="45" text-anchor="middle" class="module-text">Succession</text>
+        <text x="56" y="45" text-anchor="middle" class="module-text">继任云</text>
       </g>
     </g>
 
     <!-- 3. Services -->
     <g transform="translate(0, 260)">
-      <text x="0" y="-10" class="section-label">3. Professional Services (One-time/Recurring)</text>
+      <text x="0" y="-10" class="section-label">3. 专业服务费 (实施/交付)</text>
       <rect x="0" y="0" width="600" height="100" rx="8" fill="#F0FDF4" stroke="#4ADE80" stroke-width="2" filter="url(#shadow)"/>
       
       <g transform="translate(30, 0)">
         <!-- Col 1 -->
         <g transform="translate(0, 30)">
           <circle cx="5" cy="5" r="4" fill="#16A34A"/>
-          <text x="20" y="10" class="box-title" font-size="14">Implementation</text>
-          <text x="20" y="30" class="box-desc">One-time setup fee</text>
+          <text x="20" y="10" class="box-title" font-size="14">系统实施</text>
+          <text x="20" y="30" class="box-desc">一次性上线实施费</text>
         </g>
         
         <!-- Col 2 -->
         <g transform="translate(200, 30)">
           <circle cx="5" cy="5" r="4" fill="#16A34A"/>
-          <text x="20" y="10" class="box-title" font-size="14">Custom Dev</text>
-          <text x="20" y="30" class="box-desc">Per man-day rates</text>
+          <text x="20" y="10" class="box-title" font-size="14">二次开发</text>
+          <text x="20" y="30" class="box-desc">按需求人天 (Man-day) 报价</text>
         </g>
 
         <!-- Col 3 -->
         <g transform="translate(400, 30)">
           <circle cx="5" cy="5" r="4" fill="#16A34A"/>
-          <text x="20" y="10" class="box-title" font-size="14">Training</text>
-          <text x="20" y="30" class="box-desc">Per session</text>
+          <text x="20" y="10" class="box-title" font-size="14">客户培训</text>
+          <text x="20" y="30" class="box-desc">按场次/项目计费</text>
         </g>
       </g>
     </g>

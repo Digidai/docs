@@ -1,0 +1,85 @@
+<svg width="850" height="480" viewBox="0 0 850 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title Section -->
+  <rect x="0" y="0" width="850" height="65" rx="10" fill="#f8fafc"/>
+  <text x="425" y="41" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#1e293b">GTM 技术栈全景图</text>
+
+  <!-- Layer: Efficiency (Top) -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="750" height="80" rx="12" fill="#fef2f2" stroke="#ef4444" stroke-width="1" opacity="0.8"/>
+    <text x="20" y="25" font-family="sans-serif" font-size="14" font-weight="bold" fill="#991b1b">【效率层】</text>
+    <g transform="translate(40, 40)">
+      <rect x="0" y="0" width="130" height="30" rx="6" fill="#ffffff" stroke="#ef4444" stroke-width="0.5" filter="url(#shadow)"/>
+      <text x="65" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1e293b">Calendar 日程</text>
+      
+      <rect x="150" y="0" width="130" height="30" rx="6" fill="#ffffff" stroke="#ef4444" stroke-width="0.5" filter="url(#shadow)"/>
+      <text x="215" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1e293b">Doc 文档协作</text>
+
+      <rect x="300" y="0" width="130" height="30" rx="6" fill="#ffffff" stroke="#ef4444" stroke-width="0.5" filter="url(#shadow)"/>
+      <text x="365" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1e293b">Comm 沟通</text>
+
+      <rect x="450" y="0" width="130" height="30" rx="6" fill="#ffffff" stroke="#ef4444" stroke-width="0.5" filter="url(#shadow)"/>
+      <text x="515" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1e293b">Project 项目管理</text>
+    </g>
+  </g>
+
+  <!-- Layer: App (Middle High) -->
+  <g transform="translate(50, 175)">
+    <rect x="0" y="0" width="750" height="100" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="20" y="25" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e40af">【应用层】</text>
+    <g transform="translate(40, 40)">
+      <rect x="0" y="0" width="120" height="45" rx="8" fill="#ffffff" stroke="#3b82f6" stroke-width="1" filter="url(#shadow)"/>
+      <text x="60" y="28" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b">CRM</text>
+      
+      <rect x="135" y="0" width="120" height="45" rx="8" fill="#ffffff" stroke="#3b82f6" stroke-width="1" filter="url(#shadow)"/>
+      <text x="195" y="28" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b">MAP</text>
+
+      <rect x="270" y="0" width="120" height="45" rx="8" fill="#ffffff" stroke="#3b82f6" stroke-width="1" filter="url(#shadow)"/>
+      <text x="330" y="28" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b">CSM</text>
+
+      <rect x="405" y="0" width="120" height="45" rx="8" fill="#ffffff" stroke="#3b82f6" stroke-width="1" filter="url(#shadow)"/>
+      <text x="465" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Sales</text>
+      <text x="465" y="35" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">Engagement</text>
+
+      <rect x="540" y="0" width="120" height="45" rx="8" fill="#ffffff" stroke="#3b82f6" stroke-width="1" filter="url(#shadow)"/>
+      <text x="600" y="28" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b">CPQ</text>
+    </g>
+  </g>
+
+  <!-- Layer: Integration (Middle Low) -->
+  <g transform="translate(50, 290)">
+    <rect x="0" y="0" width="750" height="50" rx="12" fill="#fffafb" stroke="#db2777" stroke-width="1" stroke-dasharray="4,2"/>
+    <text x="375" y="31" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#9d174d">【集成层】iPaaS / 集成平台 (如 Workato, Tray.io)</text>
+  </g>
+
+  <!-- Layer: Data (Bottom) -->
+  <g transform="translate(50, 355)">
+    <rect x="0" y="0" width="750" height="100" rx="12" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+    <text x="20" y="25" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">【数据层】</text>
+    <g transform="translate(10, 40)">
+      <rect x="0" y="0" width="170" height="45" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1" filter="url(#shadow)"/>
+      <text x="85" y="20" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b">CDP</text>
+      <text x="85" y="36" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">客户数据平台</text>
+      
+      <rect x="180" y="0" width="170" height="45" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1" filter="url(#shadow)"/>
+      <text x="265" y="20" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b">Data Warehouse</text>
+      <text x="265" y="36" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">数据仓库</text>
+
+      <rect x="360" y="0" width="170" height="45" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1" filter="url(#shadow)"/>
+      <text x="445" y="20" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b">BI</text>
+      <text x="445" y="36" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">报表工具</text>
+
+      <rect x="540" y="0" width="170" height="45" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1" filter="url(#shadow)"/>
+      <text x="625" y="20" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b">Data Quality</text>
+      <text x="625" y="36" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">数据质量</text>
+    </g>
+  </g>
+</svg>

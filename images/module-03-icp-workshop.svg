@@ -1,9 +1,9 @@
-<svg width="850" height="450" viewBox="0 0 850 450" xmlns="http://www.w3.org/2000/svg">
+<svg width="960" height="450" viewBox="0 0 960 450" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="3" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.1"/>
     </filter>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#64748B"/>
     </marker>
     <style>
@@ -19,8 +19,8 @@
   <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
 
   <!-- Title Section -->
-  <text x="425" y="45" text-anchor="middle" class="title">ICP 对齐工作坊流程 (Refined)</text>
-  <text x="425" y="75" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#64748B">销售与营销深度碰撞，确立唯一的“理想客户”标准</text>
+  <text x="480" y="45" text-anchor="middle" class="title">ICP 对齐工作坊流程 (Refined)</text>
+  <text x="480" y="75" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#64748B">销售与营销深度碰撞，确立唯一的“理想客户”标准</text>
 
   <!-- Step 1: Preparation -->
   <g transform="translate(50, 120)">
@@ -43,10 +43,10 @@
   </g>
 
   <!-- Connector 1 -->
-  <path d="M 285,230 H 305" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrowhead)" fill="none"/>
+  <path d="M 280,230 H 365" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrowhead)" fill="none"/>
 
   <!-- Step 2: Workshop -->
-  <g transform="translate(310, 120)">
+  <g transform="translate(365, 120)">
     <rect x="0" y="0" width="230" height="220" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
     
     <!-- Icon Placeholder (People) -->
@@ -66,10 +66,10 @@
   </g>
 
   <!-- Connector 2 -->
-  <path d="M 545,230 H 565" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrowhead)" fill="none"/>
+  <path d="M 595,230 H 680" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrowhead)" fill="none"/>
 
   <!-- Step 3: Deployment -->
-  <g transform="translate(570, 120)">
+  <g transform="translate(680, 120)">
     <rect x="0" y="0" width="230" height="220" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
     
     <!-- Icon Placeholder (Check) -->
@@ -89,7 +89,7 @@
   </g>
 
   <!-- Footer Result Pill -->
-  <g transform="translate(200, 390)">
+  <g transform="translate(255, 390)">
     <rect x="0" y="0" width="450" height="40" class="footer-pill" filter="url(#shadow)"/>
     <text x="225" y="25" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">
       💡 最终目标：让营销的每一分钱、销售的每一分钟都花在“对的人”身上

@@ -1,0 +1,65 @@
+<svg width="850" height="420" viewBox="0 0 850 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title Section -->
+  <rect x="0" y="0" width="850" height="65" rx="10" fill="#f8fafc"/>
+  <text x="425" y="41" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#1e293b">RevOps 成功的四大关键因素</text>
+
+  <!-- Success Pillars -->
+  <g transform="translate(65, 100)">
+    <!-- Factor 1: Top-down -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="160" height="220" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="80" y="35" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1e40af">高层鼎力支持</text>
+      <text x="80" y="55" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#3b82f6" font-style="italic">CEO / CRO 推行</text>
+      <g transform="translate(15, 90)" font-family="sans-serif" font-size="11" fill="#475569">
+        <text x="0" y="0">• 打破部门墙</text>
+        <text x="0" y="25">• 赋予变革权力</text>
+        <text x="0" y="50">• 设定统一 KPI</text>
+      </g>
+    </g>
+
+    <!-- Factor 2: Data -->
+    <g transform="translate(185, 0)">
+      <rect x="0" y="0" width="160" height="220" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="80" y="35" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#065f46">扎实的数据底座</text>
+      <text x="80" y="55" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#10b981" font-style="italic">SSOT 架构</text>
+      <g transform="translate(15, 90)" font-family="sans-serif" font-size="11" fill="#475569">
+        <text x="0" y="0">• 统一数据标准</text>
+        <text x="0" y="25">• 自动化数据映射</text>
+        <text x="0" y="50">• 实时可视化看板</text>
+      </g>
+    </g>
+
+    <!-- Factor 3: Alliance -->
+    <g transform="translate(370, 0)">
+      <rect x="0" y="0" width="160" height="220" rx="12" fill="#fffef2" stroke="#eab308" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="80" y="35" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#854d0e">跨职能业务盟友</text>
+      <text x="80" y="55" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#eab308" font-style="italic">从辅助到领航</text>
+      <g transform="translate(15, 90)" font-family="sans-serif" font-size="11" fill="#475569">
+        <text x="0" y="0">• 赋能而非管控</text>
+        <text x="0" y="25">• 解决业务痛点</text>
+        <text x="0" y="50">• 建立互信关系</text>
+      </g>
+    </g>
+
+    <!-- Factor 4: Agile -->
+    <g transform="translate(555, 0)">
+      <rect x="0" y="0" width="160" height="220" rx="12" fill="#f8fafc" stroke="#64748b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="80" y="35" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1e293b">小步快跑实施</text>
+      <text x="80" y="55" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b" font-style="italic">循序渐进</text>
+      <g transform="translate(15, 90)" font-family="sans-serif" font-size="11" fill="#475569">
+        <text x="0" y="0">• 先流程后工具</text>
+        <text x="0" y="25">• 获取早期成果</text>
+        <text x="0" y="50">• 快速反馈迭代</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -48,7 +48,8 @@
 
     <!-- Opportunity Stage -->
     <g transform="translate(0, 245)">
-      <path d="M 110,0 H 290 L 250,60 H 150 Z" fill="#f0fdff" stroke="#0ea5e9" stroke-width="1.5" filter="url(#shadow)"/>
+      <!-- Widened Opportunity: Top 100-300, Bottom 115-285 -->
+      <path d="M 100,0 H 300 L 285,60 H 115 Z" fill="#f0fdff" stroke="#0ea5e9" stroke-width="1.5" filter="url(#shadow)"/>
       <text x="200" y="35" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0369a1">签约前奏 (Opportunity)</text>
       <rect x="325" y="15" width="95" height="30" rx="15" fill="#0ea5e9"/>
       <text x="372.5" y="35" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Sales (AE)</text>
@@ -60,7 +61,8 @@
 
     <!-- Won Stage -->
     <g transform="translate(0, 330)">
-      <path d="M 150,0 H 250 L 230,50 H 170 Z" fill="#ecfdf5" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+      <!-- Widened Won: Top 115-285, Bottom 130-270 -->
+      <path d="M 115,0 H 285 L 270,50 H 130 Z" fill="#ecfdf5" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
       <text x="200" y="32" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#065f46">成交 (Customer)</text>
       <rect x="285" y="10" width="105" height="30" rx="15" fill="#10b981"/>
       <text x="337.5" y="30" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff">CS / Sales</text>

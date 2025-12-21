@@ -18,24 +18,24 @@
   <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
 
   <!-- Title -->
-  <text x="425" y="40" text-anchor="middle" class="title">Freemium: An Acquisition Strategy</text>
+  <text x="425" y="40" text-anchor="middle" class="title">Freemium (免费增值): 获客策略</text>
 
   <!-- Funnel Graphic -->
   <g transform="translate(100, 80)">
     
     <!-- Level 1: Registered -->
     <path d="M 0,0 L 400,0 L 340,100 L 60,100 Z" fill="#60A5FA" filter="url(#shadow)"/>
-    <text x="200" y="45" text-anchor="middle" class="funnel-text">Registered Users</text>
+    <text x="200" y="45" text-anchor="middle" class="funnel-text">注册用户 (Registered)</text>
     <text x="200" y="65" text-anchor="middle" class="funnel-sub">100% (Acquisition)</text>
 
     <!-- Level 2: Active -->
-    <path d="M 60,110 L 340,110 L 280,210 L 120,210 Z" fill="#3B82F6" filter="url(#shadow)"/>
-    <text x="200" y="155" text-anchor="middle" class="funnel-text">Active Users</text>
+    <path d="M 60,110 L 340,110 L 290,210 L 110,210 Z" fill="#3B82F6" filter="url(#shadow)"/>
+    <text x="200" y="155" text-anchor="middle" class="funnel-text">活跃用户 (Active)</text>
     <text x="200" y="175" text-anchor="middle" class="funnel-sub">~30% (Engagement)</text>
 
     <!-- Level 3: Paid -->
-    <path d="M 120,220 L 280,220 L 250,320 L 150,320 Z" fill="#2563EB" filter="url(#shadow)"/>
-    <text x="200" y="265" text-anchor="middle" class="funnel-text">Paid Users</text>
+    <path d="M 110,220 L 290,220 L 260,320 L 140,320 Z" fill="#2563EB" filter="url(#shadow)"/>
+    <text x="200" y="265" text-anchor="middle" class="funnel-text">付费客户 (Paid)</text>
     <text x="200" y="285" text-anchor="middle" class="funnel-sub">2-5% (Monetization)</text>
 
   </g>
@@ -43,33 +43,33 @@
   <!-- Strategic Questions (Right Side) -->
   <g transform="translate(550, 80)">
     <rect x="0" y="0" width="240" height="320" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
-    <text x="20" y="30" class="card-title">Key Strategic Questions</text>
+    <text x="20" y="30" class="card-title">关键战略问题</text>
     
     <g transform="translate(20, 70)">
       <circle cx="5" cy="5" r="3" fill="#3B82F6"/>
-      <text x="20" y="10" class="card-text" font-weight="bold">Value Proposition</text>
-      <text x="20" y="30" class="card-text">What value is free to attract</text>
-      <text x="20" y="50" class="card-text">users?</text>
+      <text x="20" y="10" class="card-text" font-weight="bold">价值主张 (Value)</text>
+      <text x="20" y="30" class="card-text">用什么免费价值</text>
+      <text x="20" y="50" class="card-text">吸引用户？</text>
     </g>
 
     <g transform="translate(20, 150)">
       <circle cx="5" cy="5" r="3" fill="#3B82F6"/>
-      <text x="20" y="10" class="card-text" font-weight="bold">Conversion Trigger</text>
-      <text x="20" y="30" class="card-text">What compels users to</text>
-      <text x="20" y="50" class="card-text">upgrade? (Limit/Feature)</text>
+      <text x="20" y="10" class="card-text" font-weight="bold">转化触发 (Trigger)</text>
+      <text x="20" y="30" class="card-text">什么推动用户</text>
+      <text x="20" y="50" class="card-text">升级付费？</text>
     </g>
 
     <g transform="translate(20, 230)">
       <circle cx="5" cy="5" r="3" fill="#3B82F6"/>
-      <text x="20" y="10" class="card-text" font-weight="bold">Cost to Serve</text>
-      <text x="20" y="30" class="card-text">Is supporting free users</text>
-      <text x="20" y="50" class="card-text">economically viable?</text>
+      <text x="20" y="10" class="card-text" font-weight="bold">服务成本 (Cost)</text>
+      <text x="20" y="30" class="card-text">服务免费用户</text>
+      <text x="20" y="50" class="card-text">是否划算？</text>
     </g>
   </g>
 
   <!-- Connector Arrow -->
   <path d="M 450,270 L 530,270" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowhead)"/>
-  <text x="490" y="260" text-anchor="middle" class="arrow-text">Revenue</text>
+  <text x="490" y="260" text-anchor="middle" class="arrow-text">收入 (Revenue)</text>
 
   <defs>
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">

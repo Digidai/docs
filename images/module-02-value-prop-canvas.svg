@@ -87,14 +87,14 @@
 
     <!-- Content Labels -->
     <!-- Gains (Top Left) -->
-    <g transform="translate(75, 75)">
+    <g transform="translate(95, 95)">
        <text x="0" y="0" text-anchor="middle" class="icon">😍</text>
        <text x="0" y="30" text-anchor="middle" class="text card-title">Gains</text>
        <text x="0" y="50" text-anchor="middle" class="text item">期望收益</text>
     </g>
 
     <!-- Pains (Bottom Left) -->
-    <g transform="translate(75, 275)">
+    <g transform="translate(95, 265)">
        <text x="0" y="0" text-anchor="middle" class="icon">😫</text>
        <text x="0" y="30" text-anchor="middle" class="text card-title">Pains</text>
        <text x="0" y="50" text-anchor="middle" class="text item">痛点风险</text>
