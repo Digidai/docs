@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="850" height="450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .tier-name { font-family: sans-serif; font-size: 20px; font-weight: bold; fill: #B91C1C; }
+      .price { font-family: sans-serif; font-size: 28px; font-weight: bold; fill: #1e293b; }
+      .unit { font-family: sans-serif; font-size: 14px; fill: #64748b; }
+      .feature { font-family: sans-serif; font-size: 14px; fill: #334155; }
+      .target { font-family: sans-serif; font-size: 12px; font-weight: bold; fill: #B91C1C; text-transform: uppercase; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="425" y="40" text-anchor="middle" class="title">Youzan Pricing Tiers (2018 Snapshot)</text>
+
+  <!-- Cards Container -->
+  <g transform="translate(65, 80)">
+
+    <!-- Tier 1: Basic -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="220" height="300" rx="8" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1" filter="url(#shadow)"/>
+      <rect x="0" y="0" width="220" height="6" rx="3" fill="#FCA5A5"/> <!-- Top Accent -->
+      
+      <text x="110" y="40" text-anchor="middle" class="tier-name">Basic 基础版</text>
+      <text x="110" y="80" text-anchor="middle" class="price">¥6,800</text>
+      <text x="110" y="100" text-anchor="middle" class="unit">/ year</text>
+
+      <g transform="translate(20, 140)">
+        <text x="0" y="0" class="feature">• Basic Store</text>
+        <text x="0" y="30" class="feature">• Order Mgmt</text>
+        <text x="0" y="60" class="feature">• User Mgmt</text>
+      </g>
+      
+      <text x="110" y="270" text-anchor="middle" class="target">Individual</text>
+    </g>
+
+    <!-- Tier 2: Pro -->
+    <g transform="translate(250, 0)">
+      <rect x="0" y="0" width="220" height="300" rx="8" fill="#FFF7ED" stroke="#FDBA74" stroke-width="2" filter="url(#shadow)"/>
+      <rect x="0" y="0" width="220" height="6" rx="3" fill="#F97316"/>
+      
+      <text x="110" y="40" text-anchor="middle" class="tier-name" fill="#EA580C">Pro 专业版</text>
+      <text x="110" y="80" text-anchor="middle" class="price">¥12,800</text>
+      <text x="110" y="100" text-anchor="middle" class="unit">/ year</text>
+
+      <g transform="translate(20, 140)">
+        <text x="0" y="0" class="feature">• Marketing Tools</text>
+        <text x="0" y="30" class="feature">• Data Analytics</text>
+        <text x="0" y="60" class="feature">• Customer Service</text>
+      </g>
+      
+      <text x="110" y="270" text-anchor="middle" class="target" fill="#EA580C">SME Business</text>
+    </g>
+
+    <!-- Tier 3: Flagship -->
+    <g transform="translate(500, 0)">
+      <rect x="0" y="0" width="220" height="300" rx="8" fill="#FFF1F2" stroke="#FDA4AF" stroke-width="1" filter="url(#shadow)"/>
+      <rect x="0" y="0" width="220" height="6" rx="3" fill="#E11D48"/>
+      
+      <text x="110" y="40" text-anchor="middle" class="tier-name" fill="#E11D48">Flagship 旗舰版</text>
+      <text x="110" y="80" text-anchor="middle" class="price">¥26,800</text>
+      <text x="110" y="100" text-anchor="middle" class="unit">/ year</text>
+
+      <g transform="translate(20, 140)">
+        <text x="0" y="0" class="feature">• All Features</text>
+        <text x="0" y="30" class="feature">• Multi-store Mgmt</text>
+        <text x="0" y="60" class="feature">• Custom Dev</text>
+      </g>
+      
+      <text x="110" y="270" text-anchor="middle" class="target" fill="#E11D48">Brand / Chain</text>
+    </g>
+
+  </g>
+
+</svg>

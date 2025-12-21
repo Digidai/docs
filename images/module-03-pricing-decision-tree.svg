@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="850" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .node-text { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #1e293b; }
+      .decision-text { font-family: sans-serif; font-size: 12px; fill: #64748b; background-color: white; }
+      .result-box { fill: #F0F9FF; stroke: #0EA5E9; stroke-width: 2; rx: 4; }
+      .result-text { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #0284C7; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="425" y="40" text-anchor="middle" class="title">定价模型选择决策树</text>
+
+  <!-- Q1 -->
+  <g transform="translate(300, 80)">
+    <rect x="-120" y="0" width="240" height="50" rx="25" fill="#F8FAFC" stroke="#94A3B8" filter="url(#shadow)"/>
+    <text x="0" y="30" text-anchor="middle" class="node-text">Q1: 使用量与价值是否强相关？</text>
+  </g>
+
+  <!-- Q1 -> Yes -> Usage -->
+  <line x1="300" y1="130" x2="150" y2="180" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="200" y="140" width="20" height="14" fill="white"/> <!-- Mask for text -->
+  <text x="210" y="150" text-anchor="middle" class="decision-text" fill="#16A34A">是 (Yes)</text>
+  
+  <g transform="translate(30, 180)">
+    <rect x="0" y="0" width="240" height="60" class="result-box"/>
+    <text x="120" y="35" text-anchor="middle" class="result-text">考虑 Usage-Based 或 Hybrid</text>
+  </g>
+
+  <!-- Q1 -> No -> Q2 -->
+  <line x1="300" y1="130" x2="550" y2="180" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="420" y="140" width="20" height="14" fill="white"/>
+  <text x="430" y="150" text-anchor="middle" class="decision-text" fill="#EF4444">否 (No)</text>
+  
+  <g transform="translate(430, 180)">
+    <rect x="-120" y="0" width="240" height="50" rx="25" fill="#F8FAFC" stroke="#94A3B8" filter="url(#shadow)"/>
+    <text x="0" y="30" text-anchor="middle" class="node-text">Q2: 用户数与价值相关吗？</text>
+  </g>
+
+  <!-- Q2 -> Yes -> Seat -->
+  <line x1="550" y1="230" x2="400" y2="300" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="460" y="260" text-anchor="middle" class="decision-text" fill="#16A34A">是</text>
+
+  <g transform="translate(280, 300)">
+    <rect x="0" y="0" width="240" height="60" class="result-box"/>
+    <text x="120" y="35" text-anchor="middle" class="result-text">考虑 Seat-Based (按人头)</text>
+  </g>
+
+  <!-- Q2 -> No -> Q3 -->
+  <line x1="550" y1="230" x2="700" y2="300" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="640" y="260" text-anchor="middle" class="decision-text" fill="#EF4444">否</text>
+
+  <g transform="translate(580, 300)">
+    <rect x="-120" y="0" width="240" height="50" rx="25" fill="#F8FAFC" stroke="#94A3B8" filter="url(#shadow)"/>
+    <text x="0" y="30" text-anchor="middle" class="node-text">Q3: 客户需求差异大吗？</text>
+  </g>
+
+  <!-- Q3 -> Yes -> Tiered -->
+  <line x1="700" y1="350" x2="600" y2="420" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="640" y="380" text-anchor="middle" class="decision-text" fill="#16A34A">是</text>
+  
+  <g transform="translate(480, 420)">
+    <rect x="0" y="0" width="240" height="60" class="result-box"/>
+    <text x="120" y="35" text-anchor="middle" class="result-text">考虑 Tiered (分层)</text>
+  </g>
+
+  <!-- Q3 -> No -> Flat -->
+  <line x1="700" y1="350" x2="800" y2="420" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="760" y="380" text-anchor="middle" class="decision-text" fill="#EF4444">否</text>
+  
+  <g transform="translate(620, 420)">
+    <rect x="0" y="0" width="220" height="60" class="result-box"/> 
+    <text x="110" y="35" text-anchor="middle" class="result-text">考虑 Flat-Rate (一口价)</text>
+  </g>
+
+  <!-- Overlay: Acquisition -->
+  <g transform="translate(150, 450)">
+    <rect x="0" y="0" width="300" height="80" rx="8" fill="#FFF7ED" stroke="#F97316" stroke-dasharray="4,4"/>
+    <text x="150" y="30" text-anchor="middle" class="node-text" fill="#C2410C">需要低门槛获客？</text>
+    <text x="150" y="60" text-anchor="middle" class="result-text" fill="#EA580C">→ 考虑 Freemium 或 免费试用</text>
+  </g>
+
+</svg>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .header { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #1e293b; }
+      .formula-text { font-family: sans-serif; font-size: 14px; fill: #334155; }
+      .key-stat { font-family: sans-serif; font-size: 24px; font-weight: bold; fill: #0EA5E9; }
+      .benefit-text { font-family: sans-serif; font-size: 13px; fill: #475569; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" class="title">Snowflake Pricing Model (Usage-Based)</text>
+
+  <!-- Main Formula Box -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="600" height="150" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2" filter="url(#shadow)"/>
+    
+    <!-- Compute -->
+    <g transform="translate(30, 30)">
+      <text x="0" y="0" class="header" fill="#0284C7">Compute (计算)</text>
+      <text x="0" y="30" class="formula-text">Credits Used × Price/Credit</text>
+      <text x="0" y="50" class="benefit-text" fill="#64748B">(Pay only when running)</text>
+    </g>
+
+    <!-- Plus Sign -->
+    <text x="280" y="60" text-anchor="middle" font-size="30" fill="#94A3B8">+</text>
+
+    <!-- Storage -->
+    <g transform="translate(350, 30)">
+      <text x="0" y="0" class="header" fill="#0284C7">Storage (存储)</text>
+      <text x="0" y="30" class="formula-text">Terabytes × Price/TB/Month</text>
+      <text x="0" y="50" class="benefit-text" fill="#64748B">(Pass-through cost)</text>
+    </g>
+
+    <!-- Equals Total -->
+    <line x1="30" y1="100" x2="570" y2="100" stroke="#BAE6FD" stroke-width="1" stroke-dasharray="4,2"/>
+    <text x="300" y="130" text-anchor="middle" class="header" fill="#0369A1">Total Monthly Bill</text>
+  </g>
+
+  <!-- Benefits Section -->
+  <g transform="translate(50, 260)">
+    <text x="0" y="0" class="header">Why it works:</text>
+
+    <!-- Benefit 1 -->
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="180" height="80" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="15" y="30" class="formula-text" font-weight="bold">Low Friction</text>
+      <text x="15" y="50" class="benefit-text">Start small, no upfront</text>
+    </g>
+
+    <!-- Benefit 2 -->
+    <g transform="translate(210, 30)">
+      <rect x="0" y="0" width="180" height="80" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="15" y="30" class="formula-text" font-weight="bold">Scalability</text>
+      <text x="15" y="50" class="benefit-text">Grows with customer</text>
+    </g>
+
+    <!-- Benefit 3: NRR -->
+    <g transform="translate(420, 30)">
+      <rect x="0" y="0" width="180" height="80" rx="4" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2"/>
+      <text x="15" y="25" class="formula-text" font-weight="bold" fill="#0F766E">Net Revenue Retention</text>
+      <text x="90" y="60" text-anchor="middle" class="key-stat" fill="#14B8A6">&gt; 170%</text>
+    </g>
+
+  </g>
+
+</svg>
