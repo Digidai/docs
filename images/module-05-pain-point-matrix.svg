@@ -1,74 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
-      <feOffset dx="1" dy="1" result="offsetblur" />
-      <feComponentTransfer>
-        <feFuncA type="linear" slope="0.1" />
-      </feComponentTransfer>
-      <feMerge>
-        <feMergeNode />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
     </filter>
   </defs>
 
-  <rect width="100%" height="100%" fill="#ffffff" />
-  <text x="400" y="40" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1d1d1f">痛点优先级矩阵</text>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">
+    痛点优先级矩阵 (Urgency vs. Impact)
+  </text>
 
   <!-- Labels -->
-  <text x="450" y="80" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#1d1d1f">紧迫程度 (Urgency)</text>
-  <text x="60" y="275" transform="rotate(-90 60,275)" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#1d1d1f">影响范围 (Impact)</text>
+  <text x="450" y="470" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#555">紧迫程度 (Urgency) →</text>
+  <text x="40" y="270" transform="rotate(-90 40,270)" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#555">影响范围 (Impact) →</text>
 
-  <!-- Matrix Grid -->
-  <rect x="150" y="110" width="540" height="330" rx="12" fill="#f2f2f7" stroke="#d2d2d7" stroke-width="1" />
-  
-  <line x1="150" y1="220" x2="690" y2="220" stroke="#d2d2d7" stroke-width="1" />
-  <line x1="150" y1="330" x2="690" y2="330" stroke="#d2d2d7" stroke-width="1" />
-  <line x1="330" y1="110" x2="330" y2="440" stroke="#d2d2d7" stroke-width="1" />
-  <line x1="510" y1="110" x2="510" y2="440" stroke="#d2d2d7" stroke-width="1" />
+  <!-- Matrix Group -->
+  <g transform="translate(150, 100)">
+    
+    <!-- Header Labels -->
+    <text x="50" y="-15" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#888">低</text>
+    <text x="180" y="-15" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#888">中</text>
+    <text x="310" y="-15" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#888">高</text>
 
-  <!-- Column Headers -->
-  <text x="240" y="100" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="middle" fill="#515154">高 (High)</text>
-  <text x="420" y="100" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="middle" fill="#515154">中 (Medium)</text>
-  <text x="600" y="100" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="middle" fill="#515154">低 (Low)</text>
+    <text x="-25" y="65" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#888">低</text>
+    <text x="-25" y="175" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#888">中</text>
+    <text x="-25" y="285" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#888">高</text>
 
-  <!-- Row Headers -->
-  <text x="130" y="170" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="end" fill="#515154">高</text>
-  <text x="130" y="280" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="end" fill="#515154">中</text>
-  <text x="130" y="390" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="end" fill="#515154">低</text>
+    <!-- Cells (Impact High to Low as columns, but here standard grid x=urgency, y=impact) -->
+    <!-- Let's map Standard: X=Urgency (Right is High), Y=Impact (Top is High) -->
+    
+    <!-- Matrix Grid -->
+    <rect width="390" height="330" fill="none" stroke="#D2D2D7" stroke-width="1"/>
 
-  <!-- Cells -->
-  <!-- P0 -->
-  <rect x="160" y="120" width="160" height="90" rx="8" fill="#ffebeb" filter="url(#shadow)" />
-  <text x="240" y="170" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#c92a2a">P0</text>
-  <text x="240" y="195" font-family="Outfit, Inter, sans-serif" font-size="12" text-anchor="middle" fill="#c92a2a">生命级/立即解决</text>
+    <!-- P0: High Impact, High Urgency (Top Right) -->
+    <g transform="translate(260, 0)">
+      <rect width="130" height="110" fill="#FFEBEE" stroke="#EF5350" stroke-width="1"/>
+      <circle cx="65" cy="55" r="30" fill="#C62828" filter="url(#shadow)"/>
+      <text x="65" y="62" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#ffffff">P0</text>
+    </g>
 
-  <!-- P1s -->
-  <rect x="340" y="120" width="160" height="90" rx="8" fill="#fff9db" filter="url(#shadow)" />
-  <text x="420" y="170" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#f59f00">P1</text>
-  
-  <rect x="160" y="230" width="160" height="90" rx="8" fill="#fff9db" filter="url(#shadow)" />
-  <text x="240" y="280" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#f59f00">P1</text>
+    <!-- P1 Blocks -->
+    <g transform="translate(130, 0)">
+       <rect width="130" height="110" fill="#FFF3E0" stroke="#FF9800" stroke-width="1"/>
+       <circle cx="65" cy="55" r="25" fill="#EF6C00" filter="url(#shadow)"/>
+       <text x="65" y="60" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">P1</text>
+    </g>
+    <g transform="translate(260, 110)">
+       <rect width="130" height="110" fill="#FFF3E0" stroke="#FF9800" stroke-width="1"/>
+       <circle cx="65" cy="55" r="25" fill="#EF6C00" filter="url(#shadow)"/>
+       <text x="65" y="60" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">P1</text>
+    </g>
 
-  <!-- P2s -->
-  <rect x="520" y="120" width="160" height="90" rx="8" fill="#e7f5ff" filter="url(#shadow)" />
-  <text x="600" y="170" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#1c7ed6">P2</text>
-  
-  <rect x="340" y="230" width="160" height="90" rx="8" fill="#e7f5ff" filter="url(#shadow)" />
-  <text x="420" y="280" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#1c7ed6">P2</text>
-  
-  <rect x="160" y="340" width="160" height="90" rx="8" fill="#e7f5ff" filter="url(#shadow)" />
-  <text x="240" y="390" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#1c7ed6">P2</text>
+    <!-- P2 Blocks -->
+    <g transform="translate(0, 0)">
+       <rect width="130" height="110" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+       <circle cx="65" cy="55" r="22" fill="#1565C0" filter="url(#shadow)"/>
+       <text x="65" y="60" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">P2</text>
+    </g>
+    <g transform="translate(130, 110)">
+       <rect width="130" height="110" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+       <circle cx="65" cy="55" r="22" fill="#1565C0" filter="url(#shadow)"/>
+       <text x="65" y="60" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">P2</text>
+    </g>
+    <g transform="translate(260, 220)">
+       <rect width="130" height="110" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+       <circle cx="65" cy="55" r="22" fill="#1565C0" filter="url(#shadow)"/>
+       <text x="65" y="60" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">P2</text>
+    </g>
 
-  <!-- P3s -->
-  <rect x="520" y="230" width="160" height="90" rx="8" fill="#f8f9fa" filter="url(#shadow)" />
-  <text x="600" y="280" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#86868b">P3</text>
-  
-  <rect x="340" y="340" width="160" height="90" rx="8" fill="#f8f9fa" filter="url(#shadow)" />
-  <text x="420" y="390" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#86868b">P3</text>
+    <!-- P3 Blocks -->
+    <g transform="translate(0, 110)">
+       <rect width="130" height="110" fill="#F5F5F7" stroke="#8E8E93" stroke-width="1"/>
+       <text x="65" y="60" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#888">P3</text>
+    </g>
+    <g transform="translate(130, 220)">
+       <rect width="130" height="110" fill="#F5F5F7" stroke="#8E8E93" stroke-width="1"/>
+       <text x="65" y="60" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#888">P3</text>
+    </g>
+    <g transform="translate(0, 220)">
+       <rect width="130" height="110" fill="#F5F5F7" stroke="#8E8E93" stroke-width="1"/>
+       <text x="65" y="60" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#888">--</text>
+    </g>
+  </g>
 
-  <!-- Legend Pill -->
-  <rect x="150" y="460" width="540" height="30" rx="15" fill="#f2f2f7" />
-  <text x="420" y="480" font-family="Outfit, Inter, sans-serif" font-size="13" text-anchor="middle" fill="#86868b">GTM 资源应优先投入 P0 和 P1 级别的核心痛点</text>
+  <!-- Explanation -->
+  <g transform="translate(560, 150)">
+    <text x="0" y="0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333">优先级定义：</text>
+    <text x="0" y="30" font-family="sans-serif" font-size="12" fill="#C62828">• P0: 核心刚需，重点攻克</text>
+    <text x="0" y="55" font-family="sans-serif" font-size="12" fill="#EF6C00">• P1: 重要功能，差异化优势</text>
+    <text x="0" y="80" font-family="sans-serif" font-size="12" fill="#1565C0">• P2: 支撑功能，保证完整性</text>
+    <text x="0" y="105" font-family="sans-serif" font-size="12" fill="#888">• P3: 长尾需求，后期考虑</text>
+  </g>
 </svg>

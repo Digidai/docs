@@ -1,72 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
-      <feOffset dx="1" dy="1" result="offsetblur" />
-      <feComponentTransfer>
-        <feFuncA type="linear" slope="0.1" />
-      </feComponentTransfer>
-      <feMerge>
-        <feMergeNode />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
     </filter>
   </defs>
 
-  <rect width="100%" height="100%" fill="#f8f9fa" />
-  <text x="400" y="40" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1d1d1f">线索评分模型 (Lead Scoring)</text>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
 
-  <!-- Formula Box -->
-  <rect x="50" y="80" width="700" height="80" rx="12" fill="#ffffff" stroke="#0071e3" stroke-width="2" filter="url(#shadow)" />
-  <text x="400" y="115" font-family="Outfit, Inter, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#1d1d1f">
-    总分 = 企业特征分 (40%) + 行为信号分 (40%) + 互动分 (20%)
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">
+    线索购买信号评分模型 (Scoring Model)
   </text>
-  <text x="400" y="145" font-family="Outfit, Inter, sans-serif" font-size="14" text-anchor="middle" fill="#86868b">通过多维数据识别线索的真实意向和匹配度</text>
 
-  <!-- Components -->
-  <g transform="translate(50, 180)">
-    <!-- Firmographics -->
-    <rect width="220" height="150" rx="8" fill="#e1f5fe" stroke="#01579b" stroke-width="1" />
-    <text x="110" y="30" font-family="Outfit, Inter, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#01579b">企业特征 (40%)</text>
-    <g transform="translate(20, 55)" font-family="Outfit, Inter, sans-serif" font-size="12" fill="#343a40">
-      <text y="0">• 符合 ICP 行业: +20</text>
-      <text y="25">• 符合规模要求: +15</text>
-      <text y="50">• 符合融资阶段: +5</text>
-      <text y="80" font-size="10" fill="#86868b">* 基于公司属性的静态评分</text>
+  <!-- Formula Group -->
+  <g transform="translate(50, 90)">
+    <rect width="700" height="70" rx="35" fill="#F2F2F7" stroke="#D2D2D7" stroke-width="1"/>
+    <text x="350" y="42" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">
+      总分 = <tspan fill="#1565C0">企业特征(40%)</tspan> + <tspan fill="#2E7D32">行为信号(40%)</tspan> + <tspan fill="#E65100">意向互动(20%)</tspan>
+    </text>
+  </g>
+
+  <!-- Breakdown Columns -->
+  <g transform="translate(50, 190)">
+    
+    <!-- Column 1: Firmographics -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="220" height="220" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="110" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565C0">企业特征分</text>
+      <line x1="30" y1="55" x2="190" y2="55" stroke="#2196F3" stroke-width="1"/>
+      <text x="30" y="90" font-family="Arial, sans-serif" font-size="14" fill="#333">• 符合 ICP 行业: <tspan font-weight="bold">+20</tspan></text>
+      <text x="30" y="125" font-family="Arial, sans-serif" font-size="14" fill="#333">• 公司规模达标: <tspan font-weight="bold">+15</tspan></text>
+      <text x="30" y="160" font-family="Arial, sans-serif" font-size="14" fill="#333">• 处于目标阶段: <tspan font-weight="bold">+5</tspan></text>
     </g>
 
-    <!-- Intent Signals -->
-    <rect x="240" width="220" height="150" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" />
-    <text x="350" y="30" font-family="Outfit, Inter, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#2e7d32">行为信号 (40%)</text>
-    <g transform="translate(260, 55)" font-family="Outfit, Inter, sans-serif" font-size="12" fill="#343a40">
-      <text y="0">• 访问定价页: +15</text>
-      <text y="25">• 下载白皮书: +10</text>
-      <text y="50">• 申请 Demo: +15</text>
-      <text y="80" font-size="10" fill="#86868b">* 基于用户行为的动态评分</text>
+    <!-- Column 2: Intent -->
+    <g transform="translate(240, 0)">
+      <rect x="0" y="0" width="220" height="220" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="110" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2E7D32">行为信号分</text>
+      <line x1="30" y1="55" x2="190" y2="55" stroke="#4CAF50" stroke-width="1"/>
+      <text x="30" y="90" font-family="Arial, sans-serif" font-size="14" fill="#333">• 访问定价页: <tspan font-weight="bold">+15</tspan></text>
+      <text x="30" y="125" font-family="Arial, sans-serif" font-size="14" fill="#333">• 下载内容/白皮书: <tspan font-weight="bold">+10</tspan></text>
+      <text x="30" y="160" font-family="Arial, sans-serif" font-size="14" fill="#333">• 申请 Demo 演示: <tspan font-weight="bold">+15</tspan></text>
     </g>
 
-    <!-- Engagement -->
-    <rect x="480" width="220" height="150" rx="8" fill="#fff3e0" stroke="#e65100" stroke-width="1" />
-    <text x="590" y="30" font-family="Outfit, Inter, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#e65100">互动表现 (20%)</text>
-    <g transform="translate(500, 55)" font-family="Outfit, Inter, sans-serif" font-size="12" fill="#343a40">
-      <text y="0">• 邮件打开/点击: +10</text>
-      <text y="25">• 参加线上研讨会: +10</text>
-      <text y="50">• 社交媒体互动: +5</text>
-      <text y="80" font-size="10" fill="#86868b">* 基于活跃度的累积评分</text>
+    <!-- Column 3: Interaction -->
+    <g transform="translate(480, 0)">
+      <rect x="0" y="0" width="220" height="220" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="110" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#E65100">意向互动分</text>
+      <line x1="30" y1="55" x2="190" y2="55" stroke="#FF9800" stroke-width="1"/>
+      <text x="30" y="90" font-family="Arial, sans-serif" font-size="14" fill="#333">• 邮件打开/点击: <tspan font-weight="bold">+10</tspan></text>
+      <text x="30" y="125" font-family="Arial, sans-serif" font-size="14" fill="#333">• 参加活动 Webinar: <tspan font-weight="bold">+10</tspan></text>
     </g>
   </g>
 
-  <!-- Thresholds -->
-  <g transform="translate(50, 360)">
-    <rect width="700" height="60" rx="30" fill="#f2f2f7" />
+  <!-- Results Gradient -->
+  <g transform="translate(50, 450)">
+    <text x="350" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#555">转化阈值：</text>
     
-    <circle cx="100" cy="30" r="15" fill="#c92a2a" />
-    <text x="130" y="35" font-family="Outfit, Inter, sans-serif" font-size="14" fill="#1d1d1f">70+ 热线索 (Hot)</text>
+    <g transform="translate(0, 40)">
+      <rect x="0" y="0" width="220" height="40" rx="20" fill="#EF5350" filter="url(#shadow)"/>
+      <text x="110" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">冷线索 (Cold): &lt; 50分</text>
+    </g>
     
-    <circle cx="350" cy="30" r="15" fill="#f59f00" />
-    <text x="380" y="35" font-family="Outfit, Inter, sans-serif" font-size="14" fill="#1d1d1f">50-69 温线索 (Warm)</text>
-    
-    <circle cx="600" cy="30" r="15" fill="#86868b" />
-    <text x="630" y="35" font-family="Outfit, Inter, sans-serif" font-size="14" fill="#1d1d1f">&lt;50 冷线索 (Cold)</text>
+    <g transform="translate(240, 40)">
+      <rect x="0" y="0" width="220" height="40" rx="20" fill="#FFA726" filter="url(#shadow)"/>
+      <text x="110" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">温线索 (Warm): 50-70分</text>
+    </g>
+
+    <g transform="translate(480, 40)">
+      <rect x="0" y="0" width="220" height="40" rx="20" fill="#66BB6A" filter="url(#shadow)"/>
+      <text x="110" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">热线索 (Hot): &gt; 70分</text>
+    </g>
   </g>
 </svg>

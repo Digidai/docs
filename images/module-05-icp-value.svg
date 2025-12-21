@@ -1,58 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
-      <feOffset dx="1" dy="1" result="offsetblur" />
-      <feComponentTransfer>
-        <feFuncA type="linear" slope="0.1" />
-      </feComponentTransfer>
-      <feMerge>
-        <feMergeNode />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
     </filter>
-    <linearGradient id="gradRed" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#fff5f5;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#ffe3e3;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="gradGreen" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#f8fff8;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#e6ffe6;stop-opacity:1" />
-    </linearGradient>
   </defs>
 
-  <rect width="100%" height="100%" fill="#f8f9fa" />
-  <text x="400" y="40" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1d1d1f">ICP 的战略价值</text>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
 
-  <!-- Left Side: Without ICP -->
-  <rect x="50" y="80" width="340" height="300" rx="12" fill="url(#gradRed)" stroke="#ffa3a3" stroke-width="1" filter="url(#shadow)" />
-  <text x="220" y="115" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#c92a2a">❌ 没有清晰 ICP 的问题</text>
-  
-  <g transform="translate(70, 140)" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#495057">
-    <text y="25">• 营销信息模糊，触达不精准</text>
-    <text y="55">• 销售浪费时间在低质量线索</text>
-    <text y="85">• CAC (获客成本) 持续攀升</text>
-    <text y="115">• 产品方向不明，功能割裂</text>
-    <text y="145">• 客户流失率高，缺乏粘性</text>
+  <!-- Title -->
+  <text x="400" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">
+    ICP 的战略价值：混乱 vs 精准
+  </text>
+
+  <!-- Content Group -->
+  <g transform="translate(50, 100)">
+    
+    <!-- Left Side: Without ICP -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="320" height="240" rx="12" fill="#FAFAFA" stroke="#E5E5E7" stroke-width="1.5" filter="url(#shadow)"/>
+      <rect x="0" y="0" width="320" height="40" rx="12" fill="#FFEBEE"/>
+      <path d="M 0,40 L 320,40" stroke="#EF5350" stroke-width="0.5"/>
+      <text x="160" y="26" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#C62828">没有清晰 ICP 的问题</text>
+      
+      <g transform="translate(30, 75)">
+        <text font-family="sans-serif" font-size="14" fill="#333">
+          <tspan x="0" dy="0">• 营销信息模糊，点击率低</tspan>
+          <tspan x="0" dy="30">• 销售由于线索杂乱浪费时间</tspan>
+          <tspan x="0" dy="30">• CAC (获客成本) 居高不下</tspan>
+          <tspan x="0" dy="30">• 产品方向不明，各种需求都接</tspan>
+          <tspan x="0" dy="30">• 客户流失率高，缺乏粘性</tspan>
+        </text>
+      </g>
+    </g>
+
+    <!-- VS Divider -->
+    <circle cx="350" cy="120" r="25" fill="#333" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/>
+    <text x="350" y="127" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">VS</text>
+
+    <!-- Right Side: With ICP -->
+    <g transform="translate(380, 0)">
+      <rect x="0" y="0" width="320" height="240" rx="12" fill="#FAFAFA" stroke="#E5E5E7" stroke-width="1.5" filter="url(#shadow)"/>
+      <rect x="0" y="0" width="320" height="40" rx="12" fill="#E8F5E9"/>
+      <path d="M 0,40 L 320,40" stroke="#4CAF50" stroke-width="0.5"/>
+      <text x="160" y="26" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2E7D32">有清晰 ICP 的好处</text>
+      
+      <g transform="translate(30, 75)">
+        <text font-family="sans-serif" font-size="14" fill="#333">
+          <tspan x="0" dy="0">• 精准定向，营销转化率翻倍</tspan>
+          <tspan x="0" dy="30">• 销售聚焦高质量客户，成单快</tspan>
+          <tspan x="0" dy="30">• CAC 持续优化，ROI 提升</tspan>
+          <tspan x="0" dy="30">• 产品迭代有依据，深度穿透</tspan>
+          <tspan x="0" dy="30">• NRR (净收入留存) 持续提升</tspan>
+        </text>
+      </g>
+    </g>
   </g>
 
-  <!-- VS Divider -->
-  <circle cx="400" cy="230" r="25" fill="#ffffff" stroke="#d2d2d7" stroke-width="1" />
-  <text x="400" y="237" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#86868b">VS</text>
+  <!-- Impact Sections -->
+  <g transform="translate(50, 360)">
+    <text x="350" y="20" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#555">ICP 影响的关键决策：</text>
+    
+    <g transform="translate(0, 45)">
+      <rect x="0" y="0" width="165" height="60" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+      <text x="82.5" y="25" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1565C0">营销</text>
+      <text x="82.5" y="45" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555">渠道选择与内容</text>
+    </g>
 
-  <!-- Right Side: With ICP -->
-  <rect x="410" y="80" width="340" height="300" rx="12" fill="url(#gradGreen)" stroke="#92e692" stroke-width="1" filter="url(#shadow)" />
-  <text x="580" y="115" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#2b8a3e">✅ 有清晰 ICP 的好处</text>
-  
-  <g transform="translate(430, 140)" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#495057">
-    <text y="25">• 精准定向，营销转化率大幅提升</text>
-    <text y="55">• 销售聚焦高质量账户，缩短周期</text>
-    <text y="85">• CAC 持续优化，提升 ROI</text>
-    <text y="115">• 产品迭代有依据，快速建立优势</text>
-    <text y="145">• NRR (收入留存率) 持续提升</text>
+    <g transform="translate(178, 45)">
+      <rect x="0" y="0" width="165" height="60" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+      <text x="82.5" y="25" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E7D32">销售</text>
+      <text x="82.5" y="45" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555">线索分级与话术</text>
+    </g>
+
+    <g transform="translate(356, 45)">
+      <rect x="0" y="0" width="165" height="60" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="1"/>
+      <text x="82.5" y="25" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#E65100">产品</text>
+      <text x="82.5" y="45" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555">功能路线与定价</text>
+    </g>
+
+    <g transform="translate(534, 45)">
+      <rect x="0" y="0" width="165" height="60" rx="8" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1"/>
+      <text x="82.5" y="25" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#7B1FA2">客户成功</text>
+      <text x="82.5" y="45" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555">健康度衡量</text>
+    </g>
   </g>
-
-  <!-- Footer Pill -->
-  <rect x="50" y="400" width="700" height="30" rx="15" fill="#f2f2f7" />
-  <text x="400" y="420" font-family="Outfit, Inter, sans-serif" font-size="14" text-anchor="middle" fill="#86868b">ICP 是所有 GTM 决策的基石，决定了执行的效率和最终的成败</text>
 </svg>
