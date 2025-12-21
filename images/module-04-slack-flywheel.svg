@@ -1,58 +1,81 @@
-<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="800" height="500" fill="#F8FAFC" rx="16"/>
-  
-  <!-- Title -->
-  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">Slack 增长飞轮 (PLG 模式)</text>
-  
-  <!-- Flywheel Elements -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#6366F1" />
     </marker>
   </defs>
 
-  <!-- Central Value -->
-  <circle cx="400" cy="270" r="60" fill="#6366F1" opacity="0.1"/>
-  <circle cx="400" cy="270" r="50" fill="#6366F1"/>
-  <text x="400" y="265" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#FFFFFF">协作</text>
-  <text x="400" y="285" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#FFFFFF">核心</text>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
 
-  <!-- 1: Join & Trial -->
-  <rect x="300" y="80" width="200" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
-  <text x="400" y="108" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">1. 加入并开始试用</text>
-  <text x="400" y="125" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">低门槛、自助式注册</text>
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    Slack 增长飞轮 (PLG 模式)
+  </text>
 
-  <!-- 2. Invite Colleagues -->
-  <rect x="550" y="180" width="200" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
-  <text x="650" y="208" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">2. 邀请团队成员</text>
-  <text x="650" y="225" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">内置邀请机制、社交属性</text>
+  <!-- Flywheel Group -->
+  <g transform="translate(400, 320)">
+    <!-- Central Hub -->
+    <circle r="70" fill="#6366F1" filter="url(#shadow)"/>
+    <text y="-5" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">协作核心</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#E0E7FF">Network Effect</text>
 
-  <!-- 3. Network Effect -->
-  <rect x="550" y="340" width="200" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
-  <text x="650" y="368" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">3. 网络效应爆发</text>
-  <text x="650" y="385" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">沟通效率随用户数指数提升</text>
+    <!-- Flywheel Steps (Circular Layout) -->
+    <!-- 1. Join -->
+    <g transform="translate(0, -180)">
+      <rect x="-90" y="-35" width="180" height="70" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text y="-5" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1565C0">1. 加入并试用</text>
+      <text y="15" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555">低门槛自助注册</text>
+    </g>
 
-  <!-- 4. Habit & Dependency -->
-  <rect x="300" y="420" width="200" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
-  <text x="400" y="448" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">4. 建立使用习惯</text>
-  <text x="400" y="465" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">信息沉淀、多工具集成</text>
+    <!-- 2. Invite -->
+    <g transform="translate(160, -80)">
+      <rect x="-90" y="-35" width="180" height="70" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+      <text y="-5" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E7D32">2. 邀请成员</text>
+      <text y="15" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555">社交属性/拉新</text>
+    </g>
 
-  <!-- 5. Value Realization -->
-  <rect x="50" y="340" width="200" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
-  <text x="150" y="368" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">5. 价值实现与转化</text>
-  <text x="150" y="385" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">搜索限制触发付费升级</text>
+    <!-- 3. Network Exp -->
+    <g transform="translate(160, 80)">
+      <rect x="-90" y="-35" width="180" height="70" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+      <text y="-5" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E7D32">3. 网络效应</text>
+      <text y="15" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555">效率随用户数提升</text>
+    </g>
 
-  <!-- 6. Expansion -->
-  <rect x="50" y="180" width="200" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
-  <text x="150" y="208" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">6. 跨团队/组织扩展</text>
-  <text x="150" y="225" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">从一个团队扩散到整个公司</text>
+    <!-- 4. Habit -->
+    <g transform="translate(0, 180)">
+      <rect x="-90" y="-35" width="180" height="70" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+      <text y="-5" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#E65100">4. 建立习惯</text>
+      <text y="15" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555">信息沉淀/集成</text>
+    </g>
 
-  <!-- Circular Arrows -->
-  <path d="M 400 150 A 120 120 0 0 1 540 210" fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <path d="M 650 250 A 120 120 0 0 1 650 330" fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <path d="M 540 370 A 120 120 0 0 1 400 410" fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <path d="M 260 410 A 120 120 0 0 1 150 330" fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <path d="M 150 270 A 120 120 0 0 1 150 250" fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <path d="M 150 170 A 120 120 0 0 1 290 110" fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <!-- 5. Value/Conv -->
+    <g transform="translate(-160, 80)">
+      <rect x="-90" y="-35" width="180" height="70" rx="12" fill="#FFEBEE" stroke="#EF5350" stroke-width="1.5" filter="url(#shadow)"/>
+      <text y="-5" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#C62828">5. 价值转化</text>
+      <text y="15" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555">触发付费门槛</text>
+    </g>
+
+    <!-- 6. Expansion -->
+    <g transform="translate(-160, -80)">
+      <rect x="-90" y="-35" width="180" height="70" rx="12" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1.5" filter="url(#shadow)"/>
+      <text y="-5" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#7B1FA2">6. 组织扩展</text>
+      <text y="15" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555">跨团队病毒扩散</text>
+    </g>
+
+    <!-- Connecting Curved Arrows -->
+    <path d="M 120 -150 A 180 180 0 0 1 200 -30" fill="none" stroke="#6366F1" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    <path d="M 210 120 A 180 180 0 0 1 100 220" fill="none" stroke="#6366F1" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    <path d="M -100 220 A 180 180 0 0 1 -210 120" fill="none" stroke="#6366F1" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    <path d="M -200 -30 A 180 180 0 0 1 -120 -150" fill="none" stroke="#6366F1" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    <path d="M 0 -135 L 0 -80" stroke="#6366F1" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <!-- Bottom Result Pill -->
+  <rect x="150" y="530" width="500" height="40" rx="20" fill="#F8F9FA" stroke="#E2E8F0"/>
+  <text x="400" y="555" font-family="Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle" fill="#666">核心本质：将产品使用本身转化为获客与留存动力</text>
 </svg>
