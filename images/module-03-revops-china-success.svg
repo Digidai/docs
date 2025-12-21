@@ -1,0 +1,54 @@
+<svg width="800" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    中国企业 RevOps 成功关键 (Success Factors)
+  </text>
+
+  <!-- Content -->
+  <g transform="translate(50, 80)">
+    
+    <!-- Factor 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="340" height="180" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="30" y="40" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1565C0">1. 高管支持是前提</text>
+      
+      <g transform="translate(30, 70)">
+        <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333">
+          <tspan x="0" dy="0">• 必须有跨部门权限背书</tspan>
+          <tspan x="0" dy="35">• CEO/COO 直接支持最佳</tspan>
+          <tspan x="0" dy="35">• 定期向高管汇报进展</tspan>
+        </text>
+      </g>
+      <!-- Icon representation in corner -->
+      <circle cx="290" cy="40" r="20" fill="#BBDEFB"/>
+      <text x="290" y="46" text-anchor="middle" font-size="20">👑</text>
+    </g>
+
+    <!-- Factor 2 -->
+    <g transform="translate(360, 0)">
+      <rect x="0" y="0" width="340" height="180" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="30" y="40" font-family="sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">2. 从痛点切入，快速见效</text>
+      
+      <g transform="translate(30, 70)">
+        <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333">
+          <tspan x="0" dy="0">• 拒绝"大而全", 追求"小而美"</tspan>
+          <tspan x="0" dy="35">• 找到最痛点，快速解决</tspan>
+          <tspan x="0" dy="35">• 用小胜利 (Quick Wins) 建立信任</tspan>
+        </text>
+      </g>
+      <!-- Icon representation in corner -->
+      <circle cx="290" cy="40" r="20" fill="#C8E6C9"/>
+      <text x="290" y="46" text-anchor="middle" font-size="20">🚀</text>
+    </g>
+
+  </g>
+</svg>

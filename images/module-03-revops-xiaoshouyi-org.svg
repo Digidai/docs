@@ -1,0 +1,101 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    销售易 GTM 组织架构 (示例)
+  </text>
+
+  <!-- Org Chart -->
+  <g transform="translate(0, 50)">
+    
+    <!-- CEO -->
+    <g transform="translate(325, 30)">
+      <rect x="0" y="0" width="150" height="50" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="75" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#F57C00">CEO</text>
+    </g>
+    
+    <!-- Vertical Line from CEO -->
+    <line x1="400" y1="80" x2="400" y2="120" stroke="#555" stroke-width="2"/>
+    
+    <!-- Horizontal Line -->
+    <line x1="150" y1="120" x2="650" y2="120" stroke="#555" stroke-width="2"/>
+    
+    <!-- Vertical Lines to L2 -->
+    <line x1="150" y1="120" x2="150" y2="150" stroke="#555" stroke-width="2"/>
+    <line x1="400" y1="120" x2="400" y2="150" stroke="#555" stroke-width="2"/>
+    <line x1="650" y1="120" x2="650" y2="150" stroke="#555" stroke-width="2"/>
+    
+    <!-- L2: CMO -->
+    <g transform="translate(75, 150)">
+      <rect x="0" y="0" width="150" height="60" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="75" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565C0">CMO</text>
+      <text x="75" y="45" text-anchor="middle" font-size="12" fill="#555">市场负责</text>
+    </g>
+
+    <!-- L2: VP Ops (RevOps) -->
+    <g transform="translate(325, 150)">
+      <rect x="0" y="0" width="150" height="60" rx="8" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="75" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#6A1B9A">业务运营 VP</text>
+      <text x="75" y="45" text-anchor="middle" font-size="12" fill="#555">(RevOps)</text>
+    </g>
+
+    <!-- L2: CRO -->
+    <g transform="translate(575, 150)">
+      <rect x="0" y="0" width="150" height="60" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="75" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565C0">CRO</text>
+      <text x="75" y="45" text-anchor="middle" font-size="12" fill="#555">销售负责</text>
+    </g>
+    
+    <!-- Verticals to L3 -->
+    <line x1="150" y1="210" x2="150" y2="240" stroke="#555" stroke-width="2"/>
+    <line x1="400" y1="210" x2="400" y2="240" stroke="#555" stroke-width="2"/>
+    <line x1="650" y1="210" x2="650" y2="240" stroke="#555" stroke-width="2"/>
+
+    <!-- L3: Mkt Team -->
+    <g transform="translate(75, 240)">
+      <rect x="0" y="0" width="150" height="90" rx="8" fill="#fff" stroke="#90CAF9" stroke-width="1.5"/>
+      <text x="75" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">市场团队</text>
+      <line x1="10" y1="30" x2="140" y2="30" stroke="#eee"/>
+      <text x="20" y="50" font-size="11" fill="#555">• 品牌</text>
+      <text x="20" y="65" font-size="11" fill="#555">• 获客</text>
+      <text x="20" y="80" font-size="11" fill="#555">• 内容</text>
+    </g>
+
+    <!-- L3: RevOps Team -->
+    <g transform="translate(325, 240)">
+      <rect x="0" y="0" width="150" height="90" rx="8" fill="#fff" stroke="#CE93D8" stroke-width="1.5"/>
+      <text x="75" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">运营团队</text>
+      <line x1="10" y1="30" x2="140" y2="30" stroke="#eee"/>
+      <text x="20" y="50" font-size="11" fill="#555">• 数据分析</text>
+      <text x="20" y="65" font-size="11" fill="#555">• 系统管理</text>
+      <text x="20" y="80" font-size="11" fill="#555">• 流程 / BI</text>
+    </g>
+
+    <!-- L3: Sales Team -->
+    <g transform="translate(575, 240)">
+      <rect x="0" y="0" width="150" height="90" rx="8" fill="#fff" stroke="#90CAF9" stroke-width="1.5"/>
+      <text x="75" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">销售团队</text>
+      <line x1="10" y1="30" x2="140" y2="30" stroke="#eee"/>
+      <text x="20" y="50" font-size="11" fill="#555">• 直销</text>
+      <text x="20" y="65" font-size="11" fill="#555">• 渠道</text>
+      <text x="20" y="80" font-size="11" fill="#555">• 大客户</text>
+    </g>
+
+    <!-- Platform Bottom -->
+    <path d="M 400,330 L 400,360" stroke="#555" stroke-width="2"/>
+    <g transform="translate(250, 360)">
+      <rect x="0" y="0" width="300" height="50" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#2E7D32">统一数据平台 (CRM)</text>
+      <text x="150" y="40" text-anchor="middle" font-size="11" fill="#555">Single Source of Truth</text>
+    </g>
+
+  </g>
+</svg>
