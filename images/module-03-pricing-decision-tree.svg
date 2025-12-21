@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="850" height="650" xmlns="http://www.w3.org/2000/svg">
+<svg width="850" height="800" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
@@ -22,11 +22,11 @@
       .overlay-box { fill: #FFF7ED; stroke: #F97316; stroke-width: 2; stroke-dasharray: 4,4; rx: 6; }
       .overlay-text { font-family: sans-serif; font-size: 13px; font-weight: bold; fill: #9A3412; }
     </style>
-    <marker id="arrowhead-no" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#94A3B8"/>
+    <marker id="arrowhead-no" markerWidth="12" markerHeight="9" refX="11" refY="4.5" orient="auto">
+      <polygon points="0 0, 12 4.5, 0 9" fill="#94A3B8"/>
     </marker>
-    <marker id="arrowhead-yes" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#16A34A"/>
+    <marker id="arrowhead-yes" markerWidth="12" markerHeight="9" refX="11" refY="4.5" orient="auto">
+      <polygon points="0 0, 12 4.5, 0 9" fill="#16A34A"/>
     </marker>
   </defs>
 
@@ -34,100 +34,105 @@
   <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
 
   <!-- Title -->
-  <text x="425" y="45" text-anchor="middle" class="title">定价模型选择路径图</text>
+  <text x="425" y="50" text-anchor="middle" class="title">定价模型选择路径图</text>
 
   <!-- LEFT COLUMN: QUESTIONS (The Spine) -->
+  <!-- Center X of Question Boxes: 120 + 240/2 = 240 -->
+  <!-- Left padding: 120 -->
   
   <!-- Q1 -->
-  <g transform="translate(150, 100)">
+  <g transform="translate(120, 100)">
     <!-- Hexagon shape for decision -->
-    <path d="M 0,30 L 30,0 L 210,0 L 240,30 L 210,60 L 30,60 Z" class="q-box" filter="url(#shadow)"/>
-    <text x="120" y="36" text-anchor="middle" class="q-text">Q1: 使用量与价值强相关？</text>
+    <path d="M 0,35 L 35,0 L 205,0 L 240,35 L 205,70 L 35,70 Z" class="q-box" filter="url(#shadow)"/>
+    <text x="120" y="41" text-anchor="middle" class="q-text">Q1: 使用量与价值强相关？</text>
   </g>
 
   <!-- Path Q1 -> Q2 (NO) -->
-  <path d="M 270,160 L 270,220" class="path-no" marker-end="url(#arrowhead-no)"/>
-  <g transform="translate(255, 180)">
+  <path d="M 240,170 L 240,260" class="path-no" marker-end="url(#arrowhead-no)"/> <!-- 90px length arrow + gaps -->
+  <g transform="translate(225, 205)">
     <rect x="0" y="0" width="30" height="20" class="badge-no"/>
     <text x="15" y="14" text-anchor="middle" class="text-no">否</text>
   </g>
 
   <!-- Q2 -->
-  <g transform="translate(150, 220)">
-    <path d="M 0,30 L 30,0 L 210,0 L 240,30 L 210,60 L 30,60 Z" class="q-box" filter="url(#shadow)"/>
-    <text x="120" y="36" text-anchor="middle" class="q-text">Q2: 用户数与价值相关？</text>
+  <g transform="translate(120, 260)">
+    <path d="M 0,35 L 35,0 L 205,0 L 240,35 L 205,70 L 35,70 Z" class="q-box" filter="url(#shadow)"/>
+    <text x="120" y="41" text-anchor="middle" class="q-text">Q2: 用户数与价值相关？</text>
   </g>
 
   <!-- Path Q2 -> Q3 (NO) -->
-  <path d="M 270,280 L 270,340" class="path-no" marker-end="url(#arrowhead-no)"/>
-  <g transform="translate(255, 300)">
+  <path d="M 240,330 L 240,420" class="path-no" marker-end="url(#arrowhead-no)"/>
+  <g transform="translate(225, 365)">
     <rect x="0" y="0" width="30" height="20" class="badge-no"/>
     <text x="15" y="14" text-anchor="middle" class="text-no">否</text>
   </g>
 
   <!-- Q3 -->
-  <g transform="translate(150, 340)">
-    <path d="M 0,30 L 30,0 L 210,0 L 240,30 L 210,60 L 30,60 Z" class="q-box" filter="url(#shadow)"/>
-    <text x="120" y="36" text-anchor="middle" class="q-text">Q3: 客户需求差异大？</text>
+  <g transform="translate(120, 420)">
+    <path d="M 0,35 L 35,0 L 205,0 L 240,35 L 205,70 L 35,70 Z" class="q-box" filter="url(#shadow)"/>
+    <text x="120" y="41" text-anchor="middle" class="q-text">Q3: 客户需求差异大？</text>
   </g>
 
   <!-- Path Q3 -> Flat (NO - Final Fallback) -->
-  <path d="M 270,400 L 270,460" class="path-no" marker-end="url(#arrowhead-no)"/>
-  <g transform="translate(255, 420)">
+  <path d="M 240,490 L 240,580" class="path-no" marker-end="url(#arrowhead-no)"/>
+  <g transform="translate(225, 525)">
     <rect x="0" y="0" width="30" height="20" class="badge-no"/>
     <text x="15" y="14" text-anchor="middle" class="text-no">否</text>
   </g>
 
   <!-- Fallback Result: Flat Rate -->
-  <g transform="translate(150, 460)">
-    <rect x="0" y="0" width="240" height="70" class="r-box-no" filter="url(#shadow)"/>
-    <text x="120" y="30" text-anchor="middle" class="r-text-no">Flat-Rate (一口价)</text>
-    <text x="120" y="52" text-anchor="middle" class="r-sub" fill="#64748B">适合简单标准产品</text>
+  <g transform="translate(120, 580)">
+    <rect x="0" y="0" width="240" height="80" class="r-box-no" filter="url(#shadow)"/>
+    <text x="120" y="35" text-anchor="middle" class="r-text-no">Flat-Rate (一口价)</text>
+    <text x="120" y="60" text-anchor="middle" class="r-sub" fill="#64748B">适合简单标准产品</text>
   </g>
 
 
   <!-- RIGHT COLUMN: RESULTS (The Ribs) -->
+  <!-- Question Ends at X = 120 + 240 = 360 -->
+  <!-- Target X Start = 550 -->
+  <!-- Arrow Length = 550 - 360 = 190px (Plenty of space) -->
 
   <!-- R1: Usage -->
-  <path d="M 390,130 L 480,130" class="path-yes" marker-end="url(#arrowhead-yes)"/>
-  <g transform="translate(420, 120)">
+  <path d="M 360,135 L 550,135" class="path-yes" marker-end="url(#arrowhead-yes)"/>
+  <g transform="translate(435, 125)"> <!-- Centered on arrow approx -->
     <rect x="0" y="0" width="30" height="20" class="badge-yes"/>
     <text x="15" y="14" text-anchor="middle" class="text-yes">是</text>
   </g>
-  <g transform="translate(480, 95)">
-    <rect x="0" y="0" width="280" height="70" class="r-box-yes" filter="url(#shadow)"/>
-    <text x="140" y="30" text-anchor="middle" class="r-text-yes">Usage-Based / Hybrid</text>
-    <text x="140" y="52" text-anchor="middle" class="r-sub">按用量计费 (如 Snowflake)</text>
+  <g transform="translate(550, 95)">
+    <rect x="0" y="0" width="260" height="80" class="r-box-yes" filter="url(#shadow)"/>
+    <text x="130" y="35" text-anchor="middle" class="r-text-yes">Usage-Based / Hybrid</text>
+    <text x="130" y="60" text-anchor="middle" class="r-sub">按用量计费 (如 Snowflake)</text>
   </g>
 
   <!-- R2: Seat -->
-  <path d="M 390,250 L 480,250" class="path-yes" marker-end="url(#arrowhead-yes)"/>
-  <g transform="translate(420, 240)">
+  <path d="M 360,295 L 550,295" class="path-yes" marker-end="url(#arrowhead-yes)"/>
+  <g transform="translate(435, 285)">
     <rect x="0" y="0" width="30" height="20" class="badge-yes"/>
     <text x="15" y="14" text-anchor="middle" class="text-yes">是</text>
   </g>
-  <g transform="translate(480, 215)">
-    <rect x="0" y="0" width="280" height="70" class="r-box-yes" filter="url(#shadow)"/>
-    <text x="140" y="30" text-anchor="middle" class="r-text-yes">Seat-Based</text>
-    <text x="140" y="52" text-anchor="middle" class="r-sub">按人头计费 (如 Salesforce)</text>
+  <g transform="translate(550, 255)">
+    <rect x="0" y="0" width="260" height="80" class="r-box-yes" filter="url(#shadow)"/>
+    <text x="130" y="35" text-anchor="middle" class="r-text-yes">Seat-Based</text>
+    <text x="130" y="60" text-anchor="middle" class="r-sub">按人头计费 (如 Salesforce)</text>
   </g>
 
   <!-- R3: Tiered -->
-  <path d="M 390,370 L 480,370" class="path-yes" marker-end="url(#arrowhead-yes)"/>
-  <g transform="translate(420, 360)">
+  <path d="M 360,455 L 550,455" class="path-yes" marker-end="url(#arrowhead-yes)"/>
+  <g transform="translate(435, 445)">
     <rect x="0" y="0" width="30" height="20" class="badge-yes"/>
     <text x="15" y="14" text-anchor="middle" class="text-yes">是</text>
   </g>
-  <g transform="translate(480, 335)">
-    <rect x="0" y="0" width="280" height="70" class="r-box-yes" filter="url(#shadow)"/>
-    <text x="140" y="30" text-anchor="middle" class="r-text-yes">Tiered Pricing</text>
-    <text x="140" y="52" text-anchor="middle" class="r-sub">分层套餐 (如 HubSpot)</text>
+  <g transform="translate(550, 415)">
+    <rect x="0" y="0" width="260" height="80" class="r-box-yes" filter="url(#shadow)"/>
+    <text x="130" y="35" text-anchor="middle" class="r-text-yes">Tiered Pricing</text>
+    <text x="130" y="60" text-anchor="middle" class="r-sub">分层套餐 (如 HubSpot)</text>
   </g>
 
   <!-- Overlay: Acquisition -->
-  <g transform="translate(480, 470)">
-    <rect x="0" y="0" width="280" height="50" class="overlay-box"/>
-    <text x="140" y="30" text-anchor="middle" class="overlay-text">需要降低获客门槛？ → 叠加 Freemium</text>
+  <g transform="translate(440, 600)"> <!-- Spaced out from bottom result -->
+    <rect x="0" y="0" width="300" height="50" class="overlay-box"/>
+    <text x="150" y="30" text-anchor="middle" class="overlay-text">需要降低获客门槛？ → 叠加 Freemium</text>
   </g>
 
 </svg>
