@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .card-title { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #4c1d95; }
+      .card-sub { font-family: sans-serif; font-size: 12px; font-weight: bold; fill: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; }
+      .bullet { font-family: sans-serif; font-size: 13px; fill: #4b5563; }
+      .icon-circle { fill: #F5F3FF; stroke: #8B5CF6; stroke-width: 2; }
+      .icon-text { font-family: sans-serif; font-size: 18px; font-weight: bold; fill: #7C3AED; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" class="title">渠道合作伙伴类型 (Channel Partner Types)</text>
+
+  <!-- Container -->
+  <g transform="translate(25, 80)">
+
+    <!-- 1. Distributor -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="160" height="280" rx="8" fill="#F3E8FF" stroke="#D8B4FE" stroke-width="2" filter="url(#shadow)"/>
+      
+      <!-- Icon -->
+      <circle cx="80" cy="40" r="20" class="icon-circle"/>
+      <text x="80" y="46" text-anchor="middle" class="icon-text">D</text>
+      
+      <!-- Title -->
+      <text x="80" y="80" text-anchor="middle" class="card-title">Distributor</text>
+      <text x="80" y="100" text-anchor="middle" class="card-sub">分销商</text>
+      
+      <!-- Content -->
+      <line x1="20" y1="115" x2="140" y2="115" stroke="#E9D5FF" stroke-width="2"/>
+      
+      <text x="10" y="140" class="bullet">• 批量采购 &amp; 分发</text>
+      <text x="10" y="160" class="bullet">• 物流资金支持</text>
+      <text x="10" y="180" class="bullet">• 较少触达终端</text>
+      
+      <text x="80" y="240" text-anchor="middle" font-size="11" fill="#6B7280" font-style="italic">Ex: Ingram Micro</text>
+    </g>
+
+    <!-- 2. VAR -->
+    <g transform="translate(175, 0)">
+      <rect x="0" y="0" width="160" height="280" rx="8" fill="#F3E8FF" stroke="#D8B4FE" stroke-width="2" filter="url(#shadow)"/>
+      <circle cx="80" cy="40" r="20" class="icon-circle"/>
+      <text x="80" y="46" text-anchor="middle" class="icon-text">V</text>
+      
+      <text x="80" y="80" text-anchor="middle" class="card-title">VAR</text>
+      <text x="80" y="100" text-anchor="middle" class="card-sub">增值经销商</text>
+      
+      <line x1="20" y1="115" x2="140" y2="115" stroke="#E9D5FF" stroke-width="2"/>
+      
+      <text x="10" y="140" class="bullet">• 增加服务价值</text>
+      <text x="10" y="160" class="bullet">• 咨询/实施/培训</text>
+      <text x="10" y="180" class="bullet">• 深度客户关系</text>
+      
+      <text x="80" y="240" text-anchor="middle" font-size="11" fill="#6B7280" font-style="italic">Ex: Local IT Shop</text>
+    </g>
+
+    <!-- 3. SI -->
+    <g transform="translate(350, 0)">
+      <rect x="0" y="0" width="160" height="280" rx="8" fill="#F3E8FF" stroke="#D8B4FE" stroke-width="2" filter="url(#shadow)"/>
+      <circle cx="80" cy="40" r="20" class="icon-circle"/>
+      <text x="80" y="46" text-anchor="middle" class="icon-text">S</text>
+      
+      <text x="80" y="80" text-anchor="middle" class="card-title">SI</text>
+      <text x="80" y="100" text-anchor="middle" class="card-sub">系统集成商</text>
+      
+      <line x1="20" y1="115" x2="140" y2="115" stroke="#E9D5FF" stroke-width="2"/>
+      
+      <text x="10" y="140" class="bullet">• 整合复杂方案</text>
+      <text x="10" y="160" class="bullet">• 大型项目主导</text>
+      <text x="10" y="180" class="bullet">• 咨询驱动</text>
+      
+      <text x="80" y="240" text-anchor="middle" font-size="11" fill="#6B7280" font-style="italic">Ex: Accenture</text>
+    </g>
+
+    <!-- 4. MSP -->
+    <g transform="translate(525, 0)">
+      <rect x="0" y="0" width="160" height="280" rx="8" fill="#F3E8FF" stroke="#D8B4FE" stroke-width="2" filter="url(#shadow)"/>
+      <circle cx="80" cy="40" r="20" class="icon-circle"/>
+      <text x="80" y="46" text-anchor="middle" class="icon-text">M</text>
+      
+      <text x="80" y="80" text-anchor="middle" class="card-title">MSP</text>
+      <text x="80" y="100" text-anchor="middle" class="card-sub">托管服务商</text>
+      
+      <line x1="20" y1="115" x2="140" y2="115" stroke="#E9D5FF" stroke-width="2"/>
+      
+      <text x="10" y="140" class="bullet">• 代运营/管理</text>
+      <text x="10" y="160" class="bullet">• 持续服务收入</text>
+      <text x="10" y="180" class="bullet">• 外包模式</text>
+      
+      <text x="80" y="240" text-anchor="middle" font-size="11" fill="#6B7280" font-style="italic">Ex: Managed Ops</text>
+    </g>
+
+    <!-- 5. Agent -->
+    <g transform="translate(700, 0)">
+      <rect x="0" y="0" width="160" height="280" rx="8" fill="#F3E8FF" stroke="#D8B4FE" stroke-width="2" filter="url(#shadow)"/>
+      <circle cx="80" cy="40" r="20" class="icon-circle"/>
+      <text x="80" y="46" text-anchor="middle" class="icon-text">A</text>
+      
+      <text x="80" y="80" text-anchor="middle" class="card-title">Agent</text>
+      <text x="80" y="100" text-anchor="middle" class="card-sub">代理/推荐</text>
+      
+      <line x1="20" y1="115" x2="140" y2="115" stroke="#E9D5FF" stroke-width="2"/>
+      
+      <text x="10" y="140" class="bullet">• 介绍获佣金</text>
+      <text x="10" y="160" class="bullet">• 不直接交付</text>
+      <text x="10" y="180" class="bullet">• 轻量级合作</text>
+      
+      <text x="80" y="240" text-anchor="middle" font-size="11" fill="#6B7280" font-style="italic">Ex: Referral</text>
+    </g>
+
+  </g>
+
+</svg>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cbd5e1"/>
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .box-title { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #ffffff; }
+      .step-title { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #475569; }
+      .desc-text { font-family: sans-serif; font-size: 13px; fill: #64748b; }
+      .connector-line { stroke: #cbd5e1; stroke-width: 2; fill: none; }
+      .highlight-box { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="title">渠道的本质 (The Essence of Channels)</text>
+
+  <!-- Main Flow Container -->
+  <g transform="translate(50, 100)">
+    
+    <!-- Left Endpoint: Product -->
+    <g transform="translate(0, 40)">
+      <rect x="0" y="0" width="100" height="60" rx="8" fill="#3B82F6" filter="url(#shadow)"/>
+      <text x="50" y="25" text-anchor="middle" class="box-title">你的产品</text>
+      <text x="50" y="45" text-anchor="middle" font-size="12" fill="#DBEAFE">Your Product</text>
+    </g>
+
+    <!-- Right Endpoint: Customer -->
+    <g transform="translate(600, 40)">
+      <rect x="0" y="0" width="100" height="60" rx="8" fill="#10B981" filter="url(#shadow)"/>
+      <text x="50" y="25" text-anchor="middle" class="box-title">目标客户</text>
+      <text x="50" y="45" text-anchor="middle" font-size="12" fill="#D1FAE5">Target Customer</text>
+    </g>
+
+    <!-- The Connector Path (Channel) -->
+    <line x1="110" y1="70" x2="590" y2="70" class="connector-line" marker-end="url(#arrowhead)"/>
+
+    <!-- Process Nodes (Stages) -->
+    <!-- Spacing: 110 to 590 is 480px gap. 5 steps roughly distributed. -->
+    
+    <!-- 1. Awareness -->
+    <g transform="translate(150, 0)">
+       <!-- Top Label -->
+       <text x="0" y="20" text-anchor="middle" class="step-title">认知</text>
+       <text x="0" y="35" text-anchor="middle" font-size="11" fill="#94a3b8">Awareness</text>
+       <!-- Node -->
+       <circle cx="0" cy="70" r="6" fill="#ffffff" stroke="#3B82F6" stroke-width="2"/>
+       <!-- Bottom Desc -->
+       <text x="0" y="110" text-anchor="middle" class="desc-text" font-weight="bold">如何发现?</text>
+       <text x="0" y="130" text-anchor="middle" class="desc-text">Discovery</text>
+    </g>
+
+    <!-- 2. Interest -->
+    <g transform="translate(250, 0)">
+       <text x="0" y="20" text-anchor="middle" class="step-title">兴趣</text>
+       <text x="0" y="35" text-anchor="middle" font-size="11" fill="#94a3b8">Interest</text>
+       <circle cx="0" cy="70" r="6" fill="#ffffff" stroke="#3B82F6" stroke-width="2"/>
+       
+       <!-- Shared evaluation text -->
+       <line x1="0" y1="95" x2="100" y2="95" stroke="#cbd5e1" stroke-width="1"/>
+       <text x="50" y="110" text-anchor="middle" class="desc-text" font-weight="bold">如何了解/评估?</text>
+       <text x="50" y="130" text-anchor="middle" class="desc-text">Evaluation</text>
+    </g>
+
+    <!-- 3. Evaluation -->
+    <g transform="translate(350, 0)">
+       <text x="0" y="20" text-anchor="middle" class="step-title">评估</text>
+       <text x="0" y="35" text-anchor="middle" font-size="11" fill="#94a3b8">Evaluation</text>
+       <circle cx="0" cy="70" r="6" fill="#ffffff" stroke="#3B82F6" stroke-width="2"/>
+    </g>
+
+    <!-- 4. Purchase -->
+    <g transform="translate(450, 0)">
+       <text x="0" y="20" text-anchor="middle" class="step-title">购买</text>
+       <text x="0" y="35" text-anchor="middle" font-size="11" fill="#94a3b8">Purchase</text>
+       <circle cx="0" cy="70" r="6" fill="#ffffff" stroke="#3B82F6" stroke-width="2"/>
+       
+       <text x="0" y="110" text-anchor="middle" class="desc-text" font-weight="bold">如何购买?</text>
+       <text x="0" y="130" text-anchor="middle" class="desc-text">Transact</text>
+    </g>
+
+    <!-- 5. Usage -->
+    <g transform="translate(550, 0)">
+       <text x="0" y="20" text-anchor="middle" class="step-title">使用</text>
+       <text x="0" y="35" text-anchor="middle" font-size="11" fill="#94a3b8">Usage</text>
+       <circle cx="0" cy="70" r="6" fill="#ffffff" stroke="#3B82F6" stroke-width="2"/>
+       
+       <text x="0" y="110" text-anchor="middle" class="desc-text" font-weight="bold">如何获得支持?</text>
+       <text x="0" y="130" text-anchor="middle" class="desc-text">Support</text>
+    </g>
+
+  </g>
+
+  <!-- Summary Box -->
+  <g transform="translate(50, 280)">
+    <rect x="0" y="0" width="700" height="80" rx="8" fill="#F8FAFC" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="350" y="30" text-anchor="middle" class="step-title" fill="#334155">渠道决定了全生命周期的触达 (Channels Define the Lifecycle Touchpoints)</text>
+    
+    <!-- Connectors pointing up to the distinct sections if feasible, or just text -->
+    <path d="M 150,0 L 150,-20" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,2"/>
+    <path d="M 300,0 L 300,-20" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,2"/>
+    <path d="M 450,0 L 450,-20" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,2"/>
+    <path d="M 550,0 L 550,-20" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,2"/>
+    
+    <text x="350" y="55" text-anchor="middle" class="desc-text">触达效率 • 转化体验 • 服务质量</text>
+  </g>
+
+</svg>

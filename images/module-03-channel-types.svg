@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="850" height="550" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="slider-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#93C5FD"/>
+    </linearGradient>
+    <marker id="arrow-start" markerWidth="10" markerHeight="7" refX="1" refY="3.5" orient="auto">
+       <polygon points="10 0, 0 3.5, 10 7" fill="#64748b"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+       <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .box-title { font-family: sans-serif; font-size: 15px; font-weight: bold; }
+      .box-desc { font-family: sans-serif; font-size: 13px; fill: #475569; }
+      .slider-label { font-family: sans-serif; font-size: 13px; font-weight: bold; fill: #334155; }
+      .slider-end-label { font-family: sans-serif; font-size: 12px; fill: #64748b; }
+      .connector-line { stroke: #cbd5e1; stroke-width: 2; fill: none; }
+      .icon { font-size: 24px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="425" y="40" text-anchor="middle" class="title">四大渠道类型 (Four Channel Types)</text>
+
+  <!-- Channel Cards - Arranged Horizontally -->
+  <g transform="translate(25, 80)">
+    
+    <!-- 1. Direct Sales -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="180" height="140" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2" filter="url(#shadow)"/>
+      <text x="90" y="30" text-anchor="middle" class="icon">👤</text>
+      <text x="90" y="60" text-anchor="middle" class="box-title" fill="#1D4ED8">1. Direct Sales</text>
+      <text x="90" y="80" text-anchor="middle" class="box-title" fill="#1D4ED8">(直销)</text>
+      <text x="90" y="110" text-anchor="middle" class="box-desc">自建销售团队</text>
+      <text x="90" y="125" text-anchor="middle" class="box-desc">直接触达客户</text>
+    </g>
+
+    <!-- 2. Channel Sales -->
+    <g transform="translate(205, 0)">
+      <rect x="0" y="0" width="180" height="140" rx="8" fill="#F0FDF4" stroke="#22C55E" stroke-width="2" filter="url(#shadow)"/>
+      <text x="90" y="30" text-anchor="middle" class="icon">🤝</text>
+      <text x="90" y="60" text-anchor="middle" class="box-title" fill="#15803D">2. Channel Sales</text>
+      <text x="90" y="80" text-anchor="middle" class="box-title" fill="#15803D">(渠道销售)</text>
+      <text x="90" y="110" text-anchor="middle" class="box-desc">经销商/代理商</text>
+      <text x="90" y="125" text-anchor="middle" class="box-desc">分销网络</text>
+    </g>
+
+    <!-- 3. Partnerships -->
+    <g transform="translate(410, 0)">
+      <rect x="0" y="0" width="180" height="140" rx="8" fill="#FFF7ED" stroke="#F97316" stroke-width="2" filter="url(#shadow)"/>
+      <text x="90" y="30" text-anchor="middle" class="icon">🔗</text>
+      <text x="90" y="60" text-anchor="middle" class="box-title" fill="#C2410C">3. Partnerships</text>
+      <text x="90" y="80" text-anchor="middle" class="box-title" fill="#C2410C">(战略合作)</text>
+      <text x="90" y="110" text-anchor="middle" class="box-desc">联合 GTM</text>
+      <text x="90" y="125" text-anchor="middle" class="box-desc">资源互换</text>
+    </g>
+
+    <!-- 4. Marketplace -->
+    <g transform="translate(615, 0)">
+      <rect x="0" y="0" width="180" height="140" rx="8" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="2" filter="url(#shadow)"/>
+      <text x="90" y="30" text-anchor="middle" class="icon">🛒</text>
+      <text x="90" y="60" text-anchor="middle" class="box-title" fill="#6D28D9">4. Marketplace</text>
+      <text x="90" y="80" text-anchor="middle" class="box-title" fill="#6D28D9">(云市场)</text>
+      <text x="90" y="110" text-anchor="middle" class="box-desc">AWS/Azure</text>
+      <text x="90" y="125" text-anchor="middle" class="box-desc">生态流量</text>
+    </g>
+  </g>
+
+  <!-- Comparison Spectrums -->
+  <g transform="translate(75, 260)">
+    
+    <!-- Spectrum 1: Control -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="20" class="slider-label">控制力 (Control)</text>
+      
+      <!-- Line -->
+      <line x1="150" y1="15" x2="650" y2="15" stroke="#94a3b8" stroke-width="3" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+      
+      <!-- Indicators -->
+      <text x="150" y="40" text-anchor="middle" class="slider-end-label" font-weight="bold">HIGH (高)</text>
+      <text x="650" y="40" text-anchor="middle" class="slider-end-label" font-weight="bold">LOW (低)</text>
+      
+      <!-- Ticks for context -->
+      <!-- Direct is High -->
+      <circle cx="150" cy="15" r="5" fill="#3B82F6"/>
+      <!-- Marketplace is Low -->
+      <circle cx="650" cy="15" r="5" fill="#8B5CF6"/>
+    </g>
+
+    <!-- Spectrum 2: Scalability -->
+    <g transform="translate(0, 80)">
+      <text x="0" y="20" class="slider-label">规模化 (Scale)</text>
+      <line x1="150" y1="15" x2="650" y2="15" stroke="#94a3b8" stroke-width="3" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+      
+      <text x="150" y="40" text-anchor="middle" class="slider-end-label" font-weight="bold">SLOW (慢)</text>
+      <text x="650" y="40" text-anchor="middle" class="slider-end-label" font-weight="bold">FAST (快)</text>
+      
+      <circle cx="150" cy="15" r="5" fill="#3B82F6"/>
+      <circle cx="650" cy="15" r="5" fill="#8B5CF6"/>
+    </g>
+
+    <!-- Spectrum 3: Cost Structure -->
+    <g transform="translate(0, 160)">
+      <text x="0" y="20" class="slider-label">成本结构 (Cost)</text>
+      <line x1="150" y1="15" x2="650" y2="15" stroke="#94a3b8" stroke-width="3" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+      
+      <text x="150" y="40" text-anchor="middle" class="slider-end-label" font-weight="bold">高固定成本 (Fixed)</text>
+      <text x="650" y="40" text-anchor="middle" class="slider-end-label" font-weight="bold">高可变成本 (Variable)</text>
+      
+      <circle cx="150" cy="15" r="5" fill="#3B82F6"/>
+      <circle cx="650" cy="15" r="5" fill="#8B5CF6"/>
+    </g>
+
+  </g>
+
+  <!-- Legend / Insight -->
+  <g transform="translate(425, 480)">
+     <text x="0" y="0" text-anchor="middle" class="box-desc" font-style="italic">"Direct Sales offers max control but scales linearly with headcount."</text>
+     <text x="0" y="20" text-anchor="middle" class="box-desc" font-style="italic">"Marketplaces offer instant reach but high commission costs."</text>
+  </g>
+
+</svg>

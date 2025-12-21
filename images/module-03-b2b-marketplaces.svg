@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="850" height="700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .card-title { font-family: sans-serif; font-size: 18px; font-weight: bold; fill: #1e293b; }
+      .bullet { font-family: sans-serif; font-size: 13px; fill: #334155; }
+      .fee-badge { font-family: sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; }
+      .section-label { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #64748b; text-transform: uppercase; }
+      .other-pill { font-family: sans-serif; font-size: 12px; font-weight: 500; fill: #475569; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="425" y="40" text-anchor="middle" class="title">主要 B2B Marketplace (Major B2B Marketplaces)</text>
+
+  <!-- GRID START -->
+  <g transform="translate(65, 80)">
+
+    <!-- 1. AWS -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="340" height="180" rx="8" fill="#FFF7ED" stroke="#F97316" stroke-width="2" filter="url(#shadow)"/>
+      <path d="M 0,8 a8,8 0 0 1 8,-8 h324 a8,8 0 0 1 8,8 v32 h-340 z" fill="#FFEDD5"/> <!-- Header BG -->
+      
+      <text x="15" y="26" class="card-title" fill="#C2410C">AWS Marketplace</text>
+      
+      <!-- Commission Badge -->
+      <rect x="250" y="10" width="80" height="24" rx="12" fill="#F97316"/>
+      <text x="290" y="26" text-anchor="middle" class="fee-badge">Fee: 3-5%</text>
+
+      <g transform="translate(15, 60)">
+        <text x="0" y="0" class="bullet">• 最大的云软件市场 (4,000+ Products)</text>
+        <text x="0" y="25" class="bullet">• 支持复杂采购 (Private Offers)</text>
+        <text x="0" y="50" class="bullet">• 消耗 AWS 预算 (EDP Burn-down)</text>
+        <text x="0" y="75" class="bullet" fill="#9A3412" font-weight="bold">Strength: Infrastructure &amp; DevOps</text>
+      </g>
+    </g>
+
+    <!-- 2. Azure -->
+    <g transform="translate(380, 0)">
+      <rect x="0" y="0" width="340" height="180" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2" filter="url(#shadow)"/>
+      <path d="M 0,8 a8,8 0 0 1 8,-8 h324 a8,8 0 0 1 8,8 v32 h-340 z" fill="#DBEAFE"/>
+      
+      <text x="15" y="26" class="card-title" fill="#1E40AF">Azure Marketplace</text>
+      
+      <rect x="250" y="10" width="80" height="24" rx="12" fill="#3B82F6"/>
+      <text x="290" y="26" text-anchor="middle" class="fee-badge">Fee: ~3%</text>
+
+      <g transform="translate(15, 60)">
+        <text x="0" y="0" class="bullet">• 微软生态深度绑定</text>
+        <text x="0" y="25" class="bullet">• 消耗 Azure 消费承诺 (MACC)</text>
+        <text x="0" y="50" class="bullet">• 强调企业级合规与安全性</text>
+        <text x="0" y="75" class="bullet" fill="#1E3A8A" font-weight="bold">Strength: Enterprise Software</text>
+      </g>
+    </g>
+
+    <!-- 3. GCP -->
+    <g transform="translate(0, 260)">
+      <rect x="0" y="0" width="340" height="180" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2" filter="url(#shadow)"/>
+      <path d="M 0,8 a8,8 0 0 1 8,-8 h324 a8,8 0 0 1 8,8 v32 h-340 z" fill="#E0F2FE"/>
+      
+      <text x="15" y="26" class="card-title" fill="#0284C7">Google Cloud</text>
+      
+      <rect x="250" y="10" width="80" height="24" rx="12" fill="#0EA5E9"/>
+      <text x="290" y="26" text-anchor="middle" class="fee-badge">Fee: ~3%</text>
+
+      <g transform="translate(15, 60)">
+        <text x="0" y="0" class="bullet">• 云原生产品优先 (K8s/AI)</text>
+        <text x="0" y="25" class="bullet">• 消耗 GCP 承诺消费</text>
+        <text x="0" y="50" class="bullet">• 快速增长的 AI/Data 生态</text>
+        <text x="0" y="75" class="bullet" fill="#0369A1" font-weight="bold">Strength: Data &amp; AI</text>
+      </g>
+    </g>
+
+    <!-- 4. Salesforce -->
+    <g transform="translate(380, 260)">
+      <rect x="0" y="0" width="340" height="180" rx="8" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2" filter="url(#shadow)"/>
+      <path d="M 0,8 a8,8 0 0 1 8,-8 h324 a8,8 0 0 1 8,8 v32 h-340 z" fill="#CCFBF1"/>
+      
+      <text x="15" y="26" class="card-title" fill="#0F766E">AppExchange</text>
+      
+      <rect x="250" y="10" width="80" height="24" rx="12" fill="#14B8A6"/>
+      <text x="290" y="26" text-anchor="middle" class="fee-badge">15-25%</text>
+
+      <g transform="translate(15, 60)">
+        <text x="0" y="0" class="bullet">• CRM 生态领导者 (7,000+ Apps)</text>
+        <text x="0" y="25" class="bullet">• 需基于 Salesforce 平台构建</text>
+        <text x="0" y="50" class="bullet">• 高溢价商业软件市场</text>
+        <text x="0" y="75" class="bullet" fill="#0D9488" font-weight="bold">Strength: Business Apps</text>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- Footer: Others -->
+  <g transform="translate(65, 580)">
+    <text x="0" y="0" class="section-label">Other Important Marketplaces:</text>
+    
+    <g transform="translate(0, 20)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="160" height="30" rx="15" fill="#F1F5F9" stroke="#CBD5E1"/>
+      <text x="80" y="19" text-anchor="middle" class="other-pill">HubSpot App Marketplace</text>
+      
+      <!-- Pill 2 -->
+      <rect x="180" y="0" width="160" height="30" rx="15" fill="#F1F5F9" stroke="#CBD5E1"/>
+      <text x="260" y="19" text-anchor="middle" class="other-pill">Atlassian Marketplace</text>
+      
+      <!-- Pill 3 -->
+      <rect x="360" y="0" width="160" height="30" rx="15" fill="#F1F5F9" stroke="#CBD5E1"/>
+      <text x="440" y="19" text-anchor="middle" class="other-pill">Shopify App Store</text>
+      
+      <!-- Pill 4 -->
+      <rect x="540" y="0" width="160" height="30" rx="15" fill="#F1F5F9" stroke="#CBD5E1"/>
+      <text x="620" y="19" text-anchor="middle" class="other-pill">Slack App Directory</text>
+    </g>
+  </g>
+
+</svg>

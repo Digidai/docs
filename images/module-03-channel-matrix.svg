@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="bg-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0FDF4;stop-opacity:1" /> <!-- Green-ish for PLG -->
+      <stop offset="50%" style="stop-color:#EFF6FF;stop-opacity:1" /> <!-- Blue-ish for Inside Sales -->
+      <stop offset="100%" style="stop-color:#FAF5FF;stop-opacity:1" /> <!-- Purple-ish for Enterprise -->
+    </linearGradient>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .axis-label { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #64748b; }
+      .zone-text { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #334155; }
+      .zone-sub { font-family: sans-serif; font-size: 13px; fill: #475569; }
+      .arrow { stroke: #94a3b8; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="title">渠道选择矩阵 (Channel Selection Matrix)</text>
+
+  <!-- Chart Area -->
+  <g transform="translate(80, 80)">
+    
+    <!-- Plot Area Background with Gradient -->
+    <rect x="0" y="0" width="650" height="450" fill="url(#bg-gradient)" rx="4"/>
+    
+    <!-- Axes -->
+    <line x1="0" y1="450" x2="650" y2="450" stroke="#334155" stroke-width="2"/> <!-- Y=0 (X-axis) -->
+    <line x1="0" y1="450" x2="0" y2="0" stroke="#334155" stroke-width="2"/> <!-- X=0 (Y-axis) -->
+    
+    <!-- Axis Labels -->
+    <text x="-40" y="225" text-anchor="middle" transform="rotate(-90, -40, 225)" class="axis-label">Product Complexity (产品复杂度)</text>
+    <text x="325" y="490" text-anchor="middle" class="axis-label">ACV (年客单价)</text>
+    
+    <!-- Grid Dashes -->
+    <line x1="216" y1="0" x2="216" y2="450" stroke="#cbd5e1" stroke-dasharray="4,4"/>
+    <line x1="432" y1="0" x2="432" y2="450" stroke="#cbd5e1" stroke-dasharray="4,4"/>
+    <line x1="0" y1="150" x2="650" y2="150" stroke="#cbd5e1" stroke-dasharray="4,4"/>
+    <line x1="0" y1="300" x2="650" y2="300" stroke="#cbd5e1" stroke-dasharray="4,4"/>
+
+    <!-- Labels for Axes Scales -->
+    <text x="108" y="470" text-anchor="middle" font-size="12" fill="#64748b">Low (&lt;$5k)</text>
+    <text x="324" y="470" text-anchor="middle" font-size="12" fill="#64748b">Mid ($5k-$50k)</text>
+    <text x="540" y="470" text-anchor="middle" font-size="12" fill="#64748b">High (&gt;$50k)</text>
+    
+    <text x="-10" y="375" text-anchor="end" font-size="12" fill="#64748b">Low</text>
+    <text x="-10" y="225" text-anchor="end" font-size="12" fill="#64748b">Mid</text>
+    <text x="-10" y="75" text-anchor="end" font-size="12" fill="#64748b">High</text>
+
+    <!-- CONTENT ZONES -->
+    
+    <!-- Bottom Left: PLG -->
+    <g transform="translate(20, 360)">
+      <rect x="0" y="0" width="180" height="80" rx="4" fill="#ffffff" fill-opacity="0.8" stroke="#16a34a" stroke-width="1" filter="url(#shadow)"/>
+      <text x="90" y="30" text-anchor="middle" class="zone-text" fill="#16a34a">PLG / Self-Serve</text>
+      <text x="90" y="50" text-anchor="middle" class="zone-sub">自助服务 + 社区支持</text>
+    </g>
+
+    <!-- Mid Left: Inside Sales Support -->
+    <g transform="translate(20, 210)">
+      <rect x="0" y="0" width="180" height="80" rx="4" fill="#ffffff" fill-opacity="0.8" stroke="#0284c7" stroke-width="1" filter="url(#shadow)"/>
+      <text x="90" y="30" text-anchor="middle" class="zone-text" fill="#0284c7">Inside Sales</text>
+      <text x="90" y="50" text-anchor="middle" class="zone-sub">远程销售 + 演示</text>
+    </g>
+
+    <!-- Bottom Right: Marketplace -->
+    <g transform="translate(450, 360)">
+      <rect x="0" y="0" width="180" height="80" rx="4" fill="#ffffff" fill-opacity="0.8" stroke="#0891b2" stroke-width="1" filter="url(#shadow)"/>
+      <text x="90" y="30" text-anchor="middle" class="zone-text" fill="#0891b2">Marketplace</text>
+      <text x="90" y="50" text-anchor="middle" class="zone-sub">规模化分发</text>
+    </g>
+
+    <!-- Center: Channel / Standard -->
+    <g transform="translate(235, 210)">
+      <rect x="0" y="0" width="180" height="80" rx="4" fill="#ffffff" fill-opacity="0.8" stroke="#2563eb" stroke-width="1" filter="url(#shadow)"/>
+      <text x="90" y="30" text-anchor="middle" class="zone-text" fill="#2563eb">Channel Partners</text>
+      <text x="90" y="50" text-anchor="middle" class="zone-sub">标准化产品分销</text>
+    </g>
+
+    <!-- Top Right: Strategic / SI -->
+    <g transform="translate(450, 60)">
+      <rect x="0" y="0" width="180" height="80" rx="4" fill="#ffffff" fill-opacity="0.8" stroke="#7c3aed" stroke-width="1" filter="url(#shadow)"/>
+      <text x="90" y="30" text-anchor="middle" class="zone-text" fill="#7c3aed">Direct + SI</text>
+      <text x="90" y="50" text-anchor="middle" class="zone-sub">复杂方案 + 咨询实施</text>
+    </g>
+
+    <!-- Top Left: Field Sales (Rare but simplified) -->
+    <g transform="translate(20, 60)">
+      <rect x="0" y="0" width="180" height="80" rx="4" fill="#ffffff" fill-opacity="0.8" stroke="#4b5563" stroke-width="1" filter="url(#shadow)"/>
+      <text x="90" y="30" text-anchor="middle" class="zone-text" fill="#4b5563">Field Sales</text>
+      <text x="90" y="50" text-anchor="middle" class="zone-sub">高接触直销</text>
+    </g>
+
+  </g>
+
+</svg>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+    </marker>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .card-title { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #991b1b; }
+      .label { font-family: sans-serif; font-size: 13px; font-weight: bold; fill: #7f1d1d; }
+      .text { font-family: sans-serif; font-size: 13px; fill: #450a0a; }
+      .result-label { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #b91c1c; }
+      .result-text { font-family: sans-serif; font-size: 13px; fill: #7f1d1d; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="title">渠道错配的后果 (Consequences of Mismatch)</text>
+
+  <!-- Error Card 1 -->
+  <g transform="translate(100, 80)">
+    <!-- Background -->
+    <rect x="0" y="0" width="600" height="140" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="2" filter="url(#shadow)"/>
+    <!-- Warning Icon (Geometric Exclamation) -->
+    <circle cx="30" cy="30" r="12" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+    <rect x="28" y="24" width="4" height="8" rx="2" fill="#EF4444"/>
+    <circle cx="30" cy="36" r="2" fill="#EF4444"/>
+    
+    <!-- Header -->
+    <text x="60" y="35" class="card-title">错误 1: 高 ACV 产品 走 低触达渠道 (High ACV + Low Touch)</text>
+
+    <!-- Content Split -->
+    <g transform="translate(60, 60)">
+      <!-- Context -->
+      <text x="0" y="0" class="label">SCENARIO:</text>
+      <text x="0" y="20" class="text">• 产品: $100K+ 企业软件</text>
+      <text x="0" y="40" class="text">• 渠道: 纯自助购买 (Self-Serve)</text>
+
+      <!-- Arrow -->
+      <line x1="200" y1="20" x2="260" y2="20" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+
+      <!-- Result -->
+      <text x="280" y="0" class="result-label">RESULT (FAILURE):</text>
+      <text x="280" y="20" class="result-text">转化率极低 (Conversion Fail)</text>
+      <text x="280" y="40" class="text">客户无法自行理解复杂价值，交易卡顿。</text>
+    </g>
+  </g>
+
+  <!-- Error Card 2 -->
+  <g transform="translate(100, 240)">
+    <rect x="0" y="0" width="600" height="140" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="2" filter="url(#shadow)"/>
+    <circle cx="30" cy="30" r="12" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+    <rect x="28" y="24" width="4" height="8" rx="2" fill="#EF4444"/>
+    <circle cx="30" cy="36" r="2" fill="#EF4444"/>
+    
+    <text x="60" y="35" class="card-title">错误 2: 低 ACV 产品 走 高成本渠道 (Low ACV + High Touch)</text>
+
+    <g transform="translate(60, 60)">
+      <text x="0" y="0" class="label">SCENARIO:</text>
+      <text x="0" y="20" class="text">• 产品: $50/mo SaaS 工具</text>
+      <text x="0" y="40" class="text">• 渠道: 企业销售团队 (Field Sales)</text>
+
+      <line x1="200" y1="20" x2="260" y2="20" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+
+      <text x="280" y="0" class="result-label">RESULT (FINANCIAL LOSS):</text>
+      <text x="280" y="20" class="result-text">CAC &gt; LTV (Unit Economics Fail)</text>
+      <text x="280" y="40" class="text">销售成本远超客户价值，越卖越亏。</text>
+    </g>
+  </g>
+
+  <!-- Error Card 3 -->
+  <g transform="translate(100, 400)">
+    <rect x="0" y="0" width="600" height="140" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="2" filter="url(#shadow)"/>
+    <circle cx="30" cy="30" r="12" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+    <rect x="28" y="24" width="4" height="8" rx="2" fill="#EF4444"/>
+    <circle cx="30" cy="36" r="2" fill="#EF4444"/>
+    
+    <text x="60" y="35" class="card-title">错误 3: 过早进入渠道销售 (Premature Scaling)</text>
+
+    <g transform="translate(60, 60)">
+      <text x="0" y="0" class="label">SCENARIO:</text>
+      <text x="0" y="20" class="text">• 阶段: 产品/Playbook 未验证</text>
+      <text x="0" y="40" class="text">• 渠道: 大量招募合作伙伴 (Resellers)</text>
+
+      <line x1="200" y1="20" x2="260" y2="20" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+
+      <text x="280" y="0" class="result-label">RESULT (RELATIONSHIP DAMAGE):</text>
+      <text x="280" y="20" class="result-text">渠道销售失败 (Partner Churn)</text>
+      <text x="280" y="40" class="text">合作伙伴赚不到钱，信任破裂。</text>
+    </g>
+  </g>
+
+</svg>

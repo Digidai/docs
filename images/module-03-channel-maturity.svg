@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="850" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .stage-header { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #64748b; letter-spacing: 1px; }
+      .card-title { font-family: sans-serif; font-size: 18px; font-weight: bold; }
+      .bullet { font-family: sans-serif; font-size: 13px; fill: #475569; }
+      .metric-box { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #ffffff; }
+      .arrow-line { stroke: #cbd5e1; stroke-width: 3; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="425" y="40" text-anchor="middle" class="title">渠道项目成熟度阶段 (Channel Maturity Stages)</text>
+
+  <!-- Connector Line behind cards -->
+  <line x1="150" y1="180" x2="700" y2="180" class="arrow-line" marker-end="url(#arrowhead)"/>
+
+  <!-- Stage 1 -->
+  <g transform="translate(40, 80)">
+    <!-- Header -->
+    <text x="110" y="0" text-anchor="middle" class="stage-header">STAGE 1 (Year 0-1)</text>
+    
+    <!-- Card -->
+    <rect x="0" y="20" width="220" height="240" rx="8" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2" filter="url(#shadow)"/>
+    
+    <!-- Title -->
+    <text x="110" y="55" text-anchor="middle" class="card-title" fill="#1e40af">直销为主</text>
+    <text x="110" y="75" text-anchor="middle" font-size="12" fill="#3b82f6">(Direct Sales Focus)</text>
+    
+    <line x1="20" y1="90" x2="200" y2="90" stroke="#DBEAFE" stroke-width="1"/>
+    
+    <!-- Bullets -->
+    <text x="15" y="120" class="bullet">• 验证产品与销售流程</text>
+    <text x="15" y="145" class="bullet">• 少量试点渠道合作</text>
+    <text x="15" y="170" class="bullet">• 建立基础项目设施</text>
+    
+    <!-- Metric -->
+    <rect x="0" y="200" width="220" height="40" rx="0" ry="0" fill="#3B82F6" clip-path="inset(0 0 0 0 round 0 0 8 8)"/>
+    <text x="110" y="225" text-anchor="middle" class="metric-box">Rev Share &lt; 10%</text>
+  </g>
+
+  <!-- Stage 2 -->
+  <g transform="translate(315, 80)">
+    <text x="110" y="0" text-anchor="middle" class="stage-header">STAGE 2 (Year 1-2)</text>
+    
+    <rect x="0" y="20" width="220" height="240" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2" filter="url(#shadow)"/>
+    
+    <text x="110" y="55" text-anchor="middle" class="card-title" fill="#0369a1">渠道扩展</text>
+    <text x="110" y="75" text-anchor="middle" font-size="12" fill="#0ea5e9">(Channel Expansion)</text>
+    
+    <line x1="20" y1="90" x2="200" y2="90" stroke="#E0F2FE" stroke-width="1"/>
+    
+    <text x="15" y="120" class="bullet">• 积极招募和培养</text>
+    <text x="15" y="145" class="bullet">• 完善赋能体系</text>
+    <text x="15" y="170" class="bullet">• 建立管理团队</text>
+    
+    <rect x="0" y="200" width="220" height="40" rx="0" ry="0" fill="#0284C7" clip-path="inset(0 0 0 0 round 0 0 8 8)"/>
+    <text x="110" y="225" text-anchor="middle" class="metric-box">Rev Share 10-30%</text>
+  </g>
+
+  <!-- Stage 3 -->
+  <g transform="translate(590, 80)">
+    <text x="110" y="0" text-anchor="middle" class="stage-header">STAGE 3 (Year 2+)</text>
+    
+    <rect x="0" y="20" width="220" height="240" rx="8" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2" filter="url(#shadow)"/>
+    
+    <text x="110" y="55" text-anchor="middle" class="card-title" fill="#0f766e">渠道主导</text>
+    <text x="110" y="75" text-anchor="middle" font-size="12" fill="#14b8a6">(Channel Led)</text>
+    
+    <line x1="20" y1="90" x2="200" y2="90" stroke="#CCFBF1" stroke-width="1"/>
+    
+    <text x="15" y="120" class="bullet">• 核心主力销售渠道</text>
+    <text x="15" y="145" class="bullet">• 分级管理体系 (Gold+)</text>
+    <text x="15" y="170" class="bullet">• 成熟的生态系统</text>
+    
+    <rect x="0" y="200" width="220" height="40" rx="0" ry="0" fill="#0D9488" clip-path="inset(0 0 0 0 round 0 0 8 8)"/>
+    <text x="110" y="225" text-anchor="middle" class="metric-box">Rev Share &gt; 50%</text>
+  </g>
+
+  <!-- Insight -->
+  <g transform="translate(425, 360)">
+    <text x="0" y="0" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#64748b" font-style="italic">"Maturing form Direct Verification to Ecosystem Leverage"</text>
+  </g>
+
+</svg>

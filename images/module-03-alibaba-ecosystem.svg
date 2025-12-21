@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="850" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .layer-title { font-family: sans-serif; font-size: 18px; font-weight: bold; fill: #ffffff; }
+      .layer-sub { font-family: sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; opacity: 0.9; }
+      .bullet { font-family: sans-serif; font-size: 14px; fill: #334155; }
+      .example-text { font-family: sans-serif; font-size: 12px; fill: #64748b; font-style: italic; }
+      .label-pill { font-family: sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; text-transform: uppercase; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="425" y="40" text-anchor="middle" class="title">阿里云渠道生态架构 (Alibaba Cloud Ecosystem)</text>
+
+  <!-- Tier 1: Strategic Partners (Top) -->
+  <g transform="translate(225, 80)">
+    <!-- Main Box -->
+    <rect x="0" y="0" width="400" height="130" rx="8" fill="#FFFBEB" stroke="#F59E0B" stroke-width="2" filter="url(#shadow)"/>
+    
+    <!-- Header -->
+    <path d="M 0,8 a8,8 0 0 1 8,-8 h384 a8,8 0 0 1 8,8 v32 h-400 z" fill="#F59E0B"/>
+    <text x="200" y="26" text-anchor="middle" class="layer-title">第一层：战略合作伙伴</text>
+    
+    <!-- Content -->
+    <text x="30" y="65" class="bullet">• 联合解决方案 &amp; 共同招标 (Joint Solutions)</text>
+    <text x="30" y="90" class="bullet">• 年合作规模亿元级 (Billion Scale)</text>
+    <text x="30" y="115" class="bullet">Examples: 神州数码, 东软 (Neusoft), 软通动力</text>
+    
+    <text x="350" y="26" text-anchor="end" class="layer-sub">Top Partners</text>
+  </g>
+
+  <!-- Arrow Down -->
+  <path d="M 425,210 L 425,230" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Tier 2: Regional Partners (Middle) -->
+  <g transform="translate(125, 230)">
+    <!-- Main Box -->
+    <rect x="0" y="0" width="600" height="130" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2" filter="url(#shadow)"/>
+    
+    <!-- Header -->
+    <path d="M 0,8 a8,8 0 0 1 8,-8 h584 a8,8 0 0 1 8,8 v32 h-600 z" fill="#3B82F6"/>
+    <text x="300" y="26" text-anchor="middle" class="layer-title">第二层：区域服务商</text>
+    
+    <!-- Content -->
+    <g transform="translate(0, 0)">
+        <text x="30" y="65" class="bullet">• 省级/城市级代理 (Regional Agents)</text>
+        <text x="30" y="90" class="bullet">• 本地化销售与服务 (Localization)</text>
+        <text x="340" y="65" class="bullet">• 政企客户深度关系维护</text>
+        <text x="340" y="90" class="bullet">• 实施交付 &amp; 运维服务</text>
+    </g>
+
+    <text x="550" y="26" text-anchor="end" class="layer-sub">Regional Partners</text>
+  </g>
+
+  <!-- Arrow Down -->
+  <path d="M 425,360 L 425,380" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Tier 3: Marketplace ISVs (Bottom) -->
+  <g transform="translate(25, 380)">
+    <!-- Main Box -->
+    <rect x="0" y="0" width="800" height="130" rx="8" fill="#F0FDF4" stroke="#10B981" stroke-width="2" filter="url(#shadow)"/>
+    
+    <!-- Header -->
+    <path d="M 0,8 a8,8 0 0 1 8,-8 h784 a8,8 0 0 1 8,8 v32 h-800 z" fill="#10B981"/>
+    <text x="400" y="26" text-anchor="middle" class="layer-title">第三层：云市场 ISV</text>
+    
+    <!-- Content -->
+    <g transform="translate(0, 0)">
+        <text x="30" y="65" class="bullet">• 云市场 SaaS 厂商 (Marketplace Vendors)</text>
+        <text x="30" y="90" class="bullet">• 数千家合作伙伴 (Thousands of ISVs)</text>
+        <text x="440" y="65" class="bullet">• 产品深度集成 (Product Integration)</text>
+        <text x="440" y="90" class="bullet">• 共享客户资源 &amp; 联合营销</text>
+    </g>
+
+    <text x="750" y="26" text-anchor="end" class="layer-sub">Marketplace Partners</text>
+  </g>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+</svg>

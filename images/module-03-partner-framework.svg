@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .letter-box { fill: #0F766E; } /* Gradient start */
+      .letter-text { font-family: sans-serif; font-size: 28px; font-weight: bold; fill: #ffffff; }
+      .item-title { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #115e59; }
+      .item-sub { font-family: sans-serif; font-size: 13px; font-weight: bold; fill: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; }
+      .bullet { font-family: sans-serif; font-size: 13px; fill: #334155; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="300" y="40" text-anchor="middle" class="title">合作成功的 PARTNER 框架</text>
+
+  <!-- LIST ITEMS -->
+  <g transform="translate(80, 80)">
+
+    <!-- P -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="50" height="50" rx="10" fill="#14B8A6" filter="url(#shadow)"/>
+      <text x="25" y="35" text-anchor="middle" class="letter-text">P</text>
+      
+      <text x="70" y="20" class="item-title">Purpose (共同目标)</text>
+      <text x="70" y="40" class="bullet">• 明确双方愿景与成功指标 (KPIs)</text>
+    </g>
+
+    <line x1="25" y1="55" x2="25" y2="85" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4,2"/>
+
+    <!-- A -->
+    <g transform="translate(0, 90)">
+      <rect x="0" y="0" width="50" height="50" rx="10" fill="#0EA5E9" filter="url(#shadow)"/>
+      <text x="25" y="35" text-anchor="middle" class="letter-text">A</text>
+      
+      <text x="70" y="20" class="item-title" fill="#0284c7">Alignment (对齐)</text>
+      <text x="70" y="40" class="bullet">• 执行计划与资源投入的高度协同</text>
+    </g>
+
+    <line x1="25" y1="55" x2="25" y2="85" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4,2"/>
+
+    <!-- R -->
+    <g transform="translate(0, 180)">
+      <rect x="0" y="0" width="50" height="50" rx="10" fill="#3B82F6" filter="url(#shadow)"/>
+      <text x="25" y="35" text-anchor="middle" class="letter-text">R</text>
+      
+      <text x="70" y="20" class="item-title" fill="#2563eb">Responsibility (责任分工)</text>
+      <text x="70" y="40" class="bullet">• 清晰的角色分工与职责边界</text>
+    </g>
+
+    <line x1="25" y1="55" x2="25" y2="85" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4,2"/>
+
+    <!-- T -->
+    <g transform="translate(0, 270)">
+      <rect x="0" y="0" width="50" height="50" rx="10" fill="#6366F1" filter="url(#shadow)"/>
+      <text x="25" y="35" text-anchor="middle" class="letter-text">T</text>
+      
+      <text x="70" y="20" class="item-title" fill="#4f46e5">Timeline (时间表)</text>
+      <text x="70" y="40" class="bullet">• 关键里程碑与回顾节点设定</text>
+    </g>
+
+    <line x1="25" y1="55" x2="25" y2="85" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4,2"/>
+
+    <!-- N -->
+    <g transform="translate(0, 360)">
+      <rect x="0" y="0" width="50" height="50" rx="10" fill="#8B5CF6" filter="url(#shadow)"/>
+      <text x="25" y="35" text-anchor="middle" class="letter-text">N</text>
+      
+      <text x="70" y="20" class="item-title" fill="#7c3aed">Negotiation (协议)</text>
+      <text x="70" y="40" class="bullet">• 商业条款权益保障与法律合规</text>
+    </g>
+
+    <line x1="25" y1="55" x2="25" y2="85" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4,2"/>
+
+    <!-- E -->
+    <g transform="translate(0, 450)">
+      <rect x="0" y="0" width="50" height="50" rx="10" fill="#A855F7" filter="url(#shadow)"/>
+      <text x="25" y="35" text-anchor="middle" class="letter-text">E</text>
+      
+      <text x="70" y="20" class="item-title" fill="#9333ea">Enablement (赋能)</text>
+      <text x="70" y="40" class="bullet">• 双方团队培训, 工具资源支持</text>
+    </g>
+
+    <line x1="25" y1="55" x2="25" y2="85" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4,2"/>
+
+    <!-- R -->
+    <g transform="translate(0, 540)">
+      <rect x="0" y="0" width="50" height="50" rx="10" fill="#D946EF" filter="url(#shadow)"/>
+      <text x="25" y="35" text-anchor="middle" class="letter-text">R</text>
+      
+      <text x="70" y="20" class="item-title" fill="#c026d3">Review (回顾)</text>
+      <text x="70" y="40" class="bullet">• 定期绩效复盘与持续优化</text>
+    </g>
+
+  </g>
+  
+  <!-- Footer Note -->
+  <text x="300" y="750" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b" font-style="italic">Successful partnerships require structure, not just handshake agreements.</text>
+
+</svg>
