@@ -1,0 +1,63 @@
+<svg width="850" height="420" viewBox="0 0 850 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="850" height="65" rx="10" fill="#f8fafc"/>
+  <text x="425" y="40" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#1e293b">Okta 客户结构演进：大客户战略的胜利</text>
+
+  <!-- 2018 vs 2024 Comparison -->
+  <g transform="translate(60, 95)">
+    <!-- Y-Axis Labels -->
+    <g font-family="sans-serif" font-size="14" font-weight="bold" fill="#475569">
+      <text x="0" y="45">Enterprise (&gt;$100k)</text>
+      <text x="0" y="105">Mid-Market</text>
+      <text x="0" y="165">SMB (&lt;$25k)</text>
+    </g>
+
+    <!-- Bars for 2018 -->
+    <g transform="translate(180, 10)">
+      <text x="0" y="-15" font-family="sans-serif" font-size="12" fill="#94a3b8">2018 (上市初期)</text>
+      <rect x="0" y="15" width="105" height="30" rx="15" fill="#93c5fd" filter="url(#shadow)"/>
+      <text x="115" y="35" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1d4ed8">35%</text>
+      
+      <rect x="0" y="75" width="100" height="30" rx="15" fill="#bfdbfe" filter="url(#shadow)"/>
+      <text x="110" y="95" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1d4ed8">33%</text>
+      
+      <rect x="0" y="135" width="96" height="30" rx="15" fill="#dbeafe" filter="url(#shadow)"/>
+      <text x="106" y="155" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1d4ed8">32%</text>
+    </g>
+
+    <!-- Split Line -->
+    <line x1="380" y1="0" x2="380" y2="180" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,2"/>
+
+    <!-- Bars for 2024 -->
+    <g transform="translate(420, 10)">
+      <text x="0" y="-15" font-family="sans-serif" font-size="12" fill="#1e293b" font-weight="bold">2024 (成熟期)</text>
+      <rect x="0" y="15" width="220" height="30" rx="15" fill="#1e40af" filter="url(#shadow)"/>
+      <text x="230" y="35" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e40af">55%</text>
+      
+      <rect x="0" y="75" width="100" height="30" rx="15" fill="#3b82f6" filter="url(#shadow)"/>
+      <text x="110" y="95" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1d4ed8">25%</text>
+      
+      <rect x="0" y="135" width="80" height="30" rx="15" fill="#60a5fa" filter="url(#shadow)"/>
+      <text x="90" y="155" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1d4ed8">20%</text>
+    </g>
+  </g>
+
+  <!-- Strategic Insight Card -->
+  <g transform="translate(60, 310)">
+    <rect x="0" y="0" width="730" height="80" rx="12" fill="#f0fdff" stroke="#bae6fd" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="bold" fill="#0369a1">核心转变：上移市场 (Upmarket) 带来的溢价</text>
+    <g font-family="sans-serif" font-size="13" fill="#0c4a6e">
+      <text x="20" y="55">• 结果：大客户 ARR 占比由 35% 提升至 79% (含 Auth0 并购)</text>
+      <text x="380" y="55">• 指标影响：平均 ACV 增长 3.2 倍，财务结构更稳健</text>
+    </g>
+  </g>
+</svg>

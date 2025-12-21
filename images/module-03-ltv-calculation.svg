@@ -1,0 +1,40 @@
+<svg width="800" height="320" viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1e293b">LTV（客户生命周期价值）计算示例</text>
+
+  <!-- Formula Box -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="340" height="180" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="170" y="40" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#475569">核心计算公式</text>
+    <rect x="30" y="60" width="280" height="80" rx="8" fill="#E2E8F0"/>
+    <text x="170" y="105" text-anchor="middle" font-family="serif" font-size="20" font-weight="bold" fill="#1e293b">
+      LTV = <tspan fill="#2563EB">ARPU</tspan> × <tspan fill="#D97706">毛利率</tspan> / <tspan fill="#DC2626">流失率</tspan>
+    </text>
+  </g>
+
+  <!-- Example Box -->
+  <g transform="translate(410, 80)">
+    <rect x="0" y="0" width="340" height="180" rx="12" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="170" y="40" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#0369A1">实战案例：SaaS 工具</text>
+    <g transform="translate(40, 75)" font-family="sans-serif" font-size="14" fill="#0E7490">
+      <text x="0" y="0">1. MRR (ARPU)：$500/月</text>
+      <text x="0" y="25">2. 毛利率：80%</text>
+      <text x="0" y="50">3. 月流失率：2%</text>
+      <text x="0" y="85" font-weight="bold" font-size="16" fill="#0369A1">LTV = 500 × 0.8 / 0.02 = $20,000</text>
+    </g>
+  </g>
+
+  <!-- Insight -->
+  <text x="400" y="295" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#64748B">
+    💡 解读：月流失 2% 意味着平均客户生命周期为 50 个月（约 4.2 年）
+  </text>
+</svg>

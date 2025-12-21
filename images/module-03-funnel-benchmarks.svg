@@ -1,0 +1,77 @@
+<svg width="850" height="580" viewBox="0 0 850 580" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title Section -->
+  <rect x="0" y="0" width="850" height="65" rx="10" fill="#f8fafc"/>
+  <text x="425" y="40" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#1e293b">B2B 销售漏斗转化率基准与职责划分</text>
+
+  <!-- Funnel Visualization -->
+  <g transform="translate(200, 90)">
+    <!-- Website Visitor -->
+    <path d="M 0,0 H 400 L 370,50 H 30 Z" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="200" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#475569">网站访问者 (100,000+)</text>
+    
+    <!-- Conv Arrow 1 -->
+    <path d="M 200,50 L 200,75" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <text x="215" y="68" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2563eb">2-5%</text>
+
+    <!-- Marketing Stage -->
+    <g transform="translate(0, 75)">
+      <path d="M 30,0 H 370 L 330,60 H 70 Z" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="200" y="35" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1d4ed8">线索 (Lead/MQL)</text>
+      <rect x="-145" y="15" width="100" height="30" rx="15" fill="#3b82f6"/>
+      <text x="-95" y="35" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Marketing</text>
+    </g>
+
+    <!-- Conv Arrow 2 -->
+    <path d="M 200,135 L 200,160" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <text x="215" y="153" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2563eb">25-35%</text>
+
+    <!-- SDR/Sales Stage -->
+    <g transform="translate(0, 160)">
+      <path d="M 70,0 H 330 L 290,60 H 110 Z" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="200" y="35" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#b45309">商机 (SAL/SQL)</text>
+      <rect x="365" y="15" width="105" height="30" rx="15" fill="#f59e0b"/>
+      <text x="417.5" y="35" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff">SDR / Sales</text>
+    </g>
+
+    <!-- Conv Arrow 3 -->
+    <path d="M 200,220 L 200,245" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <text x="215" y="238" font-family="sans-serif" font-size="11" font-weight="bold" fill="#d97706">50-70%</text>
+
+    <!-- Opportunity Stage -->
+    <g transform="translate(0, 245)">
+      <path d="M 110,0 H 290 L 250,60 H 150 Z" fill="#f0fdff" stroke="#0ea5e9" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="200" y="35" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0369a1">签约前奏 (Opportunity)</text>
+      <rect x="325" y="15" width="95" height="30" rx="15" fill="#0ea5e9"/>
+      <text x="372.5" y="35" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Sales (AE)</text>
+    </g>
+
+    <!-- Conv Arrow 4 -->
+    <path d="M 200,305 L 200,330" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <text x="215" y="323" font-family="sans-serif" font-size="11" font-weight="bold" fill="#059669">20-30%</text>
+
+    <!-- Won Stage -->
+    <g transform="translate(0, 330)">
+      <path d="M 150,0 H 250 L 230,50 H 170 Z" fill="#ecfdf5" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+      <text x="200" y="32" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#065f46">成交 (Customer)</text>
+      <rect x="285" y="10" width="105" height="30" rx="15" fill="#10b981"/>
+      <text x="337.5" y="30" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff">CS / Sales</text>
+    </g>
+  </g>
+
+  <!-- Summary Takeaway (Moved Down) -->
+  <g transform="translate(80, 510)">
+    <rect x="0" y="0" width="690" height="40" rx="20" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="345" y="25" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#475569">
+      <tspan font-weight="bold">关键原则：</tspan> 只有明确各阶段的转化率基准，才能准确诊断 GTM 瓶颈（流量还是线索质量？）。
+    </text>
+  </g>
+</svg>

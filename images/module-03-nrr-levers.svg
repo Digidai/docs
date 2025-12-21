@@ -1,0 +1,46 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#1e293b">中国 SaaS 提高 NRR 的四大核心杠杆</text>
+
+  <!-- Quadrants -->
+  <!-- 1. CS Capability -->
+  <g transform="translate(60, 80)">
+    <rect x="0" y="0" width="330" height="130" rx="12" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="165" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1D4ED8">1. CS 咨询化能力</text>
+    <text x="40" y="70" font-family="sans-serif" font-size="14" fill="#1E40AF">• 深度业务调研，拒绝只做"点点点"</text>
+    <text x="40" y="95" font-family="sans-serif" font-size="14" fill="#1E40AF">• 输出行业最佳实践白皮书</text>
+  </g>
+
+  <!-- 2. Product Depth -->
+  <g transform="translate(410, 80)">
+    <rect x="0" y="0" width="330" height="130" rx="12" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="165" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#065F46">2. 产品行业化深度</text>
+    <text x="40" y="70" font-family="sans-serif" font-size="14" fill="#064E3B">• 针对细分行业预置模版</text>
+    <text x="40" y="95" font-family="sans-serif" font-size="14" fill="#064E3B">• 强集成的 Open API，融入生产系统</text>
+  </g>
+
+  <!-- 3. Eco Integration -->
+  <g transform="translate(60, 230)">
+    <rect x="0" y="0" width="330" height="130" rx="12" fill="#FDF2F8" stroke="#DB2777" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="165" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#9D174D">3. 生态集成与连接</text>
+    <text x="40" y="70" font-family="sans-serif" font-size="14" fill="#BE185D">• 与企业微信、钉钉深度打通</text>
+    <text x="40" y="95" font-family="sans-serif" font-size="14" fill="#BE185D">• 跨系统数据报表自动生成</text>
+  </g>
+
+  <!-- 4. Value Visualization -->
+  <g transform="translate(410, 230)">
+    <rect x="0" y="0" width="330" height="130" rx="12" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="165" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#9A3412">4. 价值可视化工程</text>
+    <text x="40" y="70" font-family="sans-serif" font-size="14" fill="#C2410C">• 定期发送"省钱/提效"报告</text>
+    <text x="40" y="95" font-family="sans-serif" font-size="14" fill="#C2410C">• 建立 ROI 基准模型供决策层查阅</text>
+  </g>
+</svg>
