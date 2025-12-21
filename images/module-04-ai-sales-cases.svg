@@ -1,0 +1,56 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">AI 在销售 (Sales) 中的应用</text>
+  
+  <!-- Cards Container -->
+  <g transform="translate(40, 80)">
+    <!-- Column 1: AI SDR -->
+    <rect x="0" y="0" width="350" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="0" y="0" width="350" height="35" rx="12 12 0 0" fill="#F1F5F9"/>
+    <text x="175" y="22" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#475569">线索开发与外联 (AI SDR)</text>
+    <g transform="translate(20, 55)" font-family="Inter, sans-serif" font-size="13" fill="#64748B">
+      <text x="0" y="0">• 自动账号研究与个性化外发</text>
+      <text x="0" y="25">• 智能线索漏斗触达时机优化</text>
+      <text x="0" y="50">• 自动化自动跟进与预约会议</text>
+    </g>
+
+    <!-- Column 2: Sales Co-pilot -->
+    <rect x="370" y="0" width="350" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="370" y="0" width="350" height="35" rx="12 12 0 0" fill="#EFF6FF"/>
+    <text x="545" y="22" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#3B82F6">销售辅助 (Co-pilot)</text>
+    <g transform="translate(390, 55)" font-family="Inter, sans-serif" font-size="13" fill="#64748B">
+      <text x="0" y="0">• 账户深度情报洞察与风险预警</text>
+      <text x="0" y="25">• 通话准备、竞品情报实时拉取</text>
+      <text x="0" y="50">• 销售话术推荐与下一步行动建议</text>
+    </g>
+
+    <!-- Column 3: Conv Intelligence -->
+    <rect x="0" y="140" width="350" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="0" y="140" width="350" height="35" rx="12 12 0 0" fill="#F0FDF4"/>
+    <text x="175" y="162" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#166534">对话分析 (CI)</text>
+    <g transform="translate(20, 195)" font-family="Inter, sans-serif" font-size="13" fill="#64748B">
+      <text x="0" y="0">• 通话自动录音与结构化转写</text>
+      <text x="0" y="25">• 关键词、客户情绪与反对意见提取</text>
+      <text x="0" y="50">• 销售最佳实践模式识别与培训</text>
+    </g>
+
+    <!-- Column 4: Revenue Intelligence -->
+    <rect x="370" y="140" width="350" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="370" y="140" width="350" height="35" rx="12 12 0 0" fill="#F5F3FF"/>
+    <text x="545" y="162" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#7C3AED">预测与营收情报</text>
+    <g transform="translate(390, 195)" font-family="Inter, sans-serif" font-size="13" fill="#64748B">
+      <text x="0" y="0">• 商机成交概率预测 (Scoring)</text>
+      <text x="0" y="25">• 销售业绩预测 (Forecasting)</text>
+      <text x="0" y="50">• 营收风险预警与流程诊断</text>
+    </g>
+  </g>
+
+  <!-- Tools Pill -->
+  <g transform="translate(100, 340)">
+    <rect x="0" y="0" width="600" height="40" rx="20" fill="#FFFBEB" stroke="#FDE68A"/>
+    <text x="300" y="25" font-family="Inter, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#B45309">代表工具：Apollo, 11x, Gong, Outreach, Clari, Salesloft</text>
+  </g>
+</svg>

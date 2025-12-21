@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  
+  <text x="400" y="40" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1d1d1f">GTM Motion 选择矩阵</text>
+  
+  <!-- Matrix Container -->
+  <rect x="150" y="100" width="600" height="300" rx="12" fill="#f2f2f7" stroke="#d2d2d7" stroke-width="1" />
+  
+  <!-- Grid Lines -->
+  <line x1="150" y1="250" x2="750" y2="250" stroke="#d2d2d7" stroke-width="1" />
+  <line x1="350" y1="100" x2="350" y2="400" stroke="#d2d2d7" stroke-width="1" />
+  <line x1="550" y1="100" x2="550" y2="400" stroke="#d2d2d7" stroke-width="1" />
+  
+  <!-- X Axis Labels -->
+  <text x="450" y="80" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#1d1d1f">ACV (年合同价值)</text>
+  <text x="250" y="430" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="middle" fill="#515154">低 (&lt;$5K)</text>
+  <text x="450" y="430" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="middle" fill="#515154">中 ($5K-$50K)</text>
+  <text x="650" y="430" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="middle" fill="#515154">高 (&gt;$50K)</text>
+  
+  <!-- Y Axis Labels -->
+  <text x="60" y="250" transform="rotate(-90 60,250)" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#1d1d1f">产品复杂度</text>
+  <text x="110" y="175" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="middle" fill="#515154">简单</text>
+  <text x="110" y="325" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="middle" fill="#515154">复杂</text>
+  
+  <!-- Cells -->
+  <!-- Top Left: PLG -->
+  <rect x="160" y="110" width="180" height="130" rx="8" fill="#e1f5fe" filter="url(#shadow)" opacity="0.8" />
+  <text x="250" y="165" font-family="Outfit, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#01579b">PLG</text>
+  <text x="250" y="195" font-family="Outfit, Inter, sans-serif" font-size="14" text-anchor="middle" fill="#515154">(Self-serve)</text>
+  
+  <!-- Top Center: PLG + SLG -->
+  <rect x="360" y="110" width="180" height="130" rx="8" fill="#e8f5e9" filter="url(#shadow)" opacity="0.8" />
+  <text x="450" y="165" font-family="Outfit, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#2e7d32">PLG + SLG</text>
+  <text x="450" y="195" font-family="Outfit, Inter, sans-serif" font-size="12" text-anchor="middle" fill="#515154">(Product-Led Sales)</text>
+  
+  <!-- Top Right: SLG -->
+  <rect x="560" y="110" width="180" height="130" rx="8" fill="#fff3e0" filter="url(#shadow)" opacity="0.8" />
+  <text x="650" y="165" font-family="Outfit, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#e65100">SLG</text>
+  <text x="650" y="195" font-family="Outfit, Inter, sans-serif" font-size="14" text-anchor="middle" fill="#515154">(Sales-Led)</text>
+  
+  <!-- Bottom Left: PLG/MLG -->
+  <rect x="160" y="260" width="180" height="130" rx="8" fill="#f3e5f5" filter="url(#shadow)" opacity="0.8" />
+  <text x="250" y="325" font-family="Outfit, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#4a148c">PLG / MLG</text>
+  
+  <!-- Bottom Center: SLG + PLG -->
+  <rect x="360" y="260" width="180" height="130" rx="8" fill="#e0f2f1" filter="url(#shadow)" opacity="0.8" />
+  <text x="450" y="325" font-family="Outfit, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#004d40">SLG + PLG</text>
+  <text x="450" y="355" font-family="Outfit, Inter, sans-serif" font-size="14" text-anchor="middle" fill="#515154">(Hybrid)</text>
+  
+  <!-- Bottom Right: SLG Enterprise -->
+  <rect x="560" y="260" width="180" height="130" rx="8" fill="#fbe9e7" filter="url(#shadow)" opacity="0.8" />
+  <text x="650" y="325" font-family="Outfit, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#bf360c">SLG</text>
+  <text x="650" y="355" font-family="Outfit, Inter, sans-serif" font-size="14" text-anchor="middle" fill="#515154">(Enterprise)</text>
+  
+  <!-- Legend/Pill -->
+  <rect x="150" y="450" width="600" height="30" rx="15" fill="#f2f2f7" />
+  <text x="450" y="470" font-family="Outfit, Inter, sans-serif" font-size="14" text-anchor="middle" fill="#86868b">ACV 与复杂度决定了 GTM 资源投入的重心</text>
+</svg>

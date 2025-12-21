@@ -1,0 +1,63 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">Zoom 协同扩张飞轮 (PLG + SLG)</text>
+  
+  <!-- Flywheel Center -->
+  <circle cx="400" cy="240" r="160" fill="none" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="8 4"/>
+  
+  <!-- Step 1: Product Experience -->
+  <g transform="translate(400, 80)">
+    <rect x="-80" y="-30" width="160" height="60" rx="30" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+    <text x="0" y="-5" font-family="Inter, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#1E40AF">极致产品体验</text>
+    <text x="0" y="15" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#3B82F6">It Just Works</text>
+  </g>
+  
+  <!-- Step 2: Viral Sharing -->
+  <g transform="translate(580, 240)">
+    <rect x="-80" y="-30" width="160" height="60" rx="30" fill="#F0FDF4" stroke="#16A34A" stroke-width="2"/>
+    <text x="0" y="-5" font-family="Inter, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#166534">病毒式推荐</text>
+    <text x="0" y="15" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#15803D">会议即传播</text>
+  </g>
+  
+  <!-- Step 3: Registration -->
+  <g transform="translate(400, 400)">
+    <rect x="-80" y="-30" width="160" height="60" rx="30" fill="#FFFBEB" stroke="#F59E0B" stroke-width="2"/>
+    <text x="0" y="-5" font-family="Inter, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#92400E">新用户转化</text>
+    <text x="0" y="15" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#B45309">参会者转用户</text>
+  </g>
+  
+  <!-- Step 4: Network Effect -->
+  <g transform="translate(220, 240)">
+    <rect x="-80" y="-30" width="160" height="60" rx="30" fill="#FAF5FF" stroke="#A855F7" stroke-width="2"/>
+    <text x="0" y="-5" font-family="Inter, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#6B21A8">网络效应</text>
+    <text x="0" y="15" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#9333EA">更多会议循环</text>
+  </g>
+  
+  <!-- Arrows -->
+  <g fill="none" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow-head)">
+    <path d="M 480 100 Q 560 140 580 200"/>
+    <path d="M 580 280 Q 560 340 480 380"/>
+    <path d="M 320 380 Q 240 340 220 280"/>
+    <path d="M 220 200 Q 240 140 320 100"/>
+  </g>
+  
+  <!-- The SLG Bridge -->
+  <path d="M 400 370 L 400 320" stroke="#0EA5E9" stroke-width="2" marker-end="url(#arrow-head-blue)" stroke-dasharray="4 2"/>
+  <g transform="translate(400, 240)">
+    <rect x="-100" y="-40" width="200" height="80" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2"/>
+    <text x="0" y="-5" font-family="Outfit, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#0369A1">企业采购 (SLG)</text>
+    <text x="0" y="20" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#0EA5E9">识别高潜力账户 + 主动触达</text>
+  </g>
+
+  <defs>
+    <marker id="arrow-head" markerWidth="6" markerHeight="4" refX="0" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" fill="#94A3B8" />
+    </marker>
+    <marker id="arrow-head-blue" markerWidth="6" markerHeight="4" refX="0" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" fill="#0EA5E9" />
+    </marker>
+  </defs>
+</svg>

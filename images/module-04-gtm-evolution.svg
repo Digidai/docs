@@ -1,0 +1,69 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">GTM 范式演进</text>
+  
+  <!-- Cards Container -->
+  <g transform="translate(40, 80)">
+    <!-- 1.0 Era -->
+    <rect x="0" y="0" width="220" height="260" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="0" y="0" width="220" height="40" rx="12 12 0 0" fill="#F1F5F9"/>
+    <text x="110" y="26" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#475569">1.0 时代 (1990-2010)</text>
+    <text x="110" y="65" font-family="Outfit, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#1E293B">人力驱动</text>
+    <g font-family="Inter, sans-serif" font-size="13" fill="#64748B">
+      <text x="30" y="100">• 电话销售 / 陌生拜访</text>
+      <text x="30" y="125">• 纸质件 / 手动流程</text>
+      <text x="30" y="150">• 依靠销售个人经验</text>
+      <line x1="20" y1="170" x2="200" y2="170" stroke="#F1F5F9"/>
+      <text x="30" y="195" font-weight="600" fill="#475569">特点：</text>
+      <text x="30" y="215">劳动密集型，规模靠人数</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <path d="M 230 130 L 250 130" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- 2.0 Era -->
+    <rect x="260" y="0" width="220" height="260" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="260" y="0" width="220" height="40" rx="12 12 0 0" fill="#EFF6FF"/>
+    <text x="370" y="26" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#3B82F6">2.0 时代 (2010-2023)</text>
+    <text x="370" y="65" font-family="Outfit, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#1E293B">数据驱动</text>
+    <g font-family="Inter, sans-serif" font-size="13" fill="#64748B">
+      <text x="290" y="100">• 营销自动化 (MAP)</text>
+      <text x="290" y="125">• CRM 系统标准化</text>
+      <text x="290" y="150">• 漏斗管理与报表</text>
+      <line x1="280" y1="170" x2="460" y2="170" stroke="#EFF6FF"/>
+      <text x="290" y="195" font-weight="600" fill="#3B82F6">特点：</text>
+      <text x="290" y="215">流程标准化，数据驱动决策</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <path d="M 490 130 L 510 130" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- 3.0 Era -->
+    <rect x="520" y="0" width="220" height="260" rx="12" fill="#F5F3FF" stroke="#DDD6FE" stroke-width="2"/>
+    <rect x="520" y="0" width="220" height="40" rx="12 12 0 0" fill="#8B5CF6"/>
+    <text x="630" y="26" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#FFFFFF">3.0 时代 (2023-)</text>
+    <text x="630" y="65" font-family="Outfit, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#7C3AED">AI 驱动</text>
+    <g font-family="Inter, sans-serif" font-size="13" fill="#5B21B6">
+      <text x="550" y="100">• AI Agent 自动执行</text>
+      <text x="550" y="125">• 预测性分析与建模</text>
+      <text x="550" y="150">• 智能决策优化</text>
+      <line x1="540" y1="170" x2="720" y2="170" stroke="#DDD6FE"/>
+      <text x="550" y="195" font-weight="700">特点：</text>
+      <text x="550" y="215">智能自动化，超个性化触达</text>
+    </g>
+  </g>
+
+  <!-- Summary Pill -->
+  <rect x="250" y="355" width="300" height="30" rx="15" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="400" y="375" font-family="Inter, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#166534">核心进化：从“人力密度”到“智能密度”</text>
+
+  <!-- Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94A3B8" />
+    </marker>
+  </defs>
+</svg>

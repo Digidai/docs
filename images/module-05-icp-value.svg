@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <linearGradient id="gradRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffe3e3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fff8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e6ffe6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f8f9fa" />
+  <text x="400" y="40" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1d1d1f">ICP 的战略价值</text>
+
+  <!-- Left Side: Without ICP -->
+  <rect x="50" y="80" width="340" height="300" rx="12" fill="url(#gradRed)" stroke="#ffa3a3" stroke-width="1" filter="url(#shadow)" />
+  <text x="220" y="115" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#c92a2a">❌ 没有清晰 ICP 的问题</text>
+  
+  <g transform="translate(70, 140)" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#495057">
+    <text y="25">• 营销信息模糊，触达不精准</text>
+    <text y="55">• 销售浪费时间在低质量线索</text>
+    <text y="85">• CAC (获客成本) 持续攀升</text>
+    <text y="115">• 产品方向不明，功能割裂</text>
+    <text y="145">• 客户流失率高，缺乏粘性</text>
+  </g>
+
+  <!-- VS Divider -->
+  <circle cx="400" cy="230" r="25" fill="#ffffff" stroke="#d2d2d7" stroke-width="1" />
+  <text x="400" y="237" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#86868b">VS</text>
+
+  <!-- Right Side: With ICP -->
+  <rect x="410" y="80" width="340" height="300" rx="12" fill="url(#gradGreen)" stroke="#92e692" stroke-width="1" filter="url(#shadow)" />
+  <text x="580" y="115" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#2b8a3e">✅ 有清晰 ICP 的好处</text>
+  
+  <g transform="translate(430, 140)" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#495057">
+    <text y="25">• 精准定向，营销转化率大幅提升</text>
+    <text y="55">• 销售聚焦高质量账户，缩短周期</text>
+    <text y="85">• CAC 持续优化，提升 ROI</text>
+    <text y="115">• 产品迭代有依据，快速建立优势</text>
+    <text y="145">• NRR (收入留存率) 持续提升</text>
+  </g>
+
+  <!-- Footer Pill -->
+  <rect x="50" y="400" width="700" height="30" rx="15" fill="#f2f2f7" />
+  <text x="400" y="420" font-family="Outfit, Inter, sans-serif" font-size="14" text-anchor="middle" fill="#86868b">ICP 是所有 GTM 决策的基石，决定了执行的效率和最终的成败</text>
+</svg>

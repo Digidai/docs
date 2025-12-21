@@ -1,0 +1,50 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">有赞 GTM 战略 (布道师 + 生态)</text>
+  
+  <!-- Strategy Pillars -->
+  <g transform="translate(60, 80)">
+    <!-- Pillar 1 -->
+    <rect x="0" y="0" width="330" height="120" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="20" y="30" font-family="Outfit, sans-serif" font-size="16" font-weight="700" fill="#1E293B">1. 内容教育：定义"新零售"</text>
+    <g font-family="Inter, sans-serif" font-size="12" fill="#64748B">
+      <text x="20" y="60">• 创始人影响力：白鸦演讲传播理念</text>
+      <text x="20" y="85">• 《私域流量白皮书》建立权威</text>
+      <text x="20" y="110">• 有赞学堂提供数字化培训</text>
+    </g>
+
+    <!-- Pillar 2 -->
+    <rect x="350" y="0" width="330" height="120" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="370" y="30" font-family="Outfit, sans-serif" font-size="16" font-weight="700" fill="#1E293B">2. 垂直行业突破</text>
+    <g font-family="Inter, sans-serif" font-size="12" fill="#64748B">
+      <text x="370" y="60">• 先攻美妆、母婴等高复购行业</text>
+      <text x="370" y="85">• 再扩展到餐饮、零售、教育</text>
+      <text x="370" y="110">• 打造行业标杆案例，建立公信力</text>
+    </g>
+
+    <!-- Pillar 3 -->
+    <rect x="0" y="140" width="330" height="120" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="20" y="170" font-family="Outfit, sans-serif" font-size="16" font-weight="700" fill="#1E293B">3. 服务商生态体系</text>
+    <g font-family="Inter, sans-serif" font-size="12" fill="#64748B">
+      <text x="20" y="200">• 发展代理服务商网络 (销售+实施)</text>
+      <text x="20" y="225">• 降低有赞直接服务压力</text>
+      <text x="20" y="250">• 解决中国 SaaS "重服务"难题</text>
+    </g>
+
+    <!-- Pillar 4 -->
+    <rect x="350" y="140" width="330" height="120" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="370" y="170" font-family="Outfit, sans-serif" font-size="16" font-weight="700" fill="#1E293B">4. 产品持续平台化</text>
+    <g font-family="Inter, sans-serif" font-size="12" fill="#64748B">
+      <text x="370" y="200">• 从开店工具到零售操作系统 (OS)</text>
+      <text x="370" y="225">• 线上线下一体化 (有赞零售)</text>
+      <text x="370" y="250">• 从单店支持到连锁品牌管理</text>
+    </g>
+  </g>
+  
+  <!-- Core Message -->
+  <rect x="250" y="350" width="300" height="30" rx="15" fill="#FFFBEB" stroke="#F59E0B"/>
+  <text x="400" y="370" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#92400E">GTM 核心：成为商家的"首席布道师"</text>
+</svg>

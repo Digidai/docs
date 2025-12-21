@@ -1,0 +1,45 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">HubSpot 的鸿沟挑战</text>
+  
+  <!-- Content Background -->
+  <rect x="40" y="70" width="720" height="280" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  
+  <!-- Early Market -->
+  <rect x="60" y="90" width="300" height="190" rx="8" fill="#F1F5F9" stroke="#E2E8F0"/>
+  <text x="210" y="115" font-family="Outfit, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#475569">早期市场 (Visionaries)</text>
+  <g font-family="Inter, sans-serif" font-size="13" fill="#64748B">
+    <text x="80" y="145">画像：技术先锋、小型创业公司</text>
+    <text x="80" y="175">动机："新概念很酷"、愿景驱动</text>
+    <text x="80" y="205">特点：容忍不完善、手动能力强</text>
+  </g>
+  
+  <!-- Chasm -->
+  <rect x="375" y="150" width="50" height="80" rx="4" fill="#FEF2F2" stroke="#EF4444" stroke-width="2" stroke-dasharray="4 2"/>
+  <text x="400" y="195" font-family="Outfit, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#B91C1C">鸿沟</text>
+  <path d="M 350 190 L 370 190" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 450 190 L 430 190" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Mainstream Market -->
+  <rect x="440" y="90" width="300" height="190" rx="8" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="590" y="115" font-family="Outfit, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#166534">主流市场 (Pragmatists)</text>
+  <g font-family="Inter, sans-serif" font-size="13" fill="#15803D">
+    <text x="460" y="145">画像：传统营销负责人、主流SMB</text>
+    <text x="460" y="175">动机：ROI 可量化、验证效果再决策</text>
+    <text x="460" y="205">特点：需要完整功能、服务与支持</text>
+  </g>
+  
+  <!-- Summary Pill -->
+  <rect x="250" y="300" width="300" height="40" rx="20" fill="#FFFBEB" stroke="#F59E0B"/>
+  <text x="400" y="325" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#B45309">核心转型：从"卖愿景"到"卖结果(ROI)"</text>
+  
+  <!-- Arrow Head Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#EF4444" />
+    </marker>
+  </defs>
+</svg>

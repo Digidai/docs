@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="400" y="40" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1d1d1f">痛点优先级矩阵</text>
+
+  <!-- Labels -->
+  <text x="450" y="80" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#1d1d1f">紧迫程度 (Urgency)</text>
+  <text x="60" y="275" transform="rotate(-90 60,275)" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#1d1d1f">影响范围 (Impact)</text>
+
+  <!-- Matrix Grid -->
+  <rect x="150" y="110" width="540" height="330" rx="12" fill="#f2f2f7" stroke="#d2d2d7" stroke-width="1" />
+  
+  <line x1="150" y1="220" x2="690" y2="220" stroke="#d2d2d7" stroke-width="1" />
+  <line x1="150" y1="330" x2="690" y2="330" stroke="#d2d2d7" stroke-width="1" />
+  <line x1="330" y1="110" x2="330" y2="440" stroke="#d2d2d7" stroke-width="1" />
+  <line x1="510" y1="110" x2="510" y2="440" stroke="#d2d2d7" stroke-width="1" />
+
+  <!-- Column Headers -->
+  <text x="240" y="100" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="middle" fill="#515154">高 (High)</text>
+  <text x="420" y="100" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="middle" fill="#515154">中 (Medium)</text>
+  <text x="600" y="100" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="middle" fill="#515154">低 (Low)</text>
+
+  <!-- Row Headers -->
+  <text x="130" y="170" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="end" fill="#515154">高</text>
+  <text x="130" y="280" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="end" fill="#515154">中</text>
+  <text x="130" y="390" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="end" fill="#515154">低</text>
+
+  <!-- Cells -->
+  <!-- P0 -->
+  <rect x="160" y="120" width="160" height="90" rx="8" fill="#ffebeb" filter="url(#shadow)" />
+  <text x="240" y="170" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#c92a2a">P0</text>
+  <text x="240" y="195" font-family="Outfit, Inter, sans-serif" font-size="12" text-anchor="middle" fill="#c92a2a">生命级/立即解决</text>
+
+  <!-- P1s -->
+  <rect x="340" y="120" width="160" height="90" rx="8" fill="#fff9db" filter="url(#shadow)" />
+  <text x="420" y="170" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#f59f00">P1</text>
+  
+  <rect x="160" y="230" width="160" height="90" rx="8" fill="#fff9db" filter="url(#shadow)" />
+  <text x="240" y="280" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#f59f00">P1</text>
+
+  <!-- P2s -->
+  <rect x="520" y="120" width="160" height="90" rx="8" fill="#e7f5ff" filter="url(#shadow)" />
+  <text x="600" y="170" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#1c7ed6">P2</text>
+  
+  <rect x="340" y="230" width="160" height="90" rx="8" fill="#e7f5ff" filter="url(#shadow)" />
+  <text x="420" y="280" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#1c7ed6">P2</text>
+  
+  <rect x="160" y="340" width="160" height="90" rx="8" fill="#e7f5ff" filter="url(#shadow)" />
+  <text x="240" y="390" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#1c7ed6">P2</text>
+
+  <!-- P3s -->
+  <rect x="520" y="230" width="160" height="90" rx="8" fill="#f8f9fa" filter="url(#shadow)" />
+  <text x="600" y="280" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#86868b">P3</text>
+  
+  <rect x="340" y="340" width="160" height="90" rx="8" fill="#f8f9fa" filter="url(#shadow)" />
+  <text x="420" y="390" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#86868b">P3</text>
+
+  <!-- Legend Pill -->
+  <rect x="150" y="460" width="540" height="30" rx="15" fill="#f2f2f7" />
+  <text x="420" y="480" font-family="Outfit, Inter, sans-serif" font-size="13" text-anchor="middle" fill="#86868b">GTM 资源应优先投入 P0 和 P1 级别的核心痛点</text>
+</svg>

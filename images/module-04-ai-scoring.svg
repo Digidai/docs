@@ -1,0 +1,68 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">AI 预测性线索评分模型</text>
+  
+  <!-- Data Sources Section -->
+  <g transform="translate(40, 80)">
+    <!-- 1st Party Data -->
+    <rect x="0" y="0" width="350" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="0" y="0" width="350" height="30" rx="12 12 0 0" fill="#F1F5F9"/>
+    <text x="175" y="20" font-family="Outfit, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#475569">第一方数据 (Internal Data)</text>
+    <g transform="translate(20, 50)" font-family="Inter, sans-serif" font-size="12" fill="#64748B">
+      <text x="0" y="0">• 网站行为（浏览、停留时间）</text>
+      <text x="0" y="25">• 邮件互动（打开、点击、回复）</text>
+      <text x="170" y="0">• 产品使用（高价值功能频率）</text>
+      <text x="170" y="25">• 历史成交（画像相似度）</text>
+      <text x="0" y="50">• 销售互动（通话时长、情绪分析）</text>
+    </g>
+
+    <!-- 3rd Party Data -->
+    <rect x="370" y="0" width="350" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="370" y="0" width="350" height="30" rx="12 12 0 0" fill="#EFF6FF"/>
+    <text x="545" y="20" font-family="Outfit, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#3B82F6">第三方数据 (External Signals)</text>
+    <g transform="translate(390, 50)" font-family="Inter, sans-serif" font-size="12" fill="#64748B">
+      <text x="0" y="0">• 公司动态（融资、并购、扩张）</text>
+      <text x="0" y="25">• 技术栈（正在使用竞争产品）</text>
+      <text x="170" y="0">• 招聘信号（招募特定岗位）</text>
+      <text x="170" y="25">• 行业趋势（关键词搜索热度）</text>
+      <text x="0" y="50">• 公开财报（增长指标、战略重点）</text>
+    </g>
+  </g>
+
+  <!-- AI Model Center -->
+  <g transform="translate(300, 220)">
+    <circle cx="100" cy="50" r="50" fill="#8B5CF6" opacity="0.1"/>
+    <rect x="25" y="25" width="150" height="50" rx="25" fill="#8B5CF6"/>
+    <text x="100" y="56" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#FFFFFF">AI 预测引擎</text>
+    
+    <!-- Flow Lines from sources -->
+    <path d="M -85 -20 Q -85 50 25 50" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="4 2"/>
+    <path d="M 285 -20 Q 285 50 175 50" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="4 2"/>
+  </g>
+
+  <!-- Output Section -->
+  <g transform="translate(40, 310)">
+    <!-- Output 1 -->
+    <rect x="0" y="0" width="220" height="60" rx="8" fill="#F5F3FF" stroke="#DDD6FE"/>
+    <text x="110" y="25" font-family="Outfit, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#7C3AED">购买意向评分</text>
+    <text x="110" y="45" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#5B21B6">Identify "Hot" Profiles</text>
+
+    <!-- Output 2 -->
+    <rect x="250" y="0" width="220" height="60" rx="8" fill="#F0FDF4" stroke="#BBF7D0"/>
+    <text x="360" y="25" font-family="Outfit, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#166534">最佳触达时机</text>
+    <text x="360" y="45" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#15803D">Optimal Sales Timing</text>
+
+    <!-- Output 3 -->
+    <rect x="500" y="0" width="220" height="60" rx="8" fill="#FFFBEB" stroke="#FDE68A"/>
+    <text x="610" y="25" font-family="Outfit, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#B45309">推荐下一步行动</text>
+    <text x="610" y="45" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#92400E">Next Best Action</text>
+
+    <!-- Connectors from Engine -->
+    <path d="M 360 -40 L 110 0" fill="none" stroke="#CBD5E1" stroke-width="1.5"/>
+    <path d="M 360 -40 L 360 0" fill="none" stroke="#CBD5E1" stroke-width="1.5"/>
+    <path d="M 360 -40 L 610 0" fill="none" stroke="#CBD5E1" stroke-width="1.5"/>
+  </g>
+</svg>

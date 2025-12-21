@@ -1,0 +1,44 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">Dreamforce 价值矩阵</text>
+  
+  <!-- Quadrants -->
+  <rect x="100" y="80" width="300" height="150" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="400" y="80" width="300" height="150" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="100" y="230" width="300" height="150" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="400" y="230" width="300" height="150" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Content -->
+  <g font-family="Inter, sans-serif" font-size="14">
+    <!-- Top Left -->
+    <text x="250" y="115" font-family="Outfit, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#3B82F6">品牌建设</text>
+    <text x="250" y="145" text-anchor="middle" fill="#64748B">• 思想领导力平台</text>
+    <text x="250" y="170" text-anchor="middle" fill="#64748B">• 媒体关注度</text>
+    <text x="250" y="195" text-anchor="middle" fill="#64748B">• 行业权威地位</text>
+
+    <!-- Top Right -->
+    <text x="550" y="115" font-family="Outfit, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#F43F5E">销售加速</text>
+    <text x="550" y="145" text-anchor="middle" fill="#64748B">• 客户面对面接触</text>
+    <text x="550" y="170" text-anchor="middle" fill="#64748B">• 商机推进</text>
+    <text x="550" y="195" text-anchor="middle" fill="#64748B">• 合同签订</text>
+
+    <!-- Bottom Left -->
+    <text x="250" y="265" font-family="Outfit, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#10B981">社区凝聚</text>
+    <text x="250" y="295" text-anchor="middle" fill="#64748B">• 用户大会</text>
+    <text x="250" y="320" text-anchor="middle" fill="#64748B">• 客户成功故事</text>
+    <text x="250" y="345" text-anchor="middle" fill="#64748B">• Trailblazer 社区</text>
+
+    <!-- Bottom Right -->
+    <text x="550" y="265" font-family="Outfit, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#8B5CF6">产品发布</text>
+    <text x="550" y="295" text-anchor="middle" fill="#64748B">• 新功能预告</text>
+    <text x="550" y="320" text-anchor="middle" fill="#64748B">• 产品路线图</text>
+    <text x="550" y="345" text-anchor="middle" fill="#64748B">• 培训认证</text>
+  </g>
+
+  <!-- Central Badge -->
+  <circle cx="400" cy="230" r="40" fill="#1E293B" stroke="#FFFFFF" stroke-width="4"/>
+  <text x="400" y="235" font-family="Outfit, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#FFFFFF">D.F.</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg width="800" height="360" viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="360" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">Slack vs 传统邮件</text>
+  
+  <!-- Table Header -->
+  <rect x="100" y="70" width="300" height="50" rx="8" fill="#E2E8F0"/>
+  <text x="250" y="103" font-family="Outfit, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#475569">传统邮件</text>
+  
+  <rect x="400" y="70" width="300" height="50" rx="8" fill="#6366F1"/>
+  <text x="550" y="103" font-family="Outfit, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#FFFFFF">Slack</text>
+  
+  <!-- Rows -->
+  <g font-family="Inter, sans-serif" font-size="16">
+    <!-- Row 1 -->
+    <rect x="100" y="130" width="300" height="50" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="250" y="162" text-anchor="middle" fill="#64748B">异步、正式</text>
+    <rect x="400" y="130" width="300" height="50" rx="8" fill="#F5F3FF" stroke="#C4B5FD"/>
+    <text x="550" y="162" text-anchor="middle" fill="#4338CA" font-weight="600">实时、随意</text>
+    
+    <!-- Row 2 -->
+    <rect x="100" y="190" width="300" height="50" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="250" y="222" text-anchor="middle" fill="#64748B">信息孤岛</text>
+    <rect x="400" y="190" width="300" height="50" rx="8" fill="#F5F3FF" stroke="#C4B5FD"/>
+    <text x="550" y="222" text-anchor="middle" fill="#4338CA" font-weight="600">信息透明</text>
+    
+    <!-- Row 3 -->
+    <rect x="100" y="250" width="300" height="50" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="250" y="282" text-anchor="middle" fill="#64748B">难以搜索</text>
+    <rect x="400" y="250" width="300" height="50" rx="8" fill="#F5F3FF" stroke="#C4B5FD"/>
+    <text x="550" y="282" text-anchor="middle" fill="#4338CA" font-weight="600">全局搜索</text>
+    
+    <!-- Row 4 -->
+    <rect x="100" y="310" width="300" height="40" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="250" y="337" text-anchor="middle" fill="#64748B">无法集成</text>
+    <rect x="400" y="310" width="300" height="40" rx="8" fill="#F5F3FF" stroke="#C4B5FD"/>
+    <text x="550" y="337" text-anchor="middle" fill="#4338CA" font-weight="600">开放集成</text>
+  </g>
+  
+  <!-- Divider -->
+  <line x1="400" y1="130" x2="400" y2="350" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="4"/>
+</svg>

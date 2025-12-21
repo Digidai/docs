@@ -1,0 +1,61 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">Salesforce 销售组织架构</text>
+  
+  <!-- CRO -->
+  <rect x="300" y="70" width="200" height="60" rx="12" fill="#1E40AF"/>
+  <text x="400" y="95" font-family="Outfit, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#FFFFFF">CRO</text>
+  <text x="400" y="115" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#BFDBFE">首席收入官</text>
+  
+  <!-- Lines from CRO -->
+  <path d="M 400 130 L 400 160" stroke="#1E40AF" stroke-width="2" fill="none"/>
+  <path d="M 150 160 L 650 160" stroke="#1E40AF" stroke-width="2" fill="none"/>
+  <path d="M 150 160 L 150 180" stroke="#1E40AF" stroke-width="2" fill="none"/>
+  <path d="M 400 160 L 400 180" stroke="#1E40AF" stroke-width="2" fill="none"/>
+  <path d="M 650 160 L 650 180" stroke="#1E40AF" stroke-width="2" fill="none"/>
+
+  <!-- Segments -->
+  <g font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle">
+    <!-- SMB -->
+    <rect x="50" y="180" width="200" height="80" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <text x="150" y="210" fill="#1E293B">SMB Sales</text>
+    <text x="150" y="235" font-family="Inter, sans-serif" font-size="14" fill="#64748B">Inside Sales (内部销售)</text>
+
+    <!-- Mid-Market -->
+    <rect x="300" y="180" width="200" height="80" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <text x="400" y="210" fill="#1E293B">Mid-Market</text>
+    <text x="400" y="235" font-family="Inter, sans-serif" font-size="14" fill="#64748B">Field Sales (外勤销售)</text>
+
+    <!-- Enterprise -->
+    <rect x="550" y="180" width="200" height="80" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <text x="650" y="210" fill="#1E293B">Enterprise</text>
+    <text x="650" y="235" font-family="Inter, sans-serif" font-size="14" fill="#64748B">Named Accounts (大客户)</text>
+  </g>
+
+  <!-- Support Team Flow -->
+  <rect x="100" y="320" width="600" height="80" rx="40" fill="#F1F5F9" stroke="#CBD5E1" stroke-dasharray="4"/>
+  <text x="400" y="345" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#475569">全生命周期支撑团队</text>
+  
+  <g font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle">
+    <circle cx="200" cy="375" r="20" fill="#6366F1"/>
+    <text x="200" y="380" fill="#FFFFFF">SDR</text>
+    
+    <path d="M 230 375 L 270 375" stroke="#6366F1" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <circle cx="300" cy="375" r="20" fill="#6366F1"/>
+    <text x="300" y="380" fill="#FFFFFF">AE</text>
+    
+    <path d="M 330 375 L 370 375" stroke="#6366F1" stroke-width="2"/>
+    
+    <circle cx="400" cy="375" r="20" fill="#6366F1"/>
+    <text x="400" y="380" fill="#FFFFFF">SE</text>
+    
+    <path d="M 430 375 L 470 375" stroke="#6366F1" stroke-width="2"/>
+    
+    <circle cx="500" cy="375" r="20" fill="#10B981"/>
+    <text x="500" y="380" fill="#FFFFFF">CSM</text>
+  </g>
+</svg>

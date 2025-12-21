@@ -1,0 +1,50 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">HubSpot 内容营销引擎</text>
+  
+  <!-- Content Background -->
+  <rect x="40" y="70" width="720" height="300" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  
+  <!-- Value & Path Flow -->
+  <g transform="translate(100, 100)">
+    <!-- Assets -->
+    <rect x="0" y="0" width="120" height="50" rx="8" fill="#EFF6FF" stroke="#3B82F6"/>
+    <text x="60" y="30" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E40AF">博客 (SEO)</text>
+    
+    <rect x="0" y="70" width="120" height="50" rx="8" fill="#EFF6FF" stroke="#3B82F6"/>
+    <text x="60" y="100" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E40AF">免费工具</text>
+    
+    <rect x="0" y="140" width="120" height="50" rx="8" fill="#EFF6FF" stroke="#3B82F6"/>
+    <text x="60" y="170" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E40AF">认证课程</text>
+    
+    <!-- Arrows to Middle -->
+    <path d="M 125 25 L 200 80" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow-blue)"/>
+    <path d="M 125 95 L 200 95" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow-blue)"/>
+    <path d="M 125 165 L 203 115" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow-blue)"/>
+    
+    <!-- Conversion Node -->
+    <rect x="210" y="65" width="150" height="60" rx="30" fill="#DBEAFE" stroke="#2563EB"/>
+    <text x="285" y="100" font-family="Inter, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#1E40AF">线索捕获 &amp; 培育</text>
+    
+    <!-- Arrow to Product -->
+    <path d="M 365 95 L 430 95" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow-blue)"/>
+    
+    <!-- Outcome -->
+    <rect x="440" y="45" width="160" height="100" rx="12" fill="#F0FDF4" stroke="#16A34A"/>
+    <text x="520" y="85" font-family="Outfit, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#166534">付费客户</text>
+    <text x="520" y="115" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#15803D">自然转化，高生命周期</text>
+  </g>
+  
+  <!-- Insight Legend -->
+  <text x="400" y="350" font-family="Inter, sans-serif" font-size="14" font-weight="500" text-anchor="middle" fill="#64748B">"内容"自己喝自己的香槟：教育市场 = 创造需求</text>
+  
+  <!-- Marker -->
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94A3B8" />
+    </marker>
+  </defs>
+</svg>

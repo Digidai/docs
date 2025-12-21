@@ -1,0 +1,65 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">Workday vs 传统 ERP 比较</text>
+  
+  <!-- Comparison Table -->
+  <g transform="translate(60, 80)">
+    <!-- Header -->
+    <rect x="0" y="0" width="220" height="50" rx="8" fill="#F1F5F9"/>
+    <text x="110" y="32" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#475569">维度</text>
+    
+    <rect x="230" y="0" width="220" height="50" rx="8" fill="#F1F5F9"/>
+    <text x="340" y="32" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#475569">传统 ERP (Legacy)</text>
+    
+    <rect x="460" y="0" width="220" height="50" rx="8" fill="#EFF6FF"/>
+    <text x="570" y="32" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#1E40AF">Workday (Cloud-Native)</text>
+    
+    <!-- Row 1: Deployment -->
+    <g transform="translate(0, 60)">
+      <text x="110" y="25" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#64748B">部署模式</text>
+      <text x="340" y="25" font-family="Inter, sans-serif" font-size="13" text-anchor="middle" fill="#475569">本地化 (On-Premise)</text>
+      <text x="570" y="25" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#1E40AF">多租户 SaaS (Cloud)</text>
+    </g>
+    
+    <!-- Row 2: Architecture -->
+    <g transform="translate(0, 100)">
+      <text x="110" y="25" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#64748B">系统集成</text>
+      <text x="340" y="25" font-family="Inter, sans-serif" font-size="13" text-anchor="middle" fill="#475569">孤岛化、版本不一</text>
+      <text x="570" y="25" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#1E40AF">单一版本、实时可见</text>
+    </g>
+    
+    <!-- Row 3: Upgrade -->
+    <g transform="translate(0, 140)">
+      <text x="110" y="25" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#64748B">升级维护</text>
+      <text x="340" y="25" font-family="Inter, sans-serif" font-size="13" text-anchor="middle" fill="#475569">周期长 (年)、成本高</text>
+      <text x="570" y="25" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#1E40AF">无感自动升级 (周/季)</text>
+    </g>
+    
+    <!-- Row 4: Experience -->
+    <g transform="translate(0, 180)">
+      <text x="110" y="25" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#64748B">用户体验</text>
+      <text x="340" y="25" font-family="Inter, sans-serif" font-size="13" text-anchor="middle" fill="#475569">过时界面、操作复杂</text>
+      <text x="570" y="25" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#1E40AF">现代 UI、移动优先</text>
+    </g>
+    
+    <!-- Row 5: Focus -->
+    <g transform="translate(0, 220)">
+      <text x="110" y="25" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#64748B">关注点</text>
+      <text x="340" y="25" font-family="Inter, sans-serif" font-size="13" text-anchor="middle" fill="#475569">流程合规、后勤支持</text>
+      <text x="570" y="25" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#1E40AF">员工成功、数据洞察</text>
+    </g>
+    
+    <line x1="0" y1="55" x2="680" y2="55" stroke="#E2E8F0" stroke-width="1"/>
+    <line x1="0" y1="95" x2="680" y2="95" stroke="#E2E8F0" stroke-width="1"/>
+    <line x1="0" y1="135" x2="680" y2="135" stroke="#E2E8F0" stroke-width="1"/>
+    <line x1="0" y1="175" x2="680" y2="175" stroke="#E2E8F0" stroke-width="1"/>
+    <line x1="0" y1="215" x2="680" y2="215" stroke="#E2E8F0" stroke-width="1"/>
+  </g>
+  
+  <!-- Conclusion Badge -->
+  <rect x="250" y="340" width="300" height="40" rx="20" fill="#1E293B"/>
+  <text x="400" y="365" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#FFFFFF">核心优势：SaaS 模式的降维打击</text>
+</svg>

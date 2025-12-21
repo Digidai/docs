@@ -1,0 +1,41 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">Slack Freemium 设计</text>
+  
+  <!-- Content Background -->
+  <rect x="40" y="70" width="720" height="260" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  
+  <!-- Left Column: Free -->
+  <rect x="60" y="90" width="330" height="220" rx="8" fill="#F1F5F9"/>
+  <text x="225" y="120" font-family="Outfit, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#475569">免费版 (足够日常使用)</text>
+  <line x1="100" y1="135" x2="350" y2="135" stroke="#CBD5E1" stroke-width="1"/>
+  
+  <g font-family="Inter, sans-serif" font-size="14" fill="#64748B">
+    <text x="100" y="165">• 无限用户</text>
+    <text x="100" y="195">• 无限频道</text>
+    <text x="100" y="225">• 10个应用集成</text>
+    <text x="100" y="255" fill="#E11D48" font-weight="600">• 最近 10,000 条消息可搜索</text>
+  </g>
+  
+  <!-- Right Column: Paid -->
+  <rect x="410" y="90" width="330" height="220" rx="8" fill="#F0FDF4"/>
+  <text x="575" y="120" font-family="Outfit, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#166534">付费版 (解决增长痛点)</text>
+  <line x1="450" y1="135" x2="700" y2="135" stroke="#BBF7D0" stroke-width="1"/>
+  
+  <g font-family="Inter, sans-serif" font-size="14" fill="#374151">
+    <text x="450" y="165" font-weight="600">• 无限消息历史</text>
+    <text x="450" y="195">• 无限应用集成</text>
+    <text x="450" y="225">• 群组视频通话</text>
+    <text x="450" y="255">• 高级身份验证</text>
+    <text x="450" y="285">• 合规与安全功能</text>
+  </g>
+  
+  <!-- Bottom Insight -->
+  <rect x="40" y="345" width="720" height="40" rx="20" fill="#ECFDF5" stroke="#10B981" stroke-width="1"/>
+  <text x="400" y="371" font-family="Inter, sans-serif" font-size="14" font-weight="500" text-anchor="middle" fill="#065F46">
+    关键洞察：消息搜索限制 → 随着使用时间增长，升级动机自然产生
+  </text>
+</svg>

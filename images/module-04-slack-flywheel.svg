@@ -1,0 +1,58 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">Slack 增长飞轮 (PLG 模式)</text>
+  
+  <!-- Flywheel Elements -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6366F1" />
+    </marker>
+  </defs>
+
+  <!-- Central Value -->
+  <circle cx="400" cy="270" r="60" fill="#6366F1" opacity="0.1"/>
+  <circle cx="400" cy="270" r="50" fill="#6366F1"/>
+  <text x="400" y="265" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#FFFFFF">协作</text>
+  <text x="400" y="285" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#FFFFFF">核心</text>
+
+  <!-- 1: Join & Trial -->
+  <rect x="300" y="80" width="200" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  <text x="400" y="108" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">1. 加入并开始试用</text>
+  <text x="400" y="125" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">低门槛、自助式注册</text>
+
+  <!-- 2. Invite Colleagues -->
+  <rect x="550" y="180" width="200" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  <text x="650" y="208" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">2. 邀请团队成员</text>
+  <text x="650" y="225" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">内置邀请机制、社交属性</text>
+
+  <!-- 3. Network Effect -->
+  <rect x="550" y="340" width="200" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  <text x="650" y="368" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">3. 网络效应爆发</text>
+  <text x="650" y="385" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">沟通效率随用户数指数提升</text>
+
+  <!-- 4. Habit & Dependency -->
+  <rect x="300" y="420" width="200" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  <text x="400" y="448" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">4. 建立使用习惯</text>
+  <text x="400" y="465" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">信息沉淀、多工具集成</text>
+
+  <!-- 5. Value Realization -->
+  <rect x="50" y="340" width="200" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  <text x="150" y="368" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">5. 价值实现与转化</text>
+  <text x="150" y="385" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">搜索限制触发付费升级</text>
+
+  <!-- 6. Expansion -->
+  <rect x="50" y="180" width="200" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  <text x="150" y="208" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">6. 跨团队/组织扩展</text>
+  <text x="150" y="225" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">从一个团队扩散到整个公司</text>
+
+  <!-- Circular Arrows -->
+  <path d="M 400 150 A 120 120 0 0 1 540 210" fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 650 250 A 120 120 0 0 1 650 330" fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 540 370 A 120 120 0 0 1 400 410" fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 260 410 A 120 120 0 0 1 150 330" fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 150 270 A 120 120 0 0 1 150 250" fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 150 170 A 120 120 0 0 1 290 110" fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#arrowhead)"/>
+</svg>

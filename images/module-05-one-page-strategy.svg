@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f8f9fa" />
+  
+  <!-- Header Card -->
+  <rect x="50" y="20" width="900" height="80" rx="12" fill="#0071e3" filter="url(#shadow)" />
+  <text x="500" y="55" font-family="Outfit, Inter, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#ffffff">GTM 战略一页纸 - SalesHub</text>
+  <text x="500" y="85" font-family="Outfit, Inter, sans-serif" font-size="16" text-anchor="middle" fill="#e8f2ff">v1.0 | 2024-Q1 | 核心使命：连接销售洞察与业务增长</text>
+
+  <!-- Section 1: Target Market -->
+  <rect x="50" y="120" width="440" height="150" rx="12" fill="#ffffff" stroke="#d2d2d7" stroke-width="1" filter="url(#shadow)" />
+  <rect x="50" y="120" width="440" height="40" rx="12 12 0 0" fill="#e1f5fe" />
+  <text x="70" y="147" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" fill="#01579b">【目标市场】</text>
+  <text x="70" y="190" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#1d1d1f">ICP: 50-200人 SaaS 公司</text>
+  <text x="110" y="210" font-family="Outfit, Inter, sans-serif" font-size="13" fill="#86868b">销售团队 10-30 人</text>
+  <text x="70" y="235" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#1d1d1f">TAM: $5B | SAM: $500M</text>
+  <text x="70" y="255" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#2e7d32" font-weight="600">首年 SOM: $5M</text>
+
+  <!-- Section 2: Value Prop -->
+  <rect x="510" y="120" width="440" height="150" rx="12" fill="#ffffff" stroke="#d2d2d7" stroke-width="1" filter="url(#shadow)" />
+  <rect x="510" y="120" width="440" height="40" rx="12 12 0 0" fill="#e8f5e9" />
+  <text x="530" y="147" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" fill="#2e7d32">【价值主张】</text>
+  <text x="530" y="190" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#1d1d1f">定位: 为成长期 SaaS 设计的销售协作平台</text>
+  <text x="530" y="220" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#1d1d1f">差异化: AI 驱动的销售预测</text>
+  <text x="570" y="240" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#1d1d1f">+ 原生 Slack 集成</text>
+
+  <!-- Section 3: GTM Motion -->
+  <rect x="50" y="290" width="440" height="150" rx="12" fill="#ffffff" stroke="#d2d2d7" stroke-width="1" filter="url(#shadow)" />
+  <rect x="50" y="290" width="440" height="40" rx="12 12 0 0" fill="#fff3e0" />
+  <text x="70" y="317" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" fill="#e65100">【GTM Motion】</text>
+  <text x="70" y="355" font-family="Outfit, Inter, sans-serif" font-size="16" font-weight="600" fill="#1d1d1f">Hybrid: PLG + SLG</text>
+  <text x="70" y="385" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#1d1d1f">- Self-serve: 60%</text>
+  <text x="70" y="415" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#1d1d1f">- Sales-assist: 40%</text>
+
+  <!-- Section 4: Pricing -->
+  <rect x="510" y="290" width="440" height="150" rx="12" fill="#ffffff" stroke="#d2d2d7" stroke-width="1" filter="url(#shadow)" />
+  <rect x="510" y="290" width="440" height="40" rx="12 12 0 0" fill="#f3e5f5" />
+  <text x="530" y="317" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" fill="#4a148c">【定价包装】</text>
+  <text x="530" y="355" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#1d1d1f">Freemium → Pro ($49/seat/mo)</text>
+  <text x="530" y="380" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#1d1d1f">→ Team ($99) → Enterprise</text>
+  <text x="530" y="410" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#1d1d1f">试用: 14 天 Pro 功能</text>
+  <text x="530" y="430" font-family="Outfit, Inter, sans-serif" font-size="13" fill="#2e7d32" font-weight="600">目标 Free→Paid: 5%</text>
+
+  <!-- Section 5: Metrics -->
+  <rect x="50" y="460" width="440" height="150" rx="12" fill="#ffffff" stroke="#d2d2d7" stroke-width="1" filter="url(#shadow)" />
+  <rect x="50" y="460" width="440" height="40" rx="12 12 0 0" fill="#e0f2f1" />
+  <text x="70" y="487" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" fill="#004d40">【关键指标】</text>
+  <text x="70" y="520" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#1d1d1f" font-weight="600">北极星: Weekly Active Teams</text>
+  <text x="70" y="545" font-family="Outfit, Inter, sans-serif" font-size="14" fill="#1d1d1f">- Q4 目标: 500 付费客户</text>
+  <text x="70" y="565" font-family="Outfit, Inter, sans-serif" font-size="14" fill="#1d1d1f">- ARR 目标: $2M</text>
+  <text x="70" y="585" font-family="Outfit, Inter, sans-serif" font-size="14" fill="#1d1d1f">- NRR 目标: >110%</text>
+
+  <!-- Section 6: Resources -->
+  <rect x="510" y="460" width="440" height="150" rx="12" fill="#ffffff" stroke="#d2d2d7" stroke-width="1" filter="url(#shadow)" />
+  <rect x="510" y="460" width="440" height="40" rx="12 12 0 0" fill="#fbe9e7" />
+  <text x="530" y="487" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" fill="#bf360c">【团队与资源】</text>
+  <text x="530" y="520" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#1d1d1f">团队: 5人 (Mk 2, Sales 2, Ops 1)</text>
+  <text x="530" y="545" font-family="Outfit, Inter, sans-serif" font-size="15" fill="#1d1d1f" font-weight="600">预算: $500K / 年</text>
+  <text x="570" y="565" font-family="Outfit, Inter, sans-serif" font-size="14" fill="#515154">- 人员: 60%</text>
+  <text x="570" y="585" font-family="Outfit, Inter, sans-serif" font-size="14" fill="#515154">- 营销: 30%</text>
+  <text x="570" y="605" font-family="Outfit, Inter, sans-serif" font-size="14" fill="#515154">- 工具: 10%</text>
+
+  <!-- Footer Result Pill -->
+  <rect x="50" y="620" width="900" height="20" rx="10" fill="#f2f2f7" />
+  <text x="500" y="635" font-family="Outfit, Inter, sans-serif" font-size="12" text-anchor="middle" fill="#86868b">一项成功的 GTM 战略需要市场需求、价值交付和运营效率的高度对齐</text>
+</svg>

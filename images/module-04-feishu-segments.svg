@@ -1,0 +1,45 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">飞书目标客户映射图</text>
+  
+  <!-- Sweet Spot Column -->
+  <rect x="60" y="80" width="330" height="340" rx="12" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+  <text x="225" y="120" font-family="Outfit, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#065F46">优先目标 (Sweet Spot)</text>
+  
+  <g transform="translate(80, 150)" font-family="Inter, sans-serif" font-size="15" fill="#064E3B">
+    <rect x="0" y="0" width="290" height="40" rx="8" fill="#FFFFFF" stroke="#D1FAE5"/>
+    <text x="145" y="26" text-anchor="middle">• 互联网公司、科技创业公司</text>
+    
+    <rect x="0" y="55" width="290" height="40" rx="8" fill="#FFFFFF" stroke="#D1FAE5"/>
+    <text x="145" y="81" text-anchor="middle">• 新消费品牌</text>
+    
+    <rect x="0" y="110" width="290" height="40" rx="8" fill="#FFFFFF" stroke="#D1FAE5"/>
+    <text x="145" y="136" text-anchor="middle">• 知识工作者为主的组织</text>
+    
+    <rect x="0" y="165" width="290" height="40" rx="8" fill="#FFFFFF" stroke="#D1FAE5"/>
+    <text x="145" y="191" text-anchor="middle">• 追求效率、开放文化的团队</text>
+  </g>
+  
+  <!-- Avoid Column -->
+  <rect x="410" y="80" width="330" height="340" rx="12" fill="#FFF1F2" stroke="#FB7185" stroke-width="2"/>
+  <text x="575" y="120" font-family="Outfit, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#9F1239">避开的市场 (Low Priority)</text>
+  
+  <g transform="translate(430, 150)" font-family="Inter, sans-serif" font-size="15" fill="#881337">
+    <rect x="0" y="0" width="290" height="40" rx="8" fill="#FFFFFF" stroke="#FFE4E6"/>
+    <text x="145" y="26" text-anchor="middle">• 传统制造业 (钉钉强势)</text>
+    
+    <rect x="0" y="55" width="290" height="40" rx="8" fill="#FFFFFF" stroke="#FFE4E6"/>
+    <text x="145" y="81" text-anchor="middle">• 政府和国企 (企微强势)</text>
+    
+    <rect x="0" y="55" width="290" height="40" rx="8" fill="#FFFFFF" stroke="#FFE4E6"/>
+    <rect x="0" y="110" width="290" height="40" rx="8" fill="#FFFFFF" stroke="#FFE4E6"/>
+    <text x="145" y="136" text-anchor="middle">• 价格敏感的小微企业</text>
+  </g>
+
+  <!-- Advanced Tag -->
+  <rect x="250" y="380" width="300" height="30" rx="15" fill="#3B82F6" />
+  <text x="400" y="400" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#FFFFFF">核心认同：先进公司用飞书</text>
+</svg>

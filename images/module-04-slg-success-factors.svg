@@ -1,0 +1,44 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">SLG 成功要素模型 (Success Model)</text>
+  
+  <!-- Central Hub (Enterprise Value) -->
+  <g transform="translate(300, 80)">
+    <rect x="0" y="0" width="200" height="80" rx="12" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="100" y="35" font-family="Outfit, sans-serif" font-size="20" font-weight="800" text-anchor="middle" fill="#5B21B6">Enterprise Value</text>
+    <text x="100" y="60" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#7C3AED">企业级价值</text>
+  </g>
+
+  <!-- Pillars -->
+  <g transform="translate(60, 200)">
+    <!-- Sales Machine -->
+    <rect x="0" y="0" width="210" height="100" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="105" y="30" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#475569">Sales Machine</text>
+    <text x="105" y="55" font-family="Inter, sans-serif" font-size="13" text-anchor="middle" fill="#64748B">销售机器</text>
+    <text x="105" y="80" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#94A3B8">方法论 • 直销团队 • 规模化</text>
+    <path d="M 105 0 Q 105 -40 240 -80" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 2"/>
+
+    <!-- Customer Success -->
+    <rect x="235" y="0" width="210" height="100" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="340" y="30" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#475569">Customer Success</text>
+    <text x="340" y="55" font-family="Inter, sans-serif" font-size="13" text-anchor="middle" fill="#64748B">客户成功</text>
+    <text x="340" y="80" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#94A3B8">采用率 • 续约率 • 客户忠诚度</text>
+    <path d="M 340 0 L 340 -40" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 2"/>
+
+    <!-- Expand Motion -->
+    <rect x="470" y="0" width="210" height="100" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="575" y="30" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#475569">Expand Motion</text>
+    <text x="575" y="55" font-family="Inter, sans-serif" font-size="13" text-anchor="middle" fill="#64748B">扩展动能</text>
+    <text x="575" y="80" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#94A3B8">NRR • 交叉销售 • Land &amp; Expand</text>
+    <path d="M 575 0 Q 575 -40 440 -80" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 2"/>
+  </g>
+
+  <!-- Foundation (Sustainable Growth) -->
+  <g transform="translate(300, 340)">
+    <rect x="0" y="0" width="200" height="40" rx="20" fill="#F0FDF4" stroke="#BBF7D0"/>
+    <text x="100" y="25" font-family="Inter, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#166534">Sustainable Growth</text>
+  </g>
+</svg>

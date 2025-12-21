@@ -1,0 +1,37 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">Workday 目标市场定位 (Focus Strategy)</text>
+  
+  <!-- Funnel Circles -->
+  <circle cx="400" cy="260" r="150" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <circle cx="400" cy="260" r="110" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="1"/>
+  <circle cx="400" cy="260" r="70" fill="#0EA5E9"/>
+
+  <!-- Labels -->
+  <g font-family="Inter, sans-serif" text-anchor="middle">
+    <!-- Core Target -->
+    <text x="400" y="255" font-size="16" font-weight="600" fill="#FFFFFF">10K+ 员工</text>
+    <text x="400" y="275" font-size="14" font-weight="500" fill="#FFFFFF">核心目标：大型企业</text>
+    
+    <!-- Mid-Large -->
+    <text x="400" y="175" font-size="15" font-weight="600" fill="#0369A1">1K - 10K 员工</text>
+    <text x="400" y="195" font-size="13" font-weight="500" fill="#0369A1">次要目标：中大型企业</text>
+
+    <!-- SMB -->
+    <text x="400" y="125" font-size="14" font-weight="600" fill="#94A3B8">&lt; 1K 员工</text>
+    <text x="400" y="145" font-size="12" font-weight="500" fill="#94A3B8">非目标：小企业 (Out of Scope)</text>
+  </g>
+
+  <!-- Rationale Box -->
+  <rect x="520" y="180" width="240" height="180" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.05))"/>
+  <text x="640" y="210" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#475569">为什么聚焦大企业？</text>
+  <g font-family="Inter, sans-serif" font-size="12" fill="#64748B">
+    <text x="540" y="240">• 高 ACV ($1M+) 支撑高服务投入</text>
+    <text x="540" y="265">• 大企业 HR/财务痛点明确</text>
+    <text x="540" y="290">• 替换周期长，LTV 极高</text>
+    <text x="540" y="315">• 行业背书效应显著</text>
+  </g>
+</svg>

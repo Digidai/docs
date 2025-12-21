@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f8f9fa" />
+  <text x="400" y="40" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1d1d1f">ICP vs Buyer Persona</text>
+
+  <!-- ICP Section -->
+  <rect x="75" y="100" width="300" height="240" rx="12" fill="#e1f5fe" stroke="#01579b" stroke-width="1" filter="url(#shadow)" />
+  <text x="225" y="140" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#01579b">ICP (Ideal Customer Profile)</text>
+  <text x="225" y="165" font-family="Outfit, Inter, sans-serif" font-size="14" text-anchor="middle" fill="#515154">理想客户画像 (公司维度)</text>
+  
+  <rect x="95" y="180" width="260" height="140" rx="8" fill="#ffffff" />
+  <g transform="translate(110, 205)" font-family="Outfit, Inter, sans-serif" font-size="14" fill="#343a40">
+    <text y="0">• 行业 &amp; 垂直领域</text>
+    <text y="25">• 公司规模 (人数/收入)</text>
+    <text y="50">• 融资阶段 &amp; 成长轨迹</text>
+    <text y="75">• 现有技术栈 &amp; 数字化程度</text>
+    <text y="100">• 地理位置 &amp; 合规要求</text>
+  </g>
+
+  <!-- Flow Arrow -->
+  <path d="M 385 220 L 415 220" stroke="#0071e3" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0071e3" />
+    </marker>
+  </defs>
+
+  <!-- Persona Section -->
+  <rect x="425" y="100" width="300" height="240" rx="12" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" filter="url(#shadow)" />
+  <text x="575" y="140" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#2e7d32">Buyer Persona</text>
+  <text x="575" y="165" font-family="Outfit, Inter, sans-serif" font-size="14" text-anchor="middle" fill="#515154">买家角色 (个人维度)</text>
+  
+  <rect x="445" y="180" width="260" height="140" rx="8" fill="#ffffff" />
+  <g transform="translate(460, 205)" font-family="Outfit, Inter, sans-serif" font-size="14" fill="#343a40">
+    <text y="0">• 职位 / 职能 / 资历</text>
+    <text y="25">• 关键指标 (KPIs)</text>
+    <text y="50">• 核心挑战 &amp; 痛点</text>
+    <text y="75">• 信息获取渠道 (LinkedIn/访谈)</text>
+    <text y="100">• 决策权力 / 影响范围</text>
+  </g>
+
+  <!-- Relationship Box -->
+  <rect x="75" y="370" width="650" height="50" rx="8" fill="#f2f2f7" />
+  <text x="400" y="400" font-family="Outfit, Inter, sans-serif" font-size="15" text-anchor="middle" fill="#1d1d1f">
+    <tspan font-weight="600" fill="#01579b">先定义 ICP</tspan> (我们要在那类公司赢?) 
+    <tspan font-weight="700" fill="#86868b"> ➡ </tspan> 
+    <tspan font-weight="600" fill="#2e7d32">再定义 Buyer Persona</tspan> (在那类公司里我们要打动谁?)
+  </text>
+</svg>

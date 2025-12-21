@@ -1,0 +1,59 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">HubSpot 免费 CRM 入口战略</text>
+  
+  <!-- Strategy Visualization -->
+  <g transform="translate(60, 80)">
+    <!-- Problem Box -->
+    <rect x="0" y="0" width="220" height="100" rx="8" fill="#FFF1F2" stroke="#FDA4AF"/>
+    <text x="110" y="30" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#9F1239">挑战</text>
+    <g font-family="Inter, sans-serif" font-size="12" fill="#BE123C">
+      <text x="20" y="60">• SMB 缺乏核心客户数据中心</text>
+      <text x="20" y="80">• 营销工具获客门槛高</text>
+    </g>
+    
+    <!-- Solution Arrow -->
+    <path d="M 230 50 L 280 50" stroke="#FDA4AF" stroke-width="2" marker-end="url(#arrow-red)"/>
+    
+    <!-- Free CRM Entrance -->
+    <rect x="300" y="0" width="120" height="280" rx="12" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2"/>
+    <text x="360" y="140" font-family="Outfit, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#0369A1" transform="rotate(-90, 360, 140)">免费 CRM (入口)</text>
+    <text x="360" y="260" font-family="Inter, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0369A1">$0</text>
+    
+    <!-- Upsell Layers -->
+    <g transform="translate(440, 0)">
+      <rect x="0" y="0" width="240" height="80" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="120" y="35" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1E293B">Marketing Hub</text>
+      <text x="120" y="60" font-family="Inter, sans-serif" font-size="13" text-anchor="middle" fill="#64748B">核心营销套件 (付费)</text>
+      
+      <rect x="0" y="100" width="240" height="80" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="120" y="135" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1E293B">Sales Hub</text>
+      <text x="120" y="160" font-family="Inter, sans-serif" font-size="13" text-anchor="middle" fill="#64748B">高级销售功能 (付费)</text>
+      
+      <rect x="0" y="200" width="240" height="80" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="120" y="235" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1E293B">Service Hub</text>
+      <text x="120" y="260" font-family="Inter, sans-serif" font-size="13" text-anchor="middle" fill="#64748B">客服与成功 (付费)</text>
+    </g>
+    
+    <!-- Connection Path -->
+    <path d="M 425 40 L 435 40" stroke="#0EA5E9" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path d="M 425 140 L 435 140" stroke="#0EA5E9" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path d="M 425 240 L 435 240" stroke="#0EA5E9" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  </g>
+  
+  <!-- Outcome Badge -->
+  <rect x="300" y="340" width="440" height="36" rx="18" fill="#F0FDF4" stroke="#16A34A"/>
+  <text x="520" y="363" font-family="Inter, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#166534">价值：降低获客门槛 + 客户数据锁定 + 交叉销售基础</text>
+  
+  <defs>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FDA4AF" />
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0EA5E9" />
+    </marker>
+  </defs>
+</svg>

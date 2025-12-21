@@ -1,0 +1,73 @@
+<svg width="1000" height="400" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="400" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">HubSpot 市场扩展路径 (Moving Upmarket)</text>
+  
+  <!-- Path Visualization -->
+  <g transform="translate(50, 80)">
+    <!-- Phase 1 -->
+    <rect x="0" y="0" width="200" height="240" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="100" y="30" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#64748B">2006-2012</text>
+    <rect x="20" y="50" width="160" height="40" rx="8" fill="#F1F5F9"/>
+    <text x="100" y="75" font-family="Inter, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#1E293B">VSB (很小企业)</text>
+    <g font-family="Inter, sans-serif" font-size="12" fill="#64748B">
+      <text x="30" y="115">规模：1-10人</text>
+      <text x="30" y="145">ACV：$2-5K</text>
+      <text x="30" y="175">销售：纯自助</text>
+      <text x="30" y="205">产品：单一工具</text>
+    </g>
+
+    <!-- Phase 2 -->
+    <rect x="230" y="0" width="200" height="240" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="330" y="30" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#64748B">2012-2016</text>
+    <rect x="250" y="50" width="160" height="40" rx="8" fill="#E0F2FE"/>
+    <text x="330" y="75" font-family="Inter, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0369A1">SMB (小企业)</text>
+    <g font-family="Inter, sans-serif" font-size="12" fill="#64748B">
+      <text x="260" y="115">规模：10-200人</text>
+      <text x="260" y="145">ACV：$5-20K</text>
+      <text x="260" y="175">销售：Inside Sales</text>
+      <text x="260" y="205">产品：Marketing Hub</text>
+    </g>
+
+    <!-- Phase 3 -->
+    <rect x="460" y="0" width="200" height="240" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="560" y="30" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#64748B">2016-2020</text>
+    <rect x="480" y="50" width="160" height="40" rx="8" fill="#DBEAFE"/>
+    <text x="560" y="75" font-family="Inter, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#1E40AF">MM (中型企业)</text>
+    <g font-family="Inter, sans-serif" font-size="12" fill="#64748B">
+      <text x="490" y="115">规模：200-2K人</text>
+      <text x="490" y="145">ACV：$20-100K</text>
+      <text x="490" y="175">销售：Field Sales</text>
+      <text x="490" y="205">产品：Multi-Hub</text>
+    </g>
+
+    <!-- Phase 4 -->
+    <rect x="690" y="0" width="200" height="240" rx="12" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+    <text x="790" y="30" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1E40AF">2020+</text>
+    <rect x="710" y="50" width="160" height="40" rx="8" fill="#2563EB"/>
+    <text x="790" y="75" font-family="Inter, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#FFFFFF">Enterprise (大型企业)</text>
+    <g font-family="Inter, sans-serif" font-size="12" fill="#1E3A8A">
+      <text x="720" y="115">规模：2000+人</text>
+      <text x="720" y="145">ACV：$100K+</text>
+      <text x="720" y="175">销售：Ent. Sales</text>
+      <text x="720" y="205">产品：Platform + Pro</text>
+    </g>
+
+    <!-- Arrows -->
+    <path d="M 205 120 L 225 120" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrow-gray)"/>
+    <path d="M 435 120 L 455 120" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrow-gray)"/>
+    <path d="M 665 120 L 685 120" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrow-gray)"/>
+  </g>
+  
+  <!-- Keys for Success -->
+  <rect x="50" y="340" width="900" height="40" rx="20" fill="#F0FDF4" stroke="#16A34A"/>
+  <text x="500" y="365" font-family="Inter, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#166534">向上迁移关键：产品平台化 + 销售团队升级 + 服务能力建设 + 品牌高端化</text>
+
+  <defs>
+    <marker id="arrow-gray" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#CBD5E1" />
+    </marker>
+  </defs>
+</svg>

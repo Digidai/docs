@@ -1,0 +1,36 @@
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="300" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">Figma 插件与社区生态飞轮</text>
+  
+  <!-- Flywheel Elements -->
+  <defs>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F43F5E" />
+    </marker>
+  </defs>
+
+  <!-- Product -->
+  <rect x="325" y="70" width="150" height="60" rx="30" fill="#F43F5E"/>
+  <text x="400" y="105" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#FFFFFF">优质产品</text>
+
+  <!-- Developers -->
+  <rect x="550" y="180" width="180" height="60" rx="12" fill="#FFFFFF" stroke="#F43F5E" stroke-width="2"/>
+  <text x="640" y="215" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">开发者构建插件/资源</text>
+
+  <!-- Users -->
+  <rect x="310" y="230" width="180" height="60" rx="12" fill="#FFFFFF" stroke="#F43F5E" stroke-width="2"/>
+  <text x="400" y="265" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">吸引更多设计师用户</text>
+
+  <!-- Engagement -->
+  <rect x="70" y="180" width="180" height="60" rx="12" fill="#FFFFFF" stroke="#F43F5E" stroke-width="2"/>
+  <text x="160" y="215" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">提升产品粘性与壁垒</text>
+
+  <!-- Arrows -->
+  <path d="M 480 110 L 580 170" fill="none" stroke="#F43F5E" stroke-width="3" marker-end="url(#arrowhead-red)"/>
+  <path d="M 540 220 L 500 245" fill="none" stroke="#F43F5E" stroke-width="3" marker-end="url(#arrowhead-red)"/>
+  <path d="M 300 245 L 230 220" fill="none" stroke="#F43F5E" stroke-width="3" marker-end="url(#arrowhead-red)"/>
+  <path d="M 200 170 L 320 110" fill="none" stroke="#F43F5E" stroke-width="3" marker-end="url(#arrowhead-red)"/>
+</svg>

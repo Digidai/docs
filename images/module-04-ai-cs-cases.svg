@@ -1,0 +1,56 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">AI 在客户成功 (CS) 中的应用</text>
+  
+  <!-- Cards Container -->
+  <g transform="translate(40, 80)">
+    <!-- Column 1: Churn Prediction -->
+    <rect x="0" y="0" width="350" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="0" y="0" width="350" height="35" rx="12 12 0 0" fill="#F1F5F9"/>
+    <text x="175" y="22" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#475569">流失预测与预警</text>
+    <g transform="translate(20, 55)" font-family="Inter, sans-serif" font-size="13" fill="#64748B">
+      <text x="0" y="0">• 动态客户健康分预测与风险分层</text>
+      <text x="0" y="25">• 异常使用模式挖掘与流失根因分析</text>
+      <text x="0" y="50">• 针对性挽留话术与人工干预建议</text>
+    </g>
+
+    <!-- Column 2: Personalization -->
+    <rect x="370" y="0" width="350" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="370" y="0" width="350" height="35" rx="12 12 0 0" fill="#EFF6FF"/>
+    <text x="545" y="22" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#3B82F6">个性化推荐与增购</text>
+    <g transform="translate(390, 55)" font-family="Inter, sans-serif" font-size="13" fill="#64748B">
+      <text x="0" y="0">• 功能采用推荐与培训内容智能匹配</text>
+      <text x="0" y="25">• 扩展机会识别 (Expansion Signals)</text>
+      <text x="0" y="50">• 基于场景的自动化用户生命周期运营</text>
+    </g>
+
+    <!-- Column 3: Support -->
+    <rect x="0" y="140" width="350" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="0" y="140" width="350" height="35" rx="12 12 0 0" fill="#F0FDF4"/>
+    <text x="175" y="162" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#166534">自动化支持与知识库</text>
+    <g transform="translate(20, 195)" font-family="Inter, sans-serif" font-size="13" fill="#64748B">
+      <text x="0" y="0">• AI Chatbot 处理高频基础咨询</text>
+      <text x="0" y="25">• 智能工单分类、优先级划分与路由</text>
+      <text x="0" y="50">• 知识库智能搜索与自动答疑生成</text>
+    </g>
+
+    <!-- Column 4: Insights -->
+    <rect x="370" y="140" width="350" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="370" y="140" width="350" height="35" rx="12 12 0 0" fill="#F5F3FF"/>
+    <text x="545" y="162" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#7C3AED">用户洞察与满意度</text>
+    <g transform="translate(390, 195)" font-family="Inter, sans-serif" font-size="13" fill="#64748B">
+      <text x="0" y="0">• 用户评论/工单情绪分析 (NPS 预测)</text>
+      <text x="0" y="25">• 批量反馈挖掘与产品建议提炼</text>
+      <text x="0" y="50">• 使用场景聚类与高价值客户画像</text>
+    </g>
+  </g>
+
+  <!-- Tools Pill -->
+  <g transform="translate(100, 340)">
+    <rect x="0" y="0" width="600" height="40" rx="20" fill="#FFFBEB" stroke="#FDE68A"/>
+    <text x="300" y="25" font-family="Inter, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#B45309">代表工具：Gainsight, ChurnZero, Intercom, Zendesk AI, Amplitude</text>
+  </g>
+</svg>
