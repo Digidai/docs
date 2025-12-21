@@ -1,0 +1,79 @@
+<svg width="850" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #333; }
+      .label-title { font-family: sans-serif; font-size: 18px; font-weight: bold; }
+      .label-desc { font-family: sans-serif; font-size: 14px; fill: #555; }
+      .psych-note { font-family: sans-serif; font-size: 13px; font-weight: bold; fill: #ef4444; }
+      .nudge-text { font-family: sans-serif; font-size: 12px; font-weight: bold; fill: #555; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="425" y="45" text-anchor="middle" class="title">三层定价套餐的心理学机制</text>
+
+  <!-- Tier 1: Basic (Left) -->
+  <g transform="translate(50, 120)">
+    <rect x="0" y="40" width="220" height="220" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="110" y="85" text-anchor="middle" class="label-title" fill="#1565C0">基础版 (Basic)</text>
+    <text x="110" y="125" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="bold" fill="#333">¥299</text>
+    
+    <line x1="20" y1="160" x2="200" y2="160" stroke="#BBDEFB" stroke-width="1"/>
+    <text x="110" y="210" text-anchor="middle" class="psych-note">"低价锚点 (Decoy)"</text>
+    <text x="110" y="235" text-anchor="middle" class="label-desc">衬托中间选项更超值</text>
+  </g>
+
+  <!-- Tier 2: Pro (Center - Hero) -->
+  <g transform="translate(315, 100)">
+    <rect x="0" y="0" width="220" height="280" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" filter="url(#shadow)"/>
+    
+    <!-- Badge -->
+    <rect x="50" y="-15" width="120" height="30" rx="15" fill="#FF9800"/>
+    <text x="110" y="5" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="white">推荐/核心选项</text>
+
+    <text x="110" y="60" text-anchor="middle" class="label-title" fill="#EF6C00">专业版 (Pro)</text>
+    <text x="110" y="110" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="bold" fill="#333">¥999</text>
+    
+    <line x1="20" y1="150" x2="200" y2="150" stroke="#FFE0B2" stroke-width="1"/>
+    <text x="110" y="200" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#E65100">折中效应</text>
+    <text x="110" y="230" text-anchor="middle" class="label-desc">理想的目标选择</text>
+    <text x="110" y="255" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">预期占比: 60%</text>
+  </g>
+
+  <!-- Tier 3: Enterprise (Right) -->
+  <g transform="translate(580, 120)">
+    <rect x="0" y="40" width="220" height="220" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="110" y="85" text-anchor="middle" class="label-title" fill="#1565C0">企业版 (Enterprise)</text>
+    <text x="110" y="125" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="bold" fill="#333">¥2999</text>
+    
+    <line x1="20" y1="160" x2="200" y2="160" stroke="#BBDEFB" stroke-width="1"/>
+    <text x="110" y="210" text-anchor="middle" class="psych-note">"高价锚点 (Decoy)"</text>
+    <text x="110" y="235" text-anchor="middle" class="label-desc">让专业版显得更实惠</text>
+  </g>
+
+  <!-- Nudge Arrows (Influence Flow) -->
+  <g>
+    <!-- Left Nudge -->
+    <path d="M 275,250 Q 295,250 310,250" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <text x="290" y="235" text-anchor="middle" class="nudge-text">引导</text>
+
+    <!-- Right Nudge -->
+    <path d="M 575,250 Q 555,250 540,250" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <text x="560" y="235" text-anchor="middle" class="nudge-text">引导</text>
+  </g>
+
+  <!-- Bottom Explanation -->
+  <rect x="150" y="420" width="550" height="50" rx="25" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="425" y="450" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#2E7D32">
+    通过高低锚点，将客户"助推" (Nudge) 至盈利率最高的中间选项
+  </text>
+</svg>

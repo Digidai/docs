@@ -1,0 +1,80 @@
+<svg width="950" height="600" viewBox="0 0 950 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #333; }
+      .label-title { font-family: sans-serif; font-size: 16px; font-weight: bold; }
+      .label-desc { font-family: sans-serif; font-size: 14px; fill: #555; }
+      .summary-text { font-family: sans-serif; font-size: 15px; font-weight: bold; fill: #2E7D32; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="475" y="45" text-anchor="middle" class="title">B2B 价值瀑布分析 (Value Waterfall)</text>
+  <text x="475" y="75" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#666">将感性的“好用”转化为理性的“硬核财务收益”</text>
+
+  <!-- Value Components (Waterfall Steps) -->
+  <!-- Shifted container: Box 170 + Gap 30. Total width = (170*4) + (30*3) = 680 + 90 = 770. Center in 950: Offset 90. -->
+  <g transform="translate(90, 120)">
+    <!-- Time Savings -->
+    <rect x="0" y="0" width="170" height="70" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="85" y="30" text-anchor="middle" class="label-title" fill="#1565C0">节省招聘时间</text>
+    <text x="85" y="55" text-anchor="middle" class="label-desc">收益: +$4,000 /月</text>
+
+    <!-- Path to next -->
+    <path d="M 170,35 H 200" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+    <!-- Quality -->
+    <rect x="200" y="40" width="170" height="70" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="285" y="70" text-anchor="middle" class="label-title" fill="#1565C0">提高候选人质量</text>
+    <text x="285" y="95" text-anchor="middle" class="label-desc">收益: +$3,000 /月</text>
+
+    <!-- Path to next -->
+    <path d="M 370,75 H 400" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+    <!-- Experience/Brand -->
+    <rect x="400" y="80" width="170" height="70" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="485" y="110" text-anchor="middle" class="label-title" fill="#1565C0">改善候选人体验</text>
+    <text x="485" y="135" text-anchor="middle" class="label-desc">收益: +$2,000 /月</text>
+
+    <!-- Path to next -->
+    <path d="M 570,115 H 600" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+    <!-- Risk -->
+    <rect x="600" y="120" width="170" height="70" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="685" y="150" text-anchor="middle" class="label-title" fill="#1565C0">降低合规风险</text>
+    <text x="685" y="175" text-anchor="middle" class="label-desc">收益: +$1,000 /月</text>
+  </g>
+
+  <!-- Total Calculation Indicator -->
+  <path d="M 810,300 V 330 H 475" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Outcome Row (Center in 950: Boxes 300+300, Gap 50 -> 650. Offset 150.) -->
+  <g transform="translate(150, 350)">
+    <!-- Total Economic Value -->
+    <rect x="0" y="0" width="300" height="100" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" filter="url(#shadow)"/>
+    <text x="150" y="35" text-anchor="middle" class="label-title" fill="#EF6C00">总预期经济收益 (TEV)</text>
+    <text x="150" y="75" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="bold" fill="#333">$10,000 /月</text>
+
+    <!-- Price Result -->
+    <rect x="350" y="0" width="300" height="100" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" filter="url(#shadow)"/>
+    <text x="500" y="35" text-anchor="middle" class="label-title" fill="#2E7D32">产品的实际心理价位</text>
+    <text x="500" y="75" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="bold" fill="#1B5E20">$999 /月</text>
+  </g>
+
+  <!-- Conclusion Pill (Center in 950) -->
+  <g transform="translate(175, 495)">
+    <rect x="0" y="0" width="600" height="60" rx="30" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" filter="url(#shadow)"/>
+    <text x="300" y="37" text-anchor="middle" class="summary-text">
+      🏆 价值主张：客户获得 90% 剩余价值，实现 10x ROI
+    </text>
+  </g>
+</svg>

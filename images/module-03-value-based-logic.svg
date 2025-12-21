@@ -1,0 +1,93 @@
+<svg width="900" height="480" viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #333; }
+      .section-label { font-family: sans-serif; font-size: 18px; font-weight: bold; }
+      .step-title { font-family: sans-serif; font-size: 14px; font-weight: bold; }
+      .step-desc { font-family: sans-serif; font-size: 12px; fill: #555; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="450" y="45" text-anchor="middle" class="title">定价逻辑：成本导向 vs 价值导向</text>
+
+  <!-- Traditional Pricing Area (Inside-Out) -->
+  <g transform="translate(50, 90)">
+    <rect x="0" y="0" width="800" height="150" rx="12" fill="#F8F9FA" stroke="#DEE2E6" stroke-width="1"/>
+    <text x="20" y="30" class="section-label" fill="#64748B">传统思路 (成本导向)</text>
+    
+    <g transform="translate(30, 55)">
+      <!-- Step 1 (Width 150) -->
+      <rect x="0" y="0" width="150" height="65" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="75" y="27" text-anchor="middle" class="step-title" fill="#1565C0">产品与成本</text>
+      <text x="75" y="48" text-anchor="middle" class="step-desc">"开发花了多少钱?"</text>
+
+      <path d="M 155,32 H 185" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <!-- Step 2 -->
+      <rect x="190" y="0" width="150" height="65" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="265" y="27" text-anchor="middle" class="step-title" fill="#1565C0">目标利润</text>
+      <text x="265" y="48" text-anchor="middle" class="step-desc">"加上利润预期"</text>
+
+      <path d="M 345,32 H 375" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <!-- Step 3 -->
+      <rect x="380" y="0" width="150" height="65" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="455" y="27" text-anchor="middle" class="step-title" fill="#1565C0">设定价格</text>
+      <text x="455" y="48" text-anchor="middle" class="step-desc">成本 + 利润</text>
+
+      <path d="M 535,32 H 565" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <!-- Step 4 -->
+      <rect x="570" y="0" width="150" height="65" rx="12" fill="#ECEFF1" stroke="#90A4AE" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="645" y="27" text-anchor="middle" class="step-title" fill="#455A64">寻找客户</text>
+      <text x="645" y="48" text-anchor="middle" class="step-desc">推销既定价格</text>
+    </g>
+  </g>
+
+  <!-- Value-Based Pricing Area (Outside-In) -->
+  <g transform="translate(50, 270)">
+    <rect x="0" y="0" width="800" height="150" rx="12" fill="#FFF8E1" stroke="#FFD54F" stroke-width="1" opacity="0.6"/>
+    <text x="20" y="30" class="section-label" fill="#EF6C00">价值导向 (客户思维)</text>
+    
+    <g transform="translate(30, 55)">
+      <!-- Step 1 -->
+      <rect x="0" y="0" width="150" height="65" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="75" y="27" text-anchor="middle" class="step-title" fill="#2E7D32">客户价值</text>
+      <text x="75" y="48" text-anchor="middle" class="step-desc">"帮客户省/赚多少?"</text>
+
+      <path d="M 155,32 H 185" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <!-- Step 2 -->
+      <rect x="190" y="0" width="150" height="65" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="265" y="27" text-anchor="middle" class="step-title" fill="#2E7D32">支付意愿</text>
+      <text x="265" y="48" text-anchor="middle" class="step-desc">客户愿意买单吗?</text>
+
+      <path d="M 345,32 H 375" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <!-- Step 3 -->
+      <rect x="380" y="0" width="150" height="65" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="455" y="27" text-anchor="middle" class="step-title" fill="#EF6C00">设定价格</text>
+      <text x="455" y="48" text-anchor="middle" class="step-desc">基于价值分配</text>
+
+      <path d="M 535,32 H 565" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <!-- Step 4 -->
+      <rect x="570" y="0" width="150" height="65" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)" stroke-dasharray="4,2"/>
+      <text x="645" y="27" text-anchor="middle" class="step-title" fill="#EF6C00">成本核算</text>
+      <text x="645" y="48" text-anchor="middle" class="step-desc">"倒推"成本控制线</text>
+    </g>
+  </g>
+
+  <!-- Paradigm Shift Arrow -->
+  <path d="M 450,245 V 265" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
+</svg>

@@ -1,0 +1,71 @@
+<svg width="850" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #333; }
+      .card-title { font-family: sans-serif; font-size: 17px; font-weight: bold; fill: #1B5E20; }
+      .card-desc { font-family: sans-serif; font-size: 14px; fill: #555; }
+      .num-text { font-family: sans-serif; font-size: 18px; font-weight: bold; fill: #ffffff; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="425" y="45" text-anchor="middle" class="title">SaaS 产品提价的最佳实践</text>
+  <text x="425" y="75" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#666">五个关键策略：在不流失客户的前提下实现收入增长</text>
+
+  <!-- List Container -->
+  <g transform="translate(100, 110)">
+
+    <!-- 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="650" height="80" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+      <circle cx="40" cy="40" r="20" fill="#4CAF50"/>
+      <text x="40" y="46" text-anchor="middle" class="num-text">1</text>
+      <text x="80" y="32" class="card-title">新客户先行 (New Customer First)</text>
+      <text x="80" y="58" class="card-desc">先对新注册客户实行新价格，验证市场反应。现有客户暂时保持不变。</text>
+    </g>
+    
+    <!-- 2 -->
+    <g transform="translate(0, 95)">
+      <rect x="0" y="0" width="650" height="80" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+      <circle cx="40" cy="40" r="20" fill="#4CAF50"/>
+      <text x="40" y="46" text-anchor="middle" class="num-text">2</text>
+      <text x="80" y="32" class="card-title">价值先行 (Value First)</text>
+      <text x="80" y="58" class="card-desc">先发布重磅功能或增加服务价值，再宣布价格调整，给客户一个“提价理由”。</text>
+    </g>
+
+    <!-- 3 -->
+    <g transform="translate(0, 190)">
+      <rect x="0" y="0" width="650" height="80" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+      <circle cx="40" cy="40" r="20" fill="#FF9800"/>
+      <text x="40" y="46" text-anchor="middle" class="num-text">3</text>
+      <text x="80" y="32" class="card-title" fill="#E65100">透明通知 (Advance Notice)</text>
+      <text x="80" y="58" class="card-desc">提前 30-90 天通知，透明地解释成本上涨或研发投入，争取客户理解。</text>
+    </g>
+
+    <!-- 4 -->
+    <g transform="translate(0, 285)">
+      <rect x="0" y="0" width="650" height="80" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+      <circle cx="40" cy="40" r="20" fill="#FF9800"/>
+      <text x="40" y="46" text-anchor="middle" class="num-text">4</text>
+      <text x="80" y="32" class="card-title" fill="#E65100">老客户祖父条款 (Grandfathering)</text>
+      <text x="80" y="58" class="card-desc">允许忠诚的老客户在一定期限内（如一年）保留原价，降低流失率。</text>
+    </g>
+
+    <!-- 5 -->
+    <g transform="translate(0, 380)">
+      <rect x="0" y="0" width="650" height="80" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <circle cx="40" cy="40" r="20" fill="#2196F3"/>
+      <text x="40" y="46" text-anchor="middle" class="num-text">5</text>
+      <text x="80" y="32" class="card-title" fill="#1565C0">增加新档位 (Add don't Change)</text>
+      <text x="80" y="58" class="card-desc">与其修改旧套餐，不如推出包含更多价值的高价新套餐，引导客户向上升级。</text>
+    </g>
+
+  </g>
+
+</svg>
