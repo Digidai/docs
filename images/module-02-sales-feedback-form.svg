@@ -1,0 +1,108 @@
+<svg width="700" height="580" viewBox="0 0 700 580" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .title { font-size: 20px; font-weight: 800; fill: #1e293b; }
+      .section-title { font-size: 14px; font-weight: 700; fill: #334155; }
+      .label { font-size: 13px; fill: #475569; }
+      .input-line { stroke: #cbd5e1; stroke-width: 1; stroke-dasharray: 4 2; }
+      .checkbox { font-size: 12px; fill: #64748b; }
+      .section-bg { fill: #f8fafc; stroke: #e2e8f0; stroke-width: 1; rx: 8; }
+    </style>
+  </defs>
+
+  <!-- Main Container -->
+  <rect width="700" height="580" fill="#ffffff" rx="16" ry="16" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="700" height="60" rx="16" fill="#f1f5f9"/>
+  <rect x="0" y="45" width="700" height="15" fill="#f1f5f9"/>
+  <text x="350" y="38" text-anchor="middle" class="text title">📋 价值主张销售反馈表</text>
+
+  <!-- Basic Info Section -->
+  <g transform="translate(30, 80)">
+    <text x="0" y="0" class="text label">销售代表：</text>
+    <line x1="70" y1="2" x2="200" y2="2" class="input-line"/>
+    
+    <text x="230" y="0" class="text label">日期：</text>
+    <line x1="275" y1="2" x2="380" y2="2" class="input-line"/>
+
+    <text x="410" y="0" class="text label">客户公司：</text>
+    <line x1="485" y1="2" x2="640" y2="2" class="input-line"/>
+    
+    <text x="0" y="35" class="text label">客户角色：</text>
+    <line x1="75" y1="37" x2="250" y2="37" class="input-line"/>
+  </g>
+
+  <!-- Section 1: Version Used -->
+  <g transform="translate(30, 160)">
+    <rect x="0" y="0" width="640" height="70" class="section-bg"/>
+    <text x="20" y="25" class="text section-title">1. 使用的价值主张版本：</text>
+    
+    <g transform="translate(40, 45)">
+      <rect x="0" y="-12" width="16" height="16" rx="3" fill="#fff" stroke="#94a3b8" stroke-width="1.5"/>
+      <text x="25" y="0" class="text checkbox">版本 A</text>
+      
+      <rect x="120" y="-12" width="16" height="16" rx="3" fill="#fff" stroke="#94a3b8" stroke-width="1.5"/>
+      <text x="145" y="0" class="text checkbox">版本 B</text>
+      
+      <rect x="240" y="-12" width="16" height="16" rx="3" fill="#fff" stroke="#94a3b8" stroke-width="1.5"/>
+      <text x="265" y="0" class="text checkbox">版本 C</text>
+    </g>
+  </g>
+
+  <!-- Section 2: Customer Reaction -->
+  <g transform="translate(30, 245)">
+    <rect x="0" y="0" width="640" height="70" class="section-bg"/>
+    <text x="20" y="25" class="text section-title">2. 客户对价值主张的初始反应：</text>
+    
+    <g transform="translate(40, 45)">
+      <rect x="0" y="-12" width="16" height="16" rx="3" fill="#fff" stroke="#94a3b8" stroke-width="1.5"/>
+      <text x="25" y="0" class="text checkbox">非常感兴趣</text>
+      
+      <rect x="130" y="-12" width="16" height="16" rx="3" fill="#fff" stroke="#94a3b8" stroke-width="1.5"/>
+      <text x="155" y="0" class="text checkbox">有些兴趣</text>
+      
+      <rect x="250" y="-12" width="16" height="16" rx="3" fill="#fff" stroke="#94a3b8" stroke-width="1.5"/>
+      <text x="275" y="0" class="text checkbox">无感</text>
+      
+      <rect x="340" y="-12" width="16" height="16" rx="3" fill="#fff" stroke="#94a3b8" stroke-width="1.5"/>
+      <text x="365" y="0" class="text checkbox">质疑</text>
+    </g>
+  </g>
+
+  <!-- Section 3: Resonating Value -->
+  <g transform="translate(30, 330)">
+    <rect x="0" y="0" width="640" height="65" class="section-bg"/>
+    <text x="20" y="25" class="text section-title">3. 最能引起客户共鸣的价值点：</text>
+    <line x1="40" y1="50" x2="600" y2="50" class="input-line"/>
+  </g>
+
+  <!-- Section 4: Objections -->
+  <g transform="translate(30, 410)">
+    <rect x="0" y="0" width="640" height="65" class="section-bg"/>
+    <text x="20" y="25" class="text section-title">4. 客户提出的主要异议/疑问：</text>
+    <line x1="40" y1="50" x2="600" y2="50" class="input-line"/>
+  </g>
+
+  <!-- Section 5: Result -->
+  <g transform="translate(30, 490)">
+    <rect x="0" y="0" width="640" height="75" class="section-bg"/>
+    <text x="20" y="25" class="text section-title">5. 结果：</text>
+    
+    <g transform="translate(40, 45)">
+      <rect x="0" y="-12" width="16" height="16" rx="3" fill="#fff" stroke="#22c55e" stroke-width="1.5"/>
+      <text x="25" y="0" class="text checkbox">进入下一阶段</text>
+      
+      <rect x="140" y="-12" width="16" height="16" rx="3" fill="#fff" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="165" y="0" class="text checkbox">暂缓</text>
+      
+      <rect x="230" y="-12" width="16" height="16" rx="3" fill="#fff" stroke="#ef4444" stroke-width="1.5"/>
+      <text x="255" y="0" class="text checkbox">流失</text>
+      
+      <text x="320" y="0" class="text label" font-size="12">流失原因：</text>
+      <line x1="395" y1="2" x2="560" y2="2" class="input-line"/>
+    </g>
+  </g>
+
+</svg>
