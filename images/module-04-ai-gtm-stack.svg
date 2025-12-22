@@ -1,83 +1,94 @@
-<svg width="900" height="460" viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="900" height="460" fill="#F8FAFC" rx="16"/>
+<svg width="1000" height="550" viewBox="0 0 1000 550" xmlns="http://www.w3.org/2000/svg">
+  <!-- Soft Background -->
+  <rect width="1000" height="550" fill="#F4F7FA" rx="20"/>
   
-  <!-- Definitions -->
+  <!-- Definitions for Shadows and Gradients -->
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#8B5CF6" />
-    </marker>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.05"/>
+    </filter>
+    <linearGradient id="brainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E0F2FE" />
+      <stop offset="100%" style="stop-color:#DBEAFE" />
+    </linearGradient>
   </defs>
-  
+
   <!-- Title -->
-  <text x="450" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">AI 原生 GTM 技术栈架构</text>
-  
-  <!-- Execution Layer (Top) -->
-  <g transform="translate(40, 80)">
-    <rect x="0" y="0" width="820" height="80" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
-    <text x="410" y="25" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#475569">执行层 (Execution Layer)</text>
-    <g transform="translate(0, 35)">
-      <!-- Item 1: W=180, Gap=20. x=20 -->
-      <rect x="20" y="0" width="180" height="30" rx="4" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
-      <text x="110" y="19" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#475569">AI SDR (Artisan, 11x)</text>
-      
-      <!-- Item 2: W=180, Gap=20. x=220 -->
-      <rect x="220" y="0" width="180" height="30" rx="4" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
-      <text x="310" y="19" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#475569">营销自动化 (HubSpot)</text>
-      
-      <!-- Item 3: W=180, Gap=20. x=420 -->
-      <rect x="420" y="0" width="180" height="30" rx="4" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
-      <text x="510" y="19" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#475569">销售/协作助手 (Gong)</text>
-      
-      <!-- Item 4: W=180, Gap=20. x=620 -->
-      <rect x="620" y="0" width="180" height="30" rx="4" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
-      <text x="710" y="19" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#475569">CS 自动化 (Gainsight)</text>
-    </g>
-  </g>
+  <text x="500" y="50" font-family="sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1E293B">AI 原生 GTM 技术栈</text>
 
-  <!-- Intelligence Layer (Middle) -->
-  <g transform="translate(40, 200)">
-    <rect x="0" y="0" width="820" height="90" rx="12" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
-    <text x="410" y="25" font-family="Outfit, sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#7C3AED">智能层 (Intelligence Layer - AI Brain)</text>
-    <g font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#5B21B6" text-anchor="middle">
-      <!-- Evenly distributed centers: 140, 410, 680 -->
-      <text x="140" y="60">• 线索评分与意图识别</text>
-      <text x="410" y="60">• 推荐引擎与最佳实践</text>
-      <text x="680" y="60">• 预测分析与预测报告</text>
-    </g>
+  <!-- Layer 1: Data Layer (Top) -->
+  <g transform="translate(80, 80)">
+    <!-- Container -->
+    <rect width="840" height="120" rx="20" fill="#FFFFFF" filter="url(#softShadow)"/>
+    <text x="30" y="35" font-family="sans-serif" font-size="16" font-weight="bold" fill="#334155">数据层</text>
     
-    <!-- Connector Arrows (Centered at 410) - Flow UP (Data -> Intelligence -> Execution) -->
-    <!-- Top Arrow: From Intelligence Top (y=0) to Execution Bottom (y=-40) -->
-    <path d="M 410 0 L 410 -40" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrowhead)"/>
-    <!-- Bottom Arrow: From Data Layer Top (y=130 relative) to Intelligence Bottom (y=90) -->
-    <path d="M 410 130 L 410 90" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <!-- Items -->
+    <g transform="translate(30, 60)">
+      <!-- Item 1: 6sense -->
+      <rect x="0" y="0" width="180" height="45" rx="10" fill="#F1F5F9"/>
+      <text x="90" y="20" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1E293B">6sense</text>
+      <text x="90" y="38" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#64748B">意图数据</text>
+
+      <!-- Item 2: ZoomInfo -->
+      <rect x="200" y="0" width="180" height="45" rx="10" fill="#F1F5F9"/>
+      <text x="290" y="20" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1E293B">ZoomInfo</text>
+      <text x="290" y="38" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#64748B">联系人</text>
+
+      <!-- Item 3: Clearbit -->
+      <rect x="400" y="0" width="180" height="45" rx="10" fill="#F1F5F9"/>
+      <text x="490" y="20" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1E293B">Clearbit</text>
+      <text x="490" y="38" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#64748B">富化数据</text>
+
+      <!-- Item 4: Internal Data -->
+      <rect x="600" y="0" width="180" height="45" rx="10" fill="#F1F5F9"/>
+      <text x="690" y="20" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1E293B">内部数据</text>
+      <text x="690" y="38" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#64748B">产品使用</text>
+    </g>
   </g>
 
-  <!-- Data Layer (Bottom) -->
-  <g transform="translate(40, 330)">
-    <rect x="0" y="0" width="820" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
-    <text x="410" y="25" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#475569">数据层 (Data & Signal Layer)</text>
-    <g transform="translate(0, 35)">
-      <!-- 5 items. Constant Gap 15px. -->
-      <!-- Item 1: x=15. w=146. Center=88 -->
-      <rect x="15" y="0" width="146" height="40" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
-      <text x="88" y="23" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#1E40AF">意图数据 (6sense)</text>
-      
-      <!-- Item 2: x=176. w=146. Center=249 -->
-      <rect x="176" y="0" width="146" height="40" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
-      <text x="249" y="23" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#1E40AF">联系人 (ZoomInfo)</text>
-      
-      <!-- Item 3: x=337. w=146. Center=410 -->
-      <rect x="337" y="0" width="146" height="40" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
-      <text x="410" y="23" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#1E40AF">数据富化 (Clearbit)</text>
-      
-      <!-- Item 4: x=498. w=146. Center=571 -->
-      <rect x="498" y="0" width="146" height="40" rx="4" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
-      <text x="571" y="23" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#166534">内部使用数据</text>
-      
-      <!-- Item 5: x=659. w=146. Center=732 -->
-      <rect x="659" y="0" width="146" height="40" rx="4" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
-      <text x="732" y="23" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#166534">产品行为</text>
+  <!-- Arrow 1 -> 2 -->
+  <path d="M 500 205 L 500 225 L 495 225 L 500 235 L 505 225 L 500 225" fill="#94A3B8" />
+
+  <!-- Layer 2: Intelligence Layer (Middle) -->
+  <g transform="translate(140, 240)">
+    <rect width="720" height="110" rx="20" fill="#FFFFFF" filter="url(#softShadow)"/>
+    <text x="30" y="35" font-family="sans-serif" font-size="16" font-weight="bold" fill="#334155">智能层</text>
+    
+    <!-- AI Brain Node -->
+    <circle cx="360" cy="45" r="30" fill="url(#brainGradient)" stroke="#BFDBFE" stroke-width="1"/>
+    <text x="360" y="50" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1E40AF">AI 大脑</text>
+    
+    <text x="360" y="90" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#475569">线索评分 · 账户洞察 · 预测分析 · 推荐引擎</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <path d="M 500 355 L 500 375 L 495 375 L 500 385 L 505 375 L 500 375" fill="#94A3B8" />
+
+  <!-- Layer 3: Execution Layer (Bottom) -->
+  <g transform="translate(80, 390)">
+    <rect width="840" height="120" rx="20" fill="#FFFFFF" filter="url(#softShadow)"/>
+    <text x="30" y="35" font-family="sans-serif" font-size="16" font-weight="bold" fill="#334155">执行层</text>
+    
+    <g transform="translate(30, 60)">
+      <!-- Item 1: AI SDR -->
+      <rect x="0" y="0" width="180" height="45" rx="10" fill="#F1F5F9"/>
+      <text x="90" y="20" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1E293B">AI SDR</text>
+      <text x="90" y="38" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#64748B">Artisan</text>
+
+      <!-- Item 2: Marketing Automation -->
+      <rect x="200" y="0" width="180" height="45" rx="10" fill="#F1F5F9"/>
+      <text x="290" y="20" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1E293B">营销自动化</text>
+      <text x="290" y="38" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#64748B">HubSpot</text>
+
+      <!-- Item 3: Sales Assist -->
+      <rect x="400" y="0" width="180" height="45" rx="10" fill="#F1F5F9"/>
+      <text x="490" y="20" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1E293B">销售辅助</text>
+      <text x="490" y="38" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#64748B">Gong</text>
+
+      <!-- Item 4: CS Automation -->
+      <rect x="600" y="0" width="180" height="45" rx="10" fill="#F1F5F9"/>
+      <text x="690" y="20" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1E293B">CS 自动化</text>
+      <text x="690" y="38" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#64748B">Gainsight</text>
     </g>
   </g>
 </svg>
