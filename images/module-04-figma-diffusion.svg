@@ -1,6 +1,6 @@
-<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="420" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="800" height="400" fill="#F8FAFC" rx="16"/>
+  <rect width="800" height="420" fill="#F8FAFC" rx="16"/>
   
   <!-- Title -->
   <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">Figma 组织内扩散路径</text>
@@ -35,5 +35,5 @@
   <path d="M 400 270 L 400 320" stroke="#FB7185" stroke-width="4" stroke-dasharray="8" fill="none"/>
   
   <rect x="250" y="320" width="300" height="50" rx="25" fill="#FFF1F2" stroke="#F43F5E" stroke-width="2"/>
-  <text x="400" y="352" font-family="Outfit, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#E11D48">一个设计师 → 整个产品团队 → 整个公司</text>
+  <text x="400" y="352" font-family="Outfit, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#E11D48">一个设计师 → 整个产品团队 → 整个公司</text>
 </svg>

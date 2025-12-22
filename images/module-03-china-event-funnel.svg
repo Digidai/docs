@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="400" viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
       <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
@@ -13,7 +13,7 @@
   <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
 
   <!-- Title -->
-  <text x="400" y="50" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">
+  <text x="450" y="50" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">
     中国 B2B 活动营销漏斗 (Event Funnel)
   </text>
 
@@ -30,12 +30,12 @@
       <text x="30" y="130" font-family="Arial, sans-serif" font-size="14" fill="#333">• 老客转介</text>
     </g>
     
-    <text x="225" y="75" font-family="Arial, sans-serif" font-size="12" fill="#666">邀约率</text>
-    <text x="225" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">≥ 60%</text>
-    <line x1="210" y1="75" x2="250" y2="75" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="240" y="75" font-family="Arial, sans-serif" font-size="12" fill="#666">邀约率</text>
+    <text x="240" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">≥ 60%</text>
+    <line x1="220" y1="75" x2="270" y2="75" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
 
     <!-- During-Event -->
-    <g transform="translate(250, 0)">
+    <g transform="translate(290, 0)">
       <rect width="200" height="150" rx="8" fill="#FCE4EC" stroke="#E91E63" stroke-width="1.5" filter="url(#shadow)"/>
       <text x="100" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#C2185B">活动中 (During)</text>
       <line x1="20" y1="45" x2="180" y2="45" stroke="#F8BBD0"/>
@@ -44,12 +44,12 @@
       <text x="30" y="130" font-family="Arial, sans-serif" font-size="14" fill="#333">• 需求收集</text>
     </g>
     
-    <text x="475" y="75" font-family="Arial, sans-serif" font-size="12" fill="#666">签到率</text>
-    <text x="475" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">≥ 80%</text>
-    <line x1="460" y1="75" x2="500" y2="75" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="535" y="75" font-family="Arial, sans-serif" font-size="12" fill="#666">签到率</text>
+    <text x="535" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">≥ 80%</text>
+    <line x1="510" y1="75" x2="560" y2="75" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
 
     <!-- Post-Event -->
-    <g transform="translate(500, 0)">
+    <g transform="translate(580, 0)">
       <rect width="200" height="150" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
       <text x="100" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2E7D32">活动后 (Post)</text>
       <line x1="20" y1="45" x2="180" y2="45" stroke="#C8E6C9"/>
@@ -65,11 +65,11 @@
     <rect x="0" y="0" width="200" height="40" rx="4" fill="#EEEEEE"/>
     <text x="100" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">Marketing 负责</text>
     
-    <rect x="250" y="0" width="200" height="40" rx="4" fill="#EEEEEE"/>
-    <text x="350" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">Mktg + Sales</text>
+    <rect x="290" y="0" width="200" height="40" rx="4" fill="#EEEEEE"/>
+    <text x="390" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">Mktg + Sales</text>
 
-    <rect x="500" y="0" width="200" height="40" rx="4" fill="#EEEEEE"/>
-    <text x="600" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">Sales 负责</text>
+    <rect x="580" y="0" width="200" height="40" rx="4" fill="#EEEEEE"/>
+    <text x="680" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">Sales 负责</text>
   </g>
 
 </svg>

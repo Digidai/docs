@@ -29,8 +29,9 @@
   <text x="160" y="215" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1E293B">提升产品粘性与壁垒</text>
 
   <!-- Arrows -->
-  <path d="M 480 110 L 580 170" fill="none" stroke="#F43F5E" stroke-width="3" marker-end="url(#arrowhead-red)"/>
-  <path d="M 540 220 L 500 245" fill="none" stroke="#F43F5E" stroke-width="3" marker-end="url(#arrowhead-red)"/>
-  <path d="M 300 245 L 230 220" fill="none" stroke="#F43F5E" stroke-width="3" marker-end="url(#arrowhead-red)"/>
-  <path d="M 200 170 L 320 110" fill="none" stroke="#F43F5E" stroke-width="3" marker-end="url(#arrowhead-red)"/>
+  <!-- Arrows -->
+  <path d="M 475 110 Q 520 120 580 170" fill="none" stroke="#F43F5E" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+  <path d="M 640 240 Q 600 280 490 270" fill="none" stroke="#F43F5E" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+  <path d="M 310 260 Q 200 240 160 210" fill="none" stroke="#F43F5E" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+  <path d="M 160 180 Q 200 120 325 100" fill="none" stroke="#F43F5E" stroke-width="2" marker-end="url(#arrowhead-red)"/>
 </svg>

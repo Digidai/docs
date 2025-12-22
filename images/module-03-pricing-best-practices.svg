@@ -17,7 +17,7 @@
   <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
 
   <!-- Title -->
-  <text x="425" y="40" text-anchor="middle" class="title">China SaaS Pricing Best Practices</text>
+  <text x="425" y="40" text-anchor="middle" class="title">中国 SaaS 定价最佳实践</text>
 
   <!-- Content Grid -->
   <g transform="translate(45, 80)">
@@ -28,12 +28,12 @@
       <circle cx="90" cy="40" r="24" class="icon-circle"/>
       <text x="90" y="48" text-anchor="middle" class="icon-text">1</text>
       
-      <text x="90" y="90" text-anchor="middle" class="card-title">Value First</text>
+      <text x="90" y="90" text-anchor="middle" class="card-title">价值优先 (Value First)</text>
       
       <g transform="translate(15, 120)">
-        <text x="0" y="0" class="bullet">• Quantify ROI</text>
-        <text x="0" y="25" class="bullet">• Value > Price</text>
-        <text x="0" y="50" class="bullet">• "Cheap is bad"</text>
+        <text x="0" y="0" class="bullet">• 量化 ROI 收益</text>
+        <text x="0" y="25" class="bullet">• 价值 > 价格</text>
+        <text x="0" y="50" class="bullet">• 避免"廉价感"</text>
       </g>
     </g>
 
@@ -43,12 +43,12 @@
       <circle cx="90" cy="40" r="24" class="icon-circle"/>
       <text x="90" y="48" text-anchor="middle" class="icon-text">2</text>
       
-      <text x="90" y="90" text-anchor="middle" class="card-title">Price Control</text>
+      <text x="90" y="90" text-anchor="middle" class="card-title">价格管控 (Control)</text>
       
       <g transform="translate(15, 120)">
-        <text x="0" y="0" class="bullet">• Standard Lists</text>
-        <text x="0" y="25" class="bullet">• Discount Approval</text>
-        <text x="0" y="50" class="bullet">• Consistency Check</text>
+        <text x="0" y="0" class="bullet">• 标准价目表</text>
+        <text x="0" y="25" class="bullet">• 折扣审批流程</text>
+        <text x="0" y="50" class="bullet">• 终端价格一致性</text>
       </g>
     </g>
 
@@ -58,12 +58,12 @@
       <circle cx="90" cy="40" r="24" class="icon-circle"/>
       <text x="90" y="48" text-anchor="middle" class="icon-text">3</text>
       
-      <text x="90" y="90" text-anchor="middle" class="card-title">Paid Services</text>
+      <text x="90" y="90" text-anchor="middle" class="card-title">付费服务 (Services)</text>
       
       <g transform="translate(15, 120)">
-        <text x="0" y="0" class="bullet">• Separate Fees</text>
-        <text x="0" y="25" class="bullet">• Impl/Training</text>
-        <text x="0" y="50" class="bullet">• No "All-in-one"</text>
+        <text x="0" y="0" class="bullet">• 服务单独计费</text>
+        <text x="0" y="25" class="bullet">• 实施/培训/咨询</text>
+        <text x="0" y="50" class="bullet">• 拒绝"大包大揽"</text>
       </g>
     </g>
 
@@ -73,12 +73,12 @@
       <circle cx="90" cy="40" r="24" class="icon-circle"/>
       <text x="90" y="48" text-anchor="middle" class="icon-text">4</text>
       
-      <text x="90" y="90" text-anchor="middle" class="card-title">Expansion Path</text>
+      <text x="90" y="90" text-anchor="middle" class="card-title">增购路径 (Expansion)</text>
       
       <g transform="translate(15, 120)">
-        <text x="0" y="0" class="bullet">• Modular Upsell</text>
-        <text x="0" y="25" class="bullet">• Usage Metrics</text>
-        <text x="0" y="50" class="bullet">• Clear Upgrade</text>
+        <text x="0" y="0" class="bullet">• 模块化增购</text>
+        <text x="0" y="25" class="bullet">• 用量扩容</text>
+        <text x="0" y="50" class="bullet">• 清晰的升级阶梯</text>
       </g>
     </g>
 

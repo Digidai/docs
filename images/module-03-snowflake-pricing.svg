@@ -17,7 +17,7 @@
   <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
 
   <!-- Title -->
-  <text x="350" y="40" text-anchor="middle" class="title">Snowflake Pricing Model (Usage-Based)</text>
+  <text x="350" y="40" text-anchor="middle" class="title">Snowflake 计费模型 (使用量驱动)</text>
 
   <!-- Main Formula Box -->
   <g transform="translate(50, 80)">
@@ -26,8 +26,8 @@
     <!-- Compute -->
     <g transform="translate(30, 30)">
       <text x="0" y="0" class="header" fill="#0284C7">Compute (计算)</text>
-      <text x="0" y="30" class="formula-text">Credits Used × Price/Credit</text>
-      <text x="0" y="50" class="benefit-text" fill="#64748B">(Pay only when running)</text>
+      <text x="0" y="30" class="formula-text">消耗 Credit 数 × 单价/Credit</text>
+      <text x="0" y="50" class="benefit-text" fill="#64748B">(仅在运行时付费)</text>
     </g>
 
     <!-- Plus Sign -->
@@ -36,37 +36,37 @@
     <!-- Storage -->
     <g transform="translate(350, 30)">
       <text x="0" y="0" class="header" fill="#0284C7">Storage (存储)</text>
-      <text x="0" y="30" class="formula-text">Terabytes × Price/TB/Month</text>
-      <text x="0" y="50" class="benefit-text" fill="#64748B">(Pass-through cost)</text>
+      <text x="0" y="30" class="formula-text">TB 数 × 单价/TB/月</text>
+      <text x="0" y="50" class="benefit-text" fill="#64748B">(成本透传)</text>
     </g>
 
     <!-- Equals Total -->
     <line x1="30" y1="100" x2="570" y2="100" stroke="#BAE6FD" stroke-width="1" stroke-dasharray="4,2"/>
-    <text x="300" y="130" text-anchor="middle" class="header" fill="#0369A1">Total Monthly Bill</text>
+    <text x="300" y="130" text-anchor="middle" class="header" fill="#0369A1">每月总账单 (Total Bill)</text>
   </g>
 
   <!-- Benefits Section -->
   <g transform="translate(50, 260)">
-    <text x="0" y="0" class="header">Why it works:</text>
+    <text x="0" y="0" class="header">模式优势:</text>
 
     <!-- Benefit 1 -->
     <g transform="translate(0, 30)">
       <rect x="0" y="0" width="180" height="80" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
-      <text x="15" y="30" class="formula-text" font-weight="bold">Low Friction</text>
-      <text x="15" y="50" class="benefit-text">Start small, no upfront</text>
+      <text x="15" y="30" class="formula-text" font-weight="bold">低门槛 (Low Friction)</text>
+      <text x="15" y="50" class="benefit-text">小规模起步, 无预付</text>
     </g>
 
     <!-- Benefit 2 -->
     <g transform="translate(210, 30)">
       <rect x="0" y="0" width="180" height="80" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
-      <text x="15" y="30" class="formula-text" font-weight="bold">Scalability</text>
-      <text x="15" y="50" class="benefit-text">Grows with customer</text>
+      <text x="15" y="30" class="formula-text" font-weight="bold">扩展性 (Scalability)</text>
+      <text x="15" y="50" class="benefit-text">随客户成长自动增收</text>
     </g>
 
     <!-- Benefit 3: NRR -->
     <g transform="translate(420, 30)">
       <rect x="0" y="0" width="180" height="80" rx="4" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2"/>
-      <text x="15" y="25" class="formula-text" font-weight="bold" fill="#0F766E">Net Revenue Retention</text>
+      <text x="15" y="25" class="formula-text" font-weight="bold" fill="#0F766E">净收入留存 (NRR)</text>
       <text x="90" y="60" text-anchor="middle" class="key-stat" fill="#14B8A6">&gt; 170%</text>
     </g>
 

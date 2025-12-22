@@ -18,7 +18,7 @@
   <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
 
   <!-- Title -->
-  <text x="425" y="40" text-anchor="middle" class="title">Stripe's Hybrid Pricing Layers</text>
+  <text x="425" y="40" text-anchor="middle" class="title">Stripe 混合定价层级 (Hybrid Pricing Layers)</text>
 
   <!-- Layers Container -->
   <g transform="translate(175, 80)">
@@ -28,48 +28,48 @@
       <polygon points="150,0 300,80 0,80" fill="#4C1D95" filter="url(#shadow)"/> <!-- Triangle top visual trick -->
       <rect x="0" y="80" width="300" height="90" fill="#5B21B6" filter="url(#shadow)"/>
       
-      <text x="150" y="110" text-anchor="middle" class="layer-title">Enterprise Layer</text>
-      <text x="150" y="130" text-anchor="middle" class="layer-desc">Negotiated &amp; Custom</text>
+      <text x="150" y="110" text-anchor="middle" class="layer-title">企业级层 (Enterprise)</text>
+      <text x="150" y="130" text-anchor="middle" class="layer-desc">协议谈判 &amp; 定制化</text>
       
       <g transform="translate(50, 140)">
-        <text x="100" y="0" text-anchor="middle" class="item-sub">Volume Discounts • Dedicated Support</text>
+        <text x="100" y="0" text-anchor="middle" class="item-sub">阶梯折扣 • 专属支持</text>
       </g>
     </g>
 
     <!-- Layer 2: Value-Add (Middle) -->
     <g transform="translate(50, 180)">
       <rect x="0" y="0" width="400" height="110" fill="#6366F1" filter="url(#shadow)"/>
-      <text x="200" y="30" text-anchor="middle" class="layer-title">Value-Add Layer</text>
-      <text x="200" y="50" text-anchor="middle" class="layer-desc">SaaS &amp; Usage Mix</text>
+      <text x="200" y="30" text-anchor="middle" class="layer-title">增值服务层 (Value-Add)</text>
+      <text x="200" y="50" text-anchor="middle" class="layer-desc">SaaS &amp; 用量混合</text>
       
       <!-- Items -->
       <g transform="translate(20, 60)">
         <!-- Item 1 -->
         <rect x="0" y="0" width="110" height="40" class="item-box"/>
         <text x="55" y="18" text-anchor="middle" class="item-text">Billing</text>
-        <text x="55" y="32" text-anchor="middle" class="item-sub">0.5% Vol</text>
+        <text x="55" y="32" text-anchor="middle" class="item-sub">0.5% 交易额</text>
         
         <!-- Item 2 -->
         <rect x="125" y="0" width="110" height="40" class="item-box"/>
-        <text x="180" y="18" text-anchor="middle" class="item-text">Radar</text>
-        <text x="180" y="32" text-anchor="middle" class="item-sub">5¢ / txn</text>
+        <text x="180" y="18" text-anchor="middle" class="item-text">Radar (风控)</text>
+        <text x="180" y="32" text-anchor="middle" class="item-sub">5¢ / 笔</text>
 
         <!-- Item 3 -->
         <rect x="250" y="0" width="110" height="40" class="item-box"/>
-        <text x="305" y="18" text-anchor="middle" class="item-text">Atlas</text>
-        <text x="305" y="32" text-anchor="middle" class="item-sub">$500 One-off</text>
+        <text x="305" y="18" text-anchor="middle" class="item-text">Atlas (注册)</text>
+        <text x="305" y="32" text-anchor="middle" class="item-sub">$500 一次性</text>
       </g>
     </g>
 
     <!-- Layer 1: Foundation (Bottom) -->
     <g transform="translate(0, 300)">
       <rect x="0" y="0" width="500" height="100" fill="#3B82F6" filter="url(#shadow)"/>
-      <text x="250" y="30" text-anchor="middle" class="layer-title">Foundation Layer</text>
-      <text x="250" y="50" text-anchor="middle" class="layer-desc">Core Payment Processing</text>
+      <text x="250" y="30" text-anchor="middle" class="layer-title">基础层 (Foundation)</text>
+      <text x="250" y="50" text-anchor="middle" class="layer-desc">核心支付处理</text>
       
       <g transform="translate(150, 60)">
         <rect x="0" y="0" width="200" height="30" class="item-box"/>
-        <text x="100" y="20" text-anchor="middle" class="item-text">2.9% + 30¢ per transaction</text>
+        <text x="100" y="20" text-anchor="middle" class="item-text">2.9% + 30¢ / 每笔交易</text>
       </g>
     </g>
 
