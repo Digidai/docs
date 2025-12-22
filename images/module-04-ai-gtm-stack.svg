@@ -46,11 +46,11 @@
       <text x="680" y="60">• 预测分析与预测报告</text>
     </g>
     
-    <!-- Connector Arrows (Centered at 410) -->
-    <!-- Top Arrow: From Execution Bottom (y=-40 relative to this group) to Top (y=0) -->
-    <path d="M 410 -40 L 410 0" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrowhead)"/>
-    <!-- Bottom Arrow: From Bottom (y=90) to Data Layer Top (y=130 relative to start?) No, length 40 -->
-    <path d="M 410 90 L 410 130" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <!-- Connector Arrows (Centered at 410) - Flow UP (Data -> Intelligence -> Execution) -->
+    <!-- Top Arrow: From Intelligence Top (y=0) to Execution Bottom (y=-40) -->
+    <path d="M 410 0 L 410 -40" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <!-- Bottom Arrow: From Data Layer Top (y=130 relative) to Intelligence Bottom (y=90) -->
+    <path d="M 410 130 L 410 90" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrowhead)"/>
   </g>
 
   <!-- Data Layer (Bottom) -->
