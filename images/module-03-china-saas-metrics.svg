@@ -1,0 +1,86 @@
+<svg width="800" height="420" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .title { font-size: 20px; font-weight: 800; fill: #1e293b; }
+      .header { font-size: 12px; font-weight: 700; fill: #475569; }
+      .label { font-size: 13px; font-weight: 600; fill: #1e293b; }
+      .sublabel { font-size: 11px; fill: #94a3b8; }
+      .value { font-size: 13px; fill: #334155; }
+      .note { font-size: 11px; fill: #94a3b8; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="#ffffff" rx="16"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="text title">📊 中国头部 SaaS 公司关键指标（参考区间）</text>
+
+  <!-- Table Header -->
+  <g transform="translate(30, 70)">
+    <rect x="0" y="0" width="740" height="40" rx="8" fill="#f1f5f9"/>
+    <text x="100" y="26" text-anchor="middle" class="text header">公司类型</text>
+    <text x="250" y="26" text-anchor="middle" class="text header">ARR</text>
+    <text x="350" y="26" text-anchor="middle" class="text header">NRR</text>
+    <text x="450" y="26" text-anchor="middle" class="text header">GRR</text>
+    <text x="550" y="26" text-anchor="middle" class="text header">毛利率</text>
+    <text x="670" y="26" text-anchor="middle" class="text header">研发占比</text>
+  </g>
+
+  <!-- Row 1: HR SaaS -->
+  <g transform="translate(30, 120)">
+    <rect x="0" y="0" width="740" height="60" rx="8" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+    <rect x="0" y="0" width="8" height="60" rx="4" fill="#f59e0b"/>
+    <text x="100" y="25" text-anchor="middle" class="text label">头部 HR SaaS</text>
+    <text x="100" y="45" text-anchor="middle" class="text sublabel">北森、盖雅</text>
+    <text x="250" y="35" text-anchor="middle" class="text value">5-15亿</text>
+    <text x="350" y="35" text-anchor="middle" class="text value">95-110%</text>
+    <text x="450" y="35" text-anchor="middle" class="text value">85-92%</text>
+    <text x="550" y="35" text-anchor="middle" class="text value">65-75%</text>
+    <text x="670" y="35" text-anchor="middle" class="text value">25-35%</text>
+  </g>
+
+  <!-- Row 2: E-commerce SaaS -->
+  <g transform="translate(30, 190)">
+    <rect x="0" y="0" width="740" height="60" rx="8" fill="#dbeafe" stroke="#60a5fa" stroke-width="1"/>
+    <rect x="0" y="0" width="8" height="60" rx="4" fill="#3b82f6"/>
+    <text x="100" y="25" text-anchor="middle" class="text label">头部电商 SaaS</text>
+    <text x="100" y="45" text-anchor="middle" class="text sublabel">有赞、微盟</text>
+    <text x="250" y="35" text-anchor="middle" class="text value">10-30亿</text>
+    <text x="350" y="35" text-anchor="middle" class="text value">85-100%</text>
+    <text x="450" y="35" text-anchor="middle" class="text value">75-85%</text>
+    <text x="550" y="35" text-anchor="middle" class="text value">55-65%</text>
+    <text x="670" y="35" text-anchor="middle" class="text value">20-30%</text>
+  </g>
+
+  <!-- Row 3: CRM SaaS -->
+  <g transform="translate(30, 260)">
+    <rect x="0" y="0" width="740" height="60" rx="8" fill="#dcfce7" stroke="#4ade80" stroke-width="1"/>
+    <rect x="0" y="0" width="8" height="60" rx="4" fill="#22c55e"/>
+    <text x="100" y="25" text-anchor="middle" class="text label">头部 CRM SaaS</text>
+    <text x="100" y="45" text-anchor="middle" class="text sublabel">纷享、销售易</text>
+    <text x="250" y="35" text-anchor="middle" class="text value">3-10亿</text>
+    <text x="350" y="35" text-anchor="middle" class="text value">100-115%</text>
+    <text x="450" y="35" text-anchor="middle" class="text value">88-95%</text>
+    <text x="550" y="35" text-anchor="middle" class="text value">70-80%</text>
+    <text x="670" y="35" text-anchor="middle" class="text value">30-40%</text>
+  </g>
+
+  <!-- Row 4: Vertical SaaS -->
+  <g transform="translate(30, 330)">
+    <rect x="0" y="0" width="740" height="60" rx="8" fill="#f3e8ff" stroke="#c084fc" stroke-width="1"/>
+    <rect x="0" y="0" width="8" height="60" rx="4" fill="#a855f7"/>
+    <text x="100" y="25" text-anchor="middle" class="text label">垂直行业 SaaS</text>
+    <text x="100" y="45" text-anchor="middle" class="text sublabel">明源云、医百</text>
+    <text x="250" y="35" text-anchor="middle" class="text value">1-5亿</text>
+    <text x="350" y="35" text-anchor="middle" class="text value">90-105%</text>
+    <text x="450" y="35" text-anchor="middle" class="text value">82-90%</text>
+    <text x="550" y="35" text-anchor="middle" class="text value">60-70%</text>
+    <text x="670" y="35" text-anchor="middle" class="text value">20-30%</text>
+  </g>
+
+  <!-- Note -->
+  <text x="400" y="408" text-anchor="middle" class="text note">注：以上数据为行业参考区间，非具体公司披露数据</text>
+
+</svg>

@@ -1,0 +1,102 @@
+<svg width="700" height="480" viewBox="0 0 700 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .title { font-size: 18px; font-weight: 800; fill: #1e293b; }
+      .section-title { font-size: 14px; font-weight: 700; fill: #475569; }
+      .label { font-size: 13px; fill: #64748b; }
+      .column-header { font-size: 13px; font-weight: 700; fill: #ffffff; }
+      .input-line { stroke: #cbd5e1; stroke-width: 1; stroke-dasharray: 4 2; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="480" fill="#ffffff" rx="16"/>
+
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" class="text title">📋 整体产品差距分析工作表</text>
+
+  <!-- Section 1: Core Product -->
+  <g transform="translate(40, 70)">
+    <rect x="0" y="0" width="620" height="60" rx="10" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+    <text x="20" y="25" class="text section-title" fill="#15803d">✓ 核心产品（你已有的）</text>
+    <line x1="20" y1="45" x2="600" y2="45" class="input-line"/>
+  </g>
+
+  <!-- Section 2: Whole Product Gaps -->
+  <g transform="translate(40, 150)">
+    <text x="0" y="0" class="text section-title">⚠️ 整体产品需要的（还缺的）</text>
+    
+    <!-- Column Headers -->
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="200" height="40" rx="8" fill="#3b82f6"/>
+      <text x="100" y="26" text-anchor="middle" class="text column-header">🔧 产品功能</text>
+      
+      <rect x="210" y="0" width="200" height="40" rx="8" fill="#10b981"/>
+      <text x="310" y="26" text-anchor="middle" class="text column-header">🤝 服务</text>
+      
+      <rect x="420" y="0" width="200" height="40" rx="8" fill="#8b5cf6"/>
+      <text x="520" y="26" text-anchor="middle" class="text column-header">🌐 生态</text>
+    </g>
+
+    <!-- Row 1 -->
+    <g transform="translate(0, 70)">
+      <rect x="0" y="0" width="200" height="45" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+      <rect x="12" y="15" width="16" height="16" rx="3" fill="#fff" stroke="#3b82f6" stroke-width="1.5"/>
+      <line x1="40" y1="23" x2="188" y2="23" class="input-line"/>
+      
+      <rect x="210" y="0" width="200" height="45" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+      <rect x="222" y="15" width="16" height="16" rx="3" fill="#fff" stroke="#10b981" stroke-width="1.5"/>
+      <line x1="250" y1="23" x2="398" y2="23" class="input-line"/>
+      
+      <rect x="420" y="0" width="200" height="45" rx="6" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+      <rect x="432" y="15" width="16" height="16" rx="3" fill="#fff" stroke="#8b5cf6" stroke-width="1.5"/>
+      <line x1="460" y1="23" x2="608" y2="23" class="input-line"/>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 125)">
+      <rect x="0" y="0" width="200" height="45" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+      <rect x="12" y="15" width="16" height="16" rx="3" fill="#fff" stroke="#3b82f6" stroke-width="1.5"/>
+      <line x1="40" y1="23" x2="188" y2="23" class="input-line"/>
+      
+      <rect x="210" y="0" width="200" height="45" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+      <rect x="222" y="15" width="16" height="16" rx="3" fill="#fff" stroke="#10b981" stroke-width="1.5"/>
+      <line x1="250" y1="23" x2="398" y2="23" class="input-line"/>
+      
+      <rect x="420" y="0" width="200" height="45" rx="6" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+      <rect x="432" y="15" width="16" height="16" rx="3" fill="#fff" stroke="#8b5cf6" stroke-width="1.5"/>
+      <line x1="460" y1="23" x2="608" y2="23" class="input-line"/>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0, 180)">
+      <rect x="0" y="0" width="200" height="45" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+      <rect x="12" y="15" width="16" height="16" rx="3" fill="#fff" stroke="#3b82f6" stroke-width="1.5"/>
+      <line x1="40" y1="23" x2="188" y2="23" class="input-line"/>
+      
+      <rect x="210" y="0" width="200" height="45" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+      <rect x="222" y="15" width="16" height="16" rx="3" fill="#fff" stroke="#10b981" stroke-width="1.5"/>
+      <line x1="250" y1="23" x2="398" y2="23" class="input-line"/>
+      
+      <rect x="420" y="0" width="200" height="45" rx="6" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+      <rect x="432" y="15" width="16" height="16" rx="3" fill="#fff" stroke="#8b5cf6" stroke-width="1.5"/>
+      <line x1="460" y1="23" x2="608" y2="23" class="input-line"/>
+    </g>
+  </g>
+
+  <!-- Section 3: Key Gap -->
+  <g transform="translate(40, 400)">
+    <rect x="0" y="0" width="300" height="55" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+    <text x="20" y="22" class="text section-title" fill="#b45309">🎯 最关键的差距</text>
+    <line x1="20" y1="42" x2="280" y2="42" class="input-line"/>
+  </g>
+
+  <!-- Section 4: Action Plan -->
+  <g transform="translate(360, 400)">
+    <rect x="0" y="0" width="300" height="55" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+    <text x="20" y="22" class="text section-title" fill="#1d4ed8">📝 填补计划</text>
+    <line x1="20" y1="42" x2="280" y2="42" class="input-line"/>
+  </g>
+
+</svg>
