@@ -1,0 +1,88 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .title { font-size: 24px; font-weight: 800; fill: #1e293b; }
+      .card-title { font-size: 18px; font-weight: 700; fill: #1e293b; }
+      .card-desc { font-size: 13px; fill: #64748b; }
+      .tag { font-size: 11px; font-weight: 600; fill: #fff; }
+      .label { font-size: 12px; font-weight: 600; fill: #475569; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="16" ry="16"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" class="text title">三种定位策略 (Positioning Strategies)</text>
+
+  <!-- Strategy 1: Head-to-Head -->
+  <g transform="translate(50, 90)">
+    <rect width="220" height="260" rx="12" fill="#fff1f2" stroke="#e11d48" stroke-width="2"/>
+    <text x="110" y="30" text-anchor="middle" class="text card-title">Head-to-Head</text>
+    <text x="110" y="50" text-anchor="middle" class="text card-desc">正面竞争</text>
+    
+    <!-- Visual Icon Area -->
+    <circle cx="110" cy="100" r="30" fill="#fecdd3"/>
+    <text x="110" y="105" text-anchor="middle" font-size="24">⚔️</text>
+
+    <!-- Details -->
+    <text x="110" y="150" text-anchor="middle" class="text card-desc" font-weight="bold">在现有品类中成为最好</text>
+    
+    <g transform="translate(20, 170)">
+      <text x="0" y="0" class="text label">适合：资源充足, 优势明显</text>
+      <text x="0" y="20" class="text label">风险：高 (High Risk)</text>
+    </g>
+
+    <!-- Tag -->
+    <rect x="70" y="220" width="80" height="20" rx="10" fill="#e11d48"/>
+    <text x="110" y="234" text-anchor="middle" class="text tag">STRONG</text>
+  </g>
+
+  <!-- Strategy 2: Category Creation -->
+  <g transform="translate(290, 90)">
+    <rect width="220" height="260" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+    <text x="110" y="30" text-anchor="middle" class="text card-title">Category Creation</text>
+    <text x="110" y="50" text-anchor="middle" class="text card-desc">品类创造</text>
+
+    <!-- Visual Icon Area -->
+    <circle cx="110" cy="100" r="30" fill="#ddd6fe"/>
+    <text x="110" y="105" text-anchor="middle" font-size="24">💡</text>
+
+    <!-- Details -->
+    <text x="110" y="150" text-anchor="middle" class="text card-desc" font-weight="bold">定义新品类并成为领导者</text>
+
+    <g transform="translate(20, 170)">
+      <text x="0" y="0" class="text label">适合：颠覆性创新, 教育能力</text>
+      <text x="0" y="20" class="text label">风险：最高 (Highest Risk)</text>
+    </g>
+
+    <!-- Tag -->
+    <rect x="70" y="220" width="80" height="20" rx="10" fill="#7c3aed"/>
+    <text x="110" y="234" text-anchor="middle" class="text tag">INNOVATE</text>
+  </g>
+
+  <!-- Strategy 3: Niche Focus -->
+  <g transform="translate(530, 90)">
+    <rect width="220" height="260" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="110" y="30" text-anchor="middle" class="text card-title">Niche Focus</text>
+    <text x="110" y="50" text-anchor="middle" class="text card-desc">垂直聚焦</text>
+
+    <!-- Visual Icon Area -->
+    <circle cx="110" cy="100" r="30" fill="#bfdbfe"/>
+    <text x="110" y="105" text-anchor="middle" font-size="24">🎯</text>
+
+    <!-- Details -->
+    <text x="110" y="150" text-anchor="middle" class="text card-desc" font-weight="bold">在细分市场成为第一</text>
+
+    <g transform="translate(20, 170)">
+      <text x="0" y="0" class="text label">适合：资源有限, 垂直专业</text>
+      <text x="0" y="20" class="text label">风险：中 (Medium Risk)</text>
+    </g>
+
+    <!-- Tag -->
+    <rect x="70" y="220" width="80" height="20" rx="10" fill="#2563eb"/>
+    <text x="110" y="234" text-anchor="middle" class="text tag">FOCUS</text>
+  </g>
+
+</svg>

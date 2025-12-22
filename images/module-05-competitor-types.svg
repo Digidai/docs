@@ -1,0 +1,95 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .title { font-size: 24px; font-weight: 800; fill: #1e293b; }
+      .card-title { font-size: 18px; font-weight: 700; }
+      .card-subtitle { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+      .list-item { font-size: 14px; fill: #475569; }
+      .example { font-size: 13px; font-style: italic; fill: #64748b; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="16" ry="16"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" class="text title">竞争者分类 (Competitor Classification)</text>
+
+  <!-- Card 1: Direct -->
+  <g transform="translate(50, 90)">
+    <rect width="220" height="260" rx="12" fill="#fff1f2" stroke="#e11d48" stroke-width="2"/>
+    <!-- Header -->
+    <rect width="220" height="50" rx="12" fill="#ffe4e6" clip-path="url(#top-clip)"/>
+    <path d="M 0 12 Q 0 0 12 0 L 208 0 Q 220 0 220 12 L 220 50 L 0 50 Z" fill="#ffe4e6"/>
+    
+    <text x="110" y="30" text-anchor="middle" class="text card-title" fill="#be123c">直接竞争者</text>
+    <text x="110" y="75" text-anchor="middle" class="text card-subtitle" fill="#e11d48">Direct</text>
+    
+    <!-- Checklist -->
+    <g transform="translate(20, 100)">
+      <circle cx="5" cy="5" r="3" fill="#fb7185"/> <text x="15" y="9" class="text list-item">相同产品类别</text>
+      <circle cx="5" cy="30" r="3" fill="#fb7185"/> <text x="15" y="34" class="text list-item">相同目标客户</text>
+      <circle cx="5" cy="55" r="3" fill="#fb7185"/> <text x="15" y="59" class="text list-item">解决相同问题</text>
+    </g>
+    
+    <!-- Divider -->
+    <line x1="20" y1="175" x2="200" y2="175" stroke="#fecdd3" stroke-width="1" stroke-dasharray="4 4"/>
+    
+    <!-- Example -->
+    <rect x="20" y="195" width="180" height="45" rx="6" fill="#fff" stroke="#fecdd3"/>
+    <text x="110" y="215" text-anchor="middle" class="text example" font-weight="bold">Example (CRM):</text>
+    <text x="110" y="233" text-anchor="middle" class="text example">Salesforce, HubSpot</text>
+  </g>
+
+  <!-- Card 2: Indirect -->
+  <g transform="translate(290, 90)">
+    <rect width="220" height="260" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+    <!-- Header -->
+    <path d="M 0 12 Q 0 0 12 0 L 208 0 Q 220 0 220 12 L 220 50 L 0 50 Z" fill="#fef3c7"/>
+
+    <text x="110" y="30" text-anchor="middle" class="text card-title" fill="#d97706">间接竞争者</text>
+    <text x="110" y="75" text-anchor="middle" class="text card-subtitle" fill="#f59e0b">Indirect</text>
+
+    <!-- Checklist -->
+    <g transform="translate(20, 100)">
+      <circle cx="5" cy="5" r="3" fill="#fbbf24"/> <text x="15" y="9" class="text list-item">不同产品类别</text>
+      <circle cx="5" cy="30" r="3" fill="#fbbf24"/> <text x="15" y="34" class="text list-item">相同目标客户</text>
+      <circle cx="5" cy="55" r="3" fill="#fbbf24"/> <text x="15" y="59" class="text list-item">解决相同问题</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="20" y1="175" x2="200" y2="175" stroke="#fde68a" stroke-width="1" stroke-dasharray="4 4"/>
+
+    <!-- Example -->
+    <rect x="20" y="195" width="180" height="45" rx="6" fill="#fff" stroke="#fde68a"/>
+    <text x="110" y="215" text-anchor="middle" class="text example" font-weight="bold">Example (CRM):</text>
+    <text x="110" y="233" text-anchor="middle" class="text example">Excel, ERP 模块</text>
+  </g>
+
+  <!-- Card 3: Substitute -->
+  <g transform="translate(530, 90)">
+    <rect width="220" height="260" rx="12" fill="#f0fdf4" stroke="#10b981" stroke-width="2"/>
+    <!-- Header -->
+    <path d="M 0 12 Q 0 0 12 0 L 208 0 Q 220 0 220 12 L 220 50 L 0 50 Z" fill="#d1fae5"/>
+
+    <text x="110" y="30" text-anchor="middle" class="text card-title" fill="#059669">替代品</text>
+    <text x="110" y="75" text-anchor="middle" class="text card-subtitle" fill="#10b981">Substitutes</text>
+
+    <!-- Checklist -->
+    <g transform="translate(20, 100)">
+      <circle cx="5" cy="5" r="3" fill="#34d399"/> <text x="15" y="9" class="text list-item">完全不同形式</text>
+      <circle cx="5" cy="30" r="3" fill="#34d399"/> <text x="15" y="34" class="text list-item">根本解决问题</text>
+      <circle cx="5" cy="55" r="3" fill="#34d399"/> <text x="15" y="59" class="text list-item">消除需求</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="20" y1="175" x2="200" y2="175" stroke="#a7f3d0" stroke-width="1" stroke-dasharray="4 4"/>
+
+    <!-- Example -->
+    <rect x="20" y="195" width="180" height="45" rx="6" fill="#fff" stroke="#a7f3d0"/>
+    <text x="110" y="215" text-anchor="middle" class="text example" font-weight="bold">Example (CRM):</text>
+    <text x="110" y="233" text-anchor="middle" class="text example">纸笔, 靠脑子记</text>
+  </g>
+
+</svg>

@@ -1,0 +1,74 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .title { font-size: 24px; font-weight: 800; fill: #1e293b; }
+      .header { font-size: 20px; font-weight: 700; fill: #fff; }
+      .item-text { font-size: 14px; fill: #334155; }
+      .quote { font-size: 14px; font-style: italic; font-weight: 600; fill: #475569; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="16" ry="16"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" class="text title">竞争应对最佳实践 (Competitive Response Principles)</text>
+
+  <!-- Left: DO -->
+  <g transform="translate(50, 90)">
+    <rect width="330" height="240" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    <!-- Header -->
+    <path d="M 0 12 Q 0 0 12 0 L 318 0 Q 330 0 330 12 L 330 50 L 0 50 Z" fill="#22c55e"/>
+    <text x="165" y="32" text-anchor="middle" class="text header">✅ DO (推荐做法)</text>
+    
+    <!-- List -->
+    <g transform="translate(30, 80)">
+      <circle cx="5" cy="5" r="8" fill="#dcfce7"/> <path d="M 2 5 L 4 8 L 8 2" stroke="#16a34a" stroke-width="2" fill="none"/>
+      <text x="25" y="10" class="text item-text">聚焦客户问题和价值</text>
+
+      <circle cx="5" cy="35" r="8" fill="#dcfce7"/> <path d="M 2 35 L 4 38 L 8 32" stroke="#16a34a" stroke-width="2" fill="none"/>
+      <text x="25" y="40" class="text item-text">用数据和案例说话</text>
+      
+      <circle cx="5" cy="65" r="8" fill="#dcfce7"/> <path d="M 2 65 L 4 68 L 8 62" stroke="#16a34a" stroke-width="2" fill="none"/>
+      <text x="25" y="70" class="text item-text">承认劣势，展示改进计划</text>
+      
+      <circle cx="5" cy="95" r="8" fill="#dcfce7"/> <path d="M 2 95 L 4 98 L 8 92" stroke="#16a34a" stroke-width="2" fill="none"/>
+      <text x="25" y="100" class="text item-text">强调差异化而非全面优势</text>
+      
+      <circle cx="5" cy="125" r="8" fill="#dcfce7"/> <path d="M 2 125 L 4 128 L 8 122" stroke="#16a34a" stroke-width="2" fill="none"/>
+      <text x="25" y="130" class="text item-text">提供真实客户证言</text>
+    </g>
+  </g>
+
+  <!-- Right: DON'T -->
+  <g transform="translate(420, 90)">
+    <rect width="330" height="240" rx="12" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+    <!-- Header -->
+    <path d="M 0 12 Q 0 0 12 0 L 318 0 Q 330 0 330 12 L 330 50 L 0 50 Z" fill="#ef4444"/>
+    <text x="165" y="32" text-anchor="middle" class="text header">❌ DON'T (避免做法)</text>
+
+    <!-- List -->
+    <g transform="translate(30, 80)">
+      <circle cx="5" cy="5" r="8" fill="#fee2e2"/> <path d="M 2 2 L 8 8 M 8 2 L 2 8" stroke="#dc2626" stroke-width="2" fill="none"/>
+      <text x="25" y="10" class="text item-text">贬低竞争对手</text>
+
+      <circle cx="5" cy="35" r="8" fill="#fee2e2"/> <path d="M 2 32 L 8 38 M 8 32 L 2 38" stroke="#dc2626" stroke-width="2" fill="none"/>
+      <text x="25" y="40" class="text item-text">承诺未开发的功能 (Vaporware)</text>
+      
+      <circle cx="5" cy="65" r="8" fill="#fee2e2"/> <path d="M 2 62 L 8 68 M 8 62 L 2 68" stroke="#dc2626" stroke-width="2" fill="none"/>
+      <text x="25" y="70" class="text item-text">打无底线的价格战</text>
+      
+      <circle cx="5" cy="95" r="8" fill="#fee2e2"/> <path d="M 2 92 L 8 98 M 8 92 L 2 98" stroke="#dc2626" stroke-width="2" fill="none"/>
+      <text x="25" y="100" class="text item-text">编造或夸大数据</text>
+      
+      <circle cx="5" cy="125" r="8" fill="#fee2e2"/> <path d="M 2 122 L 8 128 M 8 122 L 2 128" stroke="#dc2626" stroke-width="2" fill="none"/>
+      <text x="25" y="130" class="text item-text">忽视客户的真实需求</text>
+    </g>
+  </g>
+
+  <!-- Quote -->
+  <rect x="150" y="350" width="500" height="30" rx="15" fill="#f1f5f9"/>
+  <text x="400" y="370" text-anchor="middle" class="text quote">"我们擅长 X" (Promote Value)  vs  "他们不擅长 Y" (Trash Talk)</text>
+
+</svg>

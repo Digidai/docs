@@ -1,0 +1,48 @@
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .title { font-size: 24px; font-weight: 800; fill: #1e293b; }
+      .label-static { font-size: 20px; font-weight: 600; fill: #64748b; }
+      .label-dynamic { font-size: 18px; font-weight: 700; fill: #0f172a; }
+      .box { fill: #f1f5f9; stroke: #cbd5e1; rx: 8; }
+      .box-highlight { fill: #e0f2fe; stroke: #0ea5e9; stroke-width: 2; rx: 8; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="300" fill="#f8fafc" rx="16" ry="16"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" class="text title">定位声明公式 (Positioning Statement Formula)</text>
+
+  <!-- Row 1: Context & Subject -->
+  <g transform="translate(50, 100)">
+    <text x="0" y="30" class="text label-static">相比</text>
+    <rect x="50" y="0" width="250" height="45" class="box"/>
+    <text x="175" y="30" text-anchor="middle" class="text label-dynamic" fill="#94a3b8">[ 主要竞品 / 现状 ]</text>
+    
+    <text x="320" y="30" class="text label-static">，我们的</text>
+    <rect x="410" y="0" width="200" height="45" class="box-highlight"/>
+    <text x="510" y="30" text-anchor="middle" class="text label-dynamic" fill="#0369a1">[ 产品 / 服务 ]</text>
+  </g>
+
+  <!-- Row 2: Audience & Benefit -->
+  <g transform="translate(50, 160)">
+    <text x="0" y="30" class="text label-static">为</text>
+    <rect x="50" y="0" width="200" height="45" class="box"/>
+    <text x="150" y="30" text-anchor="middle" class="text label-dynamic" fill="#475569">[ 目标客户 ]</text>
+    
+    <text x="270" y="30" class="text label-static">提供</text>
+    <rect x="330" y="0" width="350" height="45" class="box-highlight"/>
+    <text x="505" y="30" text-anchor="middle" class="text label-dynamic" fill="#0369a1">[ 核心差异化价值 ]</text>
+  </g>
+
+  <!-- Row 3: Proof -->
+  <g transform="translate(50, 220)">
+    <text x="0" y="30" class="text label-static">因为</text>
+    <rect x="60" y="0" width="650" height="45" class="box"/>
+    <text x="385" y="30" text-anchor="middle" class="text label-dynamic" fill="#475569">[ 信任状 / 证据 / 原因 ]</text>
+  </g>
+
+</svg>

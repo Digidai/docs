@@ -1,0 +1,51 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .title { font-size: 24px; font-weight: 800; fill: #1e293b; }
+      .label-center { font-size: 16px; font-weight: 700; fill: #fff; }
+      .label-node { font-size: 15px; font-weight: 700; fill: #1e293b; }
+      .label-desc { font-size: 12px; fill: #64748b; }
+      .arrow { stroke: #94a3b8; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="16" ry="16"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" class="text title">竞品情报分发机制 (Intelligence Distribution)</text>
+
+  <!-- Central Hub: Intelligence -->
+  <circle cx="400" cy="225" r="60" fill="#0f172a" stroke="#cbd5e1" stroke-width="4"/>
+  <text x="400" y="220" text-anchor="middle" class="text label-center">竞品情报</text>
+  <text x="400" y="240" text-anchor="middle" class="text label-center" font-size="12">(Intelligence)</text>
+
+  <!-- Node 1: Top (Sales) Y=100 -->
+  <line x1="400" y1="165" x2="400" y2="125" class="arrow"/>
+  <rect x="300" y="70" width="200" height="60" rx="8" fill="#fff" stroke="#cbd5e1"/>
+  <text x="400" y="95" text-anchor="middle" class="text label-node">销售团队 (Sales)</text>
+  <text x="400" y="115" text-anchor="middle" class="text label-desc">Battle Cards, 培训</text>
+
+  <!-- Node 2: Right (Product) X=650 -->
+  <line x1="460" y1="225" x2="550" y2="225" class="arrow"/>
+  <rect x="560" y="195" width="200" height="60" rx="8" fill="#fff" stroke="#cbd5e1"/>
+  <text x="660" y="220" text-anchor="middle" class="text label-node">产品团队 (Product)</text>
+  <text x="660" y="240" text-anchor="middle" class="text label-desc">功能差距, 路线图</text>
+
+  <!-- Node 3: Bottom (Marketing) Y=350 -->
+  <line x1="400" y1="285" x2="400" y2="325" class="arrow"/>
+  <rect x="300" y="320" width="200" height="60" rx="8" fill="#fff" stroke="#cbd5e1"/>
+  <text x="400" y="345" text-anchor="middle" class="text label-node">营销团队 (Marketing)</text>
+  <text x="400" y="365" text-anchor="middle" class="text label-desc">定位, 内容策略</text>
+
+  <!-- Node 4: Left (Management) X=150 -->
+  <line x1="340" y1="225" x2="250" y2="225" class="arrow"/>
+  <rect x="40" y="195" width="200" height="60" rx="8" fill="#fff" stroke="#cbd5e1"/>
+  <text x="140" y="220" text-anchor="middle" class="text label-node">管理层 (Management)</text>
+  <text x="140" y="240" text-anchor="middle" class="text label-desc">战略决策, 资源分配</text>
+
+</svg>
