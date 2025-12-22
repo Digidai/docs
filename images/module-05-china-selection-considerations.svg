@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .main-title { font-size: 20px; font-weight: 800; fill: #1e293b; }
+      .block-title { font-size: 16px; font-weight: 700; fill: #1e293b; }
+      .bullet-text { font-size: 14px; fill: #334155; }
+      .box { rx: 12; ry: 12; stroke-width: 2; fill: #ffffff; }
+      .icon-bg { rx: 6; ry: 6; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8fafc" rx="16" ry="16"/>
+
+  <!-- Title -->
+  <rect x="250" y="30" width="300" height="50" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2" rx="12" ry="12"/>
+  <text x="400" y="62" text-anchor="middle" class="text main-title">中国 GTM 工具选型考量</text>
+
+  <!-- 1. Data Compliance -->
+  <g transform="translate(50, 110)">
+    <rect width="340" height="140" class="box" stroke="#ef4444" />
+    <rect x="15" y="15" width="32" height="32" fill="#fee2e2" class="icon-bg" />
+    <text x="60" y="38" class="text block-title">数据合规 (Compliance)</text>
+    <text x="25" y="75" class="text bullet-text">• 数据本地化要求 (PIPL)</text>
+    <text x="25" y="100" class="text bullet-text">• 个人信息保护与隐私合规</text>
+    <text x="25" y="125" class="text bullet-text">• 跨境数据传输限制</text>
+  </g>
+
+  <!-- 2. Ecosystem Integration -->
+  <g transform="translate(410, 110)">
+    <rect width="340" height="140" class="box" stroke="#10b981" />
+    <rect x="15" y="15" width="32" height="32" fill="#d1fae5" class="icon-bg" />
+    <text x="60" y="38" class="text block-title">生态整合 (Ecosystem)</text>
+    <text x="25" y="75" class="text bullet-text">• 企业微信/飞书/钉钉集成</text>
+    <text x="25" y="100" class="text bullet-text">• 微信支付/本土财务系统集成</text>
+    <text x="25" y="125" class="text bullet-text">• API 开放度与本土适配</text>
+  </g>
+
+  <!-- 3. Local Support -->
+  <g transform="translate(50, 270)">
+    <rect width="340" height="140" class="box" stroke="#3b82f6" />
+    <rect x="15" y="15" width="32" height="32" fill="#dbeafe" class="icon-bg" />
+    <text x="60" y="38" class="text block-title">本地支持 (Local Support)</text>
+    <text x="25" y="75" class="text bullet-text">• 中文界面、文档及培训</text>
+    <text x="25" y="100" class="text bullet-text">• 本地客服响应时效 (SLA)</text>
+    <text x="25" y="125" class="text bullet-text">• 对中国市场业务流程的深刻理解</text>
+  </g>
+
+  <!-- 4. Cost Effect -->
+  <g transform="translate(410, 270)">
+    <rect width="340" height="140" class="box" stroke="#f59e0b" />
+    <rect x="15" y="15" width="32" height="32" fill="#fef3c7" class="icon-bg" />
+    <text x="60" y="38" class="text block-title">成本效益 (Cost-Benefit)</text>
+    <text x="25" y="75" class="text bullet-text">• 人民币计价与开票便利性</text>
+    <text x="25" y="100" class="text bullet-text">• 适合本土企业的分层定价模式</text>
+    <text x="25" y="125" class="text bullet-text">• 灵活的付费方式与按需扩展</text>
+  </g>
+
+</svg>

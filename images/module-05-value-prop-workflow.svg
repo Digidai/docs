@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .header { font-size: 20px; font-weight: 800; fill: #1e293b; }
+      .label { font-size: 14px; font-weight: 700; fill: #334155; }
+      .subtitle { font-size: 13px; fill: #64748b; }
+      .box { rx: 12; ry: 12; stroke-width: 2; fill: #ffffff; }
+      .connector { stroke: #cbd5e1; stroke-width: 3; fill: none; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cbd5e1" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#fcfdfd" rx="16" ry="16"/>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" class="text header">价值主张的工作流价值</text>
+  <text x="400" y="70" text-anchor="middle" class="text subtitle">GTM 的核心武器：从战略设计到全渠道分发</text>
+
+  <!-- Flow -->
+  <g transform="translate(50, 120)">
+    <!-- ICP -->
+    <rect width="200" height="80" class="box" stroke="#0ea5e9" />
+    <text x="100" y="35" text-anchor="middle" class="text label" font-size="16">ICP</text>
+    <text x="100" y="60" text-anchor="middle" class="text subtitle">卖给谁？(Who)</text>
+
+    <!-- Value Prop -->
+    <rect x="250" y="0" width="200" height="80" class="box" stroke="#22c55e" />
+    <text x="350" y="35" text-anchor="middle" class="text label" font-size="16">价值主张</text>
+    <text x="350" y="60" text-anchor="middle" class="text subtitle">为什么买？(Why)</text>
+
+    <!-- Positioning -->
+    <rect x="500" y="0" width="200" height="80" class="box" stroke="#f59e0b" />
+    <text x="600" y="35" text-anchor="middle" class="text label" font-size="16">市场定位</text>
+    <text x="600" y="60" text-anchor="middle" class="text subtitle">如何被记住？(How)</text>
+
+    <!-- Connectors -->
+    <path d="M 200,40 L 250,40" class="connector" marker-end="url(#arrowhead)" />
+    <path d="M 450,40 L 500,40" class="connector" marker-end="url(#arrowhead)" />
+    
+    <!-- Down Arrow -->
+    <path d="M 350,80 L 350,140" class="connector" marker-end="url(#arrowhead)" />
+    
+    <!-- Deliverables Box -->
+    <g transform="translate(150, 140)">
+      <rect width="400" height="140" class="box" stroke="#8b5cf6" fill="#f5f3ff" />
+      <g transform="translate(40, 35)">
+        <text x="0" y="0" class="text label">• 销售话术 (Sales Deck)</text>
+        <text x="0" y="30" class="text label">• 网站文案 (Web Copy)</text>
+        <text x="0" y="60" class="text label">• 营销内容 (Marketing Content)</text>
+        <text x="0" y="90" class="text label">• 产品设计 (Product Design)</text>
+      </g>
+    </g>
+  </g>
+
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .header { font-size: 14px; font-weight: 700; fill: #475569; }
+      .row-label { font-size: 14px; fill: #334155; font-weight: 500; }
+      .bar { rx: 4; ry: 4; stroke-width: 1; }
+      .grid { stroke: #e2e8f0; stroke-width: 1; }
+      .milestone { fill: #facc15; stroke: #a16207; stroke-width: 1.5; }
+      .node-text { font-size: 12px; font-weight: 700; fill: #1e3a8a; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="450" fill="#ffffff" rx="16" ry="16" stroke="#f1f5f9" stroke-width="2"/>
+
+  <!-- Timeline Header -->
+  <g transform="translate(150, 40)">
+    <text x="40" y="0" text-anchor="middle" class="text header">W1-2</text>
+    <text x="130" y="0" text-anchor="middle" class="text header">W3-4</text>
+    <text x="220" y="0" text-anchor="middle" class="text header">W5-6</text>
+    <text x="310" y="0" text-anchor="middle" class="text header">W7-8</text>
+    <text x="400" y="0" text-anchor="middle" class="text header">W9-10</text>
+    <text x="490" y="0" text-anchor="middle" class="text header">W11-12</text>
+    <text x="580" y="0" text-anchor="middle" class="text header">W13-14</text>
+    <text x="670" y="0" text-anchor="middle" class="text header">W15-16</text>
+  </g>
+
+  <!-- Grid Lines -->
+  <g transform="translate(150, 60)">
+    <line x1="0" y1="0" x2="0" y2="300" class="grid" />
+    <line x1="85" y1="0" x2="85" y2="300" class="grid" />
+    <line x1="175" y1="0" x2="175" y2="300" class="grid" />
+    <line x1="265" y1="0" x2="265" y2="300" class="grid" />
+    <line x1="355" y1="0" x2="355" y2="300" class="grid" />
+    <line x1="445" y1="0" x2="445" y2="300" class="grid" />
+    <line x1="535" y1="0" x2="535" y2="300" class="grid" />
+    <line x1="625" y1="0" x2="625" y2="300" class="grid" />
+    <line x1="715" y1="0" x2="715" y2="300" class="grid" />
+  </g>
+
+  <!-- Tasks & Bars -->
+  <g transform="translate(40, 85)">
+    <text x="0" y="15" class="text row-label">M1 调研</text>
+    <rect x="110" y="0" width="85" height="20" fill="#bae6fd" stroke="#0ea5e9" class="bar" />
+    
+    <text x="0" y="55" class="text row-label">M2 战略</text>
+    <rect x="195" y="40" width="85" height="20" fill="#bbf7d0" stroke="#22c55e" class="bar" />
+
+    <text x="0" y="95" class="text row-label">M3 准备</text>
+    <rect x="280" y="80" width="130" height="20" fill="#fed7aa" stroke="#f97316" class="bar" />
+
+    <text x="0" y="135" class="text row-label">M4 软发布</text>
+    <rect x="410" y="120" width="45" height="20" fill="#fecaca" stroke="#ef4444" class="bar" />
+
+    <text x="0" y="175" class="text row-label">M5 正式发布</text>
+    <rect x="455" y="160" width="45" height="20" fill="#e9d5ff" stroke="#a855f7" class="bar" />
+
+    <text x="0" y="215" class="text row-label">M6 首批客户</text>
+    <rect x="500" y="200" width="85" height="20" fill="#ddd6fe" stroke="#7c3aed" class="bar" />
+
+    <text x="0" y="255" class="text row-label">M7 PMF 验证</text>
+    <rect x="585" y="240" width="85" height="20" fill="#A5F3FC" stroke="#0891B2" class="bar" />
+
+    <text x="0" y="295" class="text row-label">M8 规模化准备</text>
+    <rect x="670" y="280" width="85" height="20" fill="#fbcfe8" stroke="#db2777" class="bar" />
+  </g>
+
+  <!-- Key Nodes -->
+  <g transform="translate(150, 410)">
+    <path d="M 0,-10 L 10,0 L 0,10 L -10,0 Z" transform="translate(40, 0)" class="milestone" />
+    <text x="55" y="5" class="text node-text">M3 发布就绪</text>
+
+    <path d="M 0,-10 L 10,0 L 0,10 L -10,0 Z" transform="translate(220, 0)" class="milestone" />
+    <text x="235" y="5" class="text node-text">M5 正式发布</text>
+
+    <path d="M 0,-10 L 10,0 L 0,10 L -10,0 Z" transform="translate(420, 0)" class="milestone" />
+    <text x="435" y="5" class="text node-text">M7 PMF 验证</text>
+  </g>
+
+</svg>

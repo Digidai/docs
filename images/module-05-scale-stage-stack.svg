@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .title { font-size: 22px; font-weight: 800; fill: #1e293b; }
+      .category { font-size: 15px; font-weight: 700; fill: #475569; }
+      .tool-name { font-size: 14px; font-weight: 600; fill: #0f172a; }
+      .budget-box { fill: #f5f3ff; stroke: #ddd6fe; stroke-width: 1; rx: 8; ry: 8; }
+      .budget-text { font-size: 14px; font-weight: 700; fill: #5b21b6; }
+      .box { fill: #ffffff; stroke-width: 2; rx: 12; ry: 12; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#fcfcfd" rx="16" ry="16"/>
+
+  <!-- Header -->
+  <text x="50" y="50" class="text title">方案三：成熟规模化工具栈 (Scale)</text>
+  <text x="50" y="80" class="text tool-name">适合：200+ 人团队、$500 万+ ARR</text>
+
+  <!-- Grid Layout -->
+  <g transform="translate(50, 110)">
+    <!-- Row 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="340" height="90" class="box" stroke="#1d4ed8" />
+      <text x="20" y="35" class="text category">Enterprise CRM</text>
+      <text x="20" y="65" class="text tool-name">销售易企业版 / Salesforce (China)</text>
+    </g>
+    <g transform="translate(360, 0)">
+      <rect width="340" height="90" class="box" stroke="#059669" />
+      <text x="20" y="35" class="text category">MA / SCRM Cloud</text>
+      <text x="20" y="65" class="text tool-name">致趣百川 / Convertlab</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 110)">
+      <rect width="340" height="90" class="box" stroke="#d97706" />
+      <text x="20" y="35" class="text category">Data Intelligence</text>
+      <text x="20" y="65" class="text tool-name">探迹企业版 / ZoomInfo</text>
+    </g>
+    <g transform="translate(360, 110)">
+      <rect width="340" height="90" class="box" stroke="#dc2626" />
+      <text x="20" y="35" class="text category">Customer Support</text>
+      <text x="20" y="65" class="text tool-name">容联云 / 智齿企业版</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0, 220)">
+      <rect width="340" height="90" class="box" stroke="#7c3aed" />
+      <text x="20" y="35" class="text category">Advanced Analytics</text>
+      <text x="20" y="65" class="text tool-name">神策企业版 / 火山引擎</text>
+    </g>
+    <g transform="translate(360, 220)">
+      <rect width="340" height="90" class="box" stroke="#4f46e5" />
+      <text x="20" y="35" class="text category">Business Intelligence</text>
+      <text x="20" y="65" class="text tool-name">帆软 / Tableau (China)</text>
+    </g>
+
+    <!-- Row 4 (CDP) -->
+    <g transform="translate(0, 330)">
+      <rect width="700" height="70" class="box" stroke="#ec4899" />
+      <text x="20" y="30" class="text category">Customer Data Platform (CDP)</text>
+      <text x="20" y="55" class="text tool-name">Convertlab / 神策 CDP</text>
+    </g>
+  </g>
+
+  <!-- Footer Budget -->
+  <g transform="translate(50, 530)">
+    <rect width="700" height="50" class="budget-box" />
+    <text x="350" y="30" text-anchor="middle" class="text budget-text">月预算估算：￥20,000 - 100,000+</text>
+  </g>
+
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .header { font-size: 20px; font-weight: 800; fill: #1e293b; }
+      .step-id { font-size: 14px; font-weight: 700; fill: #ffffff; }
+      .step-title { font-size: 16px; font-weight: 700; fill: #1e3a8a; }
+      .bullet-text { font-size: 14px; fill: #334155; }
+      .box { fill: #ffffff; stroke-width: 2; rx: 12; ry: 12; }
+      .step-badge { rx: 12; }
+      .connector { stroke: #cbd5e1; stroke-width: 3; stroke-dasharray: 4 4; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="550" fill="#f8fafc" rx="16" ry="16"/>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" class="text header">GTM 工具选型决策框架</text>
+
+  <!-- Connectors -->
+  <path d="M 400,140 L 400,160" class="connector" />
+  <path d="M 400,240 L 400,260" class="connector" />
+  <path d="M 400,340 L 400,360" class="connector" />
+
+  <!-- Step 1 -->
+  <g transform="translate(200, 70)">
+    <rect width="400" height="80" class="box" stroke="#3b82f6" />
+    <rect x="-15" y="25" width="40" height="30" class="step-badge" fill="#3b82f6" />
+    <text x="5" y="46" text-anchor="middle" class="text step-id">01</text>
+    <text x="40" y="35" class="text step-title">明确需求</text>
+    <text x="40" y="60" class="text bullet-text">核心痛点是什么？必须 vs 最好？使用者是谁？</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(200, 170)">
+    <rect width="400" height="80" class="box" stroke="#10b981" />
+    <rect x="-15" y="25" width="40" height="30" class="step-badge" fill="#10b981" />
+    <text x="5" y="46" text-anchor="middle" class="text step-id">02</text>
+    <text x="40" y="35" class="text step-title">评估选项</text>
+    <text x="40" y="60" class="text bullet-text">功能匹配、集成能力、易用性、价格/TCO</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(200, 270)">
+    <rect width="400" height="80" class="box" stroke="#f59e0b" />
+    <rect x="-15" y="25" width="40" height="30" class="step-badge" fill="#f59e0b" />
+    <text x="5" y="46" text-anchor="middle" class="text step-id">03</text>
+    <text x="40" y="35" class="text step-title">测试验证</text>
+    <text x="40" y="60" class="text bullet-text">免费试用、参考客户访谈、POC 测试、安全评估</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(200, 370)">
+    <rect width="400" height="80" class="box" stroke="#ef4444" />
+    <rect x="-15" y="25" width="40" height="30" class="step-badge" fill="#ef4444" />
+    <text x="5" y="46" text-anchor="middle" class="text step-id">04</text>
+    <text x="40" y="35" class="text step-title">最终决策</text>
+    <text x="40" y="60" class="text bullet-text">确定 TCO、制定实施计划、设定退出策略</text>
+  </g>
+
+  <!-- Principles Footnote -->
+  <g transform="translate(50, 480)">
+    <text x="0" y="10" class="text step-title" font-size="14">核心原则：</text>
+    <text x="80" y="10" class="text bullet-text">先流程后工具 | 集成优先 | 从简单开始 | 关注 TCO | 评估供应商稳定性</text>
+  </g>
+
+</svg>

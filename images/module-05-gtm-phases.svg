@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .title { font-size: 20px; font-weight: 800; fill: #1e293b; }
+      .phase-id { font-size: 14px; font-weight: 700; fill: #64748b; }
+      .phase-title { font-size: 18px; font-weight: 800; fill: #0f172a; }
+      .item-text { font-size: 14px; fill: #334155; }
+      .time-text { font-size: 13px; font-weight: 600; fill: #475569; }
+      .milestone { font-size: 13px; font-weight: 700; fill: #0284c7; }
+      .box { fill: #ffffff; stroke-width: 2; rx: 12; ry: 12; }
+      .arrow { fill: none; stroke: #cbd5e1; stroke-width: 3; stroke-linecap: round; }
+      .dot { fill: #0284c7; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="450" fill="#fcfdfd" rx="16" ry="16"/>
+
+  <!-- Process Arrow -->
+  <path d="M 50,300 L 930,300" class="arrow" marker-end="url(#arrowhead)" />
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cbd5e1" />
+    </marker>
+  </defs>
+
+  <!-- Phase 1: Pre-Launch -->
+  <g transform="translate(50, 40)">
+    <rect width="210" height="200" class="box" stroke="#0ea5e9" />
+    <text x="15" y="30" class="text phase-id">Phase 1</text>
+    <text x="15" y="55" class="text phase-title">Pre-Launch</text>
+    <text x="15" y="75" class="text phase-id">发布前准备</text>
+    
+    <circle cx="25" cy="110" r="3" class="dot" /> <text x="35" y="115" class="text item-text">市场调研</text>
+    <circle cx="25" cy="140" r="3" class="dot" /> <text x="35" y="145" class="text item-text">战略确定</text>
+    <circle cx="25" cy="170" r="3" class="dot" /> <text x="35" y="175" class="text item-text">准备工作</text>
+    
+    <text x="105" y="280" text-anchor="middle" class="text milestone">M1 - M3</text>
+    <text x="105" y="305" text-anchor="middle" class="text time-text">时长：4-8周</text>
+  </g>
+
+  <!-- Phase 2: Launch -->
+  <g transform="translate(290, 40)">
+    <rect width="210" height="200" class="box" stroke="#22c55e" />
+    <text x="15" y="30" class="text phase-id">Phase 2</text>
+    <text x="15" y="55" class="text phase-title">Launch</text>
+    <text x="15" y="75" class="text phase-id">发布</text>
+    
+    <circle cx="25" cy="110" r="3" fill="#16a34a" /> <text x="35" y="115" class="text item-text">软发布 (Beta)</text>
+    <circle cx="25" cy="140" r="3" fill="#16a34a" /> <text x="35" y="145" class="text item-text">正式发布 (GA)</text>
+    <circle cx="25" cy="170" r="3" fill="#16a34a" /> <text x="35" y="175" class="text item-text">PR / 启动会</text>
+    
+    <text x="105" y="280" text-anchor="middle" class="text milestone" fill="#16a34a">M4 - M5</text>
+    <text x="105" y="305" text-anchor="middle" class="text time-text">时长：2-4周</text>
+  </g>
+
+  <!-- Phase 3: Early Traction -->
+  <g transform="translate(530, 40)">
+    <rect width="210" height="200" class="box" stroke="#f59e0b" />
+    <text x="15" y="30" class="text phase-id">Phase 3</text>
+    <text x="15" y="55" class="text phase-title">Early Traction</text>
+    <text x="15" y="75" class="text phase-id">早期牵引力</text>
+    
+    <circle cx="25" cy="110" r="3" fill="#d97706" /> <text x="35" y="115" class="text item-text">首批颗粒客户</text>
+    <circle cx="25" cy="140" r="3" fill="#d97706" /> <text x="35" y="145" class="text item-text">PMF 深度验证</text>
+    <circle cx="25" cy="170" r="3" fill="#d97706" /> <text x="35" y="175" class="text item-text">案例集收集</text>
+    
+    <text x="105" y="280" text-anchor="middle" class="text milestone" fill="#d97706">M6 - M7</text>
+    <text x="105" y="305" text-anchor="middle" class="text time-text">时长：8-12周</text>
+  </g>
+
+  <!-- Phase 4: Scale -->
+  <g transform="translate(770, 40)">
+    <rect width="200" height="200" class="box" stroke="#8b5cf6" />
+    <text x="15" y="30" class="text phase-id">Phase 4</text>
+    <text x="15" y="55" class="text phase-title">Scale</text>
+    <text x="15" y="75" class="text phase-id">规模化</text>
+    
+    <circle cx="25" cy="110" r="3" fill="#7c3aed" /> <text x="35" y="115" class="text item-text">流程标准与优化</text>
+    <circle cx="25" cy="140" r="3" fill="#7c3aed" /> <text x="35" y="145" class="text item-text">团队扩张</text>
+    <circle cx="25" cy="170" r="3" fill="#7c3aed" /> <text x="35" y="175" class="text item-text">增长加速器</text>
+    
+    <text x="100" y="280" text-anchor="middle" class="text milestone" fill="#7c3aed">M8 - M9</text>
+    <text x="100" y="305" text-anchor="middle" class="text time-text">时长：持续</text>
+  </g>
+</svg>

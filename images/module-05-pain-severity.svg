@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .header { font-size: 20px; font-weight: 800; fill: #1e293b; }
+      .level-title { font-size: 16px; font-weight: 700; fill: #1e293b; }
+      .level-desc { font-size: 14px; fill: #475569; }
+      .caution-text { font-size: 15px; font-weight: 700; fill: #dc2626; }
+      .arrow { stroke: #cbd5e1; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#fdfcfb" rx="16" ry="16"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" class="text header">痛点严重程度分级 (Pain Severity Grading)</text>
+
+  <!-- Pyramid / Levels -->
+  <g transform="translate(100, 100)">
+    <!-- Extreme -->
+    <rect width="600" height="60" fill="#fee2e2" stroke="#ef4444" stroke-width="2" rx="8" />
+    <text x="20" y="35" class="text level-title">极端痛点 (Extreme)</text>
+    <text x="180" y="34" class="text level-desc">导致业务停滞或严重损失，客户会不惜代价解决</text>
+
+    <!-- Heavy -->
+    <rect y="75" width="600" height="60" fill="#ffedd5" stroke="#f97316" stroke-width="2" rx="8" />
+    <text x="20" y="110" class="text level-title">重度痛点 (Heavy)</text>
+    <text x="180" y="109" class="text level-desc">显著影响效率或成本，客户愿意付费解决</text>
+
+    <!-- Medium -->
+    <rect y="150" width="600" height="60" fill="#fef9c3" stroke="#eab308" stroke-width="2" rx="8" />
+    <text x="20" y="185" class="text level-title">中度痛点 (Medium)</text>
+    <text x="180" y="184" class="text level-desc">造成不便但可忍受，如果有好方案会考虑</text>
+
+    <!-- Light -->
+    <rect y="225" width="600" height="60" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" rx="8" />
+    <text x="20" y="260" class="text level-title">轻微痛点 (Light)</text>
+    <text x="180" y="259" class="text level-desc">轻微不适，不会主动寻找解决方案</text>
+  </g>
+
+  <!-- Design Area Anchor -->
+  <path d="M 60,110 L 60,225" class="arrow" marker-start="url(#dot)" marker-end="url(#dot)" />
+  <defs>
+    <marker id="dot" markerWidth="4" markerHeight="4" refX="2" refY="2">
+      <circle cx="2" cy="2" r="2" fill="#dc2626" />
+    </marker>
+  </defs>
+  <text x="50" y="165" text-anchor="middle" class="text caution-text" transform="rotate(-90 50 165)">在此区域设计价值主张</text>
+</svg>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .milestone-title { font-size: 16px; font-weight: 800; fill: #1e293b; }
+      .subtitle { font-size: 13px; fill: #64748b; }
+      .label { font-size: 14px; font-weight: 700; fill: #334155; }
+      .box { stroke-width: 2; rx: 8; ry: 8; fill: #ffffff; }
+      .path-arrow { fill: none; stroke: #94a3b8; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .highlight-box { stroke-width: 2.5; rx: 8; ry: 8; fill: #fff1f2; stroke: #f43f5e; }
+      .logic-box { stroke-width: 2; rx: 8; ry: 8; fill: #f8fafc; stroke: #cbd5e1; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="450" fill="#f8fafc" rx="16" ry="16"/>
+
+  <!-- Main Critical Path Arrows -->
+  <path d="M 120,80 L 220,80" class="path-arrow" marker-end="url(#arrowhead)" />
+  <path d="M 300,80 L 400,80" class="path-arrow" marker-end="url(#arrowhead)" />
+  <path d="M 480,80 L 580,80" class="path-arrow" marker-end="url(#arrowhead)" />
+  <path d="M 660,80 L 760,80" class="path-arrow" marker-end="url(#arrowhead)" />
+
+  <!-- Milestone Nodes -->
+  <g transform="translate(40, 50)">
+    <rect width="80" height="60" class="box" stroke="#0284c7" />
+    <text x="40" y="28" text-anchor="middle" class="text milestone-title">M1</text>
+    <text x="40" y="48" text-anchor="middle" class="text subtitle">调研</text>
+  </g>
+
+  <g transform="translate(220, 50)">
+    <rect width="80" height="60" class="box" stroke="#0284c7" />
+    <text x="40" y="28" text-anchor="middle" class="text milestone-title">M2</text>
+    <text x="40" y="48" text-anchor="middle" class="text subtitle">战略</text>
+  </g>
+
+  <g transform="translate(400, 50)">
+    <rect width="80" height="60" class="box" stroke="#0284c7" />
+    <text x="40" y="28" text-anchor="middle" class="text milestone-title">M3</text>
+    <text x="40" y="48" text-anchor="middle" class="text subtitle">准备</text>
+  </g>
+
+  <g transform="translate(580, 50)">
+    <rect width="80" height="60" class="box" stroke="#0284c7" />
+    <text x="40" y="28" text-anchor="middle" class="text milestone-title">M4</text>
+    <text x="40" y="48" text-anchor="middle" class="text subtitle">软发布</text>
+  </g>
+
+  <g transform="translate(760, 50)">
+    <rect width="80" height="60" class="box" stroke="#0284c7" />
+    <text x="40" y="28" text-anchor="middle" class="text milestone-title">M5</text>
+    <text x="40" y="48" text-anchor="middle" class="text subtitle">正式发布</text>
+  </g>
+
+  <!-- Dependency Flow Lines -->
+  <!-- M2 -> ICP -->
+  <path d="M 260,110 L 260,180" class="path-arrow" marker-end="url(#arrowhead)" />
+  <!-- M3 -> Product Readiness -->
+  <path d="M 440,110 L 440,180" class="path-arrow" marker-end="url(#arrowhead)" />
+  <!-- Product Dev -> Product Readiness -->
+  <path d="M 700,210 L 530,210" class="path-arrow" marker-end="url(#arrowhead)" />
+  <!-- ICP -> Sales Training -->
+  <path d="M 260,260 L 260,330 L 420,330" class="path-arrow" marker-end="url(#arrowhead)" />
+  <!-- Product Readiness -> Sales Training -->
+  <path d="M 440,260 L 440,310" class="path-arrow" marker-end="url(#arrowhead)" />
+
+  <!-- Dependent Component Boxes -->
+  <g transform="translate(200, 180)">
+    <rect width="120" height="80" class="highlight-box" />
+    <text x="60" y="35" text-anchor="middle" class="text label" fill="#e11d48">ICP / 定位</text>
+    <text x="60" y="60" text-anchor="middle" class="text subtitle">核心策略输出</text>
+  </g>
+
+  <g transform="translate(380, 180)">
+    <rect width="120" height="80" class="highlight-box" />
+    <text x="60" y="35" text-anchor="middle" class="text label" fill="#e11d48">产品就绪</text>
+    <text x="60" y="60" text-anchor="middle" class="text subtitle">GA 版本锁定</text>
+  </g>
+
+  <g transform="translate(720, 180)">
+    <rect width="120" height="60" class="box" stroke="#f59e0b" />
+    <text x="60" y="35" text-anchor="middle" class="text label" fill="#d97706">产品开发</text>
+  </g>
+
+  <g transform="translate(380, 310)">
+    <rect width="120" height="60" class="box" stroke="#8b5cf6" />
+    <text x="60" y="35" text-anchor="middle" class="text label" fill="#7c3aed">销售培训</text>
+  </g>
+
+  <!-- Legend / Clarity Note -->
+  <text x="450" y="400" text-anchor="middle" class="text label" font-size="16">关键路径：M1 → M2 → M3 → M4 → M5</text>
+  <text x="450" y="425" text-anchor="middle" class="text subtitle">只有在【ICP/定位】和【产品就绪】完成后，方可进行【销售培训】</text>
+
+</svg>

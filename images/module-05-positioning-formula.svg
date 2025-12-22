@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .header { font-size: 20px; font-weight: 800; fill: #1e293b; }
+      .label { font-size: 15px; font-weight: 700; fill: #0f172a; }
+      .desc { font-size: 13px; fill: #64748b; font-weight: 500; }
+      .field-box { fill: #fcfcfd; stroke: #e2e8f0; stroke-width: 1.5; rx: 6; ry: 6; }
+      .keyword { font-size: 15px; font-weight: 800; fill: #2563eb; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="550" fill="#ffffff" rx="16" ry="16" stroke="#f1f5f9" stroke-width="2"/>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" class="text header">April Dunford 定位公式 (The Positioning Formula)</text>
+
+  <!-- Formula Layout -->
+  <g transform="translate(50, 80)">
+    <!-- 1. For -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="20" class="text keyword">For</text>
+      <rect x="40" y="0" width="300" height="30" class="field-box" />
+      <text x="350" y="20" class="text label">[ 目标客户 ]</text>
+      <text x="40" y="50" class="text desc">WHO - 具体的理想客户画像</text>
+    </g>
+
+    <!-- 2. Who -->
+    <g transform="translate(0, 70)">
+      <text x="0" y="20" class="text keyword">Who</text>
+      <rect x="40" y="0" width="450" height="30" class="field-box" />
+      <text x="500" y="20" class="text label">[ 面临的问题/需求 ]</text>
+      <text x="40" y="50" class="text desc">PAIN - 真实的、急需解决的业务阻碍</text>
+    </g>
+
+    <!-- 3. Our -->
+    <g transform="translate(0, 140)">
+      <text x="0" y="20" class="text keyword">Our</text>
+      <rect x="40" y="0" width="200" height="30" class="field-box" />
+      <text x="250" y="20" class="text label">[ 产品/服务名称 ]</text>
+      <text x="40" y="50" class="text desc">WHAT - 你的解决方案标识</text>
+    </g>
+
+    <!-- 4. Is a -->
+    <g transform="translate(0, 210)">
+      <text x="0" y="20" class="text keyword">Is a</text>
+      <rect x="40" y="0" width="250" height="30" class="field-box" />
+      <text x="300" y="20" class="text label">[ 品类 (Category) ]</text>
+      <text x="40" y="50" class="text desc">CONTEXT - 帮助客户快速建立认知框架</text>
+    </g>
+
+    <!-- 5. That -->
+    <g transform="translate(0, 280)">
+      <text x="0" y="20" class="text keyword">That</text>
+      <rect x="40" y="0" width="450" height="30" class="field-box" />
+      <text x="500" y="20" class="text label">[ 关键利益/差异化 ]</text>
+      <text x="40" y="50" class="text desc">VALUE - 可量化的、最重要的业务价值</text>
+    </g>
+
+    <!-- 6. Unlike -->
+    <g transform="translate(0, 350)">
+      <text x="0" y="20" class="text keyword">Unlike</text>
+      <rect x="40" y="0" width="300" height="30" class="field-box" />
+      <text x="350" y="20" class="text label">[ 竞争替代品 ]</text>
+      <text x="40" y="50" class="text desc">COMPETITION - 客户现有的做法或竞品</text>
+    </g>
+
+    <!-- 7. We -->
+    <g transform="translate(0, 420)">
+      <text x="0" y="20" class="text keyword">We</text>
+      <rect x="40" y="0" width="450" height="30" class="field-box" stroke="#2563eb" stroke-width="2" />
+      <text x="500" y="20" class="text label" fill="#2563eb">[ 独特差异点 ]</text>
+      <text x="40" y="450" class="text desc" fill="#1d4ed8">SECRET SAUCE - 为何只有你能提供上述价值？</text>
+    </g>
+  </g>
+</svg>

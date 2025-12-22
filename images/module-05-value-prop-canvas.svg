@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .header { font-size: 24px; font-weight: 800; fill: #1e293b; }
+      .side-title { font-size: 18px; font-weight: 700; fill: #475569; }
+      .comp-label { font-size: 16px; font-weight: 700; fill: #334155; }
+      .placeholder { font-size: 14px; fill: #cbd5e1; font-style: italic; }
+      .full-box { fill: #ffffff; stroke-width: 2.5; rx: 16; ry: 16; }
+      .match-line { stroke: #cbd5e1; stroke-width: 2; stroke-dasharray: 6 6; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#fcfdfd" rx="20" ry="20" stroke="#f1f5f9" stroke-width="2"/>
+
+  <!-- Title -->
+  <text x="500" y="50" text-anchor="middle" class="text header">价值主张画布 (Value Proposition Canvas)</text>
+
+  <!-- Value Map (Square) -->
+  <g transform="translate(50, 100)">
+    <rect width="420" height="420" class="full-box" stroke="#0ea5e9" />
+    <text x="210" y="-15" text-anchor="middle" class="text side-title" fill="#0369a1">价值地图 (Value Map)</text>
+    
+    <!-- Products & Services -->
+    <g transform="translate(20, 20)">
+      <rect width="180" height="380" fill="#f0f9ff" rx="8" ry="8" />
+      <text x="90" y="30" text-anchor="middle" class="text comp-label">产品与服务</text>
+      <text x="90" y="200" text-anchor="middle" class="text placeholder">1. 核心产品/功能...</text>
+    </g>
+
+    <!-- Pain Relievers -->
+    <g transform="translate(220, 20)">
+      <rect width="180" height="180" fill="#fff1f2" rx="8" ry="8" />
+      <text x="90" y="30" text-anchor="middle" class="text comp-label" fill="#e11d48">痛点解药</text>
+      <text x="90" y="100" text-anchor="middle" class="text placeholder">帮助缓解痛点...</text>
+    </g>
+
+    <!-- Gain Creators -->
+    <g transform="translate(220, 220)">
+      <rect width="180" height="180" fill="#f0fdf4" rx="8" ry="8" />
+      <text x="90" y="30" text-anchor="middle" class="text comp-label" fill="#16a34a">收益创造者</text>
+      <text x="90" y="100" text-anchor="middle" class="text placeholder">创造预期收益...</text>
+    </g>
+  </g>
+
+  <!-- Customer Profile (Circle) -->
+  <g transform="translate(530, 100)">
+    <rect width="420" height="420" class="full-box" stroke="#f59e0b" rx="210" ry="210" />
+    <text x="210" y="-15" text-anchor="middle" class="text side-title" fill="#d97706">客户画像 (Customer Profile)</text>
+    
+    <!-- Jobs -->
+    <line x1="0" y1="210" x2="420" y2="210" stroke="#fef3c7" stroke-width="2" />
+    <line x1="210" y1="0" x2="210" y2="420" stroke="#fef3c7" stroke-width="2" />
+
+    <text x="105" y="105" text-anchor="middle" class="text comp-label">客户任务</text>
+    <text x="105" y="140" text-anchor="middle" class="text placeholder">功能/社会/情感任务</text>
+
+    <!-- Pains -->
+    <text x="315" y="105" text-anchor="middle" class="text comp-label" fill="#e11d48">痛点</text>
+    <text x="315" y="140" text-anchor="middle" class="text placeholder">障碍与风险</text>
+
+    <!-- Gains -->
+    <text x="315" y="315" text-anchor="middle" class="text comp-label" fill="#16a34a">收益</text>
+    <text x="315" y="350" text-anchor="middle" class="text placeholder">期望与渴望</text>
+  </g>
+
+  <!-- Match Indication -->
+  <path d="M 450,210 C 470,210 510,210 530,210" class="match-line" />
+  <path d="M 450,410 C 470,410 510,410 530,310" class="match-line" />
+  <text x="490" y="260" text-anchor="middle" class="text comp-label" font-size="20" fill="#94a3b8">FIT</text>
+
+</svg>

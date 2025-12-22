@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .title { font-size: 20px; font-weight: 800; fill: #1e293b; }
+      .category { font-size: 15px; font-weight: 700; fill: #475569; }
+      .tool-name { font-size: 14px; font-weight: 600; fill: #0f172a; }
+      .tool-desc { font-size: 12px; fill: #64748b; }
+      .budget-box { fill: #f8fafc; stroke: #e2e8f0; stroke-width: 1; rx: 8; ry: 8; }
+      .budget-text { font-size: 13px; font-weight: 700; fill: #1e3a8a; }
+      .box { fill: #ffffff; stroke-width: 2; rx: 12; ry: 12; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#fcfcfd" rx="16" ry="16"/>
+
+  <!-- Header -->
+  <text x="50" y="50" class="text title">方案一：中小企业起步工具栈</text>
+  <text x="50" y="75" class="text tool-name">适合：50 人以下团队、&lt;$100 万 ARR</text>
+
+  <!-- Grid Layout -->
+  <g transform="translate(50, 100)">
+    <!-- Column 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="340" height="70" class="box" stroke="#0ea5e9" />
+      <text x="20" y="30" class="text category">CRM</text>
+      <text x="20" y="55" class="text tool-name">简道云 / 悟空 CRM（免费版）</text>
+    </g>
+
+    <g transform="translate(0, 90)">
+      <rect width="340" height="70" class="box" stroke="#22c55e" />
+      <text x="20" y="30" class="text category">客服 (Support)</text>
+      <text x="20" y="55" class="text tool-name">美洽 / 企业微信自带客服</text>
+    </g>
+
+    <g transform="translate(0, 180)">
+      <rect width="340" height="70" class="box" stroke="#f59e0b" />
+      <text x="20" y="30" class="text category">营销 (Marketing)</text>
+      <text x="20" y="55" class="text tool-name">企业微信 + 微盛基础版</text>
+    </g>
+
+    <!-- Column 2 -->
+    <g transform="translate(360, 0)">
+      <rect width="340" height="70" class="box" stroke="#8b5cf6" />
+      <text x="20" y="30" class="text category">数据分析 (Analytics)</text>
+      <text x="20" y="55" class="text tool-name">百度统计 + 简单埋点</text>
+    </g>
+
+    <g transform="translate(360, 90)">
+      <rect width="340" height="70" class="box" stroke="#6366f1" />
+      <text x="20" y="30" class="text category">内部协作 (Collaboration)</text>
+      <text x="20" y="55" class="text tool-name">钉钉 / 飞书 / 企业微信</text>
+    </g>
+  </g>
+
+  <!-- Footer Budget -->
+  <g transform="translate(50, 380)">
+    <rect width="700" height="40" class="budget-box" />
+    <text x="350" y="26" text-anchor="middle" class="text budget-text">总预算估算：￥2,000 - 5,000 / 月</text>
+  </g>
+
+</svg>

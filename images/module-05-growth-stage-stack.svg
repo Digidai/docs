@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .title { font-size: 20px; font-weight: 800; fill: #1e293b; }
+      .category { font-size: 15px; font-weight: 700; fill: #475569; }
+      .tool-name { font-size: 14px; font-weight: 600; fill: #0f172a; }
+      .budget-box { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1; rx: 8; ry: 8; }
+      .budget-text { font-size: 13px; font-weight: 700; fill: #1e3a8a; }
+      .box { fill: #ffffff; stroke-width: 2; rx: 12; ry: 12; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="16" ry="16"/>
+
+  <!-- Header -->
+  <text x="50" y="50" class="text title">方案二：成长期工具栈 (Growth)</text>
+  <text x="50" y="75" class="text tool-name">适合：50-200 人团队、$100-500 万 ARR</text>
+
+  <!-- Grid Layout -->
+  <g transform="translate(50, 100)">
+    <g transform="translate(0, 0)">
+      <rect width="340" height="80" class="box" stroke="#3b82f6" />
+      <text x="20" y="30" class="text category">CRM</text>
+      <text x="20" y="55" class="text tool-name">纷享销客 / 销售易标准版</text>
+    </g>
+
+    <g transform="translate(360, 0)">
+      <rect width="340" height="80" class="box" stroke="#10b981" />
+      <text x="20" y="30" class="text category">SCRM / 私域</text>
+      <text x="20" y="55" class="text tool-name">微盛 / 尘锋 SCRM</text>
+    </g>
+
+    <g transform="translate(0, 100)">
+      <rect width="340" height="80" class="box" stroke="#f59e0b" />
+      <text x="20" y="30" class="text category">获客线索 (Leads)</text>
+      <text x="20" y="55" class="text tool-name">探迹基础版 (AI 获客)</text>
+    </g>
+
+    <g transform="translate(360, 100)">
+      <rect width="340" height="80" class="box" stroke="#ef4444" />
+      <text x="20" y="30" class="text category">客服 / 互动</text>
+      <text x="20" y="55" class="text tool-name">智齿 / 网易七鱼</text>
+    </g>
+
+    <g transform="translate(0, 200)">
+      <rect width="340" height="80" class="box" stroke="#8b5cf6" />
+      <text x="20" y="30" class="text category">产品分析 (Analytics)</text>
+      <text x="20" y="55" class="text tool-name">神策 / GrowingIO</text>
+    </g>
+
+    <g transform="translate(360, 200)">
+      <rect width="340" height="80" class="box" stroke="#6366f1" />
+      <text x="20" y="30" class="text category">BI / 报表</text>
+      <text x="20" y="55" class="text tool-name">帆软 FineReport / 观远基础版</text>
+    </g>
+  </g>
+
+  <!-- Footer Budget -->
+  <g transform="translate(50, 420)">
+    <rect width="700" height="50" class="budget-box" />
+    <text x="350" y="30" text-anchor="middle" class="text budget-text">总预算估算：￥5,000 - 20,000 / 月</text>
+  </g>
+
+</svg>

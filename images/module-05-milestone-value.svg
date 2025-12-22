@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .title { font-size: 20px; font-weight: 800; fill: #1e293b; }
+      .point-title { font-size: 16px; font-weight: 700; fill: #334155; }
+      .point-desc { font-size: 14px; fill: #64748b; }
+      .box { stroke-width: 2; rx: 8; ry: 8; }
+      .arrow { fill: none; stroke: #94a3b8; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="500" fill="#f8fafc" rx="16" ry="16"/>
+
+  <!-- Title -->
+  <rect x="350" y="30" width="300" height="50" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2" rx="12" ry="12"/>
+  <text x="500" y="62" text-anchor="middle" class="text title">里程碑规划的价值</text>
+
+  <!-- Connections -->
+  <g class="arrow">
+    <path d="M 500,80 L 500,120" />
+    <path d="M 180,120 L 820,120" />
+    <path d="M 180,120 L 180,150" />
+    <path d="M 500,120 L 500,150" />
+    <path d="M 820,120 L 820,150" />
+    <path d="M 340,310 L 340,340" />
+    <path d="M 660,310 L 660,340" />
+  </g>
+
+  <!-- Value Point 1 -->
+  <rect x="60" y="150" width="240" height="150" fill="#f0f9ff" stroke="#0ea5e9" class="box" />
+  <text x="180" y="185" text-anchor="middle" class="text point-title">1. 创建共同目标</text>
+  <text x="180" y="215" text-anchor="middle" class="text point-desc">团队对齐、统一方向</text>
+  <path d="M 100,240 L 260,240" stroke="#bae6fd" stroke-width="1" />
+  <text x="180" y="270" text-anchor="middle" class="text point-desc" font-style="italic">"We are all on the same page"</text>
+
+  <!-- Value Point 2 -->
+  <rect x="380" y="150" width="240" height="150" fill="#f0fdf4" stroke="#22c55e" class="box" />
+  <text x="500" y="185" text-anchor="middle" class="text point-title">2. 分解复杂项目</text>
+  <text x="500" y="215" text-anchor="middle" class="text point-desc">大目标拆解为可执行阶段</text>
+  <path d="M 420,240 L 580,240" stroke="#bbf7d0" stroke-width="1" />
+  <text x="500" y="270" text-anchor="middle" class="text point-desc" font-style="italic">"One step at a time"</text>
+
+  <!-- Value Point 3 -->
+  <rect x="700" y="150" width="240" height="150" fill="#fff7ed" stroke="#f97316" class="box" />
+  <text x="820" y="185" text-anchor="middle" class="text point-title">3. 建立检查点</text>
+  <text x="820" y="215" text-anchor="middle" class="text point-desc">定期评估、及时调整</text>
+  <path d="M 740,240 L 900,240" stroke="#ffedd5" stroke-width="1" />
+  <text x="820" y="270" text-anchor="middle" class="text point-desc" font-style="italic">"Course correction"</text>
+  
+  <!-- Value Point 4 -->
+  <rect x="220" y="340" width="240" height="100" fill="#fef2f2" stroke="#ef4444" class="box" />
+  <text x="340" y="375" text-anchor="middle" class="text point-title">4. 管理依赖关系</text>
+  <text x="340" y="405" text-anchor="middle" class="text point-desc">识别关键路径、协调资源</text>
+
+  <!-- Value Point 5 -->
+  <rect x="540" y="340" width="240" height="100" fill="#faf5ff" stroke="#a855f7" class="box" />
+  <text x="660" y="375" text-anchor="middle" class="text point-title">5. 降低风险</text>
+  <text x="660" y="405" text-anchor="middle" class="text point-desc">早期发现问题、预留缓冲</text>
+
+</svg>
