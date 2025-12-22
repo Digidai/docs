@@ -28,29 +28,31 @@
   </g>
 
   <!-- Arrow Down -->
-  <path d="M 375,150 L 375,190" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <path d="M 375,150 L 375,190" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
 
   <!-- Step 2: ICP Scoring (Middle) -->
   <g transform="translate(275, 190)">
     <rect x="0" y="0" width="200" height="70" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" filter="url(#shadow)"/>
     <text x="100" y="30" text-anchor="middle" class="box-title" fill="#EF6C00">ICP 评分模型</text>
-    <text x="100" y="55" text-anchor="middle" class="box-desc" fill="#555">Scoring & Filtering</text>
+    <text x="100" y="55" text-anchor="middle" class="box-desc" fill="#555">评分与筛选 (Scoring)</text>
   </g>
 
-  <!-- Branching Arrows -->
-  <!-- Left Branch (High Score) -->
-  <!-- Branching Arrows -->
-  <!-- Left Branch (High Score) -->
-  <path d="M 375,260 L 375,290 L 150,290 L 150,330" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)" fill="none" class="branch"/>
-  <!-- Right Branch (Low Score) -->
-  <path d="M 375,260 L 375,290 L 600,290 L 600,330" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)" fill="none" class="branch"/>
+  <!-- Branching Paths -->
+  <!-- Main Stem -->
+  <path d="M 375,260 L 375,290" stroke="#64748b" stroke-width="2" fill="none"/>
+  
+  <!-- Left Branch -->
+  <path d="M 375,290 L 150,290 L 150,330" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  
+  <!-- Right Branch -->
+  <path d="M 375,290 L 600,290 L 600,330" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
 
   <!-- Labels on paths -->
-  <rect x="230" y="280" width="60" height="20" rx="4" fill="#ffffff" stroke="#e2e8f0"/>
-  <text x="260" y="295" text-anchor="middle" class="label" fill="#16a34a">High Score</text>
+  <rect x="220" y="280" width="80" height="20" rx="4" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="260" y="295" text-anchor="middle" class="label" fill="#16a34a">高分 (High)</text>
 
-  <rect x="460" y="280" width="60" height="20" rx="4" fill="#ffffff" stroke="#e2e8f0"/>
-  <text x="490" y="295" text-anchor="middle" class="label" fill="#64748b">Low Score</text>
+  <rect x="450" y="280" width="80" height="20" rx="4" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="490" y="295" text-anchor="middle" class="label" fill="#64748b">低分 (Low)</text>
 
   <!-- Step 3A: High Priority (Bottom Left) -->
   <g transform="translate(50, 330)">
