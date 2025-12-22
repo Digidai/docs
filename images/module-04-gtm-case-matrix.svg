@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="600" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
       <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
@@ -10,59 +10,62 @@
   <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
 
   <!-- Title -->
-  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+  <text x="500" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1e293b">
     GTM 案例全景矩阵 (GTM Case Matrix)
   </text>
   
   <!-- Matrix Grid -->
-  <g transform="translate(100, 100)">
+  <!-- Shifted further right to x=320 to accommodate long row headers -->
+  <g transform="translate(320, 100)">
     
     <!-- Axes Labels -->
-    <text x="300" y="-10" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#555">GTM Motion</text>
-    <text x="-60" y="200" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" transform="rotate(-90 -60,200)" fill="#555">Target Market (客户规模)</text>
+    <text x="300" y="-10" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#475569">GTM Motion</text>
+    <!-- Moved axis label far left to avoid collision with "SMB / Mid-Market" -->
+    <text x="-240" y="200" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" transform="rotate(-90 -240,200)" fill="#475569">Target Market (客户规模)</text>
     
     <!-- Column Headers -->
-    <text x="150" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2196F3">PLG (Product-Led)</text>
-    <text x="450" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4CAF50">SLG (Sales-Led)</text>
+    <text x="150" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0284c7">PLG (Product-Led)</text>
+    <text x="450" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#059669">SLG (Sales-Led)</text>
 
     <!-- Row Headers -->
-    <text x="-30" y="140" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#555">SMB / Mid-Market</text>
-    <text x="-30" y="340" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#555">Enterprise</text>
+    <!-- Anchored at End (-40). Text extends leftwards ~150px to approx -190. -->
+    <text x="-40" y="140" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#64748b">SMB / Mid-Market</text>
+    <text x="-40" y="340" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#64748b">Enterprise</text>
 
     <!-- Quadrants -->
     
     <!-- Q1: PLG x SMB -->
-    <rect x="0" y="50" width="300" height="200" rx="8" fill="#E3F2FD" stroke="#90CAF9" stroke-width="2"/>
+    <rect x="0" y="50" width="300" height="200" rx="8" fill="#f0f9ff" stroke="#bae6fd" stroke-width="2"/>
     <g transform="translate(150, 150)">
-        <text y="-30" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#1565C0" font-weight="bold">Slack, Notion</text>
-        <text y="0" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#1565C0" font-weight="bold">Figma, Canva</text>
-        <text y="30" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#1565C0" font-weight="bold">Dropbox</text>
+        <text y="-30" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#0369a1" font-weight="bold">Slack, Notion</text>
+        <text y="0" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#0369a1" font-weight="bold">Figma, Canva</text>
+        <text y="30" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#0369a1" font-weight="bold">Dropbox</text>
     </g>
 
     <!-- Q2: SLG x SMB (The Chasm Candidates) -->
-    <rect x="300" y="50" width="300" height="200" rx="8" fill="#E8F5E9" stroke="#A5D6A7" stroke-width="2"/>
+    <rect x="300" y="50" width="300" height="200" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="2"/>
     <g transform="translate(450, 150)">
-        <text y="-20" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#2E7D32" font-weight="bold">HubSpot (Early)</text>
-        <rect x="-90" y="10" width="180" height="30" rx="15" fill="#C8E6C9" stroke="#2E7D32"/>
-        <text y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2E7D32" font-weight="bold">🇨🇳 有赞 (Youzan)</text>
+        <text y="-20" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#15803d" font-weight="bold">HubSpot (Early)</text>
+        <rect x="-90" y="10" width="180" height="30" rx="15" fill="#dcfce7" stroke="#15803d"/>
+        <text y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#15803d" font-weight="bold">🇨🇳 有赞 (Youzan)</text>
     </g>
 
     <!-- Q3: PLG x Enterprise (Expansion) -->
-    <rect x="0" y="250" width="300" height="200" rx="8" fill="#E1F5FE" stroke="#81D4FA" stroke-width="2"/>
+    <rect x="0" y="250" width="300" height="200" rx="8" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="2"/>
     <g transform="translate(150, 350)">
-        <text y="-30" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#0277BD" font-weight="bold">Zoom (PLG+Sales)</text>
-        <rect x="-90" y="-10" width="180" height="30" rx="15" fill="#B3E5FC" stroke="#0277BD"/>
-        <text y="10" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#0277BD" font-weight="bold">🇨🇳 飞书 (Feishu)</text>
-        <text y="40" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#0277BD">Atlassian</text>
+        <text y="-30" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#075985" font-weight="bold">Zoom (PLG+Sales)</text>
+        <rect x="-90" y="-10" width="180" height="30" rx="15" fill="#e0f2fe" stroke="#075985"/>
+        <text y="10" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#075985" font-weight="bold">🇨🇳 飞书 (Feishu)</text>
+        <text y="40" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#075985">Atlassian</text>
     </g>
 
     <!-- Q4: SLG x Enterprise (Typical B2B) -->
-    <rect x="300" y="250" width="300" height="200" rx="8" fill="#F1F8E9" stroke="#AED581" stroke-width="2"/>
+    <rect x="300" y="250" width="300" height="200" rx="8" fill="#f7fee7" stroke="#d9f99d" stroke-width="2"/>
     <g transform="translate(450, 350)">
-        <text y="-30" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#33691E" font-weight="bold">Salesforce</text>
-        <text y="0" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#33691E" font-weight="bold">ServiceNow, Workday</text>
-        <rect x="-90" y="20" width="180" height="30" rx="15" fill="#DCEDC8" stroke="#33691E"/>
-        <text y="40" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#33691E" font-weight="bold">🇨🇳 北森 (Beisen)</text>
+        <text y="-30" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#3f6212" font-weight="bold">Salesforce</text>
+        <text y="0" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#3f6212" font-weight="bold">ServiceNow, Workday</text>
+        <rect x="-90" y="20" width="180" height="30" rx="15" fill="#ecfccb" stroke="#3f6212"/>
+        <text y="40" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#3f6212" font-weight="bold">🇨🇳 北森 (Beisen)</text>
     </g>
 
     <!-- Divider Lines -->
@@ -72,9 +75,9 @@
   </g>
 
   <!-- Legend -->
-  <g transform="translate(200, 560)">
-    <rect x="0" y="0" width="400" height="30" rx="15" fill="#F5F5F5"/>
-    <text x="200" y="20" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">
+  <g transform="translate(300, 560)">
+    <rect x="0" y="0" width="400" height="30" rx="15" fill="#f1f5f9"/>
+    <text x="200" y="20" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">
       注：中国案例（有赞、飞书、北森）展示了本土化 GTM 的不同路径
     </text>
   </g>

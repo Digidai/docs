@@ -25,16 +25,6 @@
     "name": "开始学习",
     "url": "/module-01/1.1-gtm-definition"
   },
-  "tabs": [
-    {
-      "name": "工具包",
-      "url": "module-05"
-    },
-    {
-      "name": "附录",
-      "url": "appendix"
-    }
-  ],
   "anchors": [
     {
       "name": "模块一",
@@ -55,6 +45,16 @@
       "name": "模块四",
       "icon": "4",
       "url": "module-04"
+    },
+    {
+      "name": "模块五",
+      "icon": "5",
+      "url": "module-05"
+    },
+    {
+      "name": "附录",
+      "icon": "book",
+      "url": "appendix"
     }
   ],
   "navigation": [
