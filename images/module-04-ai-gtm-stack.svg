@@ -1,70 +1,83 @@
-<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="460" viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="800" height="400" fill="#F8FAFC" rx="16"/>
+  <rect width="900" height="460" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8B5CF6" />
+    </marker>
+  </defs>
   
   <!-- Title -->
-  <text x="400" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">AI 原生 GTM 技术栈架构</text>
+  <text x="450" y="40" font-family="Outfit, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1E293B">AI 原生 GTM 技术栈架构</text>
   
   <!-- Execution Layer (Top) -->
-  <g transform="translate(40, 70)">
-    <rect x="0" y="0" width="720" height="80" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
-    <text x="360" y="25" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#475569">执行层 (Execution Layer)</text>
-    <g transform="translate(20, 35)">
-      <rect x="0" y="0" width="160" height="30" rx="4" fill="#F1F5F9"/>
-      <text x="80" y="20" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#475569">AI SDR (Artisan, 11x)</text>
+  <g transform="translate(40, 80)">
+    <rect x="0" y="0" width="820" height="80" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="410" y="25" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#475569">执行层 (Execution Layer)</text>
+    <g transform="translate(0, 35)">
+      <!-- Item 1: W=180, Gap=20. x=20 -->
+      <rect x="20" y="0" width="180" height="30" rx="4" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="110" y="19" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#475569">AI SDR (Artisan, 11x)</text>
       
-      <rect x="175" y="0" width="160" height="30" rx="4" fill="#F1F5F9"/>
-      <text x="255" y="20" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#475569">营销自动化 (HubSpot)</text>
+      <!-- Item 2: W=180, Gap=20. x=220 -->
+      <rect x="220" y="0" width="180" height="30" rx="4" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="310" y="19" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#475569">营销自动化 (HubSpot)</text>
       
-      <rect x="350" y="0" width="160" height="30" rx="4" fill="#F1F5F9"/>
-      <text x="430" y="20" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#475569">销售/协作助手 (Gong)</text>
+      <!-- Item 3: W=180, Gap=20. x=420 -->
+      <rect x="420" y="0" width="180" height="30" rx="4" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="510" y="19" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#475569">销售/协作助手 (Gong)</text>
       
-      <rect x="525" y="0" width="160" height="30" rx="4" fill="#F1F5F9"/>
-      <text x="605" y="20" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#475569">CS 自动化 (Gainsight)</text>
+      <!-- Item 4: W=180, Gap=20. x=620 -->
+      <rect x="620" y="0" width="180" height="30" rx="4" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="710" y="19" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#475569">CS 自动化 (Gainsight)</text>
     </g>
   </g>
 
   <!-- Intelligence Layer (Middle) -->
-  <g transform="translate(100, 170)">
-    <rect x="0" y="0" width="600" height="90" rx="12" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="2"/>
-    <text x="300" y="25" font-family="Outfit, sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#7C3AED">智能层 (Intelligence Layer - AI Brain)</text>
+  <g transform="translate(40, 200)">
+    <rect x="0" y="0" width="820" height="90" rx="12" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+    <text x="410" y="25" font-family="Outfit, sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#7C3AED">智能层 (Intelligence Layer - AI Brain)</text>
     <g font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#5B21B6" text-anchor="middle">
-      <text x="150" y="60">• 线索评分与意图识别</text>
-      <text x="300" y="60">• 推荐引擎与最佳实践</text>
-      <text x="450" y="60">• 预测分析与预测报告</text>
+      <!-- Evenly distributed centers: 140, 410, 680 -->
+      <text x="140" y="60">• 线索评分与意图识别</text>
+      <text x="410" y="60">• 推荐引擎与最佳实践</text>
+      <text x="680" y="60">• 预测分析与预测报告</text>
     </g>
     
-    <!-- Connector Arrows -->
-    <path d="M 300 -20 L 300 0" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrowhead)"/>
-    <path d="M 300 90 L 300 110" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <!-- Connector Arrows (Centered at 410) -->
+    <!-- Top Arrow: From Execution Bottom (y=-40 relative to this group) to Top (y=0) -->
+    <path d="M 410 -40 L 410 0" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <!-- Bottom Arrow: From Bottom (y=90) to Data Layer Top (y=130 relative to start?) No, length 40 -->
+    <path d="M 410 90 L 410 130" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrowhead)"/>
   </g>
 
   <!-- Data Layer (Bottom) -->
-  <g transform="translate(40, 280)">
-    <rect x="0" y="0" width="720" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
-    <text x="360" y="25" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#475569">数据层 (Data & Signal Layer)</text>
-    <g transform="translate(20, 35)">
-      <rect x="0" y="0" width="130" height="40" rx="4" fill="#EFF6FF"/>
-      <text x="65" y="25" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#1E40AF">意图数据 (6sense)</text>
+  <g transform="translate(40, 330)">
+    <rect x="0" y="0" width="820" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="410" y="25" font-family="Outfit, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#475569">数据层 (Data & Signal Layer)</text>
+    <g transform="translate(0, 35)">
+      <!-- 5 items. Constant Gap 15px. -->
+      <!-- Item 1: x=15. w=146. Center=88 -->
+      <rect x="15" y="0" width="146" height="40" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+      <text x="88" y="23" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#1E40AF">意图数据 (6sense)</text>
       
-      <rect x="145" y="0" width="130" height="40" rx="4" fill="#EFF6FF"/>
-      <text x="210" y="25" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#1E40AF">联系人 (ZoomInfo)</text>
+      <!-- Item 2: x=176. w=146. Center=249 -->
+      <rect x="176" y="0" width="146" height="40" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+      <text x="249" y="23" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#1E40AF">联系人 (ZoomInfo)</text>
       
-      <rect x="290" y="0" width="140" height="40" rx="4" fill="#EFF6FF"/>
-      <text x="360" y="25" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#1E40AF">数据富化 (Clearbit)</text>
+      <!-- Item 3: x=337. w=146. Center=410 -->
+      <rect x="337" y="0" width="146" height="40" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+      <text x="410" y="23" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#1E40AF">数据富化 (Clearbit)</text>
       
-      <rect x="445" y="0" width="130" height="40" rx="4" fill="#F0FDF4"/>
-      <text x="510" y="25" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#166534">内部使用数据</text>
+      <!-- Item 4: x=498. w=146. Center=571 -->
+      <rect x="498" y="0" width="146" height="40" rx="4" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+      <text x="571" y="23" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#166534">内部使用数据</text>
       
-      <rect x="590" y="0" width="110" height="40" rx="4" fill="#F0FDF4"/>
-      <text x="645" y="25" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#166534">产品行为</text>
+      <!-- Item 5: x=659. w=146. Center=732 -->
+      <rect x="659" y="0" width="146" height="40" rx="4" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+      <text x="732" y="23" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#166534">产品行为</text>
     </g>
   </g>
-
-  <!-- Definitions -->
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#8B5CF6" />
-    </marker>
-  </defs>
 </svg>
