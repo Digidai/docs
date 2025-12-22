@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    GTM 工具栈的核心价值 (Strategic Value)
+  </text>
+
+  <!-- 4 Pillars Grid -->
+  <g transform="translate(50, 100)">
+    <!-- 1. Efficiency -->
+    <g transform="translate(0, 0)">
+      <rect width="340" height="100" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1565C0">1. 效率提升 (Efficiency)</text>
+      <text x="20" y="65" font-family="Arial, sans-serif" font-size="14" fill="#555">自动化重复工作，释放团队时间</text>
+    </g>
+
+    <!-- 2. Data -->
+    <g transform="translate(360, 0)">
+      <rect width="340" height="100" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">2. 数据驱动 (Data-Driven)</text>
+      <text x="20" y="65" font-family="Arial, sans-serif" font-size="14" fill="#555">统一数据源，提供准确洞察</text>
+    </g>
+
+    <!-- 3. Scale -->
+    <g transform="translate(0, 120)">
+      <rect width="340" height="100" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#EF6C00">3. 规模化能力 (Scalability)</text>
+      <text x="20" y="65" font-family="Arial, sans-serif" font-size="14" fill="#555">支撑团队和业务的快速增长</text>
+    </g>
+
+    <!-- 4. CX -->
+    <g transform="translate(360, 120)">
+      <rect width="340" height="100" rx="8" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#7B1FA2">4. 客户体验 (CX)</text>
+      <text x="20" y="65" font-family="Arial, sans-serif" font-size="14" fill="#555">无缝的客户旅程，个性化触达</text>
+    </g>
+  </g>
+
+  <!-- Anti-Pattern Warning -->
+  <g transform="translate(100, 360)">
+    <rect width="600" height="100" rx="12" fill="#FFEBEE" stroke="#EF5350" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="300" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#C62828">⚠️ 错误选择的代价 (Cost of Bad Stack)</text>
+    <text x="300" y="65" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">
+      数据孤岛(Silos) • 功能重叠(Waste) • 过度复杂(Complexity) • 迁移高昂(Lock-in)
+    </text>
+  </g>
+
+</svg>

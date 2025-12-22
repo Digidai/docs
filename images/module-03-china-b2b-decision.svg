@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">
+    中国 B2B 典型决策链 (Decision Chain)
+  </text>
+
+  <!-- Flow Steps -->
+  <g transform="translate(50, 100)">
+    
+    <!-- Step 1: User -->
+    <g transform="translate(0, 0)">
+      <rect width="140" height="80" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="70" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565C0">使用者</text>
+      <text x="70" y="60" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555">发现需求</text>
+    </g>
+
+    <line x1="140" y1="40" x2="180" y2="40" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 2: IT -->
+    <g transform="translate(180, 0)">
+      <rect width="140" height="80" rx="8" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="70" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#7B1FA2">IT 部门</text>
+      <text x="70" y="60" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555">技术评估</text>
+    </g>
+
+    <line x1="320" y1="40" x2="360" y2="40" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 3: Business Lead -->
+    <g transform="translate(360, 0)">
+      <rect width="140" height="80" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="70" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#EF6C00">业务领导</text>
+      <text x="70" y="60" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555">推动立项</text>
+    </g>
+
+    <line x1="500" y1="40" x2="540" y2="40" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 4: Boss -->
+    <g transform="translate(540, 0)">
+      <rect width="140" height="80" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="70" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2E7D32">老板/高管</text>
+      <text x="70" y="60" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555">最终拍板</text>
+    </g>
+
+  </g>
+
+  <!-- Annotation Below -->
+  <g transform="translate(50, 220)">
+    <rect width="700" height="60" rx="8" fill="#FAFAFA" stroke="#E0E0E0"/>
+    <text x="350" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">中国市场特点</text>
+    <text x="350" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">
+      自下而上推动难 • 信任关系关键 • "搞定老板"是核心
+    </text>
+  </g>
+
+</svg>

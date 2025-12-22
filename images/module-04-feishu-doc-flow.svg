@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="500" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="feishuGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3370FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8F54FA;stop-opacity:1" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#999"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Main Title -->
+  <text x="500" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    文档协作范式对比 (Paradigm Shift)
+  </text>
+
+  <!-- Left Side: Traditional (Linear/Siloed) -->
+  <g transform="translate(50, 100)">
+    <rect width="420" height="320" rx="16" fill="#F5F5F7" stroke="#E5E5EA" stroke-width="2"/>
+    <text x="210" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#666">
+      传统模式: 串行传递 (Linear Handoffs)
+    </text>
+    
+    <!-- Timeline Line -->
+    <line x1="60" y1="100" x2="60" y2="280" stroke="#C7C7CC" stroke-width="2" stroke-dasharray="8"/>
+    <text x="40" y="190" font-family="Arial, sans-serif" font-size="14" fill="#999" transform="rotate(-90 40,190)">Time Delay</text>
+
+    <!-- Step 1 -->
+    <g transform="translate(100, 80)">
+      <rect width="180" height="50" rx="6" fill="#FFFFFF" stroke="#D1D1D6" filter="url(#shadow)"/>
+      <text x="90" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">1. 撰写文档 (Draft)</text>
+    </g>
+
+    <!-- Arrow Down -->
+    <line x1="190" y1="130" x2="190" y2="155" stroke="#999" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 2 -->
+    <g transform="translate(100, 155)">
+      <rect width="180" height="50" rx="6" fill="#FFFFFF" stroke="#D1D1D6" filter="url(#shadow)"/>
+      <text x="90" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">2. 发送文件 (Send File)</text>
+      <text x="200" y="30" font-family="Arial, sans-serif" font-size="12" fill="#FF9500" font-weight="bold">!</text> 
+    </g>
+
+    <!-- Arrow Down -->
+    <line x1="190" y1="205" x2="190" y2="230" stroke="#999" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 3 -->
+    <g transform="translate(100, 230)">
+      <rect width="180" height="50" rx="6" fill="#FFFFFF" stroke="#D1D1D6" filter="url(#shadow)"/>
+      <text x="90" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">3. 收集反馈 (Merge)</text>
+    </g>
+
+    <!-- Pain Point Labels -->
+    <text x="300" y="185" font-family="Arial, sans-serif" font-size="12" fill="#FF3B30">版本割裂</text>
+    <text x="300" y="260" font-family="Arial, sans-serif" font-size="12" fill="#FF3B30">整合困难</text>
+
+  </g>
+
+  <!-- Right Side: Feishu (Hub/Parallel) -->
+  <g transform="translate(530, 100)">
+    <rect width="420" height="320" rx="16" fill="#EBF3FF" stroke="#3370FF" stroke-width="2" stroke-opacity="0.3"/>
+    <text x="210" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#3370FF">
+      飞书模式: 并行协作 (Real-time Hub)
+    </text>
+
+    <!-- Central Doc Hub -->
+    <g transform="translate(130, 110)">
+      <!-- Halo Effect -->
+      <circle cx="80" cy="80" r="90" fill="url(#feishuGradient)" opacity="0.1"/>
+      
+      <!-- Core Doc -->
+      <rect x="0" y="0" width="160" height="160" rx="20" fill="#FFFFFF" stroke="url(#feishuGradient)" stroke-width="3" filter="url(#shadow)"/>
+      
+      <!-- Internal Content -->
+      <text x="80" y="45" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Lark Doc</text>
+      <line x1="30" y1="60" x2="130" y2="60" stroke="#E5E5EA" stroke-width="1"/>
+      
+      <!-- Component Badge 1: Content -->
+      <rect x="20" y="75" width="120" height="20" rx="4" fill="#E8F5E9"/>
+      <text x="80" y="90" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#2E7D32">Live Content</text>
+      
+      <!-- Component Badge 2: Chat -->
+      <rect x="20" y="100" width="120" height="20" rx="4" fill="#E3F2FD"/>
+      <text x="80" y="115" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1565C0">Contextual Chat</text>
+
+      <!-- Component Badge 3: Task -->
+      <rect x="20" y="125" width="120" height="20" rx="4" fill="#F3E5F5"/>
+      <text x="80" y="140" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#7B1FA2">Embedded Tasks</text>
+    </g>
+
+    <!-- Users Orbiting -->
+    <!-- User Top -->
+    <circle cx="210" cy="80" r="15" fill="#3370FF"/>
+    <text x="210" y="85" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">U1</text>
+    <line x1="210" y1="95" x2="210" y2="110" stroke="#3370FF" stroke-width="2"/>
+
+    <!-- User Left -->
+    <circle cx="100" cy="190" r="15" fill="#8F54FA"/>
+    <text x="100" y="195" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">U2</text>
+    <line x1="115" y1="190" x2="130" y2="190" stroke="#8F54FA" stroke-width="2"/>
+
+    <!-- User Right -->
+    <circle cx="320" cy="190" r="15" fill="#00C299"/>
+    <text x="320" y="195" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">U3</text>
+    <line x1="305" y1="190" x2="290" y2="190" stroke="#00C299" stroke-width="2"/>
+
+    <text x="210" y="300" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#3370FF">All-in-One Workspace</text>
+
+  </g>
+
+</svg>

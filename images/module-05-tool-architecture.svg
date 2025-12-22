@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="600" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="500" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    GTM 工具栈统一架构 (Unified GTM Architecture)
+  </text>
+
+  <!-- Data Layer (Top) -->
+  <g transform="translate(150, 80)">
+    <rect width="700" height="80" rx="12" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2" filter="url(#shadow)"/>
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1A237E">统一数据层 (Unified Data Layer)</text>
+    <g transform="translate(25, 45)">
+      <rect x="0" y="0" width="100" height="24" rx="4" fill="#fff" stroke="#9FA8DA"/>
+      <text x="50" y="17" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">CDP</text>
+      
+      <rect x="130" y="0" width="180" height="24" rx="4" fill="#fff" stroke="#9FA8DA"/>
+      <text x="220" y="17" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">Data Warehouse</text>
+
+      <rect x="340" y="0" width="140" height="24" rx="4" fill="#fff" stroke="#9FA8DA"/>
+      <text x="410" y="17" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">BI/Analytics</text>
+
+      <rect x="510" y="0" width="140" height="24" rx="4" fill="#fff" stroke="#9FA8DA"/>
+      <text x="580" y="17" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">Attribution</text>
+    </g>
+  </g>
+
+  <!-- Flow Arrows -->
+  <path d="M 500,160 L 500,220" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="510" y="200" font-family="Arial, sans-serif" font-size="14" fill="#666">数据流向 (Data Flow)</text>
+  
+  <!-- Distribution Lines -->
+  <line x1="200" y1="220" x2="800" y2="220" stroke="#666" stroke-width="2"/>
+  <line x1="200" y1="220" x2="200" y2="240" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="400" y1="220" x2="400" y2="240" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="220" x2="600" y2="240" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="800" y1="220" x2="800" y2="240" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Application Layer (Bottom) -->
+  <g transform="translate(0, 250)">
+    
+    <!-- Marketing -->
+    <g transform="translate(100, 0)">
+      <rect width="180" height="250" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565C0">Marketing</text>
+      <line x1="20" y1="45" x2="160" y2="45" stroke="#BBDEFB"/>
+      <text x="30" y="70" font-family="Arial, sans-serif" font-size="14" fill="#333">• MA 自动化</text>
+      <text x="30" y="100" font-family="Arial, sans-serif" font-size="14" fill="#333">• ABM 平台</text>
+      <text x="30" y="130" font-family="Arial, sans-serif" font-size="14" fill="#333">• Content CMS</text>
+      <text x="30" y="160" font-family="Arial, sans-serif" font-size="14" fill="#333">• Social Media</text>
+      <text x="30" y="190" font-family="Arial, sans-serif" font-size="14" fill="#333">• SEO Tools</text>
+    </g>
+
+    <!-- Sales -->
+    <g transform="translate(310, 0)">
+      <rect width="180" height="250" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2E7D32">Sales</text>
+      <line x1="20" y1="45" x2="160" y2="45" stroke="#C8E6C9"/>
+      <text x="30" y="70" font-family="Arial, sans-serif" font-size="14" fill="#333">• CRM 核心</text>
+      <text x="30" y="100" font-family="Arial, sans-serif" font-size="14" fill="#333">• Sales Engmt</text>
+      <text x="30" y="130" font-family="Arial, sans-serif" font-size="14" fill="#333">• CPQ 报价</text>
+      <text x="30" y="160" font-family="Arial, sans-serif" font-size="14" fill="#333">• Intelligence</text>
+      <text x="30" y="190" font-family="Arial, sans-serif" font-size="14" fill="#333">• Meeting AI</text>
+    </g>
+
+    <!-- CS -->
+    <g transform="translate(520, 0)">
+      <rect width="180" height="250" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#EF6C00">CS / Support</text>
+      <line x1="20" y1="45" x2="160" y2="45" stroke="#FFE0B2"/>
+      <text x="30" y="70" font-family="Arial, sans-serif" font-size="14" fill="#333">• CS 平台</text>
+      <text x="30" y="100" font-family="Arial, sans-serif" font-size="14" fill="#333">• Help Desk</text>
+      <text x="30" y="130" font-family="Arial, sans-serif" font-size="14" fill="#333">• NPS Survey</text>
+      <text x="30" y="160" font-family="Arial, sans-serif" font-size="14" fill="#333">• Training LMS</text>
+      <text x="30" y="190" font-family="Arial, sans-serif" font-size="14" fill="#333">• Community</text>
+    </g>
+
+    <!-- RevOps -->
+    <g transform="translate(730, 0)">
+      <rect width="180" height="250" rx="8" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#7B1FA2">RevOps</text>
+      <line x1="20" y1="45" x2="160" y2="45" stroke="#E1BEE7"/>
+      <text x="30" y="70" font-family="Arial, sans-serif" font-size="14" fill="#333">• 数据清洗</text>
+      <text x="30" y="100" font-family="Arial, sans-serif" font-size="14" fill="#333">• 流程自动化</text>
+      <text x="30" y="130" font-family="Arial, sans-serif" font-size="14" fill="#333">• 集成中间件</text>
+      <text x="30" y="160" font-family="Arial, sans-serif" font-size="14" fill="#333">• 报表开发</text>
+      <text x="30" y="190" font-family="Arial, sans-serif" font-size="14" fill="#333">• 佣金管理</text>
+    </g>
+
+  </g>
+
+</svg>

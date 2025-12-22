@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="700" viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Card Container -->
+  <rect x="50" y="50" width="700" height="600" rx="12" fill="#ffffff" stroke="#E0E0E0" stroke-width="1" filter="url(#shadow)"/>
+  
+  <!-- Header -->
+  <path d="M 50,62 a 12 12 0 0 1 12 -12 h 676 a 12 12 0 0 1 12 12 v 68 h -700 z" fill="#F8F9FA"/>
+  <rect x="50" y="130" width="700" height="1" fill="#E0E0E0"/>
+  
+  <rect x="80" y="70" width="60" height="40" rx="4" fill="#FF5252"/>
+  <text x="110" y="96" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">A</text>
+  <text x="160" y="85" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">Competitor A</text>
+  <text x="160" y="105" font-family="Arial, sans-serif" font-size="12" fill="#666">核心竞品 (Head-to-Head)</text>
+
+  <!-- Section 1: Strengths vs Weaknesses -->
+  <g transform="translate(80, 160)">
+    <!-- Strengths -->
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#D32F2F">▼ 他们的优势 (Their Strengths)</text>
+    <rect x="0" y="35" width="300" height="90" rx="8" fill="#FFEBEE" stroke="#FFCDD2"/>
+    <text x="15" y="60" font-family="Arial, sans-serif" font-size="12" fill="#333">• 品牌认知度极高 (Market Leader)</text>
+    <text x="15" y="80" font-family="Arial, sans-serif" font-size="12" fill="#333">• 功能大而全 (Feature Rich)</text>
+    <text x="15" y="100" font-family="Arial, sans-serif" font-size="12" fill="#333">• 资金雄厚</text>
+
+    <!-- Weaknesses -->
+    <g transform="translate(320, 0)">
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#388E3C">▲ 他们的劣势 (Their Weaknesses)</text>
+      <rect x="0" y="35" width="300" height="90" rx="8" fill="#E8F5E9" stroke="#C8E6C9"/>
+      <text x="15" y="60" font-family="Arial, sans-serif" font-size="12" fill="#333">• 价格极其昂贵 (High TCO)</text>
+      <text x="15" y="80" font-family="Arial, sans-serif" font-size="12" fill="#333">• 实施周期长 (6个月+)</text>
+      <text x="15" y="100" font-family="Arial, sans-serif" font-size="12" fill="#333">• 客服响应慢 (Tier 1 Support)</text>
+    </g>
+  </g>
+
+  <!-- Section 2: Our Differentiation -->
+  <g transform="translate(80, 310)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1976D2">★ 我们的差异化 (Our Edge)</text>
+    <rect x="0" y="35" width="620" height="60" rx="8" fill="#E3F2FD" stroke="#BBDEFB"/>
+    <text x="15" y="60" font-family="Arial, sans-serif" font-size="12" fill="#333">我们提供 <tspan font-weight="bold" fill="#1565C0">开箱即用</tspan> 的体验，无需专业管理员，</text>
+    <text x="15" y="80" font-family="Arial, sans-serif" font-size="12" fill="#333">且总拥有成本 (TCO) 仅为竞品 A 的 <tspan font-weight="bold" fill="#1565C0">1/3</tspan>。</text>
+  </g>
+
+  <!-- Section 3: Kill Shots & Q&A -->
+  <g transform="translate(80, 430)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">🎯 关键问答 (Kill Shots)</text>
+    
+    <!-- Q1 -->
+    <g transform="translate(0, 40)">
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#555">Q: "他们功能更多..."</text>
+      <text x="0" y="35" font-family="Arial, sans-serif" font-size="12" fill="#333">A: "是的，但 80% 的功能您可能永远用不到。我们专注解决核心 20%。"</text>
+    </g>
+
+    <!-- Q2 -->
+    <g transform="translate(320, 40)">
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#555">Q: "他们更安全..."</text>
+      <text x="0" y="35" font-family="Arial, sans-serif" font-size="12" fill="#333">A: "我们同样通过了 SOC2 认证，且数据中心本地化，合规性更强。"</text>
+    </g>
+  </g>
+
+  <!-- Landmines -->
+  <g transform="translate(80, 540)">
+    <rect width="620" height="40" rx="4" fill="#FFF3E0" stroke="#FFE0B2"/>
+    <text x="20" y="25" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">⚠️ 避免提及 (Landmines): 不要提及他们尚未发布的 Beta 版 AI 功能，不要打价格战。</text>
+  </g>
+
+</svg>

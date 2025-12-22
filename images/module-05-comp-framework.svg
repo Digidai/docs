@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="600" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="500" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    竞争分析完整框架 (Competitive Framework)
+  </text>
+
+  <!-- Step 1: Identification -->
+  <g transform="translate(400, 100)">
+    <rect width="200" height="60" rx="30" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" filter="url(#shadow)"/>
+    <text x="100" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565C0">1. 竞争者识别</text>
+  </g>
+  <path d="M 500,160 L 500,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 2: Analysis Loop -->
+  <g transform="translate(50, 200)">
+    <rect width="900" height="120" rx="12" fill="#F5F5F7" stroke="#D2D2D7" stroke-width="1"/>
+    
+    <!-- Step 2 -->
+    <g transform="translate(30, 30)">
+      <rect width="180" height="60" rx="8" fill="#ffffff" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="90" y="35" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">2. 竞争定位矩阵</text>
+    </g>
+    <!-- Arrow -->
+    <path d="M 210,60 L 250,60" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 3 -->
+    <g transform="translate(260, 30)">
+      <rect width="140" height="60" rx="8" fill="#ffffff" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="70" y="35" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">3. 功能对比</text>
+    </g>
+    <!-- Arrow -->
+    <path d="M 400,60 L 440,60" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 4 -->
+    <g transform="translate(450, 30)">
+      <rect width="140" height="60" rx="8" fill="#ffffff" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="70" y="35" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">4. SWOT 分析</text>
+    </g>
+    <!-- Arrow -->
+    <path d="M 590,60 L 630,60" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 5 & 6 merged mostly conceptually or side by side -->
+    <g transform="translate(640, 30)">
+      <rect width="230" height="60" rx="8" fill="#ffffff" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="115" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E7D32">5. 差异化策略</text>
+      <text x="115" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">&amp; 6. Win/Loss 分析</text>
+    </g>
+  </g>
+  <path d="M 500,320 L 500,360" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 3: Action -->
+  <g transform="translate(150, 360)">
+    <!-- Box 7 -->
+    <g transform="translate(0, 0)">
+      <rect width="300" height="80" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" filter="url(#shadow)"/>
+      <text x="150" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2E7D32">7. 竞争应对 Playbook</text>
+      <text x="150" y="60" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">Battle Cards, 话术, 培训</text>
+    </g>
+
+    <!-- Arrow Right -->
+    <path d="M 320,40 L 380,40" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Box 8 -->
+    <g transform="translate(400, 0)">
+      <rect width="300" height="80" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" filter="url(#shadow)"/>
+      <text x="150" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#EF6C00">8. 情报更新机制</text>
+      <text x="150" y="60" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">定期监控, 持续迭代</text>
+    </g>
+  </g>
+
+  <!-- Cycle Arrow -->
+  <path d="M 400,440 Q 500,520 860,400 Q 950,300 950,200 L 950,130 L 600,130" fill="none" stroke="#D2D2D7" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="820" y="500" font-family="Arial, sans-serif" font-size="14" font-style="italic" fill="#8E8E93">持续反馈循环</text>
+
+</svg>

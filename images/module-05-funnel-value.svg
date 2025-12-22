@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    漏斗诊断的核心价值 (Funnel Diagnostic Value)
+  </text>
+
+  <!-- 4 Questions Grid -->
+  <g transform="translate(100, 100)">
+    <!-- Q1: Efficiency -->
+    <g transform="translate(0, 0)">
+      <rect width="280" height="120" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1565C0">1. 获客效率如何？</text>
+      <text x="20" y="65" font-family="Arial, sans-serif" font-size="14" fill="#555">CAC, LTV:CAC</text>
+      <text x="20" y="85" font-family="Arial, sans-serif" font-size="14" fill="#555">Magic Number</text>
+    </g>
+
+    <!-- Q2: Bottlenecks -->
+    <g transform="translate(320, 0)">
+      <rect width="280" height="120" rx="12" fill="#FFEBEE" stroke="#EF5350" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">2. 瓶颈在哪里？</text>
+      <text x="20" y="65" font-family="Arial, sans-serif" font-size="14" fill="#555">转化率断崖点</text>
+      <text x="20" y="85" font-family="Arial, sans-serif" font-size="14" fill="#555">流失最严重的环节</text>
+    </g>
+
+    <!-- Q3: Improvement Priority -->
+    <g transform="translate(0, 150)">
+      <rect width="280" height="120" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">3. 优先改进什么？</text>
+      <text x="20" y="65" font-family="Arial, sans-serif" font-size="14" fill="#555">资源分配决策</text>
+      <text x="20" y="85" font-family="Arial, sans-serif" font-size="14" fill="#555">ROI 最高的行动</text>
+    </g>
+
+    <!-- Q4: Trend -->
+    <g transform="translate(320, 150)">
+      <rect width="280" height="120" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#EF6C00">4. 趋势如何？</text>
+      <text x="20" y="65" font-family="Arial, sans-serif" font-size="14" fill="#555">同比/环比变化</text>
+      <text x="20" y="85" font-family="Arial, sans-serif" font-size="14" fill="#555">指标恶化预警</text>
+    </g>
+  </g>
+
+  <!-- Bottom Insight Bar -->
+  <g transform="translate(100, 420)">
+    <rect width="600" height="50" rx="25" fill="#F5F5F7" stroke="#D2D2D7"/>
+    <text x="300" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#666">
+      诊断产出: 根因发现 → 改进计划 → 资源聚焦 → 业绩预测
+    </text>
+  </g>
+
+</svg>

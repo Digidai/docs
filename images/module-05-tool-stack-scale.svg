@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="700" viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="500" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    规模化阶段工具栈 (Scale Stage Stack)
+  </text>
+  <text x="500" y="75" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">200+ Customers • $5M+ ARR</text>
+
+  <!-- Platform Base Layer -->
+  <g transform="translate(100, 500)">
+    <rect width="800" height="80" rx="8" fill="#ECEFF1" stroke="#607D8B" stroke-width="2"/>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#455A64">Infrastructure &amp; Data Layer</text>
+    <g transform="translate(100, 45)">
+       <rect x="0" y="0" width="120" height="26" rx="4" fill="#fff" stroke="#B0BEC5"/>
+       <text x="60" y="17" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">Salesforce Ent.</text>
+       
+       <rect x="150" y="0" width="120" height="26" rx="4" fill="#fff" stroke="#B0BEC5"/>
+       <text x="210" y="17" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">Segment CDP</text>
+
+       <rect x="300" y="0" width="120" height="26" rx="4" fill="#fff" stroke="#B0BEC5"/>
+       <text x="360" y="17" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">Snowflake/DW</text>
+
+       <rect x="450" y="0" width="120" height="26" rx="4" fill="#fff" stroke="#B0BEC5"/>
+       <text x="510" y="17" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">Looker/Tableau</text>
+    </g>
+  </g>
+
+  <!-- Application Blocks -->
+  <g transform="translate(100, 120)">
+    
+    <!-- Marketing Cloud -->
+    <g transform="translate(0, 0)">
+      <rect width="250" height="350" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" filter="url(#shadow)"/>
+      <text x="125" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1565C0">Marketing Suite</text>
+      
+      <rect x="25" y="60" width="200" height="40" rx="4" fill="#fff" stroke="#90CAF9"/>
+      <text x="125" y="85" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Marketo / HS Ent</text>
+
+      <rect x="25" y="120" width="200" height="40" rx="4" fill="#fff" stroke="#90CAF9"/>
+      <text x="125" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">6sense / Demandbase</text>
+
+      <rect x="25" y="180" width="200" height="40" rx="4" fill="#fff" stroke="#90CAF9"/>
+      <text x="125" y="205" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">ZoomInfo / Clearbit</text>
+    </g>
+
+    <!-- Sales Cloud -->
+    <g transform="translate(275, 0)">
+      <rect width="250" height="350" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" filter="url(#shadow)"/>
+      <text x="125" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2E7D32">Sales Suite</text>
+
+      <rect x="25" y="60" width="200" height="40" rx="4" fill="#fff" stroke="#A5D6A7"/>
+      <text x="125" y="85" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Outreach / Salesloft</text>
+
+      <rect x="25" y="120" width="200" height="40" rx="4" fill="#fff" stroke="#A5D6A7"/>
+      <text x="125" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Gong / Chorus</text>
+
+      <rect x="25" y="180" width="200" height="40" rx="4" fill="#fff" stroke="#A5D6A7"/>
+      <text x="125" y="205" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Clari (Forecasting)</text>
+    </g>
+
+    <!-- CS/Ops Cloud -->
+    <g transform="translate(550, 0)">
+      <rect width="250" height="350" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" filter="url(#shadow)"/>
+      <text x="125" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#EF6C00">CS &amp; Ops Suite</text>
+
+      <rect x="25" y="60" width="200" height="40" rx="4" fill="#fff" stroke="#FFE0B2"/>
+      <text x="125" y="85" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Gainsight / ChurnZero</text>
+
+      <rect x="25" y="120" width="200" height="40" rx="4" fill="#fff" stroke="#FFE0B2"/>
+      <text x="125" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Intercom (Support)</text>
+      
+      <rect x="25" y="180" width="200" height="40" rx="4" fill="#fff" stroke="#FFE0B2"/>
+      <text x="125" y="205" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">CPQ / Billing</text>
+    </g>
+
+  </g>
+
+  <!-- Budget Info -->
+  <g transform="translate(300, 620)">
+    <rect width="400" height="60" rx="30" fill="#F5F5F5" stroke="#BDBDBD"/>
+    <text x="200" y="25" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">Monthly Budget</text>
+    <text x="200" y="45" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">$15,000 - $50,000+</text>
+  </g>
+
+</svg>

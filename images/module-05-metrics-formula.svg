@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    关键 SaaS 指标计算公式 (Key Metrics)
+  </text>
+
+  <!-- 1. CAC -->
+  <g transform="translate(100, 100)">
+    <rect width="600" height="100" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5" filter="url(#shadow)"/>
+    
+    <text x="30" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1565C0">CAC</text>
+    <text x="30" y="70" font-family="Arial, sans-serif" font-size="12" fill="#555">(获客成本)</text>
+    
+    <text x="150" y="55" font-family="Arial, sans-serif" font-size="24" fill="#333">=</text>
+    
+    <!-- Fraction -->
+    <g transform="translate(200, 30)">
+      <text x="150" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">销售费用 + 营销费用 (Sales &amp; Marketing Cost)</text>
+      <line x1="0" y1="10" x2="300" y2="10" stroke="#333" stroke-width="2"/>
+      <text x="150" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">新增客户数 (New Customers)</text>
+    </g>
+  </g>
+
+  <!-- 2. LTV -->
+  <g transform="translate(100, 220)">
+    <rect width="600" height="100" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+    
+    <text x="30" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">LTV</text>
+    <text x="30" y="70" font-family="Arial, sans-serif" font-size="12" fill="#555">(终身价值)</text>
+    
+    <text x="150" y="55" font-family="Arial, sans-serif" font-size="24" fill="#333">=</text>
+    
+    <!-- Formulas combined -->
+    <g transform="translate(200, 55)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">ARPU × 毛利率 × 客户生命周期</text>
+      <text x="210" y="0" font-family="Arial, sans-serif" font-size="12" fill="#666">(or 1/Churn)</text>
+    </g>
+  </g>
+
+  <!-- 3. CAC Payback -->
+  <g transform="translate(100, 340)">
+    <rect width="600" height="100" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+    
+    <text x="30" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#E65100">Payback</text>
+    <text x="30" y="70" font-family="Arial, sans-serif" font-size="12" fill="#555">(回收期)</text>
+    
+    <text x="150" y="55" font-family="Arial, sans-serif" font-size="24" fill="#333">=</text>
+    
+    <!-- Fraction -->
+    <g transform="translate(200, 30)">
+      <text x="100" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">CAC</text>
+      <line x1="0" y1="10" x2="200" y2="10" stroke="#333" stroke-width="2"/>
+      <text x="100" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">ARPU × 毛利率 (Margin)</text>
+    </g>
+
+    <!-- Benchmark -->
+    <rect x="450" y="35" width="120" height="30" rx="15" fill="#FFE0B2"/>
+    <text x="510" y="55" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#E65100">Target: &lt; 12 mo</text>
+  </g>
+
+  <!-- 4. Magic Number -->
+  <g transform="translate(100, 460)">
+    <rect width="600" height="100" rx="12" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1.5" filter="url(#shadow)"/>
+    
+    <text x="30" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#7B1FA2">Magic #</text>
+    <text x="30" y="70" font-family="Arial, sans-serif" font-size="12" fill="#555">(销售效率)</text>
+    
+    <text x="150" y="55" font-family="Arial, sans-serif" font-size="24" fill="#333">=</text>
+    
+    <!-- Fraction -->
+    <g transform="translate(200, 30)">
+      <text x="150" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">本季度主要新增 ARR (New ARR)</text>
+      <line x1="0" y1="10" x2="300" y2="10" stroke="#333" stroke-width="2"/>
+      <text x="150" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">上季度 S&amp;M 费用 (Prior Q S&amp;M)</text>
+    </g>
+
+    <!-- Benchmark -->
+    <rect x="520" y="35" width="60" height="30" rx="15" fill="#E1BEE7"/>
+    <text x="550" y="55" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#7B1FA2">&gt; 0.7</text>
+  </g>
+
+</svg>

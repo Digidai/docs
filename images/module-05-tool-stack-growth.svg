@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    成长阶段工具栈 (Growth Stage Stack)
+  </text>
+  <text x="400" y="75" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">50-200 Customers • $1-5M ARR</text>
+
+  <!-- Stack Layout -->
+  
+  <!-- CRM Base -->
+  <g transform="translate(200, 400)">
+    <rect width="400" height="60" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" filter="url(#shadow)"/>
+    <text x="200" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#E65100">CRM: HubSpot Pro / Salesforce Ess.</text>
+  </g>
+
+  <!-- Left Pillar: Marketing -->
+  <g transform="translate(100, 150)">
+    <rect width="180" height="200" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" filter="url(#shadow)"/>
+    <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565C0">Marketing</text>
+    
+    <rect x="20" y="60" width="140" height="40" rx="4" fill="#fff" stroke="#90CAF9"/>
+    <text x="90" y="85" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">HubSpot Mktg</text>
+
+    <rect x="20" y="120" width="140" height="40" rx="4" fill="#fff" stroke="#90CAF9"/>
+    <text x="90" y="145" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">ActiveCampaign</text>
+  </g>
+
+  <!-- Center Pillar: Sales & CS -->
+  <g transform="translate(310, 150)">
+    <rect width="180" height="200" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" filter="url(#shadow)"/>
+    <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2E7D32">Sales &amp; CS</text>
+    
+    <rect x="20" y="60" width="140" height="40" rx="4" fill="#fff" stroke="#A5D6A7"/>
+    <text x="90" y="85" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">Apollo / Reply</text>
+    
+    <rect x="20" y="120" width="140" height="40" rx="4" fill="#fff" stroke="#A5D6A7"/>
+    <text x="90" y="145" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">Intercom / Zendesk</text>
+  </g>
+
+  <!-- Right Pillar: Data & BI -->
+  <g transform="translate(520, 150)">
+    <rect width="180" height="200" rx="8" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" filter="url(#shadow)"/>
+    <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#7B1FA2">Data &amp; BI</text>
+
+    <rect x="20" y="60" width="140" height="40" rx="4" fill="#fff" stroke="#CE93D8"/>
+    <text x="90" y="85" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">Mixpanel / Amplitude</text>
+
+    <rect x="20" y="120" width="140" height="40" rx="4" fill="#fff" stroke="#CE93D8"/>
+    <text x="90" y="145" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">Metabase / Looker</text>
+  </g>
+
+  <!-- Budget Info -->
+  <g transform="translate(250, 500)">
+    <rect width="300" height="60" rx="30" fill="#F5F5F5" stroke="#BDBDBD"/>
+    <text x="150" y="25" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">Monthly Budget</text>
+    <text x="150" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">$2,000 - $5,000</text>
+  </g>
+
+</svg>

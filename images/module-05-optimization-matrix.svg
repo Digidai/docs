@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="660" viewBox="0 0 800 660" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    优化优先级矩阵 (Optimization Priority)
+  </text>
+
+  <!-- Matrix Grid -->
+  <g transform="translate(100, 100)">
+    <!-- Axes Labels -->
+    <text x="300" y="-10" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#555">影响力 (Impact)</text>
+    <text x="-30" y="220" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" transform="rotate(-90 -30 220)" fill="#555">实施难度 (Difficulty)</text>
+
+    <!-- Axes Lines -->
+    <line x1="300" y1="20" x2="300" y2="420" stroke="#D2D2D7" stroke-width="2"/>
+    <line x1="20" y1="220" x2="580" y2="220" stroke="#D2D2D7" stroke-width="2"/>
+
+    <text x="20" y="440" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#666">← 难度低 (Low)</text>
+    <text x="500" y="440" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#666">难度高 (High) →</text>
+    
+    <text x="600" y="40" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#666">↑ 影响大 (High)</text>
+    <text x="600" y="400" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#666">↓ 影响小 (Low)</text>
+
+    <!-- Quadrant Backgrounds -->
+    <rect x="20" y="20" width="280" height="200" fill="#E8F5E9" opacity="0.3"/>
+    <rect x="300" y="20" width="280" height="200" fill="#E3F2FD" opacity="0.3"/>
+    <rect x="20" y="220" width="280" height="200" fill="#F5F5F7" opacity="0.3"/>
+    <rect x="300" y="220" width="280" height="200" fill="#FFF3E0" opacity="0.3"/>
+
+    <!-- Quadrant Content -->
+    <!-- Quick Wins (Top Left) -->
+    <g transform="translate(160, 120)">
+      <circle r="60" fill="#4CAF50" opacity="0.2"/>
+      <text x="0" y="-10" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2E7D32">Quick Wins</text>
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1B5E20">速赢项目 (P0)</text>
+    </g>
+
+    <!-- Major Projects (Top Right) -->
+    <g transform="translate(440, 120)">
+      <circle r="60" fill="#2196F3" opacity="0.2"/>
+      <text x="0" y="-10" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1565C0">Major Projects</text>
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0D47A1">重大项目 (P1)</text>
+    </g>
+
+    <!-- Fill-ins (Bottom Left) -->
+    <g transform="translate(160, 320)">
+      <circle r="50" fill="#9E9E9E" opacity="0.1"/>
+      <text x="0" y="-10" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#616161">Fill-ins</text>
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#424242">填充任务 (P2)</text>
+    </g>
+
+    <!-- Nice to Have (Bottom Right) -->
+    <g transform="translate(440, 320)">
+      <circle r="50" fill="#FF9800" opacity="0.1"/>
+      <text x="0" y="-10" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#EF6C00">Nice to Have</text>
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#E65100">锦上添花 (P3)</text>
+    </g>
+  </g>
+
+  <!-- Legend Flow -->
+  <g transform="translate(100, 580)">
+    <rect width="600" height="50" rx="25" fill="#F9FAFB" stroke="#E5E7EB"/>
+    <text x="300" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">
+      优先级顺序: Quick Wins > Major Projects > Fill-ins > Nice to Have
+    </text>
+  </g>
+
+</svg>

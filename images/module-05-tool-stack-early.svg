@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    早期阶段工具栈 (Early Stage Stack)
+  </text>
+  <text x="400" y="75" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">0-50 Customers • &lt;$1M ARR</text>
+
+  <!-- Central Budget Circle -->
+  <g transform="translate(400, 250)">
+    <circle r="60" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1565C0">Monthly Budget</text>
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1565C0">$0 - 500</text>
+  </g>
+
+  <!-- Tool Cards around Center -->
+  
+  <!-- CRM (Top Left) -->
+  <g transform="translate(150, 120)">
+    <rect width="200" height="80" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#EF6C00">CRM (核心)</text>
+    <text x="20" y="55" font-family="Arial, sans-serif" font-size="14" fill="#333">HubSpot Free / Pipedrive</text>
+    <!-- Connector to center -->
+    <line x1="200" y1="80" x2="250" y2="130" stroke="#FF9800" stroke-width="1.5" stroke-dasharray="4"/>
+  </g>
+
+  <!-- Email (Top Right) -->
+  <g transform="translate(450, 120)">
+    <rect width="200" height="80" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">Email / Mktg</text>
+    <text x="20" y="55" font-family="Arial, sans-serif" font-size="14" fill="#333">Gmail + Mailchimp</text>
+    <line x1="0" y1="80" x2="-50" y2="130" stroke="#4CAF50" stroke-width="1.5" stroke-dasharray="4"/>
+  </g>
+
+  <!-- Analytics (Bottom Left) -->
+  <g transform="translate(150, 300)">
+    <rect width="200" height="80" rx="8" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7B1FA2">Analytics</text>
+    <text x="20" y="55" font-family="Arial, sans-serif" font-size="14" fill="#333">GA + Mixpanel Plan</text>
+    <line x1="200" y1="0" x2="250" y2="-50" stroke="#9C27B0" stroke-width="1.5" stroke-dasharray="4"/>
+  </g>
+
+  <!-- Comm (Bottom Right) -->
+  <g transform="translate(450, 300)">
+    <rect width="200" height="80" rx="8" fill="#B2EBF2" stroke="#00BCD4" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0097A7">Communication</text>
+    <text x="20" y="55" font-family="Arial, sans-serif" font-size="14" fill="#333">Slack + Zoom</text>
+    <line x1="0" y1="0" x2="-50" y2="-50" stroke="#00BCD4" stroke-width="1.5" stroke-dasharray="4"/>
+  </g>
+
+  <!-- Principle Bar -->
+  <g transform="translate(100, 420)">
+    <rect width="600" height="40" rx="20" fill="#F5F5F5" stroke="#E0E0E0"/>
+    <text x="300" y="25" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">
+      原则：低成本优先 • 避免过度投入 • 手动验证流程
+    </text>
+  </g>
+
+</svg>

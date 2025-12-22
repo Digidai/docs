@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    PLG 成功要素模型 (Success Model)
+  </text>
+
+  <!-- Core Value (Top) -->
+  <g transform="translate(300, 100)">
+    <rect width="200" height="80" rx="40" fill="#E3F2FD" stroke="#2196F3" stroke-width="3" filter="url(#shadow)"/>
+    <text x="100" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565C0">Product Value</text>
+    <text x="100" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#42A5F5">清晰的产品价值</text>
+  </g>
+  
+  <!-- Connector Down -->
+  <line x1="400" y1="180" x2="400" y2="230" stroke="#90CAF9" stroke-width="4"/>
+
+  <!-- Three Pillars (Middle) -->
+  <g transform="translate(50, 230)">
+    
+    <!-- 1. Easy to Try -->
+    <g transform="translate(0, 0)">
+      <rect width="200" height="120" rx="12" fill="#F1F8E9" stroke="#8BC34A" stroke-width="2" filter="url(#shadow)"/>
+      <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#33691E">Easy to Try</text>
+      <text x="100" y="65" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#558B2F">易于试用</text>
+      <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#689F38">• Freemium</text>
+    </g>
+    
+    <!-- 2. Viral Design -->
+    <g transform="translate(250, 0)">
+      <rect width="200" height="120" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" filter="url(#shadow)"/>
+      <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#E65100">Viral Design</text>
+      <text x="100" y="65" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#EF6C00">病毒机制</text>
+      <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#F57C00">• Invitation</text>
+    </g>
+
+    <!-- 3. Natural Expansion -->
+    <g transform="translate(500, 0)">
+      <rect width="200" height="120" rx="12" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" filter="url(#shadow)"/>
+      <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#7B1FA2">Expansion</text>
+      <text x="100" y="65" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#8E24AA">自然扩展</text>
+      <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#AB47BC">• Individual → Team</text>
+    </g>
+  </g>
+
+  <!-- Connectors Middle to Bottom -->
+  <line x1="150" y1="350" x2="350" y2="400" stroke="#BDBDBD" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="400" y1="350" x2="400" y2="400" stroke="#BDBDBD" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="650" y1="350" x2="450" y2="400" stroke="#BDBDBD" stroke-width="2" stroke-dasharray="4"/>
+
+  <!-- Growth Engine (Bottom) -->
+  <g transform="translate(250, 400)">
+    <path d="M 0,40 L 15,20 L 285,20 L 300,40 L 285,60 L 15,60 Z" fill="#263238" filter="url(#shadow)"/>
+    <text x="150" y="45" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff">Growth Engine 增长引擎</text>
+  </g>
+
+</svg>
