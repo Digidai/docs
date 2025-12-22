@@ -1,0 +1,95 @@
+<svg width="700" height="450" viewBox="0 0 700 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .title { font-size: 22px; font-weight: 800; fill: #1e293b; }
+      .axis-label { font-size: 14px; font-weight: 700; fill: #475569; }
+      .cell-label { font-size: 14px; font-weight: 700; fill: #fff; }
+      .strategy-label { font-size: 13px; font-weight: 600; fill: #1e293b; }
+      .strategy-desc { font-size: 12px; fill: #64748b; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="450" fill="#f8fafc" rx="16" ry="16"/>
+
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" class="text title">风险评估矩阵 (Risk Assessment Matrix)</text>
+  <text x="350" y="62" text-anchor="middle" class="text" font-size="13" fill="#64748b">风险评分 = 可能性 × 影响</text>
+
+  <!-- Matrix Container -->
+  <g transform="translate(130, 90)">
+    <!-- Y-Axis Label -->
+    <text x="-40" y="100" text-anchor="middle" class="text axis-label" transform="rotate(-90, -40, 100)">可能性 (Probability)</text>
+    
+    <!-- X-Axis Label -->
+    <text x="180" y="215" text-anchor="middle" class="text axis-label">影响 (Impact)</text>
+
+    <!-- Grid Cells (3x3) -->
+    <!-- Row 1 (High Probability) -->
+    <rect x="0" y="0" width="120" height="60" fill="#facc15" stroke="#fff" stroke-width="2" rx="4"/>
+    <text x="60" y="35" text-anchor="middle" class="text cell-label" fill="#713f12">中</text>
+    
+    <rect x="120" y="0" width="120" height="60" fill="#f97316" stroke="#fff" stroke-width="2" rx="4"/>
+    <text x="180" y="35" text-anchor="middle" class="text cell-label">高</text>
+    
+    <rect x="240" y="0" width="120" height="60" fill="#ef4444" stroke="#fff" stroke-width="2" rx="4"/>
+    <text x="300" y="35" text-anchor="middle" class="text cell-label">紧急</text>
+
+    <!-- Row 2 (Medium Probability) -->
+    <rect x="0" y="60" width="120" height="60" fill="#22c55e" stroke="#fff" stroke-width="2" rx="4"/>
+    <text x="60" y="95" text-anchor="middle" class="text cell-label">低</text>
+    
+    <rect x="120" y="60" width="120" height="60" fill="#facc15" stroke="#fff" stroke-width="2" rx="4"/>
+    <text x="180" y="95" text-anchor="middle" class="text cell-label" fill="#713f12">中</text>
+    
+    <rect x="240" y="60" width="120" height="60" fill="#f97316" stroke="#fff" stroke-width="2" rx="4"/>
+    <text x="300" y="95" text-anchor="middle" class="text cell-label">高</text>
+
+    <!-- Row 3 (Low Probability) -->
+    <rect x="0" y="120" width="120" height="60" fill="#94a3b8" stroke="#fff" stroke-width="2" rx="4"/>
+    <text x="60" y="155" text-anchor="middle" class="text cell-label">观察</text>
+    
+    <rect x="120" y="120" width="120" height="60" fill="#22c55e" stroke="#fff" stroke-width="2" rx="4"/>
+    <text x="180" y="155" text-anchor="middle" class="text cell-label">低</text>
+    
+    <rect x="240" y="120" width="120" height="60" fill="#facc15" stroke="#fff" stroke-width="2" rx="4"/>
+    <text x="300" y="155" text-anchor="middle" class="text cell-label" fill="#713f12">中</text>
+
+    <!-- Y-Axis Ticks -->
+    <text x="-10" y="35" text-anchor="end" class="text" font-size="12" fill="#475569">高</text>
+    <text x="-10" y="95" text-anchor="end" class="text" font-size="12" fill="#475569">中</text>
+    <text x="-10" y="155" text-anchor="end" class="text" font-size="12" fill="#475569">低</text>
+
+    <!-- X-Axis Ticks -->
+    <text x="60" y="195" text-anchor="middle" class="text" font-size="12" fill="#475569">低</text>
+    <text x="180" y="195" text-anchor="middle" class="text" font-size="12" fill="#475569">中</text>
+    <text x="300" y="195" text-anchor="middle" class="text" font-size="12" fill="#475569">高</text>
+  </g>
+
+  <!-- Response Strategies Legend -->
+  <g transform="translate(50, 330)">
+    <text x="0" y="0" class="text strategy-label">应对策略：</text>
+
+    <!-- Urgent -->
+    <rect x="0" y="15" width="16" height="16" rx="3" fill="#ef4444"/>
+    <text x="25" y="28" class="text strategy-label">紧急</text>
+    <text x="70" y="28" class="text strategy-desc">立即制定应对计划，分配专人跟踪</text>
+
+    <!-- High -->
+    <rect x="0" y="40" width="16" height="16" rx="3" fill="#f97316"/>
+    <text x="25" y="53" class="text strategy-label">高</text>
+    <text x="55" y="53" class="text strategy-desc">制定应对计划，定期监控</text>
+
+    <!-- Medium -->
+    <rect x="340" y="15" width="16" height="16" rx="3" fill="#facc15"/>
+    <text x="365" y="28" class="text strategy-label">中</text>
+    <text x="395" y="28" class="text strategy-desc">关注并准备应对方案</text>
+
+    <!-- Low/Watch -->
+    <rect x="340" y="40" width="16" height="16" rx="3" fill="#22c55e"/>
+    <text x="365" y="53" class="text strategy-label">低/观察</text>
+    <text x="430" y="53" class="text strategy-desc">定期检查</text>
+  </g>
+
+</svg>
