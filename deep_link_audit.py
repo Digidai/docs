@@ -13,7 +13,7 @@ import re
 from pathlib import Path
 import json
 
-DOCS_DIR = Path("/Users/dai/Documents/CursorProjects/docs")
+DOCS_DIR = Path(__file__).parent.resolve()
 
 # Load mint.json to get valid pages
 with open(DOCS_DIR / "mint.json", "r") as f:
