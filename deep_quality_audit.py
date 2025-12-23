@@ -4,7 +4,7 @@ import re
 import json
 from pathlib import Path
 
-DOCS_DIR = Path("/Users/dai/Documents/CursorProjects/docs")
+DOCS_DIR = Path(__file__).parent.resolve()
 MINT_JSON_PATH = DOCS_DIR / "mint.json"
 
 def get_all_mdx_files():
